@@ -1,263 +1,59 @@
+[ORG 0x00]         			; ì½”ë“œì˜ ì‹œìž‘ ì–´ë“œë ˆìŠ¤ë¥¼ 0x00ìœ¼ë¡œ ì„¤ì •
+[BITS 16]          			; ì´í•˜ì˜ ì½”ë“œëŠ” 16ë¹„íŠ¸ ì½”ë“œë¡œ ì„¤ì •
 
-[ORG 0x00]          ; ¿¿¿ ¿¿ ¿¿¿¿¿ 0x00¿¿ ¿¿
-[BITS 16]           ; ¿¿¿ ¿¿¿ 16¿¿ ¿¿¿ ¿¿
+SECTION .text      			; text ì„¹ì…˜(ì„¸ê·¸ë¨¼íŠ¸)ì„ ì •ì˜
 
-SECTION .text       ; text ¿¿(¿¿¿¿)¿ ¿¿
+jmp 0x07C0:START			; CS ì„¸ê·¸ë¨¼íŠ¸ ë ˆì§€ìŠ¤í„°ì— 0x07C0ì„ ë³µì‚¬í•˜ë©´ì„œ , START ë ˆì´ë¸”ë¡œ ì´ë™ (CS ì„¸ê·¸ë¨¼íŠ¸ëŠ” ë°ì´í„° ì´ë™ ëª…ë ¹ìœ¼ë¥´ ì„¤ì •ë¶ˆê°€ëŠ¥í•˜ë©° ì í”„ë‚˜ ì¸í„°ëŸ½íŠ¸ ê´€ë ¨ ëª…ë ¹ìœ¼ë¡œ ë³€ê²½ ê°€ëŠ¥
 
-jmp 0x07C0:START    ; CS ¿¿¿¿ ¿¿¿¿¿ 0x07C0¿ ¿¿¿¿¿, START ¿¿¿¿ ¿¿
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;   MINT64 OS¿ ¿¿¿ ¿¿ ¿¿ ¿
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-TOTALSECTORCOUNT:   dw  1       ; ¿¿ ¿¿¿ ¿¿¿ MINT64 OS ¿¿¿¿ ¿¿
-                                ; ¿¿ 1152 ¿¿ (0x90000byte)¿¿ ¿¿
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;   ¿¿ ¿¿
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 START:
-    mov ax, 0x07C0  ; ¿¿ ¿¿¿ ¿¿ ¿¿¿¿(0x07C0)¿ ¿¿¿¿ ¿¿¿¿ ¿¿¿ ¿¿
-    mov ds, ax      ; DS ¿¿¿¿ ¿¿¿¿¿ ¿¿
-    mov ax, 0xB800  ; ¿¿¿ ¿¿¿¿ ¿¿ ¿¿¿¿(0xB800)¿ ¿¿¿¿ ¿¿¿¿ ¿¿¿ ¿¿
-    mov es, ax      ; ES ¿¿¿¿ ¿¿¿¿¿ ¿¿
+	mov ax, 0x07C0			; ë¶€íŠ¸ ë¡œë”ì˜ ì‹œìž‘ ì–´ë“œë ˆìŠ¤(0x7C00)ë¥¼ ì„¸ê·¸ë¨¼íŠ¸ ë ˆì§€ìŠ¤í„° ê°’ìœ¼ë¡œ ë³€í™˜
+	mov ds, ax				; DS ì„¸ê·¸ë¨¼íŠ¸ ë ˆì§€ìŠ¤í„°ì— ì„¤ì •
+	mov ax, 0xB800			; ë¹„ë””ì˜¤ ë©”ëª¨ë¦¬ì˜ ì‹œìž‘ ì–´ë“œë ˆìŠ¤(0xB800)ë¥¼ ì„¸ê·¸ë¨¼íŠ¸ ë ˆì§€ìŠ¤í„° ê°’ìœ¼ë¡œ ë³€í™˜
+	mov es, ax				; ES ì„¸ê·¸ë¨¼íŠ¸ ë ˆì§€ìŠ¤í„°ì— ì„¤ì •
 
-    ; ¿¿¿ 0x0000:0000~0x0000:FFFF ¿¿¿ 64kb ¿¿¿ ¿¿
-    mov ax, 0x0000  ; ¿¿ ¿¿¿¿¿ ¿¿ ¿¿¿¿(0x0000)¿ ¿¿¿¿ ¿¿¿¿ ¿¿¿ ¿¿
-    mov ss, ax      ; SS ¿¿¿¿ ¿¿¿¿¿ ¿¿
-    mov sp, 0xFFFF  ; SP ¿¿¿¿¿ ¿¿¿¿¿ 0xFFFF¿¿ ¿¿(¿¿¿)
-    mov bp, 0xFFFF  ; BP ¿¿¿¿¿ ¿¿¿¿¿ 0xFFFF¿¿ ¿¿(¿¿¿)
+	mov si, 0				; SI ë ˆì§€ìŠ¤í„° (ë¬¸ìžì—´ ì›ë³¸ ì¸ë±ìŠ¤ ë ˆì§€ìŠ¤í„°)ë¥¼ ì´ˆê¸°í™”
 
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ; ¿¿¿ ¿¿ ¿¿¿, ¿¿¿¿ ¿¿¿¿ ¿¿
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    mov si,    0                    ; SI ¿¿¿¿(¿¿¿ ¿¿ ¿¿¿ ¿¿¿¿)¿ ¿¿¿
-        
-.SCREENCLEARLOOP:                   ; ¿¿¿ ¿¿¿ ¿¿
-    mov byte [ es: si ], 0          ; ¿¿¿ ¿¿¿¿ ¿¿¿ ¿¿¿¿ ¿¿¿¿¿ 0¿ ¿¿¿¿ ¿¿¿ ¿¿
-                                    
-    mov byte [ es: si + 1 ], 0x0A   ; ¿¿¿ ¿¿¿¿ ¿¿¿ ¿¿¿¿ ¿¿¿¿¿ 0x0A(¿¿ ¿¿¿ ¿¿ ¿¿)¿ ¿¿
-                                    
+.SCREENCLEARLOOP:			; í™”ë©´ì„ ì§€ìš°ëŠ” ë£¨í”„
+	mov byte [es:si],0		; ë¹„ë””ì˜¤ ë©”ëª¨ë¦¬ì˜ ë¬¸ìžê°€ ìœ„ì¹˜í•˜ëŠ” ì–´ë“œë ˆìŠ¤ì— 0ì„ ë³µì‚¬í•˜ì—¬ ë¬¸ìžë¥¼ ì‚­ì œ
+	mov byte [es:si+1],0x09	; ë¹„ë””ì˜¤ ë©”ëª¨ë¦¬ì˜ ì†ì„±ì´ ìœ„ì¹˜í•˜ëŠ” ì–´ë“œë ˆìŠ¤ì— 0x09(ê²€ì€ ë°”íƒ•ì— ë°ì€ íŒŒëž‘)ì„ ë³µì‚¬
 
+	add si,2				; ë¬¸ìžì™€ ì†ì„±ì„ ì„¤ì •í–ˆìœ¼ë¯€ë¡œ ë‹¤ìŒ ìœ„ì¹˜ë¡œ ì´ë™
 
-    add si, 2                       ; ¿¿¿ ¿¿¿ ¿¿¿¿¿¿ ¿¿ ¿¿¿ ¿¿
+	cmp si, 80*25*2			; í™”ë©´ì˜ ì „ì²´ í¬ê¸°ëŠ” 80ë¬¸ìž*25ë¼ì¸ìž„
+							; ì¶œë ¥í•œ ë¬¸ìžì˜ ìˆ˜ë¥¼ ì˜ë¯¸í•˜ëŠ” SI ë ˆì§€ìŠ¤í„°ì™€ ë¹„êµ
+	jl .SCREENCLEARLOOP		; SI ë ˆì§€ìŠ¤í„°ê°€ 80*25*2ë³´ë‹¤ ìž‘ë‹¤ë©´ ì•„ì§ ì§€ìš°ì§€ ëª»í•œ ì˜ì—­ì´ ìžˆìœ¼ë¯€ë¡œ .SCREENCLEARLOOP ë ˆì´ë¸”ë¡œ ì´ë™
 
-    cmp si, 80 * 25 * 2     ; ¿¿¿ ¿¿ ¿¿¿ 80 ¿¿ * 25 ¿¿¿
-                            ; ¿¿¿ ¿¿¿ ¿¿ ¿¿¿¿ SI ¿¿¿¿¿ ¿¿
-    jl .SCREENCLEARLOOP     ; SI ¿¿¿¿¿ 80*25*2¿¿ ¿¿¿ ¿¿ ¿¿¿ ¿¿ ¿¿¿ ¿¿¿¿ .SCREENCLEARLOOP ¿¿¿¿ ¿¿ 
-                            
-    
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ; ¿¿ ¿¿¿ ¿¿ ¿¿¿ ¿¿
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    push MESSAGE1               ; ¿¿¿ ¿¿¿¿ ¿¿¿¿¿ ¿¿¿ ¿¿
-    push 0                      ; ¿¿ Y ¿¿(0)¿ ¿¿¿ ¿¿
-    push 0                      ; ¿¿ X ¿¿(0)¿ ¿¿¿ ¿¿
-    call PRINTMESSAGE           ; PRINTMESSAGE ÇÔ¼ö È£Ãâ
-    add  sp, 6                  ; ¿¿¿ ¿¿¿¿ ¿¿ cdecl ¿¿ 
-    
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ; OS ¿¿¿¿ ¿¿¿¿¿ ¿¿¿ ¿¿
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    push IMAGELOADINGMESSAGE    ; ¿¿¿ ¿¿¿¿ ¿¿¿¿¿ ¿¿¿ ¿¿         
-    push 1                      ; ¿¿ Y ¿¿(1)¿ ¿¿¿ ¿¿           
-    push 0                      ; ¿¿ X ¿¿(0)¿ ¿¿¿ ¿¿                     
-    call PRINTMESSAGE           ; PRINTMESSAGE ¿¿ ¿¿                      
-    add  sp, 6                  ; ¿¿¿ ¿¿¿¿ ¿¿                           
-        
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ; ¿¿¿¿¿ ­ OS ¿¿¿¿ ¿¿
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ; ¿¿¿¿ ¿¿ ¿¿ ¿¿ ¿¿
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-RESETDISK:                          ; ¿¿¿¿ ¿¿¿¿ ¿¿¿ ¿¿
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ; BIOS Reset Function ¿¿
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ; ¿¿¿ ¿¿ 0, ¿¿¿¿ ¿¿(0=Floppy)
-    mov ax, 0
-    mov dl, 0              
-    int 0x13     
-    ; ¿¿¿ ¿¿¿¿ ¿¿ ¿¿¿ ¿¿
-    jc  HANDLEDISKERROR
-        
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ; ¿¿¿¿¿ ¿¿¿ ¿¿
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ; ¿¿¿¿ ¿¿¿ ¿¿¿¿ ¿¿¿ ¿¿¿¿(ES:BX)¿ 0x10000À¿¿ ¿¿
-    mov si, 0x1000                  ; OS ¿¿¿¿ ¿¿¿ ¿¿¿¿(0x10000)¿ 
-                                    ; ¿¿¿¿ ¿¿¿¿ ¿¿¿ ¿¿
-    mov es, si                      ; ES ¿¿¿¿ ¿¿¿¿¿ ¿ ¿¿
-    mov bx, 0x0000                  ; BX ¿¿¿¿¿ 0x0000¿ ¿¿¿¿ ¿¿¿ 
-                                    ; ¿¿¿¿¿  0x1000:0000(0x10000)¿¿ ¿¿ ¿¿
+	mov si, 0				; SI ë ˆì§€ìŠ¤í„°(ë¬¸ìžì—´ ì›ë³¸ ì¸ë±ìŠ¤ ë ˆì§€ìŠ¤í„°)ë¥¼ ì´ˆê¸°í™” 
+	mov di ,0				; DI ë ˆì§€ìŠ¤í„°(ë¬¸ìžì—´ ëŒ€ìƒ ì¸ë±ìŠ¤ ë ˆì§€ìŠ¤í„°)ë¥¼ ì´ˆê¸°í™”
+.MESSAGELOOP:				; ë©”ì‹œì§€ë¥¼ ì¶œë ¥í•˜ëŠ” ë£¨í”„
+	mov cl,byte[si+MESSAGE1]; MESSAGE1ì˜ ì–´ë“œë ˆìŠ¤ë¥¼ SIë ˆì§€ìŠ¤í„° ê°’ë§Œí¼ ë”í•œ ìœ„ì¹˜ì˜ ë¬¸ìžë¥¼ CL ë ˆì§€ìŠ¤í„°ì— ë³µì‚¬ 
+							; CL ë ˆì§€ìŠ¤í„°ëŠ” CX(ë£¨í”„ ë˜ëŠ” ë¬¸ìžì—´ì˜ ì¹´ìš´í„°ë¡œ ì‚¬ìš©)ë˜ëŠ” ë²”ìš© ë ˆì§€ìŠ¤í„°ì˜ í•˜ìœ„ 8ë¹„íŠ¸ìž„
+							; ë¬¸ìžì—´ì€ 1ë°”ì´íŠ¸ë©´ ì¶©ë¶„í•˜ë¯€ë¡œ CX ë ˆì§€ìŠ¤í„°ì˜ í•˜ìœ„ 1ë°”ì´íŠ¸ë§Œ ì‚¬ìš©
+	cmp cl, 0				; ë³µì‚¬ëœ ë¬¸ìžì™€ 0ì„ ë¹„êµ
+    je .MESSAGEEND			; ë³µì‚¬í•œ ë¬¸ìžì˜ ê°’ì´ 0ì´ë©´ ë¬¸ìžì—´ì´ ì¢…ë£Œë˜ì—ˆìŒì„ ì˜ë¯¸í•˜ë¯€ë¡œ .MESSAGEENDë¡œ ì´ë™í•˜ì—¬ ë¬¸ìž ì¶œë ¥ ì¢…ë£Œ 
 
-    mov di, word [ TOTALSECTORCOUNT ] ; ¿¿¿ OS ¿¿¿¿ ¿¿ ¿¿ DI ¿¿¿¿¿ ¿¿
+	mov byte[es:di],cl		; 0ì´ ì•„ë‹ˆë¼ë©´ ë¹„ë””ì˜¤ ë©”ëª¨ë¦¬ ì–´ë“œë ˆìŠ¤ 0xB800:diì— ë¬¸ìžë¥¼ ì¶œë ¥ 
+	
+	add si,1				; SI ë ˆì§€ìŠ¤í„°ì— 1ì„ ë”í•˜ì—¬ ë‹¤ìŒ ë¬¸ìžì—´ë¡œ ì´ë™ 
+	add di,2				; DI ë ˆì§€ìŠ¤í„°ì— 2ë¥¼ ë”í•˜ì—¬ ë¹„ë””ì˜¤ ë©”ëª¨ë¦¬ì˜ ë‹¤ìŒ ë¬¸ìž ìœ„ì¹˜ë¡œ ì´ë™ 
+							; ë¹„ë””ì˜¤ ë©”ëª¨ë¦¬ëŠ” (ë¬¸ìž,ì†ì„±)ì˜ ìŒìœ¼ë¡œ êµ¬ì„±ë˜ë¯€ë¡œ ë¬¸ìžë§Œ ì¶œë ¥í•˜ë ¤ë©´ 2ë¥¼ ë”í•´ì•¼ í•¨
 
-READDATA:                           ; ¿¿¿¿ ¿¿ ¿¿¿ ¿¿
-    ; ¿¿ ¿¿¿ ¿ ¿¿¿¿ ¿¿
-    cmp di, 0               ; ¿¿¿ OS ¿¿¿¿ ¿¿¿¿ 0¿ ¿¿
-    je  READEND             ; ¿¿¿ ¿¿ ¿¿ 0¿¿¿ ¿ ¿¿ ¿¿¿¿ READEND¿ ¿¿
-    sub di, 0x1             ; ¿¿¿ ¿¿ ¿¿ 1 ¿¿
-
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ; BIOS Read Function È£Ãâ
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    mov ah, 0x02                        ; BIO ¿¿¿  2(Read Sector)
-    mov al, 0x1                         ; ¿¿ ¿¿ ¿¿ 1
-    mov ch, byte [ TRACKNUMBER ]        ; ¿¿ ¿¿ ¿¿ ¿¿
-    mov cl, byte [ SECTORNUMBER ]       ; ¿¿ ¿¿ ¿¿ ¿¿
-    mov dh, byte [ HEADNUMBER ]         ; ¿¿ ¿¿ ¿¿ ¿¿
-    mov dl, 0x00                        ; ¿¿ ¿¿¿¿ ¿¿ (0=Floppy) ¿¿
-    int 0x13                            ; ¿¿¿¿ ¿¿¿ ¿¿
-    jc HANDLEDISKERROR                  ; ¿¿¿ ¿¿¿¿¿ HANDLEDISKERROR¿ ¿¿
-    
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ; ¿¿¿ ¿¿¿¿¿ ¿¿, ¿¿, ¿¿ ¿¿¿¿ ¿¿
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    add si, 0x0020      ; 512(0x200)¿¿¿¿¿ ¿¿¿¿¿, ¿¿ ¿¿¿¿ ¿¿¿¿ ¿¿¿ ¿¿
-                        
-    mov es, si          ; ES ¿¿¿¿ ¿¿¿¿¿ ¿¿¿ ¿¿¿¿¿ ¿ ¿¿ ¿¿ ¿¿
-    
-    ; ¿ ¿¿¿ ¿¿¿¿¿ ¿¿ ¿¿¿ ¿¿¿¿¿ ¿¿¿ ¿¿(18)¿¿ ¿¿¿¿ ¿¿
-    ; ¿¿¿ ¿¿¿ ¿¿¿ ¿¿ ¿¿¿ ¿¿¿¿ ¿¿ ¿¿ ¿¿ ¿¿
-    mov al, byte [ SECTORNUMBER ]       ; ¿¿ ¿¿¿ AL ¿¿¿¿¿ ¿¿
-    add al, 0x01                        ; ¿¿ ¿¿¿ 1 ¿¿
-    mov byte [ SECTORNUMBER ], al       ; ¿¿¿¿ ¿¿ ¿¿¿ SECTORNUMBER¿ ¿¿ ¿¿
-    cmp al, 19                          ; ¿¿¿¿ ¿¿ ¿¿¿ 19¿ ¿¿
-    jl READDATA                         ; ¿¿ ¿¿¿ 19 ¿¿¿¿¿ READDATA¿ ¿¿
-    
-    ; ¿¿¿ ¿¿¿¿ ¿¿¿¿(¿¿ ¿¿¿ 19¿¿) ¿¿¿ ¿¿(0->1,1->0)¿¿,
-    ; ¿¿ ¿¿¿ 1¿ ¿¿
-
-    xor byte [ HEADNUMBER ], 0x01       ; ¿¿ ¿¿¿ 0x01¿ XOR¿¿ ¿¿(0->1, 1->1)
-    mov byte [ SECTORNUMBER ], 0x01     ; ¿¿ ¿¿¿ ¿¿ 1¿ ¿¿
-    
-    ; ¿¿ ¿¿¿ 1->0¿¿ ¿¿¿¿¿ ¿¿ ¿¿¿ ¿¿ ¿¿ ¿¿¿¿ ¿¿¿ ¿¿¿¿ ¿¿ ¿¿¿ 1 ¿¿
-    cmp byte [ HEADNUMBER ], 0x00       ; ¿¿ ¿¿¿ 0x00¿ ¿¿
-    jne READDATA                        ; ¿¿ ¿¿¿ 0¿ ¿¿¿ READDATA¿ ¿¿
-    
-    ; ¿¿¿ 1 ¿¿¿¿ ¿ ¿¿ ¿¿ ¿¿¿ ¿¿
-    add byte [ TRACKNUMBER ], 0x01      ; ¿¿ ¿¿¿ 1 ¿¿
-    jmp READDATA                        ; READDATA¿ ¿¿
-READEND:
-
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ; OS ¿¿¿¿ ¿¿¿¿¿¿ ¿¿¿¿ ¿¿
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    push LOADINGCOMPLETEMESSAGE     ; ¿¿¿ ¿¿¿¿ ¿¿¿¿¿ ¿¿¿ ¿¿
-    push 1                          ; ¿¿ Y ¿¿(1)¿ ¿¿¿ ¿¿
-    push 20                         ; ¿¿ X ¿¿(20)¿ ¿¿¿ ¿¿
-    call PRINTMESSAGE               ; PRINTMESSAGE ¿¿ ¿¿
-    add  sp, 6                      ; ¿¿¿ ¿¿¿¿ ¿¿
-
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ; ¿¿¿ ¿¿ OS ¿¿¿ ¿¿
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    jmp 0x1000:0x0000
-    
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;   ¿¿ ¿¿ ¿¿
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; ¿¿¿ ¿¿¿ ¿¿¿¿ ¿¿
-HANDLEDISKERROR:
-    push DISKERRORMESSAGE   ; ¿¿ ¿¿¿¿ ¿¿¿¿¿ ¿¿¿ ¿¿
-    push 1                  ; ¿¿ Y ¿¿(1)¿ ¿¿¿ ¿¿
-    push 20                 ; ¿¿ X ¿¿(20)¿ ¿¿¿ ¿¿
-    call PRINTMESSAGE       ; PRINTMESSAGE ¿¿ ¿¿
-    
-    jmp $                   ; ¿¿ ¿¿¿¿ ¿¿ ¿¿ ¿¿
-
-; ¿¿¿¿ ¿¿¿¿ ¿¿
-;   PARAM: x ¿¿,y ¿¿, ¿¿¿
-PRINTMESSAGE:
-    push bp         ; ¿¿¿ ¿¿¿ ¿¿¿¿(BP)¿ ¿¿¿ ¿¿
-    mov bp, sp      ; ¿¿¿ ¿¿¿ ¿¿¿¿(BP)¿ ¿¿ ¿¿¿ ¿¿¿¿(SP¿ ¿¿ ¿¿
-                    ; ¿¿¿ ¿¿¿ ¿¿¿¿(BP)¿ ¿¿¿¿ ¿¿¿¿¿ ¿¿¿ ¿¿
-
-    push es         ; ES ¿¿¿¿ ¿¿¿¿¿¿ DX ¿¿¿¿¿¿ ¿¿¿ ¿¿
-    push si         ; ¿¿¿¿ ¿¿¿ ¿¿¿¿ ¿¿¿¿¿ ¿¿¿ ¿¿¿ ¿¿¿¿ ¿¿¿ ¿¿¿ ¿¿ ¿¿ ¿¿ ¿¿¿ ¿¿
-    push di         
-    push ax
-    push cx
-    push dx
-    
-    ; ES ¿¿¿¿ ¿¿¿¿¿ ¿¿¿ ¿¿ ¿¿¿¿ ¿¿
-    mov ax, 0xB800              ; ¿¿¿ ¿¿¿ ¿¿ ¿¿¿¿(0x0B8000)¿
-                                ; ¿¿¿¿ ¿¿¿¿ ¿¿¿ ¿¿
-    mov es, ax                  ; ES ¿¿¿¿ ¿¿¿¿¿ ¿¿
-    
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ; X, Y¿ ¿¿¿ ¿¿¿ ¿¿¿¿ ¿¿¿¿¿ ¿¿¿
-    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-    ; Y ¿¿¿ ¿¿¿¿ ¿¿ ¿¿ ¿¿¿¿¿ ¿¿
-    mov ax, word [ bp + 6 ]     ; ¿¿¿¿ 2(¿¿ ¿¿ Y)¿ AX ¿¿¿¿¿ ¿¿
-    mov si, 160                 ; ¿ ¿¿¿ ¿¿¿ ¿ (2*80 ¿¿)¿ SI ¿¿¿¿¿ ¿¿
-    mul si                      ; AX ¿¿¿¿¿ SI ¿¿¿¿¿ ¿¿¿ ¿¿ Y ¿¿¿¿ ¿¿
-    mov di, ax                  ; ¿¿¿ ¿¿ Y ¿¿¿¿¿ DI ¿¿¿¿¿ ¿¿
-    
-    ; X ¿¿¿ ¿¿¿¿ 2¿ ¿¿ ¿ ¿¿ ¿¿¿¿¿ ¿¿
-    mov ax, word [ bp + 4 ]     ; ¿¿¿¿ 1(¿¿ ¿¿X)¿ AX ¿¿¿¿¿ ¿¿
-    mov si, 2                   ; ¿ ¿¿¿ ¿¿¿¿ ¿¿¿ ¿(2)¿ SI ¿¿¿¿¿ ¿¿
-    mul si                      ; AX ¿¿¿¿¿ SI ¿¿¿¿¿ ¿¿¿ ¿¿ X ¿¿¿¿¿ ¿¿
-    add di, ax                  ; ¿¿ Y ¿¿¿¿¿ ¿¿¿ X ¿¿¿¿¿ ¿¿¿
-                                ; ¿¿ ¿¿¿ ¿¿¿ ¿¿¿¿¿ ¿¿
-    
-    ; ¿¿¿ ¿¿¿¿ ¿¿¿¿     
-    mov si, word [ bp + 8 ]     ; ¿¿¿¿ 3(¿¿¿ ¿¿¿¿ ¿¿¿¿)
-
-.MESSAGELOOP:               ; ¿¿¿¿ ¿¿¿¿ ¿¿
-    mov cl, byte [ si ]     ; SI ¿¿¿¿¿ ¿¿¿¿ ¿¿¿ ¿¿¿¿ ¿ ¿¿¿ 
-                            ; CL ¿¿¿¿¿ ¿¿
-                            ; CL ¿¿¿¿¿ CX ¿¿¿¿¿ ¿¿ 1¿¿¿¿ ¿¿
-                            ; ¿¿¿¿ 1¿¿¿¿ ¿¿¿¿¿ CX ¿¿¿¿¿ ¿¿ 1¿¿¿¿ ¿¿
-    
-    cmp cl, 0               ; ¿¿¿ ¿¿¿ 0¿ ¿¿
-    je .MESSAGEEND          ; ¿¿¿ ¿¿¿ ¿¿ 0¿¿ ¿¿¿¿ ¿¿¿¿¿¿
-                            ; ¿¿¿¿¿ .MESSAGEEND¿ ¿¿¿¿ ¿¿ ¿¿ ¿¿
-
-    mov byte [ es: di ], cl ; 0¿ ¿¿¿¿ ¿¿¿ ¿¿¿ ¿¿¿¿ 0xB800:di¿ ¿¿¿ ¿¿
-    
-    add si, 1               ; SI ¿¿¿¿¿ 1¿ ¿¿¿ ¿¿ ¿¿¿¿ ¿¿
-    add di, 2               ; DI ¿¿¿¿¿ 2¿ ¿¿¿ ¿¿¿ ¿¿¿¿ ¿¿ ¿¿ ¿¿¿ ¿¿
-                            ; ¿¿¿ ¿¿¿¿ (¿¿,¿¿)¿ ¿¿¿ ¿¿¿¿¿ ¿¿¿ ¿¿¿¿¿
-                            ; 2¿ ¿¿¿ ¿
-
-    jmp .MESSAGELOOP        ; ¿¿¿ ¿¿ ¿¿¿ ¿¿¿¿ ¿¿ ¿¿¿ ¿¿
+	jmp .MESSAGELOOP		; ë©”ì‹œì§€ ì¶œë ¥ ë£¨í”„ë¡œ ì´ë™í•˜ì—¬ ë‹¤ìŒ ë¬¸ìžë¥¼ ì¶œë ¥ 
 
 .MESSAGEEND:
-    pop dx      ; ¿¿¿¿ ¿¿¿ ¿¿ DX ¿¿¿¿¿¿ ES ¿¿¿¿¿¿¿ ¿¿¿
-    pop cx      ; ¿¿¿ ¿¿ ¿¿¿¿ ¿¿
-    pop ax     
-    pop di      
-    pop si      
-    pop es
-    pop bp      ; ¿¿¿ ¿¿¿ ¿¿¿¿(BP) ¿¿
-    ret         ; ¿¿¿ ¿¿¿ ¿¿ ¿¿¿ ¿¿¿ ¿¿
-    
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;   ¿¿¿ ¿¿
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; ¿¿ ¿¿ ¿¿ ¿¿¿
-MESSAGE1:    db 'MINT64 OS Boot Loader Start~!!', 0 ; ¿¿¿ ¿¿¿ ¿¿
-                                                    ; ¿¿¿¿ 0¿¿ ¿¿¿¿ .MESSAGELOOP¿¿
-                                                    ; ¿¿¿¿ ¿¿¿¿¿¿ ¿ ¿ ¿¿¿ ¿
-DISKERRORMESSAGE:       db  'DISK Error~!!', 0
-IMAGELOADINGMESSAGE:    db  'OS Image Loading...', 0
-LOADINGCOMPLETEMESSAGE: db  'Complete~!!', 0
 
-; ¿¿¿ ¿¿¿ ¿¿¿ ¿¿¿
-SECTORNUMBER:           db  0x02    ; OS ¿¿¿¿ ¿¿¿¿ ¿¿ ¿¿¿ ¿¿¿¿ ¿¿
-HEADNUMBER:             db  0x00    ; OS ¿¿¿¿ ¿¿¿¿ ¿¿ ¿¿¿ ¿¿¿¿ ¿¿
-TRACKNUMBER:            db  0x00    ; OS ¿¿¿¿ ¿¿¿¿ ¿¿ ¿¿¿ ¿¿¿¿ ¿¿
-    
-times 510 - ( $ - $$ )    db    0x00    ; $ : ¿¿ ¿¿¿ ¿¿¿¿
-                                        ; $$ : ¿¿ ¿¿(.text)¿ ¿¿ ¿¿¿¿
-                                        ; $ - $$ : ¿¿ ¿¿¿ ¿¿¿¿ ¿¿ ¿¿¿
-                                        ; 510 - ( $ - $$ ) : ¿¿¿¿ ¿¿¿¿ 510¿¿
-                                        ; db 0x00 : 1¿¿¿¿ ¿¿¿¿ ¿¿ 0x00
-                                        ; time : ¿¿ ¿¿
-                                        ; ¿¿ ¿¿¿¿ ¿¿¿¿ 510¿¿ 0x00¿¿ ¿¿
+	jmp $					; í˜„ìž¬ ìœ„ì¹˜ì—ì„œ ë¬´í•œ ë£¨í”„ ìˆ˜í–‰
 
-db 0x55             ; 1¿¿¿¿ ¿¿¿¿ ¿¿  0x55
-db 0xAA             ; 1¿¿¿¿ ¿¿¿¿ ¿¿ 0xAA
-                    ; ¿¿¿¿ 511, 512¿ 0x55, 0xAA¿ ¿¿ ¿¿ ¿¿¿ ¿¿¿
+MESSAGE1:	db 'MINT64 OS Boot Loader Start~!!',0 ; ì¶œë ¥í•  ë©”ì‹œì§€ ì •ì˜ ë§ˆì§€ë§‰ì€ 0ìœ¼ë¡œ ì„¤ì •í•˜ì—¬ .MESSAGELOOPì—ì„œ ë¬¸ìžì—´ì´ ì¢…ë£Œë˜ì—ˆìŒì„ ì•Œ ìˆ˜ ìžˆë„ë¡ í•¨
+
+times 510 - ($-$$) db 0x00      ; $ í˜„ìž¬ ë¼ì¸ì˜ ì–´ë“œë ˆìŠ¤ 
+                                ; $$ í˜„ìž¬ ì„¹ì…˜(.text)ì˜ ì‹œìž‘ ì–´ë“œë ˆìŠ¤ 
+                                ; $ - $$ í˜„ìž¬ ì„¹ì…˜ì„ ê¸°ì¤€ìœ¼ë¡œ í•˜ëŠ” ì˜¤í”„ì…‹ ( 0x55, 0xAAë¥¼ ì •í™•í•œ ìœ„ì¹˜ì— ì‚½ìž…í•˜ë ¤ê³  ì¶”ê°€ëœ ë¶€ë¶„)
+                                ; 510 - ($-$$) í˜„ìž¬ë¶€í„° ì–´ë“œë ˆìŠ¤ 510ê¹Œì§€
+                                ; db 0x00 db(define byteì˜ ì•½ìž) 1ë°”ì´íŠ¸ë¥¼ ì„ ì–¸í•˜ê³  ê°’ì€ 0x00
+                                ; time ë°˜ë³µ ìˆ˜í–‰
+                                ; í˜„ìž¬ ìœ„ì¹˜ì—ì„œ ì–´ë“œë ˆìŠ¤ 510ê¹Œì§€ 0x00ìœ¼ë¡œ ì±„ì›€
+
+db 0x55             		; 1ë°”ì´íŠ¸ë¥¼ ì„ ì–¸í•˜ê³  ê°’ì€ 0x55
+db 0xAA             		; 1ë°”ì´íŠ¸ë¥¼ ì„ ì–¸í•˜ê³  ê°’ì€ 0xAA
+                    		; ì–´ë“œë ˆìŠ¤ 511, 512ì— 0x55, 0xAAë¥¼ ì¨ì„œ ë¶€íŠ¸ ì„¹í„°ë¡œ í‘œê¸°í•¨
