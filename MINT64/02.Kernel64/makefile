@@ -1,10 +1,10 @@
 ###############################################################
 # 빌드 환경 및 규칙 설정
 ###############################################################
-NASM32 = nasm
-GCC32 = x86_64-pc-linux-gcc -c -m32 -ffreestanding
-LD32 = x86_64-pc-linux-ld -melf_i386 -T ../elf_i386.x -nostdlib -e main -Ttext 0x10200
-OBJCOPY32 = x86_64-pc-linux-objcopy -j .text -j .data -j .rodata -j .bss -S -O binary
+NASM64 = nasm -g -f elf64 
+GCC64 = x86_64-pc-linux-gcc -g -c -m64 -ffreestanding
+LD64 = x86_64-pc-linux-ld -melf_x86_64 -T ../elf_x86_64.x -nostdlib -e main -Ttext 0x200000
+OBJCOPY64 = x86_64-pc-linux-objcopy -j .text -j .data -j .rodata -j .bss -S -O binary
 
 OBJECTDIRECTORY = Temp
 SOURCEDIRECTORY = Source
@@ -15,14 +15,11 @@ SOURCEDIRECTORY = Source
 ###############################################################
 
 
-all : prepare Kernel32.bin
+all : prepare Kernel64.bin
 
 
 prepare:
 	mkdir -p $(OBJECTDIRECTORY)
-
-$(OBJECTDIRECTORY)/EntryPoint.bin: $(SOURCEDIRECTORY)/EntryPoint.s
-	$(NASM32) -o $@ $<
 
 dep:
 	@echo === make dependency file ===
@@ -30,13 +27,11 @@ dep:
 	@echo === depency search complete ===
 
 ExecuteInternalBuild: dep 
-	make -C $(OBJECTDIRECTORY) -f ../makefile Kernel32.elf 
+	make -C $(OBJECTDIRECTORY) -f ../makefile Kernel64.elf 
 
-$(OBJECTDIRECTORY)/Kernel32.elf.bin: ExecuteInternalBuild
-	$(OBJCOPY32) $(OBJECTDIRECTORY)/Kernel32.elf $@
 
-Kernel32.bin: $(OBJECTDIRECTORY)/EntryPoint.bin $(OBJECTDIRECTORY)/Kernel32.elf.bin
-	cat $^ > $@
+Kernel64.bin: ExecuteInternalBuild
+	$(OBJCOPY64) $(OBJECTDIRECTORY)/Kernel64.elf $@
 
 clean:
 	rm -f *.bin
@@ -45,28 +40,32 @@ clean:
 ###############################################################
 # make에 의해 다시 호출되는 부분, Temp 디렉터리를 기준으로 수행됨
 ###############################################################
-
-CENTRYPOINTOBJECTFILE = main.o
+# 빌드할 어셈블리어 엔트리 포인트 소스 파일 정의, Temp 디렉터리 기준으로 설정 
+ENTRYPOINTSOURCEFILE = ../$(SOURCEDIRECTORY)/EntryPoint.s
+ENTRYPOINTOBJECTFILE = EntryPoint.o
+# 빌드할 C 소스 파일 정의, Temp 디렉터리를 기준으로 설정
 CSOURCEFILES = $(wildcard ../$(SOURCEDIRECTORY)/*.c)
 ASSEMBLYSOURCEFILES = $(wildcard ../$(SOURCEDIRECTORY)/*.asm)
-COBJECTFILES = $(subst main.o, , $(notdir $(patsubst %.c,%.o,$(CSOURCEFILES))))
+COBJECTFILES =  $(notdir $(patsubst %.c,%.o,$(CSOURCEFILES)))
 ASSEMBLYOBJECTFILES = $(notdir $(patsubst %.asm,%.o,$(ASSEMBLYSOURCEFILES)))
+
+# 어셈블리어 엔트리 포인트 빌드
+$(ENTRYPOINTOBJECTFILE): $(ENTRYPOINTSOURCEFILE)
+	$(NASM64) -o $@ $<
 
 # .c 파일을 .o 파일로 바꾸는 규칙 정의
 %.o: ../$(SOURCEDIRECTORY)/%.c
-	@echo $@ $^
-	$(GCC32) -c $<
+	$(GCC64) -c $<
 
 # .asm 파일을 .o 파일로 바꾸는 규칙 정의
 %.o: ../$(SOURCEDIRECTORY)/%.asm
-	@echo %.o %.c
-	$(NASM32) -f elf32 -o $@ $<
+	$(NASM64) -o $@ $<
 
 InternalDependency:
-	$(GCC32) -MM $(CSOURCEFILES) > dependency.dep 
+	$(GCC64) -MM $(CSOURCEFILES) > dependency.dep 
 
-Kernel32.elf: $(CENTRYPOINTOBJECTFILE) $(COBJECTFILES) $(ASSEMBLYOBJECTFILES)
-	$(LD32) -o $@ $^
+Kernel64.elf: $(ENTRYPOINTOBJECTFILE) $(COBJECTFILES) $(ASSEMBLYOBJECTFILES)
+	$(LD64) -o $@ $^
 
 
 #ifeq (dependency.dep, $(wildcard dependency.dep))
