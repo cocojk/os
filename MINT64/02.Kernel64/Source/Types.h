@@ -19,7 +19,6 @@ typedef struct kCharactorStruct
 	BYTE bAttribute;
 } CHARACTER;
 
-void kPrintString(int iX,int iY,const char* pcString);
 #pragma pack(pop)
 // pragma pack은 구조체의 크기 정렬에 관련된 지시어로 구조체의 크기를 1바이트로 정렬하여 추가적인 메모리 공간을 더 할당하지 않게합니다.
 

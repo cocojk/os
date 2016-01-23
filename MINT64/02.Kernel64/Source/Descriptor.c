@@ -191,14 +191,3 @@ void kSetIDTEntry(IDTENTRY* pstEntry,void* pvHandler,WORD wSelector,BYTE bIST,BY
 	pstEntry->dwReserved=0;
 }
 
-// 임시 예외 또는 인터럽트 핸들러
-void kDummyHandler(void)
-{
-
-	kPrintString( 0, 0, "====================================================" );
-    kPrintString( 0, 1, "          Dummy Interrupt Handler Execute~!!!       " );
-	kPrintString( 0, 2, "           Interrupt or Exception Occur~!!!!        " );
-	kPrintString( 0, 3, "====================================================" );
-
-	while(1);
-}
