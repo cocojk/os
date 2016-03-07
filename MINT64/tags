@@ -9,20 +9,15 @@ ASSEMBLYOBJECTFILES	02.Kernel64/makefile	/^ASSEMBLYOBJECTFILES = $(notdir $(pats
 ASSEMBLYSOURCEFILES	01.Kernel32/makefile	/^ASSEMBLYSOURCEFILES = $(wildcard ..\/$(SOURCEDIRECTORY)\/*.asm)$/;"	m
 ASSEMBLYSOURCEFILES	02.Kernel64/makefile	/^ASSEMBLYSOURCEFILES = $(wildcard ..\/$(SOURCEDIRECTORY)\/*.asm)$/;"	m
 AdjustInSectorSize	04.Utility/00.ImageMaker/ImageMaker.c	/^int AdjustInSectorSize( int iFd, int iSourceSize )$/;"	f
+BITMAP	02.Kernel64/Source/DynamicMemory.h	/^} BITMAP;$/;"	t	typeref:struct:kBitmapStruct
 BOOL	01.Kernel32/Source/Types.h	8;"	d
 BOOL	02.Kernel64/Source/Types.h	8;"	d
-BOOL	temp/Types.h	8;"	d
-BOOL	temp2/Types.h	22;"	d
 BYTE	01.Kernel32/Source/Types.h	4;"	d
 BYTE	02.Kernel64/Source/Types.h	4;"	d
-BYTE	temp/Types.h	4;"	d
-BYTE	temp2/Types.h	18;"	d
 BYTESOFSECTOR	04.Utility/00.ImageMaker/ImageMaker.c	9;"	d	file:
 CENTRYPOINTOBJECTFILE	01.Kernel32/makefile	/^CENTRYPOINTOBJECTFILE = main.o$/;"	m
 CHARACTER	01.Kernel32/Source/Types.h	/^} CHARACTER;$/;"	t	typeref:struct:kCharactorStruct
 CHARACTER	02.Kernel64/Source/Types.h	/^} CHARACTER;$/;"	t	typeref:struct:kCharactorStruct
-CHARACTER	temp/Types.h	/^} CHARACTER;$/;"	t	typeref:struct:kCharactorStruct
-CHARACTER	temp2/Types.h	/^} CHARACTER;$/;"	t	typeref:struct:kCharactorStruct
 COBJECTFILES	01.Kernel32/makefile	/^COBJECTFILES = $(subst main.o, , $(notdir $(patsubst %.c,%.o,$(CSOURCEFILES))))$/;"	m
 COBJECTFILES	02.Kernel64/makefile	/^COBJECTFILES =  $(notdir $(patsubst %.c,%.o,$(CSOURCEFILES)))$/;"	m
 CODEDESCRIPTOR	01.Kernel32/Source/EntryPoint.s	/^CODEDESCRIPTOR:$/;"	l
@@ -58,330 +53,204 @@ CONSOLE_FOREGROUND_DARKWHITE	02.Kernel64/Source/Console.h	24;"	d
 CONSOLE_HEIGHT	02.Kernel64/Source/Console.h	40;"	d
 CONSOLE_VIDEOMEMORYADDRESS	02.Kernel64/Source/Console.h	41;"	d
 CONSOLE_WIDTH	02.Kernel64/Source/Console.h	39;"	d
+CONTEXT	02.Kernel64/Source/Task.h	/^} CONTEXT;$/;"	t	typeref:struct:kContextStruct
 CSOURCEFILES	01.Kernel32/makefile	/^CSOURCEFILES = $(wildcard ..\/$(SOURCEDIRECTORY)\/*.c)$/;"	m
 CSOURCEFILES	02.Kernel64/makefile	/^CSOURCEFILES = $(wildcard ..\/$(SOURCEDIRECTORY)\/*.c)$/;"	m
 CommandFunction	02.Kernel64/Source/ConsoleShell.h	/^typedef void (*CommandFunction)(const char* pcParameter);$/;"	t
 CopyFile	04.Utility/00.ImageMaker/ImageMaker.c	/^int CopyFile( int iSourceFd, int iTargetFd )$/;"	f
 DATADESCRIPTOR	01.Kernel32/Source/EntryPoint.s	/^DATADESCRIPTOR:$/;"	l
+DIR	02.Kernel64/Source/FileSystem.h	/^} FILE, DIR;$/;"	t	typeref:struct:kFileDirectoryHandleStruct
+DIRECTORYENTRY	02.Kernel64/Source/FileSystem.h	/^} DIRECTORYENTRY;$/;"	t	typeref:struct:kDirectoryEntryStruct
+DIRECTORYHANDLE	02.Kernel64/Source/FileSystem.h	/^} DIRECTORYHANDLE;$/;"	t	typeref:struct:kDirectoryHandleStruct
 DISKERRORMESSAGE	00.BootLoader/BootLoader.asm	/^DISKERRORMESSAGE:	db	'DISK Error~!!',0$/;"	d
 DISKERRORMESSAGE	00.BootLoader/BootLoader2.asm	/^DISKERRORMESSAGE:	db	'DISK Error~!!',0$/;"	d
 DWORD	01.Kernel32/Source/Types.h	6;"	d
 DWORD	02.Kernel64/Source/Types.h	6;"	d
-DWORD	temp/Types.h	6;"	d
-DWORD	temp2/Types.h	20;"	d
+DYNAMICMEMORY	02.Kernel64/Source/DynamicMemory.h	/^} DYNAMICMEMORY;$/;"	t	typeref:struct:kDynamicMemoryManagerStruct
+DYNAMICMEMORY_EMPTY	02.Kernel64/Source/DynamicMemory.h	16;"	d
+DYNAMICMEMORY_EXIST	02.Kernel64/Source/DynamicMemory.h	15;"	d
+DYNAMICMEMORY_MIN_SIZE	02.Kernel64/Source/DynamicMemory.h	12;"	d
+DYNAMICMEMORY_START_ADDRESS	02.Kernel64/Source/DynamicMemory.h	8;"	d
 ENTRYPOINTOBJECTFILE	02.Kernel64/makefile	/^ENTRYPOINTOBJECTFILE = EntryPoint.o$/;"	m
 ENTRYPOINTSOURCEFILE	02.Kernel64/makefile	/^ENTRYPOINTSOURCEFILE = ..\/$(SOURCEDIRECTORY)\/EntryPoint.s$/;"	m
 FALSE	01.Kernel32/Source/Types.h	11;"	d
 FALSE	02.Kernel64/Source/Types.h	11;"	d
-FALSE	temp/Types.h	11;"	d
-FALSE	temp2/Types.h	25;"	d
+FILE	02.Kernel64/Source/FileSystem.h	/^} FILE, DIR;$/;"	t	typeref:struct:kFileDirectoryHandleStruct
+FILEHANDLE	02.Kernel64/Source/FileSystem.h	/^} FILEHANDLE;$/;"	t	typeref:struct:kFileHandleStruct
+FILESYSTEMMANAGER	02.Kernel64/Source/FileSystem.h	/^} FILESYSTEMMANAGER;$/;"	t	typeref:struct:kFileSystemManagerStruct
+FILESYSTEM_CLUSTERSIZE	02.Kernel64/Source/FileSystem.h	20;"	d
+FILESYSTEM_FREECLUSTER	02.Kernel64/Source/FileSystem.h	16;"	d
+FILESYSTEM_HANDLE_MAXCOUNT	02.Kernel64/Source/FileSystem.h	23;"	d
+FILESYSTEM_LASTCLUSTER	02.Kernel64/Source/FileSystem.h	14;"	d
+FILESYSTEM_MAXDIRECTORYENTRYCOUNT	02.Kernel64/Source/FileSystem.h	18;"	d
+FILESYSTEM_MAXFILENAMELENGTH	02.Kernel64/Source/FileSystem.h	26;"	d
+FILESYSTEM_SECTORPERCLUSTER	02.Kernel64/Source/FileSystem.h	12;"	d
+FILESYSTEM_SEEK_CUR	02.Kernel64/Source/FileSystem.h	35;"	d
+FILESYSTEM_SEEK_END	02.Kernel64/Source/FileSystem.h	36;"	d
+FILESYSTEM_SEEK_SET	02.Kernel64/Source/FileSystem.h	34;"	d
+FILESYSTEM_SIGNATUR	02.Kernel64/Source/FileSystem.h	10;"	d
+FILESYSTEM_TYPE_DIRECTORY	02.Kernel64/Source/FileSystem.h	31;"	d
+FILESYSTEM_TYPE_FILE	02.Kernel64/Source/FileSystem.h	30;"	d
+FILESYSTEM_TYPE_FREE	02.Kernel64/Source/FileSystem.h	29;"	d
 GCC32	01.Kernel32/makefile	/^GCC32 = x86_64-pc-linux-gcc -c -m32 -ffreestanding$/;"	m
 GCC64	02.Kernel64/makefile	/^GCC64 = x86_64-pc-linux-gcc -g -c -m64 -ffreestanding$/;"	m
 GDT	01.Kernel32/Source/EntryPoint.s	/^GDT:$/;"	l
 GDTEND	01.Kernel32/Source/EntryPoint.s	/^GDTEND:$/;"	l
 GDTENTRY16	02.Kernel64/Source/Descriptor.h	/^} GDTENTRY16;$/;"	t	typeref:struct:kGDTEntry16struct
-GDTENTRY16	temp/Descriptor.h	/^} GDTENTRY16;$/;"	t	typeref:struct:kGDTEntry16struct
-GDTENTRY16	temp2/Descriptor.h	/^} GDTENTRY16;$/;"	t	typeref:struct:kGDTEntry16Struct
 GDTENTRY8	02.Kernel64/Source/Descriptor.h	/^} GDTENTRY8;$/;"	t	typeref:struct:kGDTEntry8Struct
-GDTENTRY8	temp/Descriptor.h	/^} GDTENTRY8;$/;"	t	typeref:struct:kGDTEntry8Struct
-GDTENTRY8	temp2/Descriptor.h	/^} GDTENTRY8;$/;"	t	typeref:struct:kGDTEntry8Struct
 GDTR	01.Kernel32/Source/EntryPoint.s	/^GDTR:$/;"	l
 GDTR	02.Kernel64/Source/Descriptor.h	/^} GDTR,IDTR;$/;"	t	typeref:struct:kGDTRStruct
-GDTR	temp/Descriptor.h	/^} GDTR,IDTR;$/;"	t	typeref:struct:kGDTRStruct
-GDTR	temp2/Descriptor.h	/^} GDTR, IDTR;$/;"	t	typeref:struct:kGDTRStruct
 GDTR_STARTADDRESS	02.Kernel64/Source/Descriptor.h	44;"	d
-GDTR_STARTADDRESS	temp/Descriptor.h	44;"	d
-GDTR_STARTADDRESS	temp2/Descriptor.h	60;"	d
 GDT_FLAGS_LOWER_DPL0	02.Kernel64/Source/Descriptor.h	15;"	d
-GDT_FLAGS_LOWER_DPL0	temp/Descriptor.h	15;"	d
-GDT_FLAGS_LOWER_DPL0	temp2/Descriptor.h	27;"	d
 GDT_FLAGS_LOWER_DPL1	02.Kernel64/Source/Descriptor.h	16;"	d
-GDT_FLAGS_LOWER_DPL1	temp/Descriptor.h	16;"	d
-GDT_FLAGS_LOWER_DPL1	temp2/Descriptor.h	28;"	d
 GDT_FLAGS_LOWER_DPL2	02.Kernel64/Source/Descriptor.h	17;"	d
-GDT_FLAGS_LOWER_DPL2	temp/Descriptor.h	17;"	d
-GDT_FLAGS_LOWER_DPL2	temp2/Descriptor.h	29;"	d
 GDT_FLAGS_LOWER_DPL3	02.Kernel64/Source/Descriptor.h	18;"	d
-GDT_FLAGS_LOWER_DPL3	temp/Descriptor.h	18;"	d
-GDT_FLAGS_LOWER_DPL3	temp2/Descriptor.h	30;"	d
 GDT_FLAGS_LOWER_KERNELCODE	02.Kernel64/Source/Descriptor.h	26;"	d
-GDT_FLAGS_LOWER_KERNELCODE	temp/Descriptor.h	26;"	d
-GDT_FLAGS_LOWER_KERNELCODE	temp2/Descriptor.h	38;"	d
 GDT_FLAGS_LOWER_KERNELDATA	02.Kernel64/Source/Descriptor.h	27;"	d
-GDT_FLAGS_LOWER_KERNELDATA	temp/Descriptor.h	27;"	d
-GDT_FLAGS_LOWER_KERNELDATA	temp2/Descriptor.h	40;"	d
 GDT_FLAGS_LOWER_P	02.Kernel64/Source/Descriptor.h	19;"	d
-GDT_FLAGS_LOWER_P	temp/Descriptor.h	19;"	d
-GDT_FLAGS_LOWER_P	temp2/Descriptor.h	31;"	d
 GDT_FLAGS_LOWER_S	02.Kernel64/Source/Descriptor.h	14;"	d
-GDT_FLAGS_LOWER_S	temp/Descriptor.h	14;"	d
-GDT_FLAGS_LOWER_S	temp2/Descriptor.h	26;"	d
 GDT_FLAGS_LOWER_TSS	02.Kernel64/Source/Descriptor.h	28;"	d
-GDT_FLAGS_LOWER_TSS	temp/Descriptor.h	28;"	d
-GDT_FLAGS_LOWER_TSS	temp2/Descriptor.h	42;"	d
 GDT_FLAGS_LOWER_USERCODE	02.Kernel64/Source/Descriptor.h	29;"	d
-GDT_FLAGS_LOWER_USERCODE	temp/Descriptor.h	29;"	d
-GDT_FLAGS_LOWER_USERCODE	temp2/Descriptor.h	43;"	d
 GDT_FLAGS_LOWER_USERDATA	02.Kernel64/Source/Descriptor.h	30;"	d
-GDT_FLAGS_LOWER_USERDATA	temp/Descriptor.h	30;"	d
-GDT_FLAGS_LOWER_USERDATA	temp2/Descriptor.h	45;"	d
 GDT_FLAGS_UPPER_CODE	02.Kernel64/Source/Descriptor.h	33;"	d
-GDT_FLAGS_UPPER_CODE	temp/Descriptor.h	33;"	d
-GDT_FLAGS_UPPER_CODE	temp2/Descriptor.h	49;"	d
 GDT_FLAGS_UPPER_DATA	02.Kernel64/Source/Descriptor.h	34;"	d
-GDT_FLAGS_UPPER_DATA	temp/Descriptor.h	34;"	d
-GDT_FLAGS_UPPER_DATA	temp2/Descriptor.h	50;"	d
 GDT_FLAGS_UPPER_DB	02.Kernel64/Source/Descriptor.h	21;"	d
-GDT_FLAGS_UPPER_DB	temp/Descriptor.h	21;"	d
-GDT_FLAGS_UPPER_DB	temp2/Descriptor.h	33;"	d
 GDT_FLAGS_UPPER_G	02.Kernel64/Source/Descriptor.h	22;"	d
-GDT_FLAGS_UPPER_G	temp/Descriptor.h	22;"	d
-GDT_FLAGS_UPPER_G	temp2/Descriptor.h	34;"	d
 GDT_FLAGS_UPPER_L	02.Kernel64/Source/Descriptor.h	20;"	d
-GDT_FLAGS_UPPER_L	temp/Descriptor.h	20;"	d
-GDT_FLAGS_UPPER_L	temp2/Descriptor.h	32;"	d
 GDT_FLAGS_UPPER_TSS	02.Kernel64/Source/Descriptor.h	35;"	d
-GDT_FLAGS_UPPER_TSS	temp/Descriptor.h	35;"	d
-GDT_FLAGS_UPPER_TSS	temp2/Descriptor.h	51;"	d
 GDT_KERNELCODESEGMENT	02.Kernel64/Source/Descriptor.h	38;"	d
-GDT_KERNELCODESEGMENT	temp/Descriptor.h	38;"	d
-GDT_KERNELCODESEGMENT	temp2/Descriptor.h	54;"	d
 GDT_KERNELDATASEGMENT	02.Kernel64/Source/Descriptor.h	39;"	d
-GDT_KERNELDATASEGMENT	temp/Descriptor.h	39;"	d
-GDT_KERNELDATASEGMENT	temp2/Descriptor.h	55;"	d
 GDT_MAXENTRY16COUNT	02.Kernel64/Source/Descriptor.h	48;"	d
-GDT_MAXENTRY16COUNT	temp/Descriptor.h	48;"	d
-GDT_MAXENTRY16COUNT	temp2/Descriptor.h	64;"	d
 GDT_MAXENTRY8COUNT	02.Kernel64/Source/Descriptor.h	46;"	d
-GDT_MAXENTRY8COUNT	temp/Descriptor.h	46;"	d
-GDT_MAXENTRY8COUNT	temp2/Descriptor.h	62;"	d
 GDT_TABLESIZE	02.Kernel64/Source/Descriptor.h	50;"	d
-GDT_TABLESIZE	temp/Descriptor.h	50;"	d
-GDT_TABLESIZE	temp2/Descriptor.h	66;"	d
 GDT_TSSSEGMENT	02.Kernel64/Source/Descriptor.h	40;"	d
-GDT_TSSSEGMENT	temp/Descriptor.h	40;"	d
-GDT_TSSSEGMENT	temp2/Descriptor.h	56;"	d
 GDT_TYPE_CODE	02.Kernel64/Source/Descriptor.h	11;"	d
-GDT_TYPE_CODE	temp/Descriptor.h	11;"	d
-GDT_TYPE_CODE	temp2/Descriptor.h	23;"	d
 GDT_TYPE_DATA	02.Kernel64/Source/Descriptor.h	12;"	d
-GDT_TYPE_DATA	temp/Descriptor.h	12;"	d
-GDT_TYPE_DATA	temp2/Descriptor.h	24;"	d
 GDT_TYPE_TSS	02.Kernel64/Source/Descriptor.h	13;"	d
-GDT_TYPE_TSS	temp/Descriptor.h	13;"	d
-GDT_TYPE_TSS	temp2/Descriptor.h	25;"	d
+GETPRIORITY	02.Kernel64/Source/Task.h	71;"	d
+GETTCBFROMTHREADLINK	02.Kernel64/Source/Task.h	76;"	d
+GETTCBOFFSET	02.Kernel64/Source/Task.h	73;"	d
 HANDLEDISKERROR	00.BootLoader/BootLoader.asm	/^HANDLEDISKERROR:$/;"	l
 HANDLEDISKERROR	00.BootLoader/BootLoader2.asm	/^HANDLEDISKERROR:$/;"	l
+HDDINFORMATION	02.Kernel64/Source/HardDisk.h	/^} HDDINFORMATION;$/;"	t	typeref:struct:kHDDInformationStruct
+HDDMANAGER	02.Kernel64/Source/HardDisk.h	/^} HDDMANAGER;$/;"	t	typeref:struct:kHDDManagerStruct
+HDD_COMMAND_IDENTIFY	02.Kernel64/Source/HardDisk.h	26;"	d
+HDD_COMMAND_READ	02.Kernel64/Source/HardDisk.h	24;"	d
+HDD_COMMAND_WRITE	02.Kernel64/Source/HardDisk.h	25;"	d
+HDD_DIGITALOUTPUT_DISABLEINTERRUPT	02.Kernel64/Source/HardDisk.h	44;"	d
+HDD_DIGITALOUTPUT_RESET	02.Kernel64/Source/HardDisk.h	43;"	d
+HDD_DRIVEANDHEAD_LBA	02.Kernel64/Source/HardDisk.h	39;"	d
+HDD_DRIVEANDHEAD_SLAVE	02.Kernel64/Source/HardDisk.h	40;"	d
+HDD_MAXBULKSECTORCOUNT	02.Kernel64/Source/HardDisk.h	49;"	d
+HDD_PORT_INDEX_COMMAND	02.Kernel64/Source/HardDisk.h	20;"	d
+HDD_PORT_INDEX_CYLINDERLSB	02.Kernel64/Source/HardDisk.h	16;"	d
+HDD_PORT_INDEX_CYLINDERMSB	02.Kernel64/Source/HardDisk.h	17;"	d
+HDD_PORT_INDEX_DATA	02.Kernel64/Source/HardDisk.h	13;"	d
+HDD_PORT_INDEX_DIGITALOUTPUT	02.Kernel64/Source/HardDisk.h	21;"	d
+HDD_PORT_INDEX_DRIVEANDHEAD	02.Kernel64/Source/HardDisk.h	18;"	d
+HDD_PORT_INDEX_SECTORCOUNT	02.Kernel64/Source/HardDisk.h	14;"	d
+HDD_PORT_INDEX_SECTORNUMBER	02.Kernel64/Source/HardDisk.h	15;"	d
+HDD_PORT_INDEX_STATUS	02.Kernel64/Source/HardDisk.h	19;"	d
+HDD_PORT_PRIMARYBASE	02.Kernel64/Source/HardDisk.h	9;"	d
+HDD_PORT_SECONDARYBASE	02.Kernel64/Source/HardDisk.h	10;"	d
+HDD_STATUS_BUSY	02.Kernel64/Source/HardDisk.h	36;"	d
+HDD_STATUS_CORRECTEDDATA	02.Kernel64/Source/HardDisk.h	31;"	d
+HDD_STATUS_DATAREQUEST	02.Kernel64/Source/HardDisk.h	32;"	d
+HDD_STATUS_ERROR	02.Kernel64/Source/HardDisk.h	29;"	d
+HDD_STATUS_INDEX	02.Kernel64/Source/HardDisk.h	30;"	d
+HDD_STATUS_READY	02.Kernel64/Source/HardDisk.h	35;"	d
+HDD_STATUS_SEEKCOMPLETE	02.Kernel64/Source/HardDisk.h	33;"	d
+HDD_STATUS_WRITEFAULT	02.Kernel64/Source/HardDisk.h	34;"	d
+HDD_WAITTIME	02.Kernel64/Source/HardDisk.h	47;"	d
 HEADNUMBER	00.BootLoader/BootLoader.asm	/^HEADNUMBER:		db	0x00			; OS 이미지가 시작하는 헤드 번호를 지정하는 영역 $/;"	d
 HEADNUMBER	00.BootLoader/BootLoader2.asm	/^HEADNUMBER:		db	0x00			; OS 이미지가 시작하는 헤드 번호를 지정하는 영역 $/;"	d
 IA_32eCODEDESCRIPTOR	01.Kernel32/Source/EntryPoint.s	/^IA_32eCODEDESCRIPTOR:$/;"	l
 IA_32eDATADESCRIPTOR	01.Kernel32/Source/EntryPoint.s	/^IA_32eDATADESCRIPTOR:$/;"	l
 IDTENTRY	02.Kernel64/Source/Descriptor.h	/^} IDTENTRY;$/;"	t	typeref:struct:kIDTEntryStruct
-IDTENTRY	temp/Descriptor.h	/^} IDTENTRY;$/;"	t	typeref:struct:kIDTEntryStruct
-IDTENTRY	temp2/Descriptor.h	/^} IDTENTRY;$/;"	t	typeref:struct:kIDTEntryStruct
 IDTR	02.Kernel64/Source/Descriptor.h	/^} GDTR,IDTR;$/;"	t	typeref:struct:kGDTRStruct
-IDTR	temp/Descriptor.h	/^} GDTR,IDTR;$/;"	t	typeref:struct:kGDTRStruct
-IDTR	temp2/Descriptor.h	/^} GDTR, IDTR;$/;"	t	typeref:struct:kGDTRStruct
 IDTR_STARTADDRESS	02.Kernel64/Source/Descriptor.h	77;"	d
-IDTR_STARTADDRESS	temp/Descriptor.h	77;"	d
-IDTR_STARTADDRESS	temp2/Descriptor.h	92;"	d
 IDT_FLAGS_DPL0	02.Kernel64/Source/Descriptor.h	60;"	d
-IDT_FLAGS_DPL0	temp/Descriptor.h	60;"	d
-IDT_FLAGS_DPL0	temp2/Descriptor.h	76;"	d
 IDT_FLAGS_DPL1	02.Kernel64/Source/Descriptor.h	61;"	d
-IDT_FLAGS_DPL1	temp/Descriptor.h	61;"	d
-IDT_FLAGS_DPL1	temp2/Descriptor.h	77;"	d
 IDT_FLAGS_DPL2	02.Kernel64/Source/Descriptor.h	62;"	d
-IDT_FLAGS_DPL2	temp/Descriptor.h	62;"	d
-IDT_FLAGS_DPL2	temp2/Descriptor.h	78;"	d
 IDT_FLAGS_DPL3	02.Kernel64/Source/Descriptor.h	63;"	d
-IDT_FLAGS_DPL3	temp/Descriptor.h	63;"	d
-IDT_FLAGS_DPL3	temp2/Descriptor.h	79;"	d
 IDT_FLAGS_IST0	02.Kernel64/Source/Descriptor.h	65;"	d
-IDT_FLAGS_IST0	temp/Descriptor.h	65;"	d
-IDT_FLAGS_IST0	temp2/Descriptor.h	81;"	d
 IDT_FLAGS_IST1	02.Kernel64/Source/Descriptor.h	66;"	d
-IDT_FLAGS_IST1	temp/Descriptor.h	66;"	d
-IDT_FLAGS_IST1	temp2/Descriptor.h	82;"	d
 IDT_FLAGS_KERNEL	02.Kernel64/Source/Descriptor.h	70;"	d
-IDT_FLAGS_KERNEL	temp/Descriptor.h	70;"	d
-IDT_FLAGS_KERNEL	temp2/Descriptor.h	85;"	d
 IDT_FLAGS_P	02.Kernel64/Source/Descriptor.h	64;"	d
-IDT_FLAGS_P	temp/Descriptor.h	64;"	d
-IDT_FLAGS_P	temp2/Descriptor.h	80;"	d
 IDT_FLAGS_USER	02.Kernel64/Source/Descriptor.h	71;"	d
-IDT_FLAGS_USER	temp/Descriptor.h	71;"	d
-IDT_FLAGS_USER	temp2/Descriptor.h	86;"	d
 IDT_MAXENTRYCOUNT	02.Kernel64/Source/Descriptor.h	75;"	d
-IDT_MAXENTRYCOUNT	temp/Descriptor.h	75;"	d
-IDT_MAXENTRYCOUNT	temp2/Descriptor.h	90;"	d
 IDT_STARTADDRESS	02.Kernel64/Source/Descriptor.h	79;"	d
-IDT_STARTADDRESS	temp/Descriptor.h	79;"	d
-IDT_STARTADDRESS	temp2/Descriptor.h	95;"	d
 IDT_TABLESIZE	02.Kernel64/Source/Descriptor.h	81;"	d
-IDT_TABLESIZE	temp/Descriptor.h	81;"	d
-IDT_TABLESIZE	temp2/Descriptor.h	97;"	d
 IDT_TYPE_INTERRUPT	02.Kernel64/Source/Descriptor.h	58;"	d
-IDT_TYPE_INTERRUPT	temp/Descriptor.h	58;"	d
-IDT_TYPE_INTERRUPT	temp2/Descriptor.h	74;"	d
 IDT_TYPE_TRAP	02.Kernel64/Source/Descriptor.h	59;"	d
-IDT_TYPE_TRAP	temp/Descriptor.h	59;"	d
-IDT_TYPE_TRAP	temp2/Descriptor.h	75;"	d
 IMAGELOADINGMESSAGE	00.BootLoader/BootLoader.asm	/^IMAGELOADINGMESSAGE:	db 'OS Image Loading...',0$/;"	d
 IMAGELOADINGMESSAGE	00.BootLoader/BootLoader2.asm	/^IMAGELOADINGMESSAGE:	db 'OS Image Loading...',0$/;"	d
 IST_SIZE	02.Kernel64/Source/Descriptor.h	87;"	d
-IST_SIZE	temp/Descriptor.h	87;"	d
-IST_SIZE	temp2/Descriptor.h	102;"	d
 IST_STARTADDRESS	02.Kernel64/Source/Descriptor.h	85;"	d
-IST_STARTADDRESS	temp/Descriptor.h	85;"	d
-IST_STARTADDRESS	temp2/Descriptor.h	100;"	d
 KERNEL32SECTORCOUNT	00.BootLoader/BootLoader.asm	/^KERNEL32SECTORCOUNT: dw 0x02 		; 보호 모드 커널의 총 섹터 수$/;"	d
 KEYBOARDMANAGER	02.Kernel64/Source/Keyboard.h	/^} KEYBOARDMANAGER;$/;"	t	typeref:struct:kKeyboardManagerStruct
-KEYBOARDMANAGER	temp/Keyboard.h	/^} KEYBOARDMANAGER;$/;"	t	typeref:struct:kKeyboardManagerStruct
-KEYBOARDMANAGER	temp2/Keyboard.h	/^} KEYBOARDMANAGER;$/;"	t	typeref:struct:kKeyboardManagerStruct
 KEYDATA	02.Kernel64/Source/Keyboard.h	/^} KEYDATA;$/;"	t	typeref:struct:kKeyDataStruct
 KEYMAPPINGENTRY	02.Kernel64/Source/Keyboard.h	/^} KEYMAPPINGENTRY;$/;"	t	typeref:struct:kKeyMappingEntryStruct
-KEYMAPPINGENTRY	temp/Keyboard.h	/^} KEYMAPPINGENTRY;$/;"	t	typeref:struct:kKeyMappingEntryStruct
-KEYMAPPINGENTRY	temp2/Keyboard.h	/^} KEYMAPPINGENTRY;$/;"	t	typeref:struct:kKeyMappingEntryStruct
 KEY_BACKSPACE	02.Kernel64/Source/Keyboard.h	22;"	d
-KEY_BACKSPACE	temp/Keyboard.h	22;"	d
-KEY_BACKSPACE	temp2/Keyboard.h	34;"	d
 KEY_CAPSLOCK	02.Kernel64/Source/Keyboard.h	29;"	d
-KEY_CAPSLOCK	temp/Keyboard.h	29;"	d
-KEY_CAPSLOCK	temp2/Keyboard.h	41;"	d
 KEY_CENTER	02.Kernel64/Source/Keyboard.h	46;"	d
-KEY_CENTER	temp/Keyboard.h	46;"	d
-KEY_CENTER	temp2/Keyboard.h	58;"	d
 KEY_CTRL	02.Kernel64/Source/Keyboard.h	24;"	d
-KEY_CTRL	temp/Keyboard.h	24;"	d
-KEY_CTRL	temp2/Keyboard.h	36;"	d
 KEY_DEL	02.Kernel64/Source/Keyboard.h	52;"	d
-KEY_DEL	temp/Keyboard.h	52;"	d
-KEY_DEL	temp2/Keyboard.h	64;"	d
 KEY_DOWN	02.Kernel64/Source/Keyboard.h	49;"	d
-KEY_DOWN	temp/Keyboard.h	49;"	d
-KEY_DOWN	temp2/Keyboard.h	61;"	d
 KEY_END	02.Kernel64/Source/Keyboard.h	48;"	d
-KEY_END	temp/Keyboard.h	48;"	d
-KEY_END	temp2/Keyboard.h	60;"	d
 KEY_ENTER	02.Kernel64/Source/Keyboard.h	19;"	d
-KEY_ENTER	temp/Keyboard.h	19;"	d
-KEY_ENTER	temp2/Keyboard.h	31;"	d
 KEY_ESC	02.Kernel64/Source/Keyboard.h	21;"	d
-KEY_ESC	temp/Keyboard.h	21;"	d
-KEY_ESC	temp2/Keyboard.h	33;"	d
 KEY_F1	02.Kernel64/Source/Keyboard.h	30;"	d
-KEY_F1	temp/Keyboard.h	30;"	d
-KEY_F1	temp2/Keyboard.h	42;"	d
 KEY_F10	02.Kernel64/Source/Keyboard.h	39;"	d
-KEY_F10	temp/Keyboard.h	39;"	d
-KEY_F10	temp2/Keyboard.h	51;"	d
 KEY_F11	02.Kernel64/Source/Keyboard.h	53;"	d
-KEY_F11	temp/Keyboard.h	53;"	d
-KEY_F11	temp2/Keyboard.h	65;"	d
 KEY_F12	02.Kernel64/Source/Keyboard.h	54;"	d
-KEY_F12	temp/Keyboard.h	54;"	d
-KEY_F12	temp2/Keyboard.h	66;"	d
 KEY_F2	02.Kernel64/Source/Keyboard.h	31;"	d
-KEY_F2	temp/Keyboard.h	31;"	d
-KEY_F2	temp2/Keyboard.h	43;"	d
 KEY_F3	02.Kernel64/Source/Keyboard.h	32;"	d
-KEY_F3	temp/Keyboard.h	32;"	d
-KEY_F3	temp2/Keyboard.h	44;"	d
 KEY_F4	02.Kernel64/Source/Keyboard.h	33;"	d
-KEY_F4	temp/Keyboard.h	33;"	d
-KEY_F4	temp2/Keyboard.h	45;"	d
 KEY_F5	02.Kernel64/Source/Keyboard.h	34;"	d
-KEY_F5	temp/Keyboard.h	34;"	d
-KEY_F5	temp2/Keyboard.h	46;"	d
 KEY_F6	02.Kernel64/Source/Keyboard.h	35;"	d
-KEY_F6	temp/Keyboard.h	35;"	d
-KEY_F6	temp2/Keyboard.h	47;"	d
 KEY_F7	02.Kernel64/Source/Keyboard.h	36;"	d
-KEY_F7	temp/Keyboard.h	36;"	d
-KEY_F7	temp2/Keyboard.h	48;"	d
 KEY_F8	02.Kernel64/Source/Keyboard.h	37;"	d
-KEY_F8	temp/Keyboard.h	37;"	d
-KEY_F8	temp2/Keyboard.h	49;"	d
 KEY_F9	02.Kernel64/Source/Keyboard.h	38;"	d
-KEY_F9	temp/Keyboard.h	38;"	d
-KEY_F9	temp2/Keyboard.h	50;"	d
 KEY_FLAGS_DOWN	02.Kernel64/Source/Keyboard.h	12;"	d
-KEY_FLAGS_DOWN	temp/Keyboard.h	12;"	d
-KEY_FLAGS_DOWN	temp2/Keyboard.h	24;"	d
 KEY_FLAGS_EXTENDEDKEY	02.Kernel64/Source/Keyboard.h	13;"	d
-KEY_FLAGS_EXTENDEDKEY	temp/Keyboard.h	13;"	d
-KEY_FLAGS_EXTENDEDKEY	temp2/Keyboard.h	25;"	d
 KEY_FLAGS_UP	02.Kernel64/Source/Keyboard.h	11;"	d
-KEY_FLAGS_UP	temp/Keyboard.h	11;"	d
-KEY_FLAGS_UP	temp2/Keyboard.h	23;"	d
 KEY_HOME	02.Kernel64/Source/Keyboard.h	42;"	d
-KEY_HOME	temp/Keyboard.h	42;"	d
-KEY_HOME	temp2/Keyboard.h	54;"	d
 KEY_INS	02.Kernel64/Source/Keyboard.h	51;"	d
-KEY_INS	temp/Keyboard.h	51;"	d
-KEY_INS	temp2/Keyboard.h	63;"	d
 KEY_LALT	02.Kernel64/Source/Keyboard.h	28;"	d
-KEY_LALT	temp/Keyboard.h	28;"	d
-KEY_LALT	temp2/Keyboard.h	40;"	d
 KEY_LEFT	02.Kernel64/Source/Keyboard.h	45;"	d
-KEY_LEFT	temp/Keyboard.h	45;"	d
-KEY_LEFT	temp2/Keyboard.h	57;"	d
 KEY_LSHIFT	02.Kernel64/Source/Keyboard.h	25;"	d
-KEY_LSHIFT	temp/Keyboard.h	25;"	d
-KEY_LSHIFT	temp2/Keyboard.h	37;"	d
 KEY_MAPPINGTABLEMAXCOUNT	02.Kernel64/Source/Keyboard.h	16;"	d
-KEY_MAPPINGTABLEMAXCOUNT	temp/Keyboard.h	16;"	d
-KEY_MAPPINGTABLEMAXCOUNT	temp2/Keyboard.h	28;"	d
 KEY_MAXQUEUECOUNT	02.Kernel64/Source/Keyboard.h	58;"	d
 KEY_NONE	02.Kernel64/Source/Keyboard.h	18;"	d
-KEY_NONE	temp/Keyboard.h	18;"	d
-KEY_NONE	temp2/Keyboard.h	30;"	d
 KEY_NUMLOCK	02.Kernel64/Source/Keyboard.h	40;"	d
-KEY_NUMLOCK	temp/Keyboard.h	40;"	d
-KEY_NUMLOCK	temp2/Keyboard.h	52;"	d
 KEY_PAGEDOWN	02.Kernel64/Source/Keyboard.h	50;"	d
-KEY_PAGEDOWN	temp/Keyboard.h	50;"	d
-KEY_PAGEDOWN	temp2/Keyboard.h	62;"	d
 KEY_PAGEUP	02.Kernel64/Source/Keyboard.h	44;"	d
-KEY_PAGEUP	temp/Keyboard.h	44;"	d
-KEY_PAGEUP	temp2/Keyboard.h	56;"	d
 KEY_PAUSE	02.Kernel64/Source/Keyboard.h	55;"	d
-KEY_PAUSE	temp/Keyboard.h	55;"	d
-KEY_PAUSE	temp2/Keyboard.h	67;"	d
 KEY_PRINTSCREEN	02.Kernel64/Source/Keyboard.h	27;"	d
-KEY_PRINTSCREEN	temp/Keyboard.h	27;"	d
-KEY_PRINTSCREEN	temp2/Keyboard.h	39;"	d
 KEY_RIGHT	02.Kernel64/Source/Keyboard.h	47;"	d
-KEY_RIGHT	temp/Keyboard.h	47;"	d
-KEY_RIGHT	temp2/Keyboard.h	59;"	d
 KEY_RSHIFT	02.Kernel64/Source/Keyboard.h	26;"	d
-KEY_RSHIFT	temp/Keyboard.h	26;"	d
-KEY_RSHIFT	temp2/Keyboard.h	38;"	d
 KEY_SCROLLLOCK	02.Kernel64/Source/Keyboard.h	41;"	d
-KEY_SCROLLLOCK	temp/Keyboard.h	41;"	d
-KEY_SCROLLLOCK	temp2/Keyboard.h	53;"	d
 KEY_SKIPCOUNTFORPAUSE	02.Kernel64/Source/Keyboard.h	8;"	d
-KEY_SKIPCOUNTFORPAUSE	temp/Keyboard.h	8;"	d
-KEY_SKIPCOUNTFORPAUSE	temp2/Keyboard.h	20;"	d
 KEY_TAB	02.Kernel64/Source/Keyboard.h	20;"	d
-KEY_TAB	temp/Keyboard.h	20;"	d
-KEY_TAB	temp2/Keyboard.h	32;"	d
 KEY_UP	02.Kernel64/Source/Keyboard.h	43;"	d
-KEY_UP	temp/Keyboard.h	43;"	d
-KEY_UP	temp2/Keyboard.h	55;"	d
 LD32	01.Kernel32/makefile	/^LD32 = x86_64-pc-linux-ld -melf_i386 -T ..\/elf_i386.x -nostdlib -e main -Ttext 0x10200$/;"	m
 LD64	02.Kernel64/makefile	/^LD64 = x86_64-pc-linux-ld -melf_x86_64 -T ..\/elf_x86_64.x -nostdlib -e main -Ttext 0x200000$/;"	m
+LIST	02.Kernel64/Source/List.h	/^} LIST;$/;"	t	typeref:struct:kListManagerStruct
+LISTLINK	02.Kernel64/Source/List.h	/^} LISTLINK;$/;"	t	typeref:struct:kListLinkStruct
 LOADINGCOMPLETEMESSAGE	00.BootLoader/BootLoader.asm	/^LOADINGCOMPLETEMESSAGE: db ' Complete~!!', 0$/;"	d
 LOADINGCOMPLETEMESSAGE	00.BootLoader/BootLoader2.asm	/^LOADINGCOMPLETEMESSAGE: db ' Complete~!!', 0$/;"	d
+MAX	02.Kernel64/Source/Utility.h	9;"	d
+MBR	02.Kernel64/Source/FileSystem.h	/^} MBR;$/;"	t	typeref:struct:kMBRStruct
 MESSAGE1	00.BootLoader/BootLoader.asm	/^MESSAGE1:	db 'MINT64 OS Boot Loader Start~!!',0 ; 출력할 메시지 정의 마지막은 0으로 설정하여 .MESSAGELOOP에서 문자열이 종료되었음을 알 수 있도록 함$/;"	d
 MESSAGE1	00.BootLoader/BootLoader2.asm	/^MESSAGE1:	db 'MINT64 OS Boot Loader Start~!!',0 ; 출력할 메시지 정의 마지막은 0으로 설정하여 .MESSAGELOOP에서 문자열이 종료되었음을 알 수 있도록 함$/;"	d
+MIN	02.Kernel64/Source/Utility.h	8;"	d
+MSTOCOUNT	02.Kernel64/Source/PIT.h	8;"	d
+MUTEX	02.Kernel64/Source/Synchronization.h	/^} MUTEX;$/;"	t	typeref:struct:kMutextStruct
 NASM32	01.Kernel32/makefile	/^NASM32 = nasm$/;"	m
-NASM64	02.Kernel64/makefile	/^NASM64 = nasm -g -f elf64 $/;"	m
+NASM64	02.Kernel64/makefile	/^NASM64 = nasm -f elf64 -g -F stabs$/;"	m
 NULL	01.Kernel32/Source/Types.h	12;"	d
 NULL	02.Kernel64/Source/Types.h	12;"	d
-NULL	temp/Types.h	12;"	d
-NULL	temp2/Types.h	26;"	d
 NULLDESCRIPTOR	01.Kernel32/Source/EntryPoint.s	/^NULLDESCRIPTOR:$/;"	l
 OBJCOPY32	01.Kernel32/makefile	/^OBJCOPY32 = x86_64-pc-linux-objcopy -j .text -j .data -j .rodata -j .bss -S -O binary$/;"	m
 OBJCOPY64	02.Kernel64/makefile	/^OBJCOPY64 = x86_64-pc-linux-objcopy -j .text -j .data -j .rodata -j .bss -S -O binary$/;"	m
@@ -403,6 +272,7 @@ PAGE_FLAGS_US	01.Kernel32/Source/Page.h	9;"	d
 PAGE_MAXENTRYCOUNT	01.Kernel32/Source/Page.h	20;"	d
 PAGE_TABLESIZE	01.Kernel32/Source/Page.h	19;"	d
 PARAMETERLIST	02.Kernel64/Source/ConsoleShell.h	/^} PARAMETERLIST;$/;"	t	typeref:struct:kParameterListStruct
+PARTITION	02.Kernel64/Source/FileSystem.h	/^} PARTITION;$/;"	t	typeref:struct:kPartitionStruct
 PDENTRY	01.Kernel32/Source/Page.h	/^} PML4ENTRY,PDPTENTRY,PDENTRY,PTENTRY;$/;"	t	typeref:struct:kPageTableEntryStruct
 PDPTENTRY	01.Kernel32/Source/Page.h	/^} PML4ENTRY,PDPTENTRY,PDENTRY,PTENTRY;$/;"	t	typeref:struct:kPageTableEntryStruct
 PIC_IRQSTARTVECTOR	02.Kernel64/Source/PIC.h	14;"	d
@@ -410,6 +280,23 @@ PIC_MASTER_PORT1	02.Kernel64/Source/PIC.h	8;"	d
 PIC_MASTER_PORT2	02.Kernel64/Source/PIC.h	9;"	d
 PIC_SLAVE_PORT1	02.Kernel64/Source/PIC.h	10;"	d
 PIC_SLAVE_PORT2	02.Kernel64/Source/PIC.h	11;"	d
+PIT_CONTER0_LATCH	02.Kernel64/Source/PIT.h	32;"	d
+PIT_CONTROL_BCDCOUNTER	02.Kernel64/Source/PIT.h	28;"	d
+PIT_CONTROL_BINARYCOUNTER	02.Kernel64/Source/PIT.h	27;"	d
+PIT_CONTROL_COUNTER0	02.Kernel64/Source/PIT.h	18;"	d
+PIT_CONTROL_COUNTER1	02.Kernel64/Source/PIT.h	19;"	d
+PIT_CONTROL_COUNTER2	02.Kernel64/Source/PIT.h	20;"	d
+PIT_CONTROL_LATCH	02.Kernel64/Source/PIT.h	22;"	d
+PIT_CONTROL_LSBMSBRW	02.Kernel64/Source/PIT.h	21;"	d
+PIT_CONTROL_MODE0	02.Kernel64/Source/PIT.h	23;"	d
+PIT_CONTROL_MODE2	02.Kernel64/Source/PIT.h	24;"	d
+PIT_COUNTER0_ONCE	02.Kernel64/Source/PIT.h	30;"	d
+PIT_COUNTER0_PERIODIC	02.Kernel64/Source/PIT.h	31;"	d
+PIT_FREQUENCY	02.Kernel64/Source/PIT.h	7;"	d
+PIT_PORT_CONTROL	02.Kernel64/Source/PIT.h	12;"	d
+PIT_PORT_COUNTER0	02.Kernel64/Source/PIT.h	13;"	d
+PIT_PORT_COUNTER1	02.Kernel64/Source/PIT.h	14;"	d
+PIT_PORT_COUNTER2	02.Kernel64/Source/PIT.h	15;"	d
 PML4ENTRY	01.Kernel32/Source/Page.h	/^} PML4ENTRY,PDPTENTRY,PDENTRY,PTENTRY;$/;"	t	typeref:struct:kPageTableEntryStruct
 PRINTMESSAGE	00.BootLoader/BootLoader.asm	/^PRINTMESSAGE:$/;"	l
 PRINTMESSAGE	00.BootLoader/BootLoader2.asm	/^PRINTMESSAGE:$/;"	l
@@ -419,14 +306,23 @@ PTENTRY	01.Kernel32/Source/Page.h	/^} PML4ENTRY,PDPTENTRY,PDENTRY,PTENTRY;$/;"	t
 QUEUE	02.Kernel64/Source/Queue.h	/^} QUEUE;$/;"	t	typeref:struct:kQueueManagerStruct
 QWORD	01.Kernel32/Source/Types.h	7;"	d
 QWORD	02.Kernel64/Source/Types.h	7;"	d
-QWORD	temp/Types.h	7;"	d
-QWORD	temp2/Types.h	21;"	d
 READDATA	00.BootLoader/BootLoader.asm	/^READDATA:							; 디스크를 읽는 코드의 시작$/;"	l
 READDATA	00.BootLoader/BootLoader2.asm	/^READDATA:							; 디스크를 읽는 코드의 시작$/;"	l
 READDISK	00.BootLoader/BootLoader.asm	/^READDISK:							; 디스크를 리셋하는 코드의 시작$/;"	l
 READDISK	00.BootLoader/BootLoader2.asm	/^READDISK:							; 디스크를 리셋하는 코드의 시작$/;"	l
 READEND	00.BootLoader/BootLoader.asm	/^READEND:$/;"	l
 READEND	00.BootLoader/BootLoader2.asm	/^READEND:$/;"	l
+RTC_ADDRESS_DAYOFMONTH	02.Kernel64/Source/RTC.h	16;"	d
+RTC_ADDRESS_DAYOFWEEK	02.Kernel64/Source/RTC.h	15;"	d
+RTC_ADDRESS_HOUR	02.Kernel64/Source/RTC.h	14;"	d
+RTC_ADDRESS_MINUTE	02.Kernel64/Source/RTC.h	13;"	d
+RTC_ADDRESS_MONTH	02.Kernel64/Source/RTC.h	17;"	d
+RTC_ADDRESS_SECOND	02.Kernel64/Source/RTC.h	12;"	d
+RTC_ADDRESS_YEAR	02.Kernel64/Source/RTC.h	18;"	d
+RTC_BCDTOBINARY	02.Kernel64/Source/RTC.h	21;"	d
+RTC_CMOSADDRESS	02.Kernel64/Source/RTC.h	8;"	d
+RTC_CMOSDATA	02.Kernel64/Source/RTC.h	9;"	d
+SCHEDULER	02.Kernel64/Source/Task.h	/^} SCHEDULER;$/;"	t	typeref:struct:kSchedulerStruct
 SECTION	00.BootLoader/BootLoader.asm	/^SECTION .text      					; text 섹션(세그먼트)을 정의$/;"	l
 SECTION	00.BootLoader/BootLoader2.asm	/^SECTION .text      					; text 섹션(세그먼트)을 정의$/;"	l
 SECTION	01.Kernel32/Source/EntryPoint.s	/^SECTION .text				; text 섹션(세그먼트)을 정의$/;"	l
@@ -435,13 +331,13 @@ SECTION	01.Kernel32/VirtualOS.asm	/^SECTION .text       ; text 섹션(세그먼�
 SECTION	02.Kernel64/Source/AssemblyUtility.asm	/^SECTION .text					; text 섹션(세그먼트)을 정의$/;"	l
 SECTION	02.Kernel64/Source/EntryPoint.s	/^SECTION .text					; .text 섹션(세그먼트)을 정의$/;"	l
 SECTION	02.Kernel64/Source/ISR.asm	/^SECTION .text       ; text 섹션(세그먼트)을 정의$/;"	l
-SECTION	temp/AssemblyUtility.asm	/^SECTION .text					; text 섹션(세그먼트)을 정의$/;"	l
-SECTION	temp/EntryPoint.s	/^SECTION .text					; .text 섹션(세그먼트)을 정의$/;"	l
-SECTION	temp2/AssemblyUtility.asm	/^SECTION .text       ; text ����(���׸�Ʈ)�� ����$/;"	l
-SECTION	temp2/EntryPoint.s	/^SECTION .text       ; text ����(���׸�Ʈ)�� ����$/;"	l
 SECTORCOUNT	01.Kernel32/VirtualOS.asm	/^SECTORCOUNT:        dw  0x0000      ; 현재 실행 중인 섹터 번호를 저장$/;"	d
 SECTORNUMBER	00.BootLoader/BootLoader.asm	/^SECTORNUMBER:	db	0x02			; OS 이미지가 시작하는 섹터 번호를 저장하는 영역 (MBR는 부트로더)$/;"	d
 SECTORNUMBER	00.BootLoader/BootLoader2.asm	/^SECTORNUMBER:	db	0x02			; OS 이미지가 시작하는 섹터 번호를 저장하는 영역 (MBR는 부트로더)$/;"	d
+SEEK_CUR	02.Kernel64/Source/FileSystem.h	57;"	d
+SEEK_END	02.Kernel64/Source/FileSystem.h	58;"	d
+SEEK_SET	02.Kernel64/Source/FileSystem.h	56;"	d
+SETPRIORITY	02.Kernel64/Source/Task.h	72;"	d
 SHELLCOMMANDENTRY	02.Kernel64/Source/ConsoleShell.h	/^} SHELLCOMMANDENTRY;$/;"	t	typeref:struct:kShellCommandEntrystruct
 SOURCEDIRECTORY	01.Kernel32/makefile	/^SOURCEDIRECTORY = Source$/;"	m
 SOURCEDIRECTORY	02.Kernel64/makefile	/^SOURCEDIRECTORY = Source$/;"	m
@@ -450,9 +346,53 @@ START	00.BootLoader/BootLoader2.asm	/^START:$/;"	l
 START	01.Kernel32/Source/EntryPoint.s	/^START:$/;"	l
 START	01.Kernel32/VirtualOS.asm	/^START:$/;"	l
 START	02.Kernel64/Source/EntryPoint.s	/^START:$/;"	l
-START	temp/EntryPoint.s	/^START:$/;"	l
-START	temp2/EntryPoint.s	/^START:$/;"	l
 SWITCHSUCCESSMESSAGE	01.Kernel32/Source/EntryPoint.s	/^SWITCHSUCCESSMESSAGE: db 'Switch To Protected Mode Success~!!', 0$/;"	d
+TASK_CSOFFSET	02.Kernel64/Source/Task.h	33;"	d
+TASK_DSOFFSET	02.Kernel64/Source/Task.h	16;"	d
+TASK_ESOFFSET	02.Kernel64/Source/Task.h	15;"	d
+TASK_FLAGS_ENDTASK	02.Kernel64/Source/Task.h	64;"	d
+TASK_FLAGS_HIGH	02.Kernel64/Source/Task.h	57;"	d
+TASK_FLAGS_HIGHEST	02.Kernel64/Source/Task.h	56;"	d
+TASK_FLAGS_IDLE	02.Kernel64/Source/Task.h	68;"	d
+TASK_FLAGS_LOW	02.Kernel64/Source/Task.h	59;"	d
+TASK_FLAGS_LOWEST	02.Kernel64/Source/Task.h	60;"	d
+TASK_FLAGS_MEDIUM	02.Kernel64/Source/Task.h	58;"	d
+TASK_FLAGS_PROCESS	02.Kernel64/Source/Task.h	66;"	d
+TASK_FLAGS_SYSTEM	02.Kernel64/Source/Task.h	65;"	d
+TASK_FLAGS_THREAD	02.Kernel64/Source/Task.h	67;"	d
+TASK_FLAGS_WAIT	02.Kernel64/Source/Task.h	61;"	d
+TASK_FSOFFSET	02.Kernel64/Source/Task.h	14;"	d
+TASK_GSOFFSET	02.Kernel64/Source/Task.h	13;"	d
+TASK_INVALIDID	02.Kernel64/Source/Task.h	47;"	d
+TASK_MAXCOUNT	02.Kernel64/Source/Task.h	40;"	d
+TASK_MAXREADYLISTCOUNT	02.Kernel64/Source/Task.h	53;"	d
+TASK_PROCESSORTIME	02.Kernel64/Source/Task.h	50;"	d
+TASK_R10OFFSET	02.Kernel64/Source/Task.h	22;"	d
+TASK_R11OFFSET	02.Kernel64/Source/Task.h	21;"	d
+TASK_R12OFFSET	02.Kernel64/Source/Task.h	20;"	d
+TASK_R13OFFSET	02.Kernel64/Source/Task.h	19;"	d
+TASK_R14OFFSET	02.Kernel64/Source/Task.h	18;"	d
+TASK_R15OFFSET	02.Kernel64/Source/Task.h	17;"	d
+TASK_R8OFFSET	02.Kernel64/Source/Task.h	24;"	d
+TASK_R9OFFSET	02.Kernel64/Source/Task.h	23;"	d
+TASK_RAXOFFSET	02.Kernel64/Source/Task.h	30;"	d
+TASK_RBPOFFSET	02.Kernel64/Source/Task.h	31;"	d
+TASK_RBXOFFSET	02.Kernel64/Source/Task.h	29;"	d
+TASK_RCXOFFSET	02.Kernel64/Source/Task.h	28;"	d
+TASK_RDIOFFSET	02.Kernel64/Source/Task.h	26;"	d
+TASK_RDXOFFSET	02.Kernel64/Source/Task.h	27;"	d
+TASK_REGISTERCOUNT	02.Kernel64/Source/Task.h	9;"	d
+TASK_REGISTERSIZE	02.Kernel64/Source/Task.h	10;"	d
+TASK_RFLAGSOFFSET	02.Kernel64/Source/Task.h	34;"	d
+TASK_RIPOFFSET	02.Kernel64/Source/Task.h	32;"	d
+TASK_RSIOFFSET	02.Kernel64/Source/Task.h	25;"	d
+TASK_RSPOFFSET	02.Kernel64/Source/Task.h	35;"	d
+TASK_SSOFFSET	02.Kernel64/Source/Task.h	36;"	d
+TASK_STACKPOOLADDRESS	02.Kernel64/Source/Task.h	43;"	d
+TASK_STACKSIZE	02.Kernel64/Source/Task.h	44;"	d
+TASK_TCBPOOLADDRESS	02.Kernel64/Source/Task.h	39;"	d
+TCB	02.Kernel64/Source/Task.h	/^} TCB;$/;"	t	typeref:struct:kTaskControlBlockStruct
+TCBPOOLMANAGER	02.Kernel64/Source/Task.h	/^} TCBPOOLMANAGER;$/;"	t	typeref:struct:kTCBPoolManagerStruct
 TOTALSECTORCOUNT	00.BootLoader/BootLoader.asm	/^TOTALSECTORCOUNT:	dw	0x02 		; 부트 로더를 제외한 MINT64 OS 이미지의 크기 $/;"	d
 TOTALSECTORCOUNT	00.BootLoader/BootLoader2.asm	/^TOTALSECTORCOUNT:	dw	1024		; 부트 로더를 제외한 MINT64 OS 이미지의 크기 $/;"	d
 TOTALSECTORCOUNT	01.Kernel32/VirtualOS.asm	/^TOTALSECTORCOUNT    equ 1024        ; 가상 os의 총 섹터 수$/;"	d
@@ -460,149 +400,134 @@ TRACKNUMBER	00.BootLoader/BootLoader.asm	/^TRACKNUMBER:	db	0x00			; OS 이미지
 TRACKNUMBER	00.BootLoader/BootLoader2.asm	/^TRACKNUMBER:	db	0x00			; OS 이미지가 시작하는 트랙 번호를 저장하는 영역 $/;"	d
 TRUE	01.Kernel32/Source/Types.h	10;"	d
 TRUE	02.Kernel64/Source/Types.h	10;"	d
-TRUE	temp/Types.h	10;"	d
-TRUE	temp2/Types.h	24;"	d
 TSSSEGMENT	02.Kernel64/Source/Descriptor.h	/^} TSSSEGMENT;$/;"	t	typeref:struct:kTSSDataStruct
-TSSSEGMENT	temp/Descriptor.h	/^} TSSSEGMENT;$/;"	t	typeref:struct:kTSSDataStruct
-TSSSEGMENT	temp2/Descriptor.h	/^} TSSSEGMENT;$/;"	t	typeref:struct:kTSSDataStruct
 TSS_SEGMENTSIZE	02.Kernel64/Source/Descriptor.h	51;"	d
-TSS_SEGMENTSIZE	temp/Descriptor.h	51;"	d
-TSS_SEGMENTSIZE	temp2/Descriptor.h	68;"	d
+USTOCOUNT	02.Kernel64/Source/PIT.h	9;"	d
 UpdateCombinationKeyStatusAndLED	02.Kernel64/Source/Keyboard.c	/^void UpdateCombinationKeyStatusAndLED(BYTE bScanCode)$/;"	f
-UpdateCombinationKeyStatusAndLED	temp/Keyboard.c	/^void UpdateCombinationKeyStatusAndLED(BYTE bScanCode)$/;"	f
-UpdateCombinationKeyStatusAndLED	temp2/Keyboard.c	/^void UpdateCombinationKeyStatusAndLED( BYTE bScanCode )$/;"	f
 VGA_INDEX_LOWERCURSOR	02.Kernel64/Source/Console.h	47;"	d
 VGA_INDEX_UPPERCURSOR	02.Kernel64/Source/Console.h	46;"	d
 VGA_PORT_DATA	02.Kernel64/Source/Console.h	45;"	d
 VGA_PORT_INDEX	02.Kernel64/Source/Console.h	44;"	d
 WORD	01.Kernel32/Source/Types.h	5;"	d
 WORD	02.Kernel64/Source/Types.h	5;"	d
-WORD	temp/Types.h	5;"	d
-WORD	temp2/Types.h	19;"	d
 WriteKernelInformation	04.Utility/00.ImageMaker/ImageMaker.c	/^void WriteKernelInformation( int iTargetFd, int iTotalKernelSectorCount, int iKernelSectorCount )$/;"	f
 __ASSEMBLYUTILITY_H__	02.Kernel64/Source/AssemblyUtility.h	2;"	d
-__ASSEMBLYUTILITY_H__	temp/AssemblyUtility.h	2;"	d
-__ASSEMBLYUTILITY_H__	temp2/AssemblyUtility.h	10;"	d
 __CONSOLESHELL_H__	02.Kernel64/Source/ConsoleShell.h	2;"	d
 __CONSOLE_H__	02.Kernel64/Source/Console.h	2;"	d
 __DESCRIPTOR_H__	02.Kernel64/Source/Descriptor.h	2;"	d
-__DESCRIPTOR_H__	temp/Descriptor.h	2;"	d
-__DESCRIPTOR_H__	temp2/Descriptor.h	10;"	d
+__DYNAMICMEMORY_H__	02.Kernel64/Source/DynamicMemory.h	2;"	d
+__FILESYSTEM_H__	02.Kernel64/Source/FileSystem.h	2;"	d
+__HARDDISK_H__	02.Kernel64/Source/HardDisk.h	2;"	d
 __INTERRUPTHANDLER_H__	02.Kernel64/Source/InterruptHandler.h	2;"	d
 __ISR_H__	02.Kernel64/Source/ISR.h	2;"	d
 __KEYBOARD_H__	02.Kernel64/Source/Keyboard.h	2;"	d
-__KEYBOARD_H__	temp/Keyboard.h	2;"	d
-__KEYBOARD_H__	temp2/Keyboard.h	10;"	d
+__LIST_H__	02.Kernel64/Source/List.h	2;"	d
 __PAGE_H__	01.Kernel32/Source/Page.h	2;"	d
 __PIC_H__	02.Kernel64/Source/PIC.h	2;"	d
+__PIT_H__	02.Kernel64/Source/PIT.h	2;"	d
 __QUEUE_H__	02.Kernel64/Source/Queue.h	2;"	d
+__RTC_H__	02.Kernel64/Source/RTC.h	2;"	d
+__SYNCHRONIZATION_H__	02.Kernel64/Source/Synchronization.h	2;"	d
+__TASK_H__	02.Kernel64/Source/Task.h	2;"	d
 __TYPES_H__	01.Kernel32/Source/Types.h	2;"	d
 __TYPES_H__	02.Kernel64/Source/Types.h	2;"	d
-__TYPES_H__	temp/Types.h	2;"	d
-__TYPES_H__	temp2/Types.h	10;"	d
 __UTILITY_H__	01.Kernel32/Source/ModeSwitch.h	2;"	d
 __UTILITY_H__	02.Kernel64/Source/Utility.h	2;"	d
-__UTILITY_H__	temp/Utility.h	2;"	d
-__UTILITY_H__	temp2/Utility.h	10;"	d
 a	testdata.c	/^int a;$/;"	v
 b	testdata.c	/^int b =1;$/;"	v
 bASCIICode	02.Kernel64/Source/Keyboard.h	/^	BYTE bASCIICode;$/;"	m	struct:kKeyDataStruct
 bAttribute	01.Kernel32/Source/Types.h	/^	BYTE bAttribute;$/;"	m	struct:kCharactorStruct
 bAttribute	02.Kernel64/Source/Types.h	/^	BYTE bAttribute;$/;"	m	struct:kCharactorStruct
-bAttribute	temp/Types.h	/^	BYTE bAttribute;$/;"	m	struct:kCharactorStruct
-bAttribute	temp2/Types.h	/^    BYTE bAttribute;$/;"	m	struct:kCharactorStruct
+bBootableFlag	02.Kernel64/Source/FileSystem.h	/^	BYTE bBootableFlag;$/;"	m	struct:kPartitionStruct
+bCanWrite	02.Kernel64/Source/HardDisk.h	/^	BOOL bCanWrite;$/;"	m	struct:kHDDManagerStruct
 bCapsLockOn	02.Kernel64/Source/Keyboard.h	/^    BOOL bCapsLockOn;$/;"	m	struct:kKeyboardManagerStruct
-bCapsLockOn	temp/Keyboard.h	/^    BOOL bCapsLockOn;$/;"	m	struct:kKeyboardManagerStruct
-bCapsLockOn	temp2/Keyboard.h	/^    BOOL bCapsLockOn;$/;"	m	struct:kKeyboardManagerStruct
 bCharactor	01.Kernel32/Source/Types.h	/^	BYTE bCharactor;$/;"	m	struct:kCharactorStruct
 bCharactor	02.Kernel64/Source/Types.h	/^	BYTE bCharactor;$/;"	m	struct:kCharactorStruct
-bCharactor	temp/Types.h	/^	BYTE bCharactor;$/;"	m	struct:kCharactorStruct
-bCharactor	temp2/Types.h	/^    BYTE bCharactor;$/;"	m	struct:kCharactorStruct
 bCombinedCode	02.Kernel64/Source/Keyboard.h	/^    BYTE bCombinedCode;$/;"	m	struct:kKeyMappingEntryStruct
-bCombinedCode	temp/Keyboard.h	/^    BYTE bCombinedCode;$/;"	m	struct:kKeyMappingEntryStruct
-bCombinedCode	temp2/Keyboard.h	/^    BYTE bCombinedCode;$/;"	m	struct:kKeyMappingEntryStruct
 bExtendedCodeIn	02.Kernel64/Source/Keyboard.h	/^    BOOL bExtendedCodeIn;$/;"	m	struct:kKeyboardManagerStruct
-bExtendedCodeIn	temp/Keyboard.h	/^    BOOL bExtendedCodeIn;$/;"	m	struct:kKeyboardManagerStruct
-bExtendedCodeIn	temp2/Keyboard.h	/^    BOOL bExtendedCodeIn;$/;"	m	struct:kKeyboardManagerStruct
+bFPUUsed	02.Kernel64/Source/Task.h	/^	BOOL bFPUUsed;$/;"	m	struct:kTaskControlBlockStruct
 bFlags	02.Kernel64/Source/Keyboard.h	/^	BYTE bFlags;$/;"	m	struct:kKeyDataStruct
+bHDDDetected	02.Kernel64/Source/HardDisk.h	/^	BOOL bHDDDetected;$/;"	m	struct:kHDDManagerStruct
 bIST	02.Kernel64/Source/Descriptor.h	/^	BYTE bIST;$/;"	m	struct:kIDTEntryStruct
-bIST	temp/Descriptor.h	/^	BYTE bIST;$/;"	m	struct:kIDTEntryStruct
-bIST	temp2/Descriptor.h	/^    BYTE bIST;$/;"	m	struct:kIDTEntryStruct
 bLastOpereationPut	02.Kernel64/Source/Queue.h	/^	BOOL bLastOpereationPut;$/;"	m	struct:kQueueManagerStruct
+bLockFlag	02.Kernel64/Source/Synchronization.h	/^	volatile BOOL bLockFlag;$/;"	m	struct:kMutextStruct
 bMiddleBaseAddress1	02.Kernel64/Source/Descriptor.h	/^	BYTE bMiddleBaseAddress1;$/;"	m	struct:kGDTEntry16struct
-bMiddleBaseAddress1	temp/Descriptor.h	/^	BYTE bMiddleBaseAddress1;$/;"	m	struct:kGDTEntry16struct
-bMiddleBaseAddress1	temp2/Descriptor.h	/^    BYTE bMiddleBaseAddress1;$/;"	m	struct:kGDTEntry16Struct
 bMiddleBaseAddress2	02.Kernel64/Source/Descriptor.h	/^	BYTE bMiddleBaseAddress2;$/;"	m	struct:kGDTEntry16struct
-bMiddleBaseAddress2	temp/Descriptor.h	/^	BYTE bMiddleBaseAddress2;$/;"	m	struct:kGDTEntry16struct
-bMiddleBaseAddress2	temp2/Descriptor.h	/^    BYTE bMiddleBaseAddress2;$/;"	m	struct:kGDTEntry16Struct
+bMounted	02.Kernel64/Source/FileSystem.h	/^	BOOL bMounted;$/;"	m	struct:kFileSystemManagerStruct
 bNormalCode	02.Kernel64/Source/Keyboard.h	/^	BYTE bNormalCode;$/;"	m	struct:kKeyMappingEntryStruct
-bNormalCode	temp/Keyboard.h	/^	BYTE bNormalCode;$/;"	m	struct:kKeyMappingEntryStruct
-bNormalCode	temp2/Keyboard.h	/^    BYTE bNormalCode;$/;"	m	struct:kKeyMappingEntryStruct
 bNumLockOn	02.Kernel64/Source/Keyboard.h	/^    BOOL bNumLockOn;$/;"	m	struct:kKeyboardManagerStruct
-bNumLockOn	temp/Keyboard.h	/^    BOOL bNumLockOn;$/;"	m	struct:kKeyboardManagerStruct
-bNumLockOn	temp2/Keyboard.h	/^    BOOL bNumLockOn;$/;"	m	struct:kKeyboardManagerStruct
+bPartitionType	02.Kernel64/Source/FileSystem.h	/^	BYTE bPartitionType;$/;"	m	struct:kPartitionStruct
+bPrimaryInterruptOccur	02.Kernel64/Source/HardDisk.h	/^	volatile BOOL bPrimaryInterruptOccur;$/;"	m	struct:kHDDManagerStruct
 bScanCode	02.Kernel64/Source/Keyboard.h	/^	BYTE bScanCode;$/;"	m	struct:kKeyDataStruct
 bScrollLockOn	02.Kernel64/Source/Keyboard.h	/^    BOOL bScrollLockOn;$/;"	m	struct:kKeyboardManagerStruct
-bScrollLockOn	temp/Keyboard.h	/^    BOOL bScrollLockOn;$/;"	m	struct:kKeyboardManagerStruct
-bScrollLockOn	temp2/Keyboard.h	/^    BOOL bScrollLockOn;$/;"	m	struct:kKeyboardManagerStruct
+bSecondaryInterruptOccur	02.Kernel64/Source/HardDisk.h	/^	volatile BOOL bSecondaryInterruptOccur;$/;"	m	struct:kHDDManagerStruct
 bShiftDown	02.Kernel64/Source/Keyboard.h	/^	BOOL bShiftDown;$/;"	m	struct:kKeyboardManagerStruct
-bShiftDown	temp/Keyboard.h	/^	BOOL bShiftDown;$/;"	m	struct:kKeyboardManagerStruct
-bShiftDown	temp2/Keyboard.h	/^    BOOL bShiftDown;$/;"	m	struct:kKeyboardManagerStruct
+bType	02.Kernel64/Source/FileSystem.h	/^	BYTE bType;$/;"	m	struct:kFileDirectoryHandleStruct
 bTypeAndFlags	02.Kernel64/Source/Descriptor.h	/^	BYTE bTypeAndFlags;$/;"	m	struct:kIDTEntryStruct
-bTypeAndFlags	temp/Descriptor.h	/^	BYTE bTypeAndFlags;$/;"	m	struct:kIDTEntryStruct
-bTypeAndFlags	temp2/Descriptor.h	/^    BYTE bTypeAndFlags;$/;"	m	struct:kIDTEntryStruct
 bTypeAndLowerFlag	02.Kernel64/Source/Descriptor.h	/^	BYTE bTypeAndLowerFlag;$/;"	m	struct:kGDTEntry16struct
 bTypeAndLowerFlag	02.Kernel64/Source/Descriptor.h	/^	BYTE bTypeAndLowerFlag;$/;"	m	struct:kGDTEntry8Struct
-bTypeAndLowerFlag	temp/Descriptor.h	/^	BYTE bTypeAndLowerFlag;$/;"	m	struct:kGDTEntry16struct
-bTypeAndLowerFlag	temp/Descriptor.h	/^	BYTE bTypeAndLowerFlag;$/;"	m	struct:kGDTEntry8Struct
-bTypeAndLowerFlag	temp2/Descriptor.h	/^    BYTE bTypeAndLowerFlag;$/;"	m	struct:kGDTEntry16Struct
-bTypeAndLowerFlag	temp2/Descriptor.h	/^    BYTE bTypeAndLowerFlag;$/;"	m	struct:kGDTEntry8Struct
 bUpperBaseAddress1	02.Kernel64/Source/Descriptor.h	/^	BYTE bUpperBaseAddress1;$/;"	m	struct:kGDTEntry8Struct
-bUpperBaseAddress1	temp/Descriptor.h	/^	BYTE bUpperBaseAddress1;$/;"	m	struct:kGDTEntry8Struct
-bUpperBaseAddress1	temp2/Descriptor.h	/^    BYTE bUpperBaseAddress1;$/;"	m	struct:kGDTEntry8Struct
 bUpperBaseAddress2	02.Kernel64/Source/Descriptor.h	/^	BYTE bUpperBaseAddress2;$/;"	m	struct:kGDTEntry8Struct
-bUpperBaseAddress2	temp/Descriptor.h	/^	BYTE bUpperBaseAddress2;$/;"	m	struct:kGDTEntry8Struct
-bUpperBaseAddress2	temp2/Descriptor.h	/^    BYTE bUpperBaseAddress2;$/;"	m	struct:kGDTEntry8Struct
 bUpperLimitAndUpperFlag	02.Kernel64/Source/Descriptor.h	/^	BYTE bUpperLimitAndUpperFlag;$/;"	m	struct:kGDTEntry16struct
 bUpperLimitAndUpperFlag	02.Kernel64/Source/Descriptor.h	/^	BYTE bUpperLimitAndUpperFlag;$/;"	m	struct:kGDTEntry8Struct
-bUpperLimitAndUpperFlag	temp/Descriptor.h	/^	BYTE bUpperLimitAndUpperFlag;$/;"	m	struct:kGDTEntry16struct
-bUpperLimitAndUpperFlag	temp/Descriptor.h	/^	BYTE bUpperLimitAndUpperFlag;$/;"	m	struct:kGDTEntry8Struct
-bUpperLimitAndUpperFlag	temp2/Descriptor.h	/^    BYTE bUpperLimitAndUpperFlag;$/;"	m	struct:kGDTEntry16Struct
-bUpperLimitAndUpperFlag	temp2/Descriptor.h	/^    BYTE bUpperLimitAndUpperFlag;$/;"	m	struct:kGDTEntry8Struct
 c	testdata.c	/^int c;$/;"	v
+closedir	02.Kernel64/Source/FileSystem.h	53;"	d
 d	testdata.c	/^int d=0;$/;"	v
+d_name	02.Kernel64/Source/FileSystem.h	63;"	d
 db	00.BootLoader/BootLoader.asm	/^db 0x55             				; 1바이트를 선언하고 값은 0x55$/;"	l
 db	00.BootLoader/BootLoader.asm	/^db 0xAA             				; 1바이트를 선언하고 값은 0xAA$/;"	l
 db	00.BootLoader/BootLoader2.asm	/^db 0x55             				; 1바이트를 선언하고 값은 0x55$/;"	l
 db	00.BootLoader/BootLoader2.asm	/^db 0xAA             				; 1바이트를 선언하고 값은 0xAA$/;"	l
+dirent	02.Kernel64/Source/FileSystem.h	62;"	d
 dw	01.Kernel32/Source/EntryPoint.s	/^dw 0x0000$/;"	l
 dwAttributeAndLowerBaseAddress	01.Kernel32/Source/Page.h	/^	DWORD dwAttributeAndLowerBaseAddress;$/;"	m	struct:kPageTableEntryStruct
+dwClusterLinkAreaSize	02.Kernel64/Source/FileSystem.h	/^	DWORD dwClusterLinkAreaSize;$/;"	m	struct:kFileSystemManagerStruct
+dwClusterLinkAreaStartAddress	02.Kernel64/Source/FileSystem.h	/^	DWORD dwClusterLinkAreaStartAddress;$/;"	m	struct:kFileSystemManagerStruct
+dwClusterLinkSectorCount	02.Kernel64/Source/FileSystem.h	/^	DWORD dwClusterLinkSectorCount;$/;"	m	struct:kMBRStruct
+dwCurrentClusterIndex	02.Kernel64/Source/FileSystem.h	/^	DWORD dwCurrentClusterIndex;$/;"	m	struct:kFileHandleStruct
+dwCurrentOffset	02.Kernel64/Source/FileSystem.h	/^	DWORD dwCurrentOffset;$/;"	m	struct:kFileHandleStruct
+dwDataAreaStartAddress	02.Kernel64/Source/FileSystem.h	/^	DWORD dwDataAreaStartAddress;$/;"	m	struct:kFileSystemManagerStruct
+dwFileSize	02.Kernel64/Source/FileSystem.h	/^	DWORD dwFileSize;$/;"	m	struct:kDirectoryEntryStruct
+dwFileSize	02.Kernel64/Source/FileSystem.h	/^	DWORD dwFileSize;$/;"	m	struct:kFileHandleStruct
+dwLastAllocatedclusterLinkSectorOffset	02.Kernel64/Source/FileSystem.h	/^	DWORD dwLastAllocatedclusterLinkSectorOffset;$/;"	m	struct:kFileSystemManagerStruct
+dwLockCount	02.Kernel64/Source/Synchronization.h	/^	volatile DWORD dwLockCount;$/;"	m	struct:kMutextStruct
 dwPading	02.Kernel64/Source/Descriptor.h	/^	DWORD dwPading;$/;"	m	struct:kGDTRStruct
-dwPading	temp/Descriptor.h	/^	DWORD dwPading;$/;"	m	struct:kGDTRStruct
-dwPading	temp2/Descriptor.h	/^    DWORD dwPading;$/;"	m	struct:kGDTRStruct
+dwPreviousClusterIndex	02.Kernel64/Source/FileSystem.h	/^	DWORD dwPreviousClusterIndex;$/;"	m	struct:kFileHandleStruct
 dwReserved	02.Kernel64/Source/Descriptor.h	/^	DWORD dwReserved;$/;"	m	struct:kGDTEntry16struct
 dwReserved	02.Kernel64/Source/Descriptor.h	/^	DWORD dwReserved;$/;"	m	struct:kIDTEntryStruct
-dwReserved	temp/Descriptor.h	/^	DWORD dwReserved;$/;"	m	struct:kGDTEntry16struct
-dwReserved	temp/Descriptor.h	/^	DWORD dwReserved;$/;"	m	struct:kIDTEntryStruct
-dwReserved	temp2/Descriptor.h	/^    DWORD dwReserved;$/;"	m	struct:kGDTEntry16Struct
-dwReserved	temp2/Descriptor.h	/^    DWORD dwReserved;$/;"	m	struct:kIDTEntryStruct
 dwReserved1	02.Kernel64/Source/Descriptor.h	/^	DWORD dwReserved1;$/;"	m	struct:kTSSDataStruct
-dwReserved1	temp/Descriptor.h	/^	DWORD dwReserved1;$/;"	m	struct:kTSSDataStruct
-dwReserved1	temp2/Descriptor.h	/^    DWORD dwReserved1;$/;"	m	struct:kTSSDataStruct
+dwReservedSectorCount	02.Kernel64/Source/FileSystem.h	/^	DWORD dwReservedSectorCount;$/;"	m	struct:kFileSystemManagerStruct
+dwReservedSectorCount	02.Kernel64/Source/FileSystem.h	/^	DWORD dwReservedSectorCount;$/;"	m	struct:kMBRStruct
+dwSignature	02.Kernel64/Source/FileSystem.h	/^	DWORD dwSignature;$/;"	m	struct:kMBRStruct
+dwSizeInSector	02.Kernel64/Source/FileSystem.h	/^	DWORD dwSizeInSector;$/;"	m	struct:kPartitionStruct
+dwStartClusterIndex	02.Kernel64/Source/FileSystem.h	/^	DWORD dwStartClusterIndex;$/;"	m	struct:kDirectoryEntryStruct
+dwStartClusterIndex	02.Kernel64/Source/FileSystem.h	/^	DWORD dwStartClusterIndex;$/;"	m	struct:kFileHandleStruct
+dwStartingLBAAddress	02.Kernel64/Source/FileSystem.h	/^	DWORD dwStartingLBAAddress;$/;"	m	struct:kPartitionStruct
+dwTotalClusterCount	02.Kernel64/Source/FileSystem.h	/^	DWORD dwTotalClusterCount;$/;"	m	struct:kFileSystemManagerStruct
+dwTotalClusterCount	02.Kernel64/Source/FileSystem.h	/^	DWORD dwTotalClusterCount;$/;"	m	struct:kMBRStruct
+dwTotalSectors	02.Kernel64/Source/HardDisk.h	/^	DWORD dwTotalSectors;$/;"	m	struct:kHDDInformationStruct
 dwUpperBaseAddress	02.Kernel64/Source/Descriptor.h	/^	DWORD dwUpperBaseAddress;$/;"	m	struct:kGDTEntry16struct
 dwUpperBaseAddress	02.Kernel64/Source/Descriptor.h	/^	DWORD dwUpperBaseAddress;$/;"	m	struct:kIDTEntryStruct
-dwUpperBaseAddress	temp/Descriptor.h	/^	DWORD dwUpperBaseAddress;$/;"	m	struct:kGDTEntry16struct
-dwUpperBaseAddress	temp/Descriptor.h	/^	DWORD dwUpperBaseAddress;$/;"	m	struct:kIDTEntryStruct
-dwUpperBaseAddress	temp2/Descriptor.h	/^    DWORD dwUpperBaseAddress;$/;"	m	struct:kGDTEntry16Struct
-dwUpperBaseAddress	temp2/Descriptor.h	/^    DWORD dwUpperBaseAddress;$/;"	m	struct:kIDTEntryStruct
 dwUpperBaseAddressAndEXB	01.Kernel32/Source/Page.h	/^	DWORD dwUpperBaseAddressAndEXB;$/;"	m	struct:kPageTableEntryStruct
 extern	02.Kernel64/Source/EntryPoint.s	/^extern main		$/;"	l
 extern	02.Kernel64/Source/ISR.asm	/^extern kCommonExceptionHandler, kCommonInterruptHandler, kKeyboardHandler$/;"	l
-extern	temp/EntryPoint.s	/^extern main		$/;"	l
-extern	temp2/EntryPoint.s	/^extern main$/;"	l
+extern	02.Kernel64/Source/ISR.asm	/^extern kTimerHandler, kDeviceNotAvailableHandler, kHDDHandler$/;"	l
+fReadHDDInformation	02.Kernel64/Source/FileSystem.h	/^typedef BOOL (*fReadHDDInformation) (BOOL bPrimary,BOOL bMaster,HDDINFORMATION* pstHDDInformation);$/;"	t
+fReadHDDSector	02.Kernel64/Source/FileSystem.h	/^typedef int (*fReadHDDSector) (BOOL bPrimary,BOOL bMaster,DWORD dwLBA,int iSectorCount,char* pcBuffer);$/;"	t
+fWriteHDDSector	02.Kernel64/Source/FileSystem.h	/^typedef int (*fWriteHDDSector) (BOOL bPrimary,BOOL bMaster,DWORD dwLBA,int iSectorCount,char* pcBuffer);$/;"	t
+fclose	02.Kernel64/Source/FileSystem.h	48;"	d
+fopen	02.Kernel64/Source/FileSystem.h	44;"	d
+fread	02.Kernel64/Source/FileSystem.h	45;"	d
+fseek	02.Kernel64/Source/FileSystem.h	47;"	d
+fwrite	02.Kernel64/Source/FileSystem.h	46;"	d
+g_qwTickCount	02.Kernel64/Source/Utility.c	/^volatile QWORD g_qwTickCount=0;$/;"	v
 global	01.Kernel32/Source/ModeSwitch.asm	/^global	kReadCPUID, kSwitchAndExecute64bitKernel$/;"	l
 global	02.Kernel64/Source/AssemblyUtility.asm	/^global kEnableInterrupt, kDisableInterrupt, kReadRFLAGS$/;"	l
-global	02.Kernel64/Source/AssemblyUtility.asm	/^global kInPortByte, kOutPortByte,kLoadGDTR,kLoadTR,kLoadIDTR$/;"	l
+global	02.Kernel64/Source/AssemblyUtility.asm	/^global kInPortByte, kOutPortByte,kInPortWord,kOutPortWord$/;"	l
+global	02.Kernel64/Source/AssemblyUtility.asm	/^global kInitializeFPU, kSaveFPUContext, kLoadFPUContext, kSetTS, kClearTS$/;"	l
+global	02.Kernel64/Source/AssemblyUtility.asm	/^global kLoadGDTR,kLoadTR,kLoadIDTR$/;"	l
+global	02.Kernel64/Source/AssemblyUtility.asm	/^global kReadTSC$/;"	l
+global	02.Kernel64/Source/AssemblyUtility.asm	/^global kSwitchContext, kHlt, kTestAndSet$/;"	l
 global	02.Kernel64/Source/ISR.asm	/^global kISRBoundRangeExceeded, kISRInvalidOpcode, kISRDeviceNotAvailable, kISRDoubleFault,$/;"	l
 global	02.Kernel64/Source/ISR.asm	/^global kISRCoprocessorSegmentOverrun, kISRInvalidTSS, kISRSegmentNotPresent$/;"	l
 global	02.Kernel64/Source/ISR.asm	/^global kISRDivideError, kISRDebug, kISRNMI, kISRBreakPoint, kISROverflow$/;"	l
@@ -611,89 +536,156 @@ global	02.Kernel64/Source/ISR.asm	/^global kISRFloppy, kISRParallel1, kISRRTC, k
 global	02.Kernel64/Source/ISR.asm	/^global kISRMouse, kISRCoprocessor, kISRHDD1, kISRHDD2, kISRETCInterrupt$/;"	l
 global	02.Kernel64/Source/ISR.asm	/^global kISRStackSegmentFault, kISRGeneralProtection, kISRPageFault, kISR15$/;"	l
 global	02.Kernel64/Source/ISR.asm	/^global kISRTimer, kISRKeyboard, kISRSlavePIC, kISRSerial2, kISRSerial1, kISRParallel2$/;"	l
-global	temp/AssemblyUtility.asm	/^global kInPortByte, kOutPortByte,kLoadGDTR,kLoadTR,kLoadIDTR$/;"	l
-global	temp2/AssemblyUtility.asm	/^global kInPortByte, kOutPortByte, kLoadGDTR, kLoadTR, kLoadIDTR$/;"	l
+gs_pfReadHDDInformation	02.Kernel64/Source/FileSystem.c	/^fReadHDDInformation gs_pfReadHDDInformation = NULL;$/;"	v
+gs_pfReadHDDSector	02.Kernel64/Source/FileSystem.c	/^fReadHDDSector gs_pfReadHDDSector =NULL;$/;"	v
+gs_pfWriteHDDSector	02.Kernel64/Source/FileSystem.c	/^fWriteHDDSector gs_pfWriteHDDSector =NULL;$/;"	v
+gs_qwAdder	02.Kernel64/Source/ConsoleShell.c	/^static volatile QWORD gs_qwAdder;$/;"	v	file:
+gs_qwRandomValue	02.Kernel64/Source/ConsoleShell.c	/^static volatile QWORD gs_qwRandomValue = 0;$/;"	v	file:
 gs_qwTotalRAMMBSize	02.Kernel64/Source/Utility.c	/^static gs_qwTotalRAMMBSize=0;$/;"	v	file:
 gs_stConsoleManager	02.Kernel64/Source/Console.c	/^CONSOLEMANAGER gs_stConsoleManager = {0,};$/;"	v
+gs_stDynamicMemory	02.Kernel64/Source/DynamicMemory.c	/^static DYNAMICMEMORY gs_stDynamicMemory;$/;"	v	file:
+gs_stFileSystemManager	02.Kernel64/Source/FileSystem.c	/^static FILESYSTEMMANAGER gs_stFileSystemManager;$/;"	v	file:
+gs_stHDDManager	02.Kernel64/Source/HardDisk.c	/^static HDDMANAGER gs_stHDDManager;$/;"	v	file:
 gs_stKeyQueue	02.Kernel64/Source/Keyboard.c	/^static QUEUE gs_stKeyQueue;$/;"	v	file:
 gs_stKeyboardManager	02.Kernel64/Source/Keyboard.c	/^static KEYBOARDMANAGER gs_stKeyboardManager={0,};$/;"	v	file:
-gs_stKeyboardManager	temp/Keyboard.c	/^static KEYBOARDMANAGER gs_stKeyboardManager={0,};$/;"	v	file:
-gs_stKeyboardManager	temp2/Keyboard.c	/^static KEYBOARDMANAGER gs_stKeyboardManager = { 0, };$/;"	v	file:
+gs_stMutex	02.Kernel64/Source/ConsoleShell.c	/^static MUTEX gs_stMutex;$/;"	v	file:
+gs_stScheduler	02.Kernel64/Source/Task.c	/^static SCHEDULER gs_stScheduler;$/;"	v	file:
+gs_stTCBPoolManager	02.Kernel64/Source/Task.c	/^static TCBPOOLMANAGER gs_stTCBPoolManager;$/;"	v	file:
+gs_vbTempBuffer	02.Kernel64/Source/FileSystem.c	/^static BYTE gs_vbTempBuffer[FILESYSTEM_SECTORPERCLUSTER*512];$/;"	v	file:
 gs_vstCommandTable	02.Kernel64/Source/ConsoleShell.c	/^SHELLCOMMANDENTRY gs_vstCommandTable[] =$/;"	v
 gs_vstKeyMappingTable	02.Kernel64/Source/Keyboard.c	/^static KEYMAPPINGENTRY gs_vstKeyMappingTable[KEY_MAPPINGTABLEMAXCOUNT]=$/;"	v	file:
-gs_vstKeyMappingTable	temp/Keyboard.c	/^static KEYMAPPINGENTRY gs_vstKeyMappingTable[KEY_MAPPINGTABLEMAXCOUNT]=$/;"	v	file:
-gs_vstKeyMappingTable	temp2/Keyboard.c	/^static KEYMAPPINGENTRY gs_vstKeyMappingTable[ KEY_MAPPINGTABLEMAXCOUNT ] =$/;"	v	file:
 gs_vstKeyQueueBuffer	02.Kernel64/Source/Keyboard.c	/^static KEYDATA gs_vstKeyQueueBuffer[KEY_MAXQUEUECOUNT];$/;"	v	file:
+iAllocatedCount	02.Kernel64/Source/Task.h	/^	int iAllocatedCount;$/;"	m	struct:kTCBPoolManagerStruct
+iBlockCountOfSmallestBlock	02.Kernel64/Source/DynamicMemory.h	/^	int iBlockCountOfSmallestBlock;$/;"	m	struct:kDynamicMemoryManagerStruct
+iCurrentOffset	02.Kernel64/Source/FileSystem.h	/^	int iCurrentOffset;$/;"	m	struct:kDirectoryHandleStruct
 iCurrentPosition	02.Kernel64/Source/ConsoleShell.h	/^	int iCurrentPosition;$/;"	m	struct:kParameterListStruct
 iCurrentPrintOffset	02.Kernel64/Source/Console.h	/^    int iCurrentPrintOffset;$/;"	m	struct:kConsoleManagerStruct
 iDataSize	02.Kernel64/Source/Queue.h	/^	int iDataSize;$/;"	m	struct:kQueueManagerStruct
+iDirectoryEntryOffset	02.Kernel64/Source/FileSystem.h	/^	int iDirectoryEntryOffset;$/;"	m	struct:kFileHandleStruct
 iGetindex	02.Kernel64/Source/Queue.h	/^	int iGetindex;$/;"	m	struct:kQueueManagerStruct
+iItemCount	02.Kernel64/Source/List.h	/^	int iItemCount;$/;"	m	struct:kListManagerStruct
 iLength	02.Kernel64/Source/ConsoleShell.h	/^	int iLength;$/;"	m	struct:kParameterListStruct
+iMaxCount	02.Kernel64/Source/Task.h	/^	int iMaxCount;$/;"	m	struct:kTCBPoolManagerStruct
 iMaxDataCount	02.Kernel64/Source/Queue.h	/^	int iMaxDataCount;$/;"	m	struct:kQueueManagerStruct
+iMaxLevelCount	02.Kernel64/Source/DynamicMemory.h	/^	int iMaxLevelCount;$/;"	m	struct:kDynamicMemoryManagerStruct
+iProcessorTime	02.Kernel64/Source/Task.h	/^	int iProcessorTime;$/;"	m	struct:kSchedulerStruct
 iPutIndex	02.Kernel64/Source/Queue.h	/^	int iPutIndex;$/;"	m	struct:kQueueManagerStruct
 iSkipCountForPause	02.Kernel64/Source/Keyboard.h	/^    int iSkipCountForPause;$/;"	m	struct:kKeyboardManagerStruct
-iSkipCountForPause	temp/Keyboard.h	/^    int iSkipCountForPause;$/;"	m	struct:kKeyboardManagerStruct
-iSkipCountForPause	temp2/Keyboard.h	/^    int iSkipCountForPause;$/;"	m	struct:kKeyboardManagerStruct
+iUseCount	02.Kernel64/Source/Task.h	/^	int iUseCount;$/;"	m	struct:kTCBPoolManagerStruct
 jmp	00.BootLoader/BootLoader.asm	/^jmp 0x07C0:START					; CS 세그먼트 레지스터에 0x07C0을 복사하면서 , START 레이블로 이동 (CS 세그먼트는 데이터 이동 명령으르 설정불가능하며 점프나 인터럽트 관련 명령으로 변경 가능$/;"	l
 jmp	00.BootLoader/BootLoader2.asm	/^jmp 0x07C0:START					; CS 세그먼트 레지스터에 0x07C0을 복사하면서 , START 레이블로 이동 (CS 세그먼트는 데이터 이동 명령으르 설정불가능하며 점프나 인터럽트 관련 명령으로 변경 가능$/;"	l
 jmp	01.Kernel32/VirtualOS.asm	/^jmp 0x1000:START   ; cs 세그먼트 레지스터에 0x1000을 복사하면서, START 레이블로 이동$/;"	l
 kAToI	02.Kernel64/Source/Utility.c	/^long kAToI(const char* pcBuffer,int iRadix)$/;"	f
 kActivateKeyboard	02.Kernel64/Source/Keyboard.c	/^BOOL kActivateKeyboard(void)$/;"	f
-kActivateKeyboard	temp/Keyboard.c	/^BOOL kActivateKeyboard(void)$/;"	f
-kActivateKeyboard	temp2/Keyboard.c	/^BOOL kActivateKeyboard( void )$/;"	f
+kAddListToHeader	02.Kernel64/Source/List.c	/^void kAddListToHeader(LIST* pstList,void* pvItem)$/;"	f
+kAddListToTail	02.Kernel64/Source/List.c	/^void kAddListToTail(LIST* pstList,void* pvItem)$/;"	f
+kAddTaskToReadyList	02.Kernel64/Source/Task.c	/^static BOOL kAddTaskToReadyList(TCB* pstTask)$/;"	f	file:
+kAllocateFileDirectoryHandle	02.Kernel64/Source/FileSystem.c	/^static void* kAllocateFileDirectoryHandle(void)$/;"	f	file:
+kAllocateMemory	02.Kernel64/Source/DynamicMemory.c	/^void* kAllocateMemory(QWORD qwSize)$/;"	f
+kAllocateTCB	02.Kernel64/Source/Task.c	/^static TCB* kAllocateTCB(void)$/;"	f	file:
+kAllocationBuddyBlock	02.Kernel64/Source/DynamicMemory.c	/^static int kAllocationBuddyBlock(QWORD qwAlignedSize)$/;"	f	file:
+kBitmapStruct	02.Kernel64/Source/DynamicMemory.h	/^typedef struct kBitmapStruct$/;"	s
+kCPULoad	02.Kernel64/Source/ConsoleShell.c	/^static void kCPULoad(const char* pcParameterBuffer)$/;"	f	file:
+kCalculateDynamicMemorySize	02.Kernel64/Source/DynamicMemory.c	/^static QWORD kCalculateDynamicMemorySize(void)$/;"	f	file:
+kCalculateMetaBlockCount	02.Kernel64/Source/DynamicMemory.c	/^static int kCalculateMetaBlockCount(QWORD qwDynamicRAMSize)$/;"	f	file:
 kChangeKeyboardLED	02.Kernel64/Source/Keyboard.c	/^BOOL kChangeKeyboardLED(BOOL bCapsLockOn,BOOL bNumLockOn,BOOL bScrollLockOn)$/;"	f
-kChangeKeyboardLED	temp/Keyboard.c	/^BOOL kChangeKeyboardLED(BOOL bCapsLockOn,BOOL bNumLockOn,BOOL bScrollLockOn)$/;"	f
-kChangeKeyboardLED	temp2/Keyboard.c	/^BOOL kChangeKeyboardLED( BOOL bCapsLockOn, BOOL bNumLockOn, BOOL bScrollLockOn )$/;"	f
+kChangePriority	02.Kernel64/Source/Task.c	/^BOOL kChangePriority(QWORD qwTaskID,BYTE bPriority)$/;"	f
+kChangeTaskPriority	02.Kernel64/Source/ConsoleShell.c	/^static void kChangeTaskPriority(const char* pcParameterBuffer)$/;"	f	file:
 kCharactorStruct	01.Kernel32/Source/Types.h	/^typedef struct kCharactorStruct$/;"	s
 kCharactorStruct	02.Kernel64/Source/Types.h	/^typedef struct kCharactorStruct$/;"	s
-kCharactorStruct	temp/Types.h	/^typedef struct kCharactorStruct$/;"	s
-kCharactorStruct	temp2/Types.h	/^typedef struct kCharactorStruct$/;"	s
 kCheckTotalRAMSize	02.Kernel64/Source/Utility.c	/^void kCheckTotalRAMSize(void)$/;"	f
 kClearScreen	02.Kernel64/Source/Console.c	/^void kClearScreen(void)$/;"	f
-kCls	02.Kernel64/Source/ConsoleShell.c	/^void kCls(const char* pcParameterBuffer)$/;"	f
+kClearTS	02.Kernel64/Source/AssemblyUtility.asm	/^kClearTS:$/;"	l
+kCloseDirectory	02.Kernel64/Source/FileSystem.c	/^int kCloseDirectory(DIR* pstDirectory)$/;"	f
+kCloseFile	02.Kernel64/Source/FileSystem.c	/^int kCloseFile(FILE* pstFile)$/;"	f
+kCls	02.Kernel64/Source/ConsoleShell.c	/^static void kCls(const char* pcParameterBuffer)$/;"	f	file:
 kCommonExceptionHandler	02.Kernel64/Source/InterruptHandler.c	/^void kCommonExceptionHandler(int iVectorNumber,QWORD qwErrorCode)$/;"	f
 kCommonInterruptHandler	02.Kernel64/Source/InterruptHandler.c	/^void kCommonInterruptHandler(int iVectorNumber)$/;"	f
 kConsoleManagerStruct	02.Kernel64/Source/Console.h	/^typedef struct kConsoleManagerStruct$/;"	s
 kConsolePrintString	02.Kernel64/Source/Console.c	/^int kConsolePrintString(const char* pcBuffer)$/;"	f
+kContextStruct	02.Kernel64/Source/Task.h	/^typedef struct kContextStruct$/;"	s
+kConvertDayOfWeekToString	02.Kernel64/Source/RTC.c	/^char* kConvertDayOfWeekToString(BYTE bDayOfWeek)$/;"	f
 kConvertScanCodeAndPutQueue	02.Kernel64/Source/Keyboard.c	/^BOOL kConvertScanCodeAndPutQueue(BYTE bScanCode)$/;"	f
 kConvertScanCodeToASCIICode	02.Kernel64/Source/Keyboard.c	/^BOOL kConvertScanCodeToASCIICode(BYTE bScanCode,BYTE* pbASCIICODE,BOOL* pbFlags)$/;"	f
-kConvertScanCodeToASCIICode	temp/Keyboard.c	/^BOOL kConvertScanCodeToASCIICode(BYTE bScanCode,BYTE* pbASCIICODE,BOOL* pbFlags)$/;"	f
-kConvertScanCodeToASCIICode	temp2/Keyboard.c	/^BOOL kConvertScanCodeToASCIICode( BYTE bScanCode, BYTE* pbASCIICode, BOOL* pbFlags )$/;"	f
 kCopyKernel64ImageTo2Mbyte	01.Kernel32/Source/main.c	/^void kCopyKernel64ImageTo2Mbyte(void)$/;"	f
+kCreateFile	02.Kernel64/Source/FileSystem.c	/^static BOOL kCreateFile(const char* pcFileName,DIRECTORYENTRY* pstEntry,int* piDirectoryEntryIndex)$/;"	f	file:
+kCreateFileInRootDirectory	02.Kernel64/Source/ConsoleShell.c	/^static void kCreateFileInRootDirectory(const char* pcParameterBuffer)$/;"	f	file:
+kCreateTask	02.Kernel64/Source/Task.c	/^TCB* kCreateTask(QWORD qwFlags,void* pvMemoryAddress,QWORD qwMemorySize,QWORD qwEntryPointAddress)$/;"	f
+kCreateTestTask	02.Kernel64/Source/ConsoleShell.c	/^static void kCreateTestTask(const char* pcParameterBuffer)$/;"	f	file:
+kCreateThreadTask	02.Kernel64/Source/ConsoleShell.c	/^static void kCreateThreadTask(void)$/;"	f	file:
 kDecimalStringToLong	02.Kernel64/Source/Utility.c	/^long kDecimalStringToLong(const char* pcBuffer)$/;"	f
 kDecimalTostring	02.Kernel64/Source/Utility.c	/^int kDecimalTostring(long lValue,char* pcBuffer)$/;"	f
+kDecreaseProcessorTime	02.Kernel64/Source/Task.c	/^void kDecreaseProcessorTime(void)$/;"	f
+kDeleteFileInRootDirectory	02.Kernel64/Source/ConsoleShell.c	/^static void kDeleteFileInRootDirectory(const char* pcParameterBuffer)$/;"	f	file:
+kDeviceNotAvailableHandler	02.Kernel64/Source/InterruptHandler.c	/^void kDeviceNotAvailableHandler(int iVectorNumber)$/;"	f
+kDirectoryEntryStruct	02.Kernel64/Source/FileSystem.h	/^typedef struct kDirectoryEntryStruct$/;"	s
+kDirectoryHandleStruct	02.Kernel64/Source/FileSystem.h	/^typedef struct kDirectoryHandleStruct$/;"	s
 kDisableInterrupt	02.Kernel64/Source/AssemblyUtility.asm	/^kDisableInterrupt:$/;"	l
-kDummyHandler	temp/Descriptor.c	/^void kDummyHandler(void)$/;"	f
-kDummyHandler	temp2/Descriptor.c	/^void kDummyHandler( void )$/;"	f
+kDropCharactorThread	02.Kernel64/Source/ConsoleShell.c	/^static void kDropCharactorThread(void)$/;"	f	file:
+kDynamicMemoryManagerStruct	02.Kernel64/Source/DynamicMemory.h	/^typedef struct kDynamicMemoryManagerStruct$/;"	s
 kEnableA20Gate	02.Kernel64/Source/Keyboard.c	/^void kEnableA20Gate(void)$/;"	f
-kEnableA20Gate	temp/Keyboard.c	/^void kEnableA20Gate(void)$/;"	f
-kEnableA20Gate	temp2/Keyboard.c	/^void kEnableA20Gate( void )$/;"	f
 kEnableInterrupt	02.Kernel64/Source/AssemblyUtility.asm	/^kEnableInterrupt:$/;"	l
+kEndTask	02.Kernel64/Source/Task.c	/^BOOL kEndTask(QWORD qwTaskID)$/;"	f
 kExecuteCommand	02.Kernel64/Source/ConsoleShell.c	/^void kExecuteCommand(const char* pcCommandBuffer)$/;"	f
-kGDTEntry16Struct	temp2/Descriptor.h	/^typedef struct kGDTEntry16Struct$/;"	s
+kExitTask	02.Kernel64/Source/Task.c	/^void kExitTask(void)$/;"	f
+kFPUTestTask	02.Kernel64/Source/ConsoleShell.c	/^static void kFPUTestTask(void)$/;"	f	file:
+kFileDirectoryHandleStruct	02.Kernel64/Source/FileSystem.h	/^typedef struct kFileDirectoryHandleStruct$/;"	s
+kFileHandleStruct	02.Kernel64/Source/FileSystem.h	/^typedef struct kFileHandleStruct$/;"	s
+kFileSystemManagerStruct	02.Kernel64/Source/FileSystem.h	/^typedef struct kFileSystemManagerStruct$/;"	s
+kFindDirectoryEntry	02.Kernel64/Source/FileSystem.c	/^static int kFindDirectoryEntry(const char* pcFileName,DIRECTORYENTRY* pstEntry)$/;"	f	file:
+kFindFreeBlockInBitmap	02.Kernel64/Source/DynamicMemory.c	/^static int kFindFreeBlockInBitmap(int iBlockListIndex)$/;"	f	file:
+kFindFreeCluster	02.Kernel64/Source/FileSystem.c	/^static DWORD kFindFreeCluster(void)$/;"	f	file:
+kFindFreeDirectoryEntry	02.Kernel64/Source/FileSystem.c	/^static int kFindFreeDirectoryEntry(void)$/;"	f	file:
+kFindList	02.Kernel64/Source/List.c	/^void* kFindList(const LIST* pstList,QWORD qwID)$/;"	f
+kFormat	02.Kernel64/Source/FileSystem.c	/^BOOL kFormat(void)$/;"	f
+kFormatHDD	02.Kernel64/Source/ConsoleShell.c	/^static void kFormatHDD(const char* pcParameterBuffer)$/;"	f	file:
+kFreeBuddyBlock	02.Kernel64/Source/DynamicMemory.c	/^static BOOL kFreeBuddyBlock(int iBlockListIndex,int iBlockOffset)$/;"	f	file:
+kFreeClusterUtilEnd	02.Kernel64/Source/FileSystem.c	/^static BOOL kFreeClusterUtilEnd(DWORD dwClusterIndex)$/;"	f	file:
+kFreeFileDirectoryHandle	02.Kernel64/Source/FileSystem.c	/^static void kFreeFileDirectoryHandle(FILE* pstFile)$/;"	f	file:
+kFreeMemory	02.Kernel64/Source/DynamicMemory.c	/^BOOL kFreeMemory(void* pvAddress)$/;"	f
+kFreeTCB	02.Kernel64/Source/Task.c	/^static void kFreeTCB(QWORD qwID)$/;"	f	file:
 kGDTEntry16struct	02.Kernel64/Source/Descriptor.h	/^typedef struct kGDTEntry16struct$/;"	s
-kGDTEntry16struct	temp/Descriptor.h	/^typedef struct kGDTEntry16struct$/;"	s
 kGDTEntry8Struct	02.Kernel64/Source/Descriptor.h	/^typedef struct kGDTEntry8Struct$/;"	s
-kGDTEntry8Struct	temp/Descriptor.h	/^typedef struct kGDTEntry8Struct$/;"	s
-kGDTEntry8Struct	temp2/Descriptor.h	/^typedef struct kGDTEntry8Struct$/;"	s
 kGDTRStruct	02.Kernel64/Source/Descriptor.h	/^typedef struct kGDTRStruct$/;"	s
-kGDTRStruct	temp/Descriptor.h	/^typedef struct kGDTRStruct$/;"	s
-kGDTRStruct	temp2/Descriptor.h	/^typedef struct kGDTRStruct$/;"	s
+kGetBlockListIndexOfMatchSize	02.Kernel64/Source/DynamicMemory.c	/^static int kGetBlockListIndexOfMatchSize(QWORD qwAlignedSize)$/;"	f	file:
+kGetBuddyBlockSize	02.Kernel64/Source/DynamicMemory.c	/^static QWORD kGetBuddyBlockSize(QWORD qwSize)$/;"	f	file:
 kGetCh	02.Kernel64/Source/Console.c	/^BYTE kGetCh(void)$/;"	f
+kGetClusterLinkData	02.Kernel64/Source/FileSystem.c	/^static BOOL kGetClusterLinkData(DWORD dwClusterIndex,DWORD* pdwData)$/;"	f	file:
 kGetCursor	02.Kernel64/Source/Console.c	/^void kGetCursor(int* piX,int* piY)$/;"	f
+kGetDirectoryEntryData	02.Kernel64/Source/FileSystem.c	/^static BOOL kGetDirectoryEntryData(int iIndex,DIRECTORYENTRY* pstEntry)$/;"	f	file:
+kGetDynamicMemoryInformation	02.Kernel64/Source/DynamicMemory.c	/^void kGetDynamicMemoryInformation(QWORD* pqwDynamicMemoryStartAddress,QWORD* pqwDynamicMemoryTotalSize,QWORD* pqwMetaDataSize,QWORD* pqwUsedMemorySize)$/;"	f
+kGetDynamicMemoryManager	02.Kernel64/Source/DynamicMemory.c	/^DYNAMICMEMORY* kGetDynamicMemoryManager(void)$/;"	f
+kGetFileSystemInformation	02.Kernel64/Source/FileSystem.c	/^void kGetFileSystemInformation(FILESYSTEMMANAGER* pstManager)$/;"	f
+kGetFlagInBitmap	02.Kernel64/Source/DynamicMemory.c	/^static BYTE kGetFlagInBitmap(int iBlockListIndex,int iOffset)$/;"	f	file:
+kGetHDDInformation	02.Kernel64/Source/FileSystem.c	/^BOOL kGetHDDInformation(HDDINFORMATION* pstInformation)$/;"	f
+kGetHeaderFromList	02.Kernel64/Source/List.c	/^void* kGetHeaderFromList(const LIST* pstList)$/;"	f
 kGetKeyFromKeyQueue	02.Kernel64/Source/Keyboard.c	/^BOOL kGetKeyFromKeyQueue(KEYDATA* pstData)$/;"	f
 kGetKeyboardScanCode	02.Kernel64/Source/Keyboard.c	/^BYTE kGetKeyboardScanCode(void)$/;"	f
-kGetKeyboardScanCode	temp/Keyboard.c	/^BYTE kGetKeyboardScanCode(void)$/;"	f
-kGetKeyboardScanCode	temp2/Keyboard.c	/^BYTE kGetKeyboardScanCode( void )$/;"	f
+kGetLastFPUUsedTaskID	02.Kernel64/Source/Task.c	/^QWORD kGetLastFPUUsedTaskID(void)$/;"	f
+kGetListCount	02.Kernel64/Source/List.c	/^int kGetListCount(const LIST* pstList)$/;"	f
+kGetNextFromList	02.Kernel64/Source/List.c	/^void* kGetNextFromList(const LIST* pstList,void* pstCurrent)$/;"	f
 kGetNextParameter	02.Kernel64/Source/ConsoleShell.c	/^int kGetNextParameter(PARAMETERLIST* pstList,char* pcParameter)$/;"	f
+kGetNextTaskToRun	02.Kernel64/Source/Task.c	/^static TCB* kGetNextTaskToRun(void)	$/;"	f	file:
+kGetPreviousFromList	02.Kernel64/Source/List.c	/^void* kGetPreviousFromList(const LIST* pstList,void* pstCurrent)$/;"	f
+kGetProcessByThread	02.Kernel64/Source/Task.c	/^static TCB* kGetProcessByThread(TCB* pstThread)$/;"	f	file:
+kGetProcessorLoad	02.Kernel64/Source/Task.c	/^QWORD kGetProcessorLoad(void)$/;"	f
 kGetQueue	02.Kernel64/Source/Queue.c	/^BOOL kGetQueue(QUEUE* pstQueue,void* pvData)$/;"	f
+kGetReadyTaskCount	02.Kernel64/Source/Task.c	/^int kGetReadyTaskCount(void)$/;"	f
+kGetRunningTask	02.Kernel64/Source/Task.c	/^TCB* kGetRunningTask(void)$/;"	f
+kGetTCBInTCBPool	02.Kernel64/Source/Task.c	/^TCB* kGetTCBInTCBPool(int iOffset)$/;"	f
+kGetTailFromList	02.Kernel64/Source/List.c	/^void* kGetTailFromList(const LIST* pstList)$/;"	f
+kGetTaskCount	02.Kernel64/Source/Task.c	/^int kGetTaskCount(void)$/;"	f
+kGetTickCount	02.Kernel64/Source/Utility.c	/^QWORD kGetTickCount(void)$/;"	f
 kGetTotalRAMSize	02.Kernel64/Source/Utility.c	/^QWORD kGetTotalRAMSize(void)$/;"	f
-kHelp	02.Kernel64/Source/ConsoleShell.c	/^void kHelp(const char* pcParameterBuffer)$/;"	f
+kHDDHandler	02.Kernel64/Source/InterruptHandler.c	/^void kHDDHandler(int iVectorNumber)$/;"	f
+kHDDInformationStruct	02.Kernel64/Source/HardDisk.h	/^typedef struct kHDDInformationStruct$/;"	s
+kHDDManagerStruct	02.Kernel64/Source/HardDisk.h	/^typedef struct kHDDManagerStruct$/;"	s
+kHaltProcessorByLoad	02.Kernel64/Source/Task.c	/^void kHaltProcessorByLoad(void)$/;"	f
+kHelp	02.Kernel64/Source/ConsoleShell.c	/^static void kHelp(const char* pcParameterBuffer)$/;"	f	file:
 kHexStringToQword	02.Kernel64/Source/Utility.c	/^QWORD kHexStringToQword(const char* pcBuffer)$/;"	f
 kHexToString	02.Kernel64/Source/Utility.c	/^int kHexToString(QWORD qwValue,char* pcBuffer)$/;"	f
+kHlt	02.Kernel64/Source/AssemblyUtility.asm	/^kHlt:$/;"	l
 kIDTEntryStruct	02.Kernel64/Source/Descriptor.h	/^typedef struct kIDTEntryStruct$/;"	s
-kIDTEntryStruct	temp/Descriptor.h	/^typedef struct kIDTEntryStruct$/;"	s
-kIDTEntryStruct	temp2/Descriptor.h	/^typedef struct kIDTEntryStruct$/;"	s
 kISR15	02.Kernel64/Source/ISR.asm	/^kISR15:$/;"	l
 kISRAlignmentCheck	02.Kernel64/Source/ISR.asm	/^kISRAlignmentCheck:$/;"	l
 kISRBoundRangeExceeded	02.Kernel64/Source/ISR.asm	/^kISRBoundRangeExceeded:$/;"	l
@@ -733,125 +725,179 @@ kISRSlavePIC	02.Kernel64/Source/ISR.asm	/^kISRSlavePIC:$/;"	l
 kISRStackSegmentFault	02.Kernel64/Source/ISR.asm	/^kISRStackSegmentFault:$/;"	l
 kISRTimer	02.Kernel64/Source/ISR.asm	/^kISRTimer:$/;"	l
 kIToA	02.Kernel64/Source/Utility.c	/^int kIToA(long lValue,char* pcBuffer,int iRadix)$/;"	f
+kIdleTask	02.Kernel64/Source/Task.c	/^void kIdleTask(void)$/;"	f
 kInPortByte	02.Kernel64/Source/AssemblyUtility.asm	/^kInPortByte:$/;"	l
-kInPortByte	temp/AssemblyUtility.asm	/^kInPortByte:$/;"	l
-kInPortByte	temp2/AssemblyUtility.asm	/^kInPortByte:$/;"	l
+kInPortWord	02.Kernel64/Source/AssemblyUtility.asm	/^kInPortWord:$/;"	l
 kInitializeConsole	02.Kernel64/Source/Console.c	/^void kInitializeConsole(int iX,int iY)$/;"	f
+kInitializeDynamicMemory	02.Kernel64/Source/DynamicMemory.c	/^void kInitializeDynamicMemory(void)$/;"	f
+kInitializeFPU	02.Kernel64/Source/AssemblyUtility.asm	/^kInitializeFPU:$/;"	l
+kInitializeFileSystem	02.Kernel64/Source/FileSystem.c	/^BOOL kInitializeFileSystem(void)$/;"	f
 kInitializeGDTTableAndTSS	02.Kernel64/Source/Descriptor.c	/^void kInitializeGDTTableAndTSS (void)$/;"	f
-kInitializeGDTTableAndTSS	temp/Descriptor.c	/^void kInitializeGDTTableAndTSS (void)$/;"	f
-kInitializeGDTTableAndTSS	temp2/Descriptor.c	/^void kInitializeGDTTableAndTSS( void )$/;"	f
+kInitializeHDD	02.Kernel64/Source/HardDisk.c	/^BOOL kInitializeHDD(void)$/;"	f
 kInitializeIDTTables	02.Kernel64/Source/Descriptor.c	/^void kInitializeIDTTables(void)$/;"	f
-kInitializeIDTTables	temp/Descriptor.c	/^void kInitializeIDTTables(void)$/;"	f
-kInitializeIDTTables	temp2/Descriptor.c	/^void kInitializeIDTTables( void )$/;"	f
 kInitializeKernel64Area	01.Kernel32/Source/main.c	/^BOOL kInitializeKernel64Area(void)$/;"	f
 kInitializeKeyboard	02.Kernel64/Source/Keyboard.c	/^BOOL kInitializeKeyboard(void)$/;"	f
+kInitializeList	02.Kernel64/Source/List.c	/^void kInitializeList(LIST* pstList)$/;"	f
+kInitializeMutex	02.Kernel64/Source/Synchronization.c	/^void kInitializeMutex(MUTEX* pstMutex)$/;"	f
 kInitializePIC	02.Kernel64/Source/PIC.c	/^void kInitializePIC(void)$/;"	f
+kInitializePIT	02.Kernel64/Source/PIT.c	/^void kInitializePIT(WORD wCount,BOOL bPeriodic)$/;"	f
 kInitializePageTables	01.Kernel32/Source/Page.c	/^void kInitializePageTables(void)$/;"	f
 kInitializeParameter	02.Kernel64/Source/ConsoleShell.c	/^void kInitializeParameter(PARAMETERLIST* pstList,const char* pcParameter)$/;"	f
 kInitializeQueue	02.Kernel64/Source/Queue.c	/^void kInitializeQueue(QUEUE* pstQueue,void* pvQueueBuffer,int iMaxDataCount,int iDataSize)$/;"	f
+kInitializeScheduler	02.Kernel64/Source/Task.c	/^void kInitializeScheduler(void)$/;"	f
+kInitializeTCBPool	02.Kernel64/Source/Task.c	/^static void kInitializeTCBPool(void)$/;"	f	file:
 kInitializeTSSSegment	02.Kernel64/Source/Descriptor.c	/^void kInitializeTSSSegment(TSSSEGMENT* pstTSS)$/;"	f
-kInitializeTSSSegment	temp/Descriptor.c	/^void kInitializeTSSSegment(TSSSEGMENT* pstTSS)$/;"	f
-kInitializeTSSSegment	temp2/Descriptor.c	/^void kInitializeTSSSegment( TSSSEGMENT* pstTSS )$/;"	f
 kIsAlphabetScanCode	02.Kernel64/Source/Keyboard.c	/^BOOL kIsAlphabetScanCode(BYTE bScanCode)$/;"	f
-kIsAlphabetScanCode	temp/Keyboard.c	/^BOOL kIsAlphabetScanCode(BYTE bScanCode)$/;"	f
-kIsAlphabetScanCode	temp2/Keyboard.c	/^BOOL kIsAlphabetScanCode( BYTE bScanCode )$/;"	f
+kIsFileOpened	02.Kernel64/Source/FileSystem.c	/^BOOL kIsFileOpened(const DIRECTORYENTRY* pstEntry)$/;"	f
 kIsInputBufferFull	02.Kernel64/Source/Keyboard.c	/^BOOL kIsInputBufferFull(void)$/;"	f
-kIsInputBufferFull	temp/Keyboard.c	/^BOOL kIsInputBufferFull(void)$/;"	f
-kIsInputBufferFull	temp2/Keyboard.c	/^BOOL kIsInputBufferFull( void )$/;"	f
 kIsMemoryEnough	01.Kernel32/Source/main.c	/^BOOL kIsMemoryEnough(void)$/;"	f
 kIsNumberOrSymbolScanCode	02.Kernel64/Source/Keyboard.c	/^BOOL kIsNumberOrSymbolScanCode(BYTE bScanCode)$/;"	f
-kIsNumberOrSymbolScanCode	temp/Keyboard.c	/^BOOL kIsNumberOrSymbolScanCode(BYTE bScanCode)$/;"	f
-kIsNumberOrSymbolScanCode	temp2/Keyboard.c	/^BOOL kIsNumberOrSymbolScanCode( BYTE bScanCode )$/;"	f
 kIsNumberPadScanCode	02.Kernel64/Source/Keyboard.c	/^BOOL kIsNumberPadScanCode(BYTE bScanCode)$/;"	f
-kIsNumberPadScanCode	temp/Keyboard.c	/^BOOL kIsNumberPadScanCode(BYTE bScanCode)$/;"	f
-kIsNumberPadScanCode	temp2/Keyboard.c	/^BOOL kIsNumberPadScanCode( BYTE bScanCode )$/;"	f
 kIsOutputBufferFull	02.Kernel64/Source/Keyboard.c	/^BOOL kIsOutputBufferFull(void)$/;"	f
-kIsOutputBufferFull	temp/Keyboard.c	/^BOOL kIsOutputBufferFull(void)$/;"	f
-kIsOutputBufferFull	temp2/Keyboard.c	/^BOOL kIsOutputBufferFull( void )$/;"	f
+kIsProcessorTimeExpired	02.Kernel64/Source/Task.c	/^BOOL kIsProcessorTimeExpired(void)$/;"	f
 kIsQueueEmpty	02.Kernel64/Source/Queue.c	/^BOOL kIsQueueEmpty(const QUEUE* pstQueue)$/;"	f
 kIsQueueFull	02.Kernel64/Source/Queue.c	/^BOOL kIsQueueFull(const QUEUE* pstQueue)$/;"	f
+kIsTaskExist	02.Kernel64/Source/Task.c	/^BOOL kIsTaskExist(QWORD qwID)$/;"	f
 kIsUseCombinedCode	02.Kernel64/Source/Keyboard.c	/^BOOL kIsUseCombinedCode(BYTE bScanCode)$/;"	f
-kIsUseCombinedCode	temp/Keyboard.c	/^BOOL kIsUseCombinedCode(BYTE bScanCode)$/;"	f
-kIsUseCombinedCode	temp2/Keyboard.c	/^BOOL kIsUseCombinedCode( BOOL bScanCode )$/;"	f
 kKeyDataStruct	02.Kernel64/Source/Keyboard.h	/^typedef struct kKeyDataStruct$/;"	s
 kKeyMappingEntryStruct	02.Kernel64/Source/Keyboard.h	/^typedef struct kKeyMappingEntryStruct$/;"	s
-kKeyMappingEntryStruct	temp/Keyboard.h	/^typedef struct kKeyMappingEntryStruct$/;"	s
-kKeyMappingEntryStruct	temp2/Keyboard.h	/^typedef struct kKeyMappingEntryStruct$/;"	s
 kKeyboardHandler	02.Kernel64/Source/InterruptHandler.c	/^void kKeyboardHandler(int iVectorNumber)$/;"	f
 kKeyboardManagerStruct	02.Kernel64/Source/Keyboard.h	/^typedef struct kKeyboardManagerStruct$/;"	s
-kKeyboardManagerStruct	temp/Keyboard.h	/^typedef struct kKeyboardManagerStruct$/;"	s
-kKeyboardManagerStruct	temp2/Keyboard.h	/^typedef struct kKeyboardManagerStruct$/;"	s
+kKillTask	02.Kernel64/Source/ConsoleShell.c	/^static void kKillTask(const char* pcParameterBuffer)$/;"	f	file:
+kListLinkStruct	02.Kernel64/Source/List.h	/^typedef struct kListLinkStruct$/;"	s
+kListManagerStruct	02.Kernel64/Source/List.h	/^typedef struct kListManagerStruct$/;"	s
+kLoadFPUContext	02.Kernel64/Source/AssemblyUtility.asm	/^kLoadFPUContext:$/;"	l
 kLoadGDTR	02.Kernel64/Source/AssemblyUtility.asm	/^kLoadGDTR:$/;"	l
-kLoadGDTR	temp/AssemblyUtility.asm	/^kLoadGDTR:$/;"	l
-kLoadGDTR	temp2/AssemblyUtility.asm	/^kLoadGDTR:$/;"	l
 kLoadIDTR	02.Kernel64/Source/AssemblyUtility.asm	/^kLoadIDTR:$/;"	l
-kLoadIDTR	temp/AssemblyUtility.asm	/^kLoadIDTR:$/;"	l
-kLoadIDTR	temp2/AssemblyUtility.asm	/^kLoadIDTR:$/;"	l
 kLoadTR	02.Kernel64/Source/AssemblyUtility.asm	/^kLoadTR:$/;"	l
-kLoadTR	temp/AssemblyUtility.asm	/^kLoadTR:$/;"	l
-kLoadTR	temp2/AssemblyUtility.asm	/^kLoadTR:$/;"	l
+kLock	02.Kernel64/Source/Synchronization.c	/^void kLock(MUTEX* pstMutex)$/;"	f
+kLockForSystemData	02.Kernel64/Source/Synchronization.c	/^BOOL kLockForSystemData(void)$/;"	f
+kMBRStruct	02.Kernel64/Source/FileSystem.h	/^typedef struct kMBRStruct$/;"	s
 kMaskPICInterrupt	02.Kernel64/Source/PIC.c	/^void kMaskPICInterrupt(WORD wIRQBitmask)$/;"	f
+kMatrixProcess	02.Kernel64/Source/ConsoleShell.c	/^static void kMatrixProcess(void)$/;"	f	file:
+kMeasurPrecessorSpeed	02.Kernel64/Source/ConsoleShell.c	/^static void kMeasurPrecessorSpeed(const char* pcParameterBuffer)$/;"	f	file:
 kMemCmp	02.Kernel64/Source/Utility.c	/^int kMemCmp(const void* pvDestination,const void* pvSource,int iSize)$/;"	f
-kMemCmp	temp/Utility.c	/^int kMemCmp(const void* pvDestination,const void* pvSource,int iSize)$/;"	f
-kMemCmp	temp2/Utility.c	/^int kMemCmp( const void* pvDestination, const void* pvSource, int iSize )$/;"	f
 kMemCpy	02.Kernel64/Source/Utility.c	/^int kMemCpy(void* pvDestination,const void* pvSource,int iSize)$/;"	f
-kMemCpy	temp/Utility.c	/^int kMemCpy(void* pvDestination,const void* pvSource,int iSize)$/;"	f
-kMemCpy	temp2/Utility.c	/^int kMemCpy( void* pvDestination, const void* pvSource, int iSize )$/;"	f
 kMemSet	02.Kernel64/Source/Utility.c	/^void kMemSet(void* pvDestination,BYTE bData,int iSize)$/;"	f
-kMemSet	temp/Utility.c	/^void kMemSet(void* pvDestination,BYTE bData,int iSize)$/;"	f
-kMemSet	temp2/Utility.c	/^void kMemSet( void* pvDestination, BYTE bData, int iSize )$/;"	f
+kMount	02.Kernel64/Source/FileSystem.c	/^BOOL kMount(void)$/;"	f
+kMountHDD	02.Kernel64/Source/ConsoleShell.c	/^static void kMountHDD(const char* pcParameterBuffer)$/;"	f	file:
+kMutextStruct	02.Kernel64/Source/Synchronization.h	/^typedef struct kMutextStruct$/;"	s
+kOpenDirectory	02.Kernel64/Source/FileSystem.c	/^DIR* kOpenDirectory(const char* pcDirectoryName)$/;"	f
+kOpenFile	02.Kernel64/Source/FileSystem.c	/^FILE* kOpenFile(const char* pcFileName,const char* pcMode)$/;"	f
 kOutPortByte	02.Kernel64/Source/AssemblyUtility.asm	/^kOutPortByte:$/;"	l
-kOutPortByte	temp/AssemblyUtility.asm	/^kOutPortByte:$/;"	l
-kOutPortByte	temp2/AssemblyUtility.asm	/^kOutPortByte:$/;"	l
+kOutPortWord	02.Kernel64/Source/AssemblyUtility.asm	/^kOutPortWord:$/;"	l
 kPageTableEntryStruct	01.Kernel32/Source/Page.h	/^typedef struct kPageTableEntryStruct$/;"	s
 kParameterListStruct	02.Kernel64/Source/ConsoleShell.h	/^typedef struct kParameterListStruct$/;"	s
+kPartitionStruct	02.Kernel64/Source/FileSystem.h	/^typedef struct kPartitionStruct$/;"	s
+kPrintNumberTask	02.Kernel64/Source/ConsoleShell.c	/^static void kPrintNumberTask(void)$/;"	f	file:
 kPrintString	01.Kernel32/Source/main.c	/^void kPrintString(int iX,int iY,const char* pcString)$/;"	f
-kPrintString	temp/main.c	/^void kPrintString(int iX,int iY,const char* pcString)$/;"	f
-kPrintString	temp2/main.c	/^void kPrintString( int iX, int iY, const char* pcString )$/;"	f
 kPrintStringXY	02.Kernel64/Source/Console.c	/^void kPrintStringXY(int iX,int iY,const char* pcString)$/;"	f
 kPrintf	02.Kernel64/Source/Console.c	/^void kPrintf(const char* pcFormatString,...)$/;"	f
 kPutQueue	02.Kernel64/Source/Queue.c	/^BOOL kPutQueue(QUEUE* pstQueue,const void* pvData)$/;"	f
 kQueueManagerStruct	02.Kernel64/Source/Queue.h	/^typedef struct kQueueManagerStruct$/;"	s
+kRandom	02.Kernel64/Source/ConsoleShell.c	/^QWORD kRandom(void)$/;"	f
+kRandomAllocationTask	02.Kernel64/Source/ConsoleShell.c	/^static void kRandomAllocationTask(void)$/;"	f	file:
 kReadCPUID	01.Kernel32/Source/ModeSwitch.asm	/^kReadCPUID:$/;"	l
+kReadCluster	02.Kernel64/Source/FileSystem.c	/^static BOOL kReadCluster(DWORD dwOffset,BYTE* pbBuffer)$/;"	f	file:
+kReadClusterLinkTable	02.Kernel64/Source/FileSystem.c	/^static BOOL kReadClusterLinkTable(DWORD dwOffset,BYTE* pbBuffer)$/;"	f	file:
+kReadCounter0	02.Kernel64/Source/PIT.c	/^WORD kReadCounter0(void)$/;"	f
+kReadDataFromFile	02.Kernel64/Source/ConsoleShell.c	/^static void kReadDataFromFile(const char* pcParameterBuffer)$/;"	f	file:
+kReadDirectory	02.Kernel64/Source/FileSystem.c	/^struct kDirectoryEntryStruct* kReadDirectory(DIR* pstDirectory)$/;"	f
+kReadFile	02.Kernel64/Source/FileSystem.c	/^DWORD kReadFile(void* pvBuffer,DWORD dwSize,DWORD dwCount,FILE* pstFile)$/;"	f
+kReadHDDInformation	02.Kernel64/Source/HardDisk.c	/^BOOL kReadHDDInformation(BOOL bPrimary,BOOL bMaster,HDDINFORMATION* pstHDDInformation)$/;"	f
+kReadHDDSector	02.Kernel64/Source/HardDisk.c	/^int kReadHDDSector(BOOL bPrimary,BOOL bMaster,DWORD dwLBA,int iSectorCount,char* pcBuffer)$/;"	f
+kReadHDDStatus	02.Kernel64/Source/HardDisk.c	/^static BYTE kReadHDDStatus(BOOL bPrimary)$/;"	f	file:
 kReadRFLAGS	02.Kernel64/Source/AssemblyUtility.asm	/^kReadRFLAGS:$/;"	l
+kReadRTCData	02.Kernel64/Source/RTC.c	/^void kReadRTCData(WORD* pwYear,BYTE* pbMonth,BYTE* pbDayOfMonth,BYTE* pbDayOfWeek)$/;"	f
+kReadRTCTime	02.Kernel64/Source/RTC.c	/^void kReadRTCTime(BYTE* pbHour,BYTE* pbMinute,BYTE* pbSecond)$/;"	f
+kReadSector	02.Kernel64/Source/ConsoleShell.c	/^static void kReadSector(const char* pcParameterBuffer)$/;"	f	file:
+kReadTSC	02.Kernel64/Source/AssemblyUtility.asm	/^kReadTSC:$/;"	l
+kReadTimeStampCounter	02.Kernel64/Source/ConsoleShell.c	/^static void kReadTimeStampCounter(const char* pcParameterBuffer)$/;"	f	file:
 kReboot	02.Kernel64/Source/Keyboard.c	/^void kReboot(void)$/;"	f
-kReboot	temp/Keyboard.c	/^void kReboot(void)$/;"	f
-kReboot	temp2/Keyboard.c	/^void kReboot( void )$/;"	f
+kRemoveFile	02.Kernel64/Source/FileSystem.c	/^int kRemoveFile(const char* pcFileName)$/;"	f
+kRemoveList	02.Kernel64/Source/List.c	/^void* kRemoveList(LIST* pstList,QWORD qwID)$/;"	f
+kRemoveListFromHeader	02.Kernel64/Source/List.c	/^void* kRemoveListFromHeader(LIST* pstList)$/;"	f
+kRemoveListFromTail	02.Kernel64/Source/List.c	/^void* kRemoveListFromTail(LIST* pstList)$/;"	f
+kRemoveTaskFromReadyList	02.Kernel64/Source/Task.c	/^static TCB* kRemoveTaskFromReadyList(QWORD qwTaskID)$/;"	f	file:
 kReverseString	02.Kernel64/Source/Utility.c	/^void kReverseString(char* pcBuffer)$/;"	f
+kRewindDirectory	02.Kernel64/Source/FileSystem.c	/^void kRewindDirectory(DIR* pstDirectory)$/;"	f
 kSPrintf	02.Kernel64/Source/Utility.c	/^int kSPrintf(char* pcBuffer,const char* pcFormatString,...)$/;"	f
+kSaveFPUContext	02.Kernel64/Source/AssemblyUtility.asm	/^kSaveFPUContext:$/;"	l
+kSchedule	02.Kernel64/Source/Task.c	/^void kSchedule(void)$/;"	f
+kScheduleInInterrupt	02.Kernel64/Source/Task.c	/^BOOL kScheduleInInterrupt(void)$/;"	f
+kSchedulerStruct	02.Kernel64/Source/Task.h	/^typedef struct kSchedulerStruct$/;"	s
+kSeekFile	02.Kernel64/Source/FileSystem.c	/^int kSeekFile(FILE* pstFile,int iOffset,int iOrigin)$/;"	f
 kSendEOIToPIC	02.Kernel64/Source/PIC.c	/^void kSendEOIToPIC(int iIRQNumber)$/;"	f
+kSetClusterLinkData	02.Kernel64/Source/FileSystem.c	/^static BOOL kSetClusterLinkData(DWORD dwClusterIndex,DWORD dwData)$/;"	f	file:
 kSetCursor	02.Kernel64/Source/Console.c	/^void kSetCursor(int iX,int iY)$/;"	f
+kSetDirectoryEntryData	02.Kernel64/Source/FileSystem.c	/^static BOOL kSetDirectoryEntryData(int iIndex,DIRECTORYENTRY* pstEntry)$/;"	f	file:
+kSetFlagInBitmap	02.Kernel64/Source/DynamicMemory.c	/^static void kSetFlagInBitmap(int iBlockListIndex,int iOffset,BYTE bFlag)$/;"	f	file:
 kSetGDTEntry16	02.Kernel64/Source/Descriptor.c	/^void kSetGDTEntry16(GDTENTRY16* pstEntry,QWORD qwBaseAddress,DWORD dwLimit,BYTE bUpperFlags,BYTE bLowerFlags,BYTE bType)$/;"	f
-kSetGDTEntry16	temp/Descriptor.c	/^void kSetGDTEntry16(GDTENTRY16* pstEntry,QWORD qwBaseAddress,DWORD dwLimit,BYTE bUpperFlags,BYTE bLowerFlags,BYTE bType)$/;"	f
-kSetGDTEntry16	temp2/Descriptor.c	/^void kSetGDTEntry16( GDTENTRY16* pstEntry, QWORD qwBaseAddress, DWORD dwLimit,$/;"	f
 kSetGDTEntry8	02.Kernel64/Source/Descriptor.c	/^void kSetGDTEntry8(GDTENTRY8* pstEntry,DWORD dwBaseAddress,DWORD dwLimit,BYTE bUpperFlags,BYTE bLowerFlags,BYTE bType)$/;"	f
-kSetGDTEntry8	temp/Descriptor.c	/^void kSetGDTEntry8(GDTENTRY8* pstEntry,DWORD dwBaseAddress,DWORD dwLimit,BYTE bUpperFlags,BYTE bLowerFlags,BYTE bType)$/;"	f
-kSetGDTEntry8	temp2/Descriptor.c	/^void kSetGDTEntry8( GDTENTRY8* pstEntry, DWORD dwBaseAddress, DWORD dwLimit,$/;"	f
+kSetHDDInterruptFlag	02.Kernel64/Source/HardDisk.c	/^void kSetHDDInterruptFlag(BOOL bPrimary,BOOL bFlag)$/;"	f
 kSetIDTEntry	02.Kernel64/Source/Descriptor.c	/^void kSetIDTEntry(IDTENTRY* pstEntry,void* pvHandler,WORD wSelector,BYTE bIST,BYTE bFlags,BYTE bType)$/;"	f
-kSetIDTEntry	temp/Descriptor.c	/^void kSetIDTEntry(IDTENTRY* pstEntry,void* pvHandler,WORD wSelector,BYTE bIST,BYTE bFlags,BYTE bType)$/;"	f
-kSetIDTEntry	temp2/Descriptor.c	/^void kSetIDTEntry( IDTENTRY* pstEntry, void* pvHandler, WORD wSelector, $/;"	f
 kSetInterruptFlag	02.Kernel64/Source/Utility.c	/^BOOL kSetInterruptFlag(BOOL bEnableInterrupt)$/;"	f
+kSetLastFPUUsedTaskID	02.Kernel64/Source/Task.c	/^void kSetLastFPUUsedTaskID(QWORD qwTaskID)$/;"	f
 kSetPageEntryData	01.Kernel32/Source/Page.c	/^void kSetPageEntryData(PTENTRY* pstEntry,DWORD dwUpperBaseAddress,DWORD dwLowerBaseAddress,DWORD dwLowerFlags,DWORD dwUpperFLAGS)$/;"	f
+kSetRunningTask	02.Kernel64/Source/Task.c	/^void kSetRunningTask(TCB* pstTask)$/;"	f
+kSetTS	02.Kernel64/Source/AssemblyUtility.asm	/^kSetTS:$/;"	l
+kSetTimer	02.Kernel64/Source/ConsoleShell.c	/^static void kSetTimer(const char* pcParameterBuffer)$/;"	f	file:
+kSetUpTask	02.Kernel64/Source/Task.c	/^static void kSetUpTask(TCB* pstTCB,QWORD qwFlags,QWORD qwEntryPointAddress,void* pvStackAddress,QWORD qwStackSize)$/;"	f	file:
 kShellCommandEntrystruct	02.Kernel64/Source/ConsoleShell.h	/^typedef struct kShellCommandEntrystruct$/;"	s
-kShowTotalRAMSize	02.Kernel64/Source/ConsoleShell.c	/^void kShowTotalRAMSize(const char* pcParameterBuffer)$/;"	f
-kShutdown	02.Kernel64/Source/ConsoleShell.c	/^void kShutdown(const char* pcParameterBuffer)$/;"	f
+kShowDateAndTime	02.Kernel64/Source/ConsoleShell.c	/^static void kShowDateAndTime(const char* pcParameterBuffer)$/;"	f	file:
+kShowDynamicMemoryInformation	02.Kernel64/Source/ConsoleShell.c	/^static void kShowDynamicMemoryInformation(const char* pcParameterBuffer)$/;"	f	file:
+kShowFileSystemInformation	02.Kernel64/Source/ConsoleShell.c	/^static void kShowFileSystemInformation(const char* pcParameterBuffer)$/;"	f	file:
+kShowHDDInformation	02.Kernel64/Source/ConsoleShell.c	/^static void kShowHDDInformation(const char* pcParameterBuffer)$/;"	f	file:
+kShowMatrix	02.Kernel64/Source/ConsoleShell.c	/^static void kShowMatrix(const char* pcParameterBuffer)$/;"	f	file:
+kShowRootDirectory	02.Kernel64/Source/ConsoleShell.c	/^static void kShowRootDirectory(const char* pcParameterBuffer)$/;"	f	file:
+kShowTaskList	02.Kernel64/Source/ConsoleShell.c	/^static void kShowTaskList(const char* pcParameterBuffer)$/;"	f	file:
+kShowTotalRAMSize	02.Kernel64/Source/ConsoleShell.c	/^static void kShowTotalRAMSize(const char* pcParameterBuffer)$/;"	f	file:
+kShutdown	02.Kernel64/Source/ConsoleShell.c	/^static void kShutdown(const char* pcParameterBuffer)$/;"	f	file:
+kSleep	02.Kernel64/Source/Utility.c	/^void kSleep(QWORD qwMillisecond)$/;"	f
 kStartConsoleShell	02.Kernel64/Source/ConsoleShell.c	/^void kStartConsoleShell(void)$/;"	f
 kStrLen	02.Kernel64/Source/Utility.c	/^int kStrLen(const char* pcBuffer)$/;"	f
-kStringToDecimalHexText	02.Kernel64/Source/ConsoleShell.c	/^void kStringToDecimalHexText(const char* pcParameterBuffer)$/;"	f
+kStringToDecimalHexText	02.Kernel64/Source/ConsoleShell.c	/^static void kStringToDecimalHexText(const char* pcParameterBuffer)$/;"	f	file:
+kSwapByteInWord	02.Kernel64/Source/HardDisk.c	/^static void kSwapByteInWord(WORD* pwData,int iWordCount)$/;"	f	file:
 kSwitchAndExecute64bitKernel	01.Kernel32/Source/ModeSwitch.asm	/^kSwitchAndExecute64bitKernel:$/;"	l
+kSwitchContext	02.Kernel64/Source/AssemblyUtility.asm	/^kSwitchContext:$/;"	l
+kTCBPoolManagerStruct	02.Kernel64/Source/Task.h	/^typedef struct kTCBPoolManagerStruct$/;"	s
 kTSSDataStruct	02.Kernel64/Source/Descriptor.h	/^typedef struct kTSSDataStruct$/;"	s
-kTSSDataStruct	temp/Descriptor.h	/^typedef struct kTSSDataStruct$/;"	s
-kTSSDataStruct	temp2/Descriptor.h	/^typedef struct kTSSDataStruct$/;"	s
+kTaskControlBlockStruct	02.Kernel64/Source/Task.h	/^typedef struct kTaskControlBlockStruct$/;"	s
+kTestAndSet	02.Kernel64/Source/AssemblyUtility.asm	/^kTestAndSet:$/;"	l
+kTestFileIO	02.Kernel64/Source/ConsoleShell.c	/^static void kTestFileIO(const char* pcParameterBuffer)$/;"	f	file:
+kTestMutex	02.Kernel64/Source/ConsoleShell.c	/^static void kTestMutex(const char* pcParameterBuffer)$/;"	f	file:
+kTestPIE	02.Kernel64/Source/ConsoleShell.c	/^static void kTestPIE(const char* pcParameterBuffer)$/;"	f	file:
+kTestRandomAllocation	02.Kernel64/Source/ConsoleShell.c	/^static void kTestRandomAllocation(const char* pcParameterBuffer)$/;"	f	file:
+kTestSequentialAllocation	02.Kernel64/Source/ConsoleShell.c	/^static void kTestSequentialAllocation(const char* pcParameterBuffer)$/;"	f	file:
+kTestTask1	02.Kernel64/Source/ConsoleShell.c	/^static void kTestTask1(void)$/;"	f	file:
+kTestTask2	02.Kernel64/Source/ConsoleShell.c	/^static void kTestTask2(void)$/;"	f	file:
+kTestThread	02.Kernel64/Source/ConsoleShell.c	/^static void kTestThread(const char* pcParameterBuffer)$/;"	f	file:
+kTimerHandler	02.Kernel64/Source/InterruptHandler.c	/^void kTimerHandler(int iVectorNumber)$/;"	f
+kUnlock	02.Kernel64/Source/Synchronization.c	/^void kUnlock(MUTEX* pstMutex)$/;"	f
+kUnlockForSystemData	02.Kernel64/Source/Synchronization.c	/^void kUnlockForSystemData(BOOL bInterruptFlag)$/;"	f
+kUpdateDirectoryEntry	02.Kernel64/Source/FileSystem.c	/^static BOOL kUpdateDirectoryEntry(FILEHANDLE* pstFileHandle)$/;"	f	file:
 kVSPrintf	02.Kernel64/Source/Utility.c	/^int kVSPrintf(char* pcBuffer,const char* pcFormatString,va_list ap)$/;"	f
+kWaitForHDDInterrupt	02.Kernel64/Source/HardDisk.c	/^static BOOL kWaitForHDDInterrupt(BOOL bPrimary)$/;"	f	file:
+kWaitForHDDNoBusy	02.Kernel64/Source/HardDisk.c	/^static BOOL kWaitForHDDNoBusy(BOOL bPrimary)$/;"	f	file:
+kWaitForHDDReady	02.Kernel64/Source/HardDisk.c	/^static BOOL kWaitForHDDReady(BOOL bPrimary)$/;"	f	file:
+kWaitUsingDirectPIT	02.Kernel64/Source/PIT.c	/^void kWaitUsingDirectPIT(WORD wCount)$/;"	f
+kWaitUsingPIT	02.Kernel64/Source/ConsoleShell.c	/^static void kWaitUsingPIT(const char* pcParameterBuffer)$/;"	f	file:
+kWriteCluster	02.Kernel64/Source/FileSystem.c	/^static BOOL kWriteCluster(DWORD dwOffset,BYTE* pbBuffer)$/;"	f	file:
+kWriteClusterLinkTable	02.Kernel64/Source/FileSystem.c	/^static BOOL kWriteClusterLinkTable(DWORD dwOffset,BYTE* pbBuffer)$/;"	f	file:
+kWriteDataToFile	02.Kernel64/Source/ConsoleShell.c	/^static void kWriteDataToFile(const char* pcParameterBuffer)$/;"	f	file:
+kWriteFile	02.Kernel64/Source/FileSystem.c	/^DWORD kWriteFile(const void* pvBuffer,DWORD dwSize,DWORD dwCount,FILE* pstFile)$/;"	f
+kWriteHDDSector	02.Kernel64/Source/HardDisk.c	/^int kWriteHDDSector(BOOL bPrimary,BOOL bMaster,DWORD dwLBA,int iSectorCount,char* pcBuffer)$/;"	f
+kWriteSector	02.Kernel64/Source/ConsoleShell.c	/^static void kWriteSector(const char* pcParameterBuffer)$/;"	f	file:
+kWriteZero	02.Kernel64/Source/FileSystem.c	/^BOOL kWriteZero(FILE* pstFile,DWORD dwCount)$/;"	f
 ltr	02.Kernel64/Source/AssemblyUtility.asm	/^	ltr di						; 파라미터 1(TSS 세그먼트 디스크립터의 오프셋)을 프로세서에 설정하여 TSS 세그먼트를 로드 $/;"	d
-ltr	temp/AssemblyUtility.asm	/^	ltr di						; 파라미터 1(TSS 세그먼트 디스크립터의 오프셋)을 프로세서에 설정하여 TSS 세그먼트를 로드 $/;"	d
-ltr	temp2/AssemblyUtility.asm	/^    ltr di          ; �Ķ���� 1(TSS ���׸�Ʈ ��ũ������ ������)�� ���μ�����$/;"	d
 main	01.Kernel32/Source/main.c	/^void main(void)$/;"	f
 main	02.Kernel64/Source/main.c	/^void main( void )$/;"	f
 main	04.Utility/00.ImageMaker/ImageMaker.c	/^int main(int argc, char* argv[])$/;"	f
-main	temp/main.c	/^void main(void)$/;"	f
-main	temp2/main.c	/^void main( void )$/;"	f
 main	testdata.c	/^int main()$/;"	f
+offsetof	02.Kernel64/Source/Types.h	15;"	d
+opendir	02.Kernel64/Source/FileSystem.h	50;"	d
+pbAllocatedBlockListIndex	02.Kernel64/Source/DynamicMemory.h	/^	BYTE* pbAllocatedBlockListIndex;$/;"	m	struct:kDynamicMemoryManagerStruct
+pbBitmap	02.Kernel64/Source/DynamicMemory.h	/^	BYTE* pbBitmap;$/;"	m	struct:kBitmapStruct
 pcBuffer	02.Kernel64/Source/ConsoleShell.h	/^	const char* pcBuffer;$/;"	m	struct:kParameterListStruct
 pcCommand	02.Kernel64/Source/ConsoleShell.h	/^	char* pcCommand;$/;"	m	struct:kShellCommandEntrystruct
 pcHelp	02.Kernel64/Source/ConsoleShell.h	/^	char* pcHelp;$/;"	m	struct:kShellCommandEntrystruct
@@ -860,59 +906,95 @@ pop	00.BootLoader/BootLoader.asm	/^	pop di$/;"	d
 pop	00.BootLoader/BootLoader.asm	/^	pop dx							; 함수에서 사용이 끝난 dx 레지스터부터 es 레지스터까지를 스택에 삽입된 값을 이용해서 복원$/;"	d
 pop	00.BootLoader/BootLoader2.asm	/^	pop di$/;"	d
 pop	00.BootLoader/BootLoader2.asm	/^	pop dx							; 함수에서 사용이 끝난 dx 레지스터부터 es 레지스터까지를 스택에 삽입된 값을 이용해서 복원$/;"	d
+pstBitmapOfLevel	02.Kernel64/Source/DynamicMemory.h	/^	BITMAP* pstBitmapOfLevel;$/;"	m	struct:kDynamicMemoryManagerStruct
+pstDirectoryBuffer	02.Kernel64/Source/FileSystem.h	/^	DIRECTORYENTRY* pstDirectoryBuffer;$/;"	m	struct:kDirectoryHandleStruct
+pstHandlePool	02.Kernel64/Source/FileSystem.h	/^	FILE* pstHandlePool;$/;"	m	struct:kFileSystemManagerStruct
+pstRunningTask	02.Kernel64/Source/Task.h	/^	TCB* pstRunningTask;$/;"	m	struct:kSchedulerStruct
+pstStartAddress	02.Kernel64/Source/Task.h	/^	TCB* pstStartAddress;$/;"	m	struct:kTCBPoolManagerStruct
 push	00.BootLoader/BootLoader.asm	/^	push di	$/;"	d
 push	00.BootLoader/BootLoader.asm	/^	push dx $/;"	d
 push	00.BootLoader/BootLoader2.asm	/^	push di	$/;"	d
 push	00.BootLoader/BootLoader2.asm	/^	push dx $/;"	d
+pvHeader	02.Kernel64/Source/List.h	/^	void* pvHeader;$/;"	m	struct:kListManagerStruct
+pvMemoryAddress	02.Kernel64/Source/Task.h	/^	void* pvMemoryAddress;$/;"	m	struct:kTaskControlBlockStruct
+pvNext	02.Kernel64/Source/List.h	/^	void* pvNext;$/;"	m	struct:kListLinkStruct
+pvPrevious	02.Kernel64/Source/List.h	/^	void* pvPrevious;$/;"	m	struct:kListLinkStruct
 pvQueueArray	02.Kernel64/Source/Queue.h	/^	void* pvQueueArray;$/;"	m	struct:kQueueManagerStruct
+pvStackAddress	02.Kernel64/Source/Task.h	/^	void* pvStackAddress;$/;"	m	struct:kTaskControlBlockStruct
+pvTail	02.Kernel64/Source/List.h	/^	void* pvTail;$/;"	m	struct:kListManagerStruct
 qwBaseAddress	02.Kernel64/Source/Descriptor.h	/^	QWORD qwBaseAddress;$/;"	m	struct:kGDTRStruct
-qwBaseAddress	temp/Descriptor.h	/^	QWORD qwBaseAddress;$/;"	m	struct:kGDTRStruct
-qwBaseAddress	temp2/Descriptor.h	/^    QWORD qwBaseAddress;$/;"	m	struct:kGDTRStruct
+qwEndAddress	02.Kernel64/Source/DynamicMemory.h	/^	QWORD qwEndAddress;$/;"	m	struct:kDynamicMemoryManagerStruct
+qwExistBitCount	02.Kernel64/Source/DynamicMemory.h	/^	QWORD qwExistBitCount;$/;"	m	struct:kBitmapStruct
+qwFlags	02.Kernel64/Source/Task.h	/^	QWORD qwFlags;$/;"	m	struct:kTaskControlBlockStruct
+qwID	02.Kernel64/Source/List.h	/^	QWORD qwID;$/;"	m	struct:kListLinkStruct
 qwIST	02.Kernel64/Source/Descriptor.h	/^	QWORD qwIST[7];$/;"	m	struct:kTSSDataStruct
-qwIST	temp/Descriptor.h	/^	QWORD qwIST[7];$/;"	m	struct:kTSSDataStruct
-qwIST	temp2/Descriptor.h	/^    QWORD qwIST[ 7 ];$/;"	m	struct:kTSSDataStruct
+qwLastFPUUsedTaskID	02.Kernel64/Source/Task.h	/^	QWORD qwLastFPUUsedTaskID;$/;"	m	struct:kSchedulerStruct
+qwMemorySize	02.Kernel64/Source/Task.h	/^	QWORD qwMemorySize;$/;"	m	struct:kTaskControlBlockStruct
+qwParentProcessID	02.Kernel64/Source/Task.h	/^	QWORD qwParentProcessID;$/;"	m	struct:kTaskControlBlockStruct
+qwProcessorLoad	02.Kernel64/Source/Task.h	/^	QWORD qwProcessorLoad;$/;"	m	struct:kSchedulerStruct
 qwReserved2	02.Kernel64/Source/Descriptor.h	/^	QWORD qwReserved2;$/;"	m	struct:kTSSDataStruct
-qwReserved2	temp/Descriptor.h	/^	QWORD qwReserved2;$/;"	m	struct:kTSSDataStruct
-qwReserved2	temp2/Descriptor.h	/^    QWORD qwReserved2;$/;"	m	struct:kTSSDataStruct
 qwReserved3	02.Kernel64/Source/Descriptor.h	/^	QWORD qwReserved3;$/;"	m	struct:kTSSDataStruct
-qwReserved3	temp/Descriptor.h	/^	QWORD qwReserved3;$/;"	m	struct:kTSSDataStruct
-qwReserved3	temp2/Descriptor.h	/^    QWORD qwReserved3;$/;"	m	struct:kTSSDataStruct
 qwRsp	02.Kernel64/Source/Descriptor.h	/^	QWORD qwRsp[3];$/;"	m	struct:kTSSDataStruct
-qwRsp	temp/Descriptor.h	/^	QWORD qwRsp[3];$/;"	m	struct:kTSSDataStruct
-qwRsp	temp2/Descriptor.h	/^    QWORD qwRsp[ 3 ];$/;"	m	struct:kTSSDataStruct
+qwSpendProcessorTimeInIdleTask	02.Kernel64/Source/Task.h	/^	QWORD qwSpendProcessorTimeInIdleTask;$/;"	m	struct:kSchedulerStruct
+qwStackSize	02.Kernel64/Source/Task.h	/^	QWORD qwStackSize;$/;"	m	struct:kTaskControlBlockStruct
+qwStartAddress	02.Kernel64/Source/DynamicMemory.h	/^	QWORD qwStartAddress;$/;"	m	struct:kDynamicMemoryManagerStruct
+qwTaskID	02.Kernel64/Source/Synchronization.h	/^	volatile QWORD qwTaskID;$/;"	m	struct:kMutextStruct
+qwUsedSize	02.Kernel64/Source/DynamicMemory.h	/^	QWORD qwUsedSize;$/;"	m	struct:kDynamicMemoryManagerStruct
+readdir	02.Kernel64/Source/FileSystem.h	51;"	d
+remove	02.Kernel64/Source/FileSystem.h	49;"	d
+rewinddir	02.Kernel64/Source/FileSystem.h	52;"	d
+size_t	02.Kernel64/Source/FileSystem.h	61;"	d
+stChildThreadList	02.Kernel64/Source/Task.h	/^	LIST stChildThreadList;$/;"	m	struct:kTaskControlBlockStruct
+stContext	02.Kernel64/Source/Task.h	/^	CONTEXT stContext;$/;"	m	struct:kTaskControlBlockStruct
+stDirectoryHandle	02.Kernel64/Source/FileSystem.h	/^		DIRECTORYHANDLE stDirectoryHandle;$/;"	m	union:kFileDirectoryHandleStruct::__anon1
+stFileHandle	02.Kernel64/Source/FileSystem.h	/^		FILEHANDLE stFileHandle;$/;"	m	union:kFileDirectoryHandleStruct::__anon1
+stHDDInformation	02.Kernel64/Source/HardDisk.h	/^	HDDINFORMATION stHDDInformation;$/;"	m	struct:kHDDManagerStruct
+stLink	02.Kernel64/Source/Task.h	/^	LISTLINK stLink;$/;"	m	struct:kTaskControlBlockStruct
+stMutex	02.Kernel64/Source/FileSystem.h	/^	MUTEX stMutex;$/;"	m	struct:kFileSystemManagerStruct
+stMutex	02.Kernel64/Source/HardDisk.h	/^	MUTEX stMutex;$/;"	m	struct:kHDDManagerStruct
+stThreadLink	02.Kernel64/Source/Task.h	/^	LISTLINK stThreadLink;$/;"	m	struct:kTaskControlBlockStruct
+stWaitList	02.Kernel64/Source/Task.h	/^	LIST stWaitList;$/;"	m	struct:kSchedulerStruct
 times	00.BootLoader/BootLoader.asm	/^times 510 - ($-$$) db 0x00      	; $ 현재 라인의 어드레스 $/;"	l
 times	00.BootLoader/BootLoader2.asm	/^times 510 - ($-$$) db 0x00      	; $ 현재 라인의 어드레스 $/;"	l
 times	01.Kernel32/Source/EntryPoint.s	/^times 512 - ($-$$) db 0x00	; 512 바이트를 맞추기 위해 남은 부분을 0으로 채움$/;"	l
+vbBootCode	02.Kernel64/Source/FileSystem.h	/^	BYTE vbBootCode[430];$/;"	m	struct:kMBRStruct
+vbBootLoaderSignature	02.Kernel64/Source/FileSystem.h	/^	BYTE vbBootLoaderSignature[2];$/;"	m	struct:kMBRStruct
+vbEndingCHSAddress	02.Kernel64/Source/FileSystem.h	/^	BYTE vbEndingCHSAddress[3];$/;"	m	struct:kPartitionStruct
+vbPadding	02.Kernel64/Source/Synchronization.h	/^	BYTE vbPadding[3];$/;"	m	struct:kMutextStruct
+vbStartingCHSAddress	02.Kernel64/Source/FileSystem.h	/^	BYTE vbStartingCHSAddress[3];$/;"	m	struct:kPartitionStruct
+vcFileName	02.Kernel64/Source/FileSystem.h	/^	char vcFileName[FILESYSTEM_MAXFILENAMELENGTH];$/;"	m	struct:kDirectoryEntryStruct
+vcPadding	02.Kernel64/Source/Task.h	/^	char vcPadding[11];$/;"	m	struct:kTaskControlBlockStruct
+viExecuteCount	02.Kernel64/Source/Task.h	/^	int viExecuteCount[TASK_MAXREADYLISTCOUNT];$/;"	m	struct:kSchedulerStruct
+vqRegister	02.Kernel64/Source/Task.h	/^	QWORD vqRegister[TASK_REGISTERCOUNT];$/;"	m	struct:kContextStruct
+vqwFPUContext	02.Kernel64/Source/Task.h	/^	QWORD vqwFPUContext[512\/8];$/;"	m	struct:kTaskControlBlockStruct
+vstPartiton	02.Kernel64/Source/FileSystem.h	/^	PARTITION vstPartiton[4];$/;"	m	struct:kMBRStruct
+vstReadyList	02.Kernel64/Source/Task.h	/^	LIST vstReadyList[TASK_MAXREADYLISTCOUNT];$/;"	m	struct:kSchedulerStruct
+vwFirmwareRevision	02.Kernel64/Source/HardDisk.h	/^	WORD vwFirmwareRevision[4];$/;"	m	struct:kHDDInformationStruct
+vwModelNumber	02.Kernel64/Source/HardDisk.h	/^	WORD vwModelNumber[20];$/;"	m	struct:kHDDInformationStruct
+vwReserved2	02.Kernel64/Source/HardDisk.h	/^	WORD vwReserved2[13];$/;"	m	struct:kHDDInformationStruct
+vwReserved3	02.Kernel64/Source/HardDisk.h	/^	WORD vwReserved3[196];$/;"	m	struct:kHDDInformationStruct
+vwSerialNumber	02.Kernel64/Source/HardDisk.h	/^	WORD vwSerialNumber[10];$/;"	m	struct:kHDDInformationStruct
+wBufferSize	02.Kernel64/Source/HardDisk.h	/^	WORD wBufferSize;$/;"	m	struct:kHDDInformationStruct
+wBytesInPhaseLock	02.Kernel64/Source/HardDisk.h	/^	WORD wBytesInPhaseLock;$/;"	m	struct:kHDDInformationStruct
+wConfiguation	02.Kernel64/Source/HardDisk.h	/^	WORD wConfiguation;$/;"	m	struct:kHDDInformationStruct
+wControllerType	02.Kernel64/Source/HardDisk.h	/^	WORD wControllerType;$/;"	m	struct:kHDDInformationStruct
 wIOMapBaseAddress	02.Kernel64/Source/Descriptor.h	/^	WORD wIOMapBaseAddress;$/;"	m	struct:kTSSDataStruct
-wIOMapBaseAddress	temp/Descriptor.h	/^	WORD wIOMapBaseAddress;$/;"	m	struct:kTSSDataStruct
-wIOMapBaseAddress	temp2/Descriptor.h	/^    WORD wIOMapBaseAddress;$/;"	m	struct:kTSSDataStruct
+wInterSectorGap	02.Kernel64/Source/HardDisk.h	/^	WORD wInterSectorGap;$/;"	m	struct:kHDDInformationStruct
 wLimit	02.Kernel64/Source/Descriptor.h	/^	WORD wLimit;$/;"	m	struct:kGDTRStruct
-wLimit	temp/Descriptor.h	/^	WORD wLimit;$/;"	m	struct:kGDTRStruct
-wLimit	temp2/Descriptor.h	/^    WORD wLimit;$/;"	m	struct:kGDTRStruct
 wLowerBaseAddress	02.Kernel64/Source/Descriptor.h	/^	WORD wLowerBaseAddress;$/;"	m	struct:kGDTEntry16struct
 wLowerBaseAddress	02.Kernel64/Source/Descriptor.h	/^	WORD wLowerBaseAddress;$/;"	m	struct:kGDTEntry8Struct
 wLowerBaseAddress	02.Kernel64/Source/Descriptor.h	/^	WORD wLowerBaseAddress;$/;"	m	struct:kIDTEntryStruct
-wLowerBaseAddress	temp/Descriptor.h	/^	WORD wLowerBaseAddress;$/;"	m	struct:kGDTEntry16struct
-wLowerBaseAddress	temp/Descriptor.h	/^	WORD wLowerBaseAddress;$/;"	m	struct:kGDTEntry8Struct
-wLowerBaseAddress	temp/Descriptor.h	/^	WORD wLowerBaseAddress;$/;"	m	struct:kIDTEntryStruct
-wLowerBaseAddress	temp2/Descriptor.h	/^    WORD wLowerBaseAddress;$/;"	m	struct:kGDTEntry16Struct
-wLowerBaseAddress	temp2/Descriptor.h	/^    WORD wLowerBaseAddress;$/;"	m	struct:kGDTEntry8Struct
-wLowerBaseAddress	temp2/Descriptor.h	/^    WORD wLowerBaseAddress;$/;"	m	struct:kIDTEntryStruct
 wLowerLimit	02.Kernel64/Source/Descriptor.h	/^	WORD wLowerLimit;$/;"	m	struct:kGDTEntry16struct
 wLowerLimit	02.Kernel64/Source/Descriptor.h	/^	WORD wLowerLimit;$/;"	m	struct:kGDTEntry8Struct
-wLowerLimit	temp/Descriptor.h	/^	WORD wLowerLimit;$/;"	m	struct:kGDTEntry16struct
-wLowerLimit	temp/Descriptor.h	/^	WORD wLowerLimit;$/;"	m	struct:kGDTEntry8Struct
-wLowerLimit	temp2/Descriptor.h	/^    WORD wLowerLimit;$/;"	m	struct:kGDTEntry16Struct
-wLowerLimit	temp2/Descriptor.h	/^    WORD wLowerLimit;$/;"	m	struct:kGDTEntry8Struct
 wMiddleBaseAddress	02.Kernel64/Source/Descriptor.h	/^	WORD wMiddleBaseAddress;$/;"	m	struct:kIDTEntryStruct
-wMiddleBaseAddress	temp/Descriptor.h	/^	WORD wMiddleBaseAddress;$/;"	m	struct:kIDTEntryStruct
-wMiddleBaseAddress	temp2/Descriptor.h	/^    WORD wMiddleBaseAddress;$/;"	m	struct:kIDTEntryStruct
+wNumberOfCylinder	02.Kernel64/Source/HardDisk.h	/^	WORD wNumberOfCylinder;$/;"	m	struct:kHDDInformationStruct
+wNumberOfECCBytes	02.Kernel64/Source/HardDisk.h	/^	WORD wNumberOfECCBytes;$/;"	m	struct:kHDDInformationStruct
+wNumberOfHead	02.Kernel64/Source/HardDisk.h	/^	WORD wNumberOfHead;$/;"	m	struct:kHDDInformationStruct
+wNumberOfSectorPerCylinder	02.Kernel64/Source/HardDisk.h	/^	WORD wNumberOfSectorPerCylinder;$/;"	m	struct:kHDDInformationStruct
+wNumberOfVendorUniqueStatusWord	02.Kernel64/Source/HardDisk.h	/^	WORD wNumberOfVendorUniqueStatusWord;$/;"	m	struct:kHDDInformationStruct
 wPading	02.Kernel64/Source/Descriptor.h	/^	WORD wPading;$/;"	m	struct:kGDTRStruct
-wPading	temp/Descriptor.h	/^	WORD wPading;$/;"	m	struct:kGDTRStruct
-wPading	temp2/Descriptor.h	/^    WORD wPading;$/;"	m	struct:kGDTRStruct
 wReserved	02.Kernel64/Source/Descriptor.h	/^	WORD wReserved;$/;"	m	struct:kTSSDataStruct
-wReserved	temp/Descriptor.h	/^	WORD wReserved;$/;"	m	struct:kTSSDataStruct
-wReserved	temp2/Descriptor.h	/^    WORD wReserved;$/;"	m	struct:kTSSDataStruct
+wReserved1	02.Kernel64/Source/HardDisk.h	/^	WORD wReserved1;$/;"	m	struct:kHDDInformationStruct
 wSegmentSelector	02.Kernel64/Source/Descriptor.h	/^	WORD wSegmentSelector;$/;"	m	struct:kIDTEntryStruct
-wSegmentSelector	temp/Descriptor.h	/^	WORD wSegmentSelector;$/;"	m	struct:kIDTEntryStruct
-wSegmentSelector	temp2/Descriptor.h	/^    WORD wSegmentSelector;$/;"	m	struct:kIDTEntryStruct
+wUnformattedBytePerSector	02.Kernel64/Source/HardDisk.h	/^	WORD wUnformattedBytePerSector;$/;"	m	struct:kHDDInformationStruct
+wUnformattedBytePerTrack	02.Kernel64/Source/HardDisk.h	/^	WORD wUnformattedBytePerTrack;$/;"	m	struct:kHDDInformationStruct

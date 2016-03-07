@@ -4,6 +4,12 @@
 #include "PIC.h"
 #include "Console.h"
 #include "ConsoleShell.h"
+#include "Task.h"
+#include "PIT.h"
+#include "DynamicMemory.h"
+#include "HardDisk.h"
+#include "FileSystem.h"
+#include "SerialPort.h"
 
 void main( void )
 {
@@ -39,6 +45,18 @@ void main( void )
     kSetCursor( 45, iCursorY++ );
     kPrintf( "Pass], Size = %d MB\n", kGetTotalRAMSize() );
     
+	kPrintf("TCB Poll And Scheduler Initialize...........[Pass]\n");
+	iCursorY++;
+	kInitializeScheduler();
+
+	// 동적 메모리 초기화 
+	kPrintf("Dynamic Memory Initialize...................[Pass]\n");
+	iCursorY++;
+	kInitializeDynamicMemory();
+
+	// 1ms당 한 번씩 인터럽트가 발생하도록 설정 
+	kInitializePIT(MSTOCOUNT(1),1);
+
     kPrintf( "Keyboard Activate And Queue Initialize......[    ]" );
     // 키보드를 활성화 
     if( kInitializeKeyboard() == TRUE )
@@ -62,6 +80,25 @@ void main( void )
     kSetCursor( 45, iCursorY++ );
     kPrintf( "Pass\n" );
 
-    // 셸을 시작 
+	// 파일 시스템을 초기화 
+	kPrintf("File System Initialize......................[    ]");
+	if(kInitializeFileSystem()==TRUE)
+	{
+		kSetCursor(45,iCursorY++);
+		kPrintf("Pass\n");
+	}
+	else
+	{
+		kSetCursor(45,iCursorY++);
+		kPrintf("Fail\n");
+	}
+
+	// 시리얼 포트 초기화 
+	kPrintf("Serial Port Initialize......................[Pass]\n");
+	iCursorY++;
+	kInitializeSerialPort();
+
+ 	// 유후 태스크를 시스템 스레드로 생성하고 셸을 시작 
+	kCreateTask(TASK_FLAGS_LOWEST | TASK_FLAGS_THREAD | TASK_FLAGS_SYSTEM | TASK_FLAGS_IDLE,0,0,(QWORD)kIdleTask);
     kStartConsoleShell();
 }
