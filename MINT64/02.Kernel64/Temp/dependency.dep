@@ -14,9 +14,10 @@ ConsoleShell.o: ../Source/ConsoleShell.c ../Source/ConsoleShell.h \
  ../Source/Task.h ../Source/List.h ../Source/Synchronization.h \
  ../Source/DynamicMemory.h ../Source/HardDisk.h ../Source/FileSystem.h \
  ../Source/CacheManager.h ../Source/SerialPort.h ../Source/Queue.h \
- ../Source/MPConfigurationTable.h
+ ../Source/MPConfigurationTable.h ../Source/LocalAPIC.h \
+ ../Source/MultiProcessor.h ../Source/IOAPIC.h
 Descriptor.o: ../Source/Descriptor.c ../Source/Descriptor.h \
- ../Source/Types.h ../Source/Utility.h \
+ ../Source/Types.h ../Source/MultiProcessor.h ../Source/Utility.h \
  /usr/cross/lib/gcc/x86_64-pc-linux/4.8.2/include/stdarg.h \
  ../Source/ISR.h
 DynamicMemory.o: ../Source/DynamicMemory.c ../Source/DynamicMemory.h \
@@ -36,20 +37,34 @@ InterruptHandler.o: ../Source/InterruptHandler.c \
  ../Source/Keyboard.h ../Source/Console.h ../Source/Utility.h \
  /usr/cross/lib/gcc/x86_64-pc-linux/4.8.2/include/stdarg.h \
  ../Source/Task.h ../Source/List.h ../Source/Descriptor.h \
- ../Source/AssemblyUtility.h ../Source/HardDisk.h \
- ../Source/Synchronization.h
+ ../Source/MultiProcessor.h ../Source/AssemblyUtility.h \
+ ../Source/HardDisk.h ../Source/Synchronization.h
+IOAPIC.o: ../Source/IOAPIC.c ../Source/IOAPIC.h ../Source/Types.h \
+ ../Source/MPConfigurationTable.h ../Source/PIC.h
 Keyboard.o: ../Source/Keyboard.c ../Source/Types.h \
  ../Source/AssemblyUtility.h ../Source/Task.h ../Source/List.h \
  ../Source/Keyboard.h ../Source/Queue.h ../Source/Synchronization.h
 List.o: ../Source/List.c ../Source/List.h ../Source/Types.h
+LocalAPIC.o: ../Source/LocalAPIC.c ../Source/LocalAPIC.h \
+ ../Source/Types.h ../Source/MPConfigurationTable.h
 main.o: ../Source/main.c ../Source/Types.h ../Source/Keyboard.h \
- ../Source/Descriptor.h ../Source/PIC.h ../Source/Console.h \
- ../Source/ConsoleShell.h ../Source/Task.h ../Source/List.h \
- ../Source/PIT.h ../Source/DynamicMemory.h ../Source/HardDisk.h \
- ../Source/Synchronization.h ../Source/FileSystem.h \
+ ../Source/Descriptor.h ../Source/MultiProcessor.h ../Source/PIC.h \
+ ../Source/Console.h ../Source/ConsoleShell.h ../Source/Task.h \
+ ../Source/List.h ../Source/PIT.h ../Source/DynamicMemory.h \
+ ../Source/HardDisk.h ../Source/Synchronization.h ../Source/FileSystem.h \
+ ../Source/CacheManager.h ../Source/SerialPort.h ../Source/Queue.h
+Main.o: ../Source/Main.c ../Source/Types.h ../Source/Keyboard.h \
+ ../Source/Descriptor.h ../Source/MultiProcessor.h ../Source/PIC.h \
+ ../Source/Console.h ../Source/ConsoleShell.h ../Source/Task.h \
+ ../Source/List.h ../Source/PIT.h ../Source/DynamicMemory.h \
+ ../Source/HardDisk.h ../Source/Synchronization.h ../Source/FileSystem.h \
  ../Source/CacheManager.h ../Source/SerialPort.h ../Source/Queue.h
 MPConfigurationTable.o: ../Source/MPConfigurationTable.c \
  ../Source/MPConfigurationTable.h ../Source/Types.h ../Source/Console.h
+MultiProcessor.o: ../Source/MultiProcessor.c ../Source/MultiProcessor.h \
+ ../Source/Types.h ../Source/MPConfigurationTable.h \
+ ../Source/AssemblyUtility.h ../Source/Task.h ../Source/List.h \
+ ../Source/LocalAPIC.h ../Source/PIT.h
 PIC.o: ../Source/PIC.c ../Source/PIC.h ../Source/Types.h
 PIT.o: ../Source/PIT.c ../Source/PIT.h ../Source/Types.h \
  ../Source/AssemblyUtility.h ../Source/Task.h ../Source/List.h
@@ -71,7 +86,8 @@ Synchronization.o: ../Source/Synchronization.c \
  /usr/cross/lib/gcc/x86_64-pc-linux/4.8.2/include/stdarg.h \
  ../Source/Task.h ../Source/List.h
 Task.o: ../Source/Task.c ../Source/Task.h ../Source/Types.h \
- ../Source/List.h ../Source/Descriptor.h ../Source/Synchronization.h
+ ../Source/List.h ../Source/Descriptor.h ../Source/MultiProcessor.h \
+ ../Source/Synchronization.h
 Utility.o: ../Source/Utility.c ../Source/Utility.h \
  /usr/cross/lib/gcc/x86_64-pc-linux/4.8.2/include/stdarg.h \
  ../Source/Types.h ../Source/AssemblyUtility.h ../Source/Task.h \

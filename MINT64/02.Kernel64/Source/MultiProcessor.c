@@ -1,5 +1,5 @@
 #include "MultiProcessor.h"
-#include "MPConfigurationTable"
+#include "MPConfigurationTable.h"
 #include "AssemblyUtility.h"
 #include "LocalAPIC.h"
 #include "PIT.h"
@@ -32,7 +32,7 @@ BOOL kStartUpApplicationProcessor(void)
 		return FALSE;
 	}
 
-	return TRUE:
+	return TRUE;
 }
 
 
@@ -51,7 +51,7 @@ static BOOL kWakeUpApplicationProcessor(void)
 	// MP 설정 테이블 헤더에 저장된 로컬 APIC의 메모리 맵 I/O 어드레스를 사용 
 	pstMPManager = kGetMPConfigurationManager();
 	pstMPHeader = pstMPManager->pstMPConfigurationTableHeader;
-	qwLocalAPICBaseAddress =- pstMPHeader->dwMemoryMapIOAddressOfLocalAPIC;
+	qwLocalAPICBaseAddress = pstMPHeader->dwMemoryMapIOAddressOfLocalAPIC;
 
 	// APIC ID 레지스터의 어드레스(0xFEE00020)를 저장하여, Application Processor가 
 	// 자신의 APIC ID를 읽을 수 잇게 함 
@@ -65,7 +65,7 @@ static BOOL kWakeUpApplicationProcessor(void)
 	// 하위 인터럽트 커맨드 레지스터(0xFEE00300)을 사용하여 BSP(Bootstrap Processor)를
 	// 제외한 나머지 코어에 INIT IPI를 전송 
 	// All excluding self, edge trigger, assert, physical destination, INIT
-	*(DWORD*)(qwLocalAPICBaseAddress+APIC_REGISTER_ICR_LOWER)=APIC_DESTINATIONSHORTHAND_ALLEXCLUDINGSELF | APIC_TRIGGERMODE_EDGE | APIC_LEVEL_ASSET | APIC_DESTINATIONMODE_PHYSICAL | APIC_DELIVERYMODE_INIT;
+	*(DWORD*)(qwLocalAPICBaseAddress+APIC_REGISTER_ICR_LOWER)=APIC_DESTINATIONSHORTHAND_ALLEXCLUDINGSELF | APIC_TRIGGERMODE_EDGE | APIC_LEVEL_ASSERT | APIC_DESTINATIONMODE_PHYSICAL | APIC_DELIVERYMODE_INIT;
 
 	// PIT를  직접 제어하여 10ms 동안 대기 
 	kWaitUsingDirectPIT(MSTOCOUNT(10));
@@ -92,7 +92,7 @@ static BOOL kWakeUpApplicationProcessor(void)
 		// 보호 모드 커널이 시작하는 0x10000에서 실행시키려고 0x10(0x10000/4KB)를 
 		// 인터럽트 벡터로 설정 
 		// All excluding self, edge trigger, assert, physical destination, start up
-		*(DWORD*)(qwLocalAPICBaseAddress+APIC_REGISTER_ICR_LOWER) = APIC_DESTINATIONSHORTHAND_ALLEXCLUDINGSELF | APIC_TRIGGERMODE_EDGE | APIC_LEVEL_ASSET | APIC_DESTINATIONMODE_PHYSICAL | APIC_DELIVERYMODE_STARTUP | 0x10;
+		*(DWORD*)(qwLocalAPICBaseAddress+APIC_REGISTER_ICR_LOWER) = APIC_DESTINATIONSHORTHAND_ALLEXCLUDINGSELF | APIC_TRIGGERMODE_EDGE | APIC_LEVEL_ASSERT | APIC_DESTINATIONMODE_PHYSICAL | APIC_DELIVERYMODE_STARTUP | 0x10;
 
 		// PIT를  직접 제어하여 200us 동안 대기 
 		kWaitUsingDirectPIT(USTOCOUNT(200));

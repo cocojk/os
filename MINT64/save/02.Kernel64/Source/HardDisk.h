@@ -44,7 +44,7 @@
 #define HDD_DIGITALOUTPUT_DISABLEINTERRUPT	0x01
 
 // 하드 디스크의 응답을 대기하는 시간(millisecond)
-#define HDD_WAITTIME						3000
+#define HDD_WAITTIME						500
 // 한 번에 HDD에 읽거나 쓸 수 있는 섹터의 수 
 #define HDD_MAXBULKSECTORCOUNT				256
 

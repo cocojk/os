@@ -2,6 +2,7 @@
 #define __DESCRIPTOR_H__
 
 #include "Types.h"
+#include "MultiProcessor.h"
 
 // 매크로
 ////////////////////////////////////////////////////////////////////////////////
@@ -44,11 +45,11 @@
 #define GDTR_STARTADDRESS		0x142000
 // 8바이트 엔트리의 갯수, 널 디스크립터/커널 코드/커널 데이터 
 #define GDT_MAXENTRY8COUNT		3
-// 16바이트 엔트리의 갯수, TSS 
-#define GDT_MAXENTRY16COUNT		1
+// 16바이트 엔트리의 갯수, 즉 TSS는 프로세서 또는 코어의 최대 개수만큼 생성  
+#define GDT_MAXENTRY16COUNT		(MAXPROCESSORCOUNT)
 // GDT 테이블의 크기
 #define GDT_TABLESIZE			((sizeof(GDTENTRY8)*GDT_MAXENTRY8COUNT) + (sizeof(GDTENTRY16)*GDT_MAXENTRY16COUNT))
-#define TSS_SEGMENTSIZE			(sizeof(TSSSEGMENT))
+#define TSS_SEGMENTSIZE			(sizeof(TSSSEGMENT)*MAXPROCESSORCOUNT)
 
 
 ////////////////////////////////////////////////////////////////////////////////

@@ -4,6 +4,7 @@
 #include "Types.h"
 #include "Synchronization.h"
 #include "HardDisk.h"
+#include "CacheManager.h"
 
 // 매크로와 함수 포인터 
 // MINT 파일 시스템 시그니처(Signature)
@@ -182,6 +183,9 @@ typedef struct kFileSystemManagerStruct
 
 	// 핸드 풀의 어드레스 
 	FILE* pstHandlePool;
+
+	// 캐시를 사용하는지 여부 
+	BOOL bCacheEnable;
 } FILESYSTEMMANAGER;
 
 #pragma pack(pop)
@@ -208,5 +212,8 @@ void kRewindDirectory(DIR* pstDirectory);
 int kCloseDirectory(DIR* pstDirectory);
 BOOL kWriteZero(FILE* pstFile,DWORD dwCount);
 BOOL kIsFileOpened(const DIRECTORYENTRY* pstEntry);
+
+// 캐시 관련 함수 
+BOOL kFlushFileSystemCache(void);
 
 #endif /*__FILESYSTEM_H_*/

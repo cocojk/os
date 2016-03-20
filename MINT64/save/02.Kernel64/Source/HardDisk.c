@@ -373,10 +373,14 @@ int kReadHDDSector(BOOL bPrimary,BOOL bMaster,DWORD dwLBA,int iSectorCount,char*
 			// 인터럽트가 발생하지 않으면 문제가 발생한 것으로 종료 
 			if(bWaitResult==FALSE)
 			{
-				kPrintf("Interrupt Not Occur\n");
-				// 동기화 처리 
-				kUnlock(&(gs_stHDDManager.stMutex));
-				return FALSE;
+					
+				if((bStatus&HDD_STATUS_DATAREQUEST)!=HDD_STATUS_DATAREQUEST)
+				{
+					kPrintf("Interrupt Not Occur\n");
+					// 동기화 처리 
+					kUnlock(&(gs_stHDDManager.stMutex));
+					return FALSE;
+				}
 			}
 		}
 
@@ -523,9 +527,13 @@ int kWriteHDDSector(BOOL bPrimary,BOOL bMaster,DWORD dwLBA,int iSectorCount,char
 			// 인터럽트가 발생하지 않으면 문제가 발생한 것으로 종료 
 			if(bWaitResult==FALSE)
 			{
-				// 동기화 처리 
-				kUnlock(&(gs_stHDDManager.stMutex));
-				return FALSE;
+				if((bStatus&HDD_STATUS_DATAREQUEST)!=HDD_STATUS_DATAREQUEST)
+				{
+					// 동기화 처리 
+					kPrintf("Interrupt Not Occur\n");
+					kUnlock(&(gs_stHDDManager.stMutex));
+					return FALSE;
+				}
 			}
 		}
 

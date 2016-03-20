@@ -79,7 +79,8 @@ void kTimerHandler(int iVectorNumber)
 {
 	char vcBuffer[] ="[INT:  , ]";
 	static int g_iTimerInterruptCount=0;
-		
+	int i=0;
+
 	// 인터럽트가 발생했음을 알리려고 메시지를 출력하는 부분
 	// 인터럽트 벡터를 화면 오른쪽 위에 2자리 정수로 출력
 	vcBuffer[5]='0'+iVectorNumber/10;
@@ -95,6 +96,7 @@ void kTimerHandler(int iVectorNumber)
 	// 타이머 발생 횟수를 증가
 	g_qwTickCount++;
 
+	
 	// 태스크가 사용한 프로세서의 시간을 줄임 
 	kDecreaseProcessorTime();
 	// 프로세서가 사용할 수 있는 시간을 다 썻다면 태스크 전환 수행 
