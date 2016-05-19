@@ -1,5 +1,5 @@
 #include "MultiProcessor.h"
-#include "MPConfigurationTable"
+#include "MPConfigurationTable.h"
 #include "AssemblyUtility.h"
 #include "LocalAPIC.h"
 #include "PIT.h"
@@ -32,7 +32,7 @@ BOOL kStartUpApplicationProcessor(void)
 		return FALSE;
 	}
 
-	return TRUE:
+	return TRUE;
 }
 
 
@@ -51,7 +51,7 @@ static BOOL kWakeUpApplicationProcessor(void)
 	// MP 설정 테이블 헤더에 저장된 로컬 APIC의 메모리 맵 I/O 어드레스를 사용 
 	pstMPManager = kGetMPConfigurationManager();
 	pstMPHeader = pstMPManager->pstMPConfigurationTableHeader;
-	qwLocalAPICBaseAddress =- pstMPHeader->dwMemoryMapIOAddressOfLocalAPIC;
+	qwLocalAPICBaseAddress = pstMPHeader->dwMemoryMapIOAddressOfLocalAPIC;
 
 	// APIC ID 레지스터의 어드레스(0xFEE00020)를 저장하여, Application Processor가 
 	// 자신의 APIC ID를 읽을 수 잇게 함 

@@ -44,5 +44,5 @@ void kStartConsoleShell(void);
 void kExecuteCommand(const char* pcCommandBuffer);
 void kInitializeParameter(PARAMETERLIST* pstList,const char* pcParameter);
 int kGetNextParameter(PARAMETERLIST* pstList,char* pcParameter);
-
+QWORD kRandom(void);
 #endif /*__CONSOLESHELL_H__*/

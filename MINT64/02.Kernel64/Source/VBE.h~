@@ -1,0 +1,18 @@
+#ifndef __VBE_H__
+#define __VBE_H__
+
+#include "Types.h"
+
+// 매크로 
+// 모드 정보 블록이 저장된 어드레스 
+#define VBE_MODEINFOBLOCKADDRESS			0x7E00
+// 그래픽 모드로 시작하는 플래그가 저장된 어드레스 
+#define VBE_STARTGRAPHICMODEFLAGADDRESS		0x7C0A
+
+// 구조체 
+#pragma pack (push,1)
+
+// VBE에서 정의한 모드 정보 블록(ModeInfoBlock) 자료구조, 256바이트
+typedef struct kVBEInfoBlockStruct
+{
+
