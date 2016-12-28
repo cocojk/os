@@ -1,5 +1,5 @@
-cscope 15 $HOME/os/MINT64               0000956545
-	@/home/jk/os/MINT64/00.BootLoader/BootLoader.asm
+cscope 15 $HOME/os/MINT64               0000980605
+	@/home/jkr555/os/MINT64/00.BootLoader/BootLoader.asm
 
 1 [
 ORG
@@ -1061,7 +1061,7 @@ db
 db
  0xAA ; 1Î∞îÏù¥Ìä∏Î•º ÏÑ†Ïñ∏ÌïòÍ≥† Í∞íÏùÄ 0xAA
 
-	@/home/jk/os/MINT64/00.BootLoader/BootLoader2.asm
+	@/home/jkr555/os/MINT64/00.BootLoader/BootLoader2.asm
 
 1 [
 ORG
@@ -2107,7 +2107,7 @@ db
 db
  0xAA ; 1Î∞îÏù¥Ìä∏Î•º ÏÑ†Ïñ∏ÌïòÍ≥† Í∞íÏùÄ 0xAA
 
-	@/home/jk/os/MINT64/01.Kernel32/Source/EntryPoint.s
+	@/home/jkr555/os/MINT64/01.Kernel32/Source/EntryPoint.s
 
 1 ; 
 	gE¡ryPoöt
@@ -3213,7 +3213,7 @@ db
 	gdb
  0x00 ; 512 Î∞îÏù¥Ìä∏Î•º ÎßûÏ∂îÍ∏∞ ÏúÑÌï¥ ÎÇ®ÏùÄ Î∂ÄÎ∂ÑÏùÑ 0ÏúºÎ°ú Ï±ÑÏõÄ
 
-	@/home/jk/os/MINT64/01.Kernel32/Source/ModeSwitch.asm
+	@/home/jkr555/os/MINT64/01.Kernel32/Source/ModeSwitch.asm
 
 1 [
 BITS
@@ -3717,7 +3717,7 @@ jmp
 	g$
 
 
-	@/home/jk/os/MINT64/01.Kernel32/Source/ModeSwitch.h
+	@/home/jkr555/os/MINT64/01.Kernel32/Source/ModeSwitch.h
 
 1 #i‚de‡
 __UTILITY_H__
@@ -3753,7 +3753,7 @@ pdwEDX
 kSwôchAndExecuã64bôKî√l
 ();
 
-	@/home/jk/os/MINT64/01.Kernel32/Source/Page.c
+	@/home/jkr555/os/MINT64/01.Kernel32/Source/Page.c
 
 1 
 	~"Page.h
@@ -3939,7 +3939,7 @@ dwUµîFLAGS
 	}
 }
 
-	@/home/jk/os/MINT64/01.Kernel32/Source/Page.h
+	@/home/jkr555/os/MINT64/01.Kernel32/Source/Page.h
 
 1 #i‚de‡
 __PAGE_H__
@@ -4087,7 +4087,7 @@ dwLowîFœgs
 dwUµîFœgs
 );
 
-	@/home/jk/os/MINT64/01.Kernel32/Source/Types.h
+	@/home/jkr555/os/MINT64/01.Kernel32/Source/Types.h
 
 1 #i‚de‡
 __TYPES_H__
@@ -4179,7 +4179,7 @@ BYTE
 p›
 )
 
-	@/home/jk/os/MINT64/01.Kernel32/Source/main.c
+	@/home/jkr555/os/MINT64/01.Kernel32/Source/main.c
 
 1 
 	~"Ty≥s.h
@@ -4643,7 +4643,7 @@ pdwSour˚Addªss
 	}
 }
 
-	@/home/jk/os/MINT64/01.Kernel32/VirtualOS.asm
+	@/home/jkr555/os/MINT64/01.Kernel32/VirtualOS.asm
 
 1 [
 ORG
@@ -4829,7 +4829,7 @@ $$
 	gídªp
 
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/AssemblyUtility.asm
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/AssemblyUtility.asm
 
 1 [
 BITS
@@ -4890,7 +4890,9 @@ globÆ
 , 
 	gkH…
 , 
-kTe°AndSë
+	gkTe°AndSë
+, 
+kPau£
 
 
 11 
@@ -6357,9 +6359,7 @@ IA32_APIC_BASE
 	gMSR
 ÏùÄ Î†àÏßÄÏä§ÌÑ∞ Ïñ¥ÎìúÎ†àÏä§ 27Ïóê ÏúÑÏπòÌïòÏó¨,
 
-319 
-	grdm§
- ; 
+319 ; 
 	gMSR
 Ïùò ÏÉÅÏúÑ 32ÎπÑÌä∏ÏôÄ ÌïòÏúÑ 32ÎπÑÌä∏Îäî Í∞ÅÍ∞Å 
 	gEDX
@@ -6409,7 +6409,23 @@ p›
 	gªt
 
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/AssemblyUtility.h
+332 ; 
+	gPARAM
+: ÏóÜÏùå
+
+333 
+kPau£
+:
+
+334 
+∑u£
+ ; ÌîÑÎ°úÏÑ∏ÏÑúÎ•º ÏùºÏãú Ï§ëÏßÄ ÏÉÅÌÉúÎ°ú ÏßÑÏûÖÏãúÌÇ¥
+
+335 
+	gªt
+
+
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/AssemblyUtility.h
 
 1 #i‚de‡
 __ASSEMBLYUTILITY_H__
@@ -6569,7 +6585,11 @@ wD©a
 kE«bÀGlobÆLoˇlAPIC
 ();
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/CacheManager.c
+28 
+kPau£
+();
+
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/CacheManager.c
 
 1 
 	~"CacheM™agî.h
@@ -7421,7 +7441,7 @@ TRUE
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/CacheManager.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/CacheManager.h
 
 1 #i‚de‡
 __CACHEMANAGER_H__
@@ -7601,10 +7621,10 @@ CACHEBUFFER
 piMaxCou¡
 );
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/Console.c
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/Console.c
 
 1 
-	~"/u§/¸oss/lib/gcc/x86_64-pc-löux/4.8.2/ö˛ude/°d¨g.h
+	~"/u§/¸oss/lib/gcc/x86_64-pc-löux/4.4.5/ö˛ude/°d¨g.h
 "
 
 2 
@@ -8133,7 +8153,7 @@ CONSOLE_DEFAULTTEXTCOLOR
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/Console.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/Console.h
 
 1 #i‚de‡
 __CONSOLE_H__
@@ -8433,7 +8453,7 @@ iY
 pcSåög
  );
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/ConsoleShell.c
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/ConsoleShell.c
 
 1 
 	~"C⁄sﬁeShñl.h
@@ -8499,497 +8519,565 @@ pcSåög
 	~"Mu…iPro˚ss‹.h
 "
 
-19 
+17 
+	~"IOAPIC.h
+"
+
+18 
+	~"I¡îru±H™dÀr.h
+"
+
+21 
 MUTEX
  
 	ggs_°Muãx
 ;
 
-20 vﬁ©ûê
+22 vﬁ©ûê
 QWORD
  
 	ggs_qwAddî
 ;
 
-24 
+26 
 kHñp
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-25 
+27 
 kCls
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-26 
+28 
 kShowTŸÆRAMSize
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-27 
+29 
 kSåögToDecimÆHexText
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-28 
+30 
 kShutdown
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-29 
+31 
 kSëTimî
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-30 
+32 
 kWaôUsögPIT
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-31 
+33 
 kRódTimeSèmpCou¡î
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-32 
+34 
 kMósurPª˚ss‹S≥ed
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-33 
+35 
 kShowD©eAndTime
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-34 
+36 
 kCª©eTe°Task
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-35 
+37 
 kCh™geTaskPri‹ôy
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-36 
+38 
 kShowTaskLi°
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-37 
+39 
 kKûlTask
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-38 
+40 
 kCPULﬂd
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-39 
+41 
 kTe°Muãx
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-40 
+42 
 kTe°Thªad
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-41 
+43 
 kShowM©rix
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-42 
+44 
 kTe°PIE
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-43 
+45 
 kTe°SequítülAŒoˇti⁄
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-44 
+46 
 kTe°R™domAŒoˇti⁄
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-45 
+47 
 kShowDy«micMem‹yInf‹m©i⁄
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-46 
+48 
 kShowHDDInf‹m©i⁄
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-47 
+49 
 kRódSe˘‹
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-48 
+50 
 kWrôeSe˘‹
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-49 
+51 
 kMou¡HDD
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-50 
+52 
 kF‹m©HDD
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-51 
+53 
 kShowFûeSy°emInf‹m©i⁄
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-52 
+54 
 kCª©eFûeInRoŸDúe˘‹y
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-53 
+55 
 kDñëeFûeInRoŸDúe˘‹y
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-54 
+56 
 kShowRoŸDúe˘‹y
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-55 
+57 
 kWrôeD©aToFûe
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-56 
+58 
 kRódD©aFromFûe
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-57 
+59 
 kTe°FûeIO
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-58 
+60 
 kFlushCache
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-59 
+61 
 kDow∆ﬂdFûe
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-60 
+62 
 kShowMPC⁄figuøti⁄TabÀ
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
-61 
+63 
 kSèπAµliˇti⁄Pro˚ss‹
 (c⁄° * 
 pcP¨amëîBuf„r
 );
 
 64 
+kSèπSymmëricIOMode
+(c⁄° * 
+pcP¨amëîBuf„r
+);
+
+65 
+kShowIRQINTINM≠pögTabÀ
+(c⁄° * 
+pcP¨amëîBuf„r
+);
+
+66 
+kShowI¡îru±Pro˚ssögCou¡
+(c⁄° * 
+pcP¨amëîBuf„r
+);
+
+67 
+kSèπI¡îru±LﬂdBÆ™cög
+(c⁄° * 
+pcP¨amëîBuf„r
+);
+
+68 
+kSèπTaskLﬂdBÆ™cög
+(c⁄° * 
+pcP¨amëîBuf„r
+);
+
+69 
+kCh™geTaskAfföôy
+(c⁄° * 
+pcP¨amëîBuf„r
+);
+
+72 
 kTe°Task1
 ();
 
-65 
+73 
 kTe°Task2
 ();
 
-66 
+74 
 kPrötNumbîTask
 ();
 
-67 
+75 
 kCª©eThªadTask
 ();
 
-68 
+76 
 QWORD
  
 kR™dom
 ();
 
-69 
+77 
 kDr›Ch¨a˘‹Thªad
 ();
 
-70 
+78 
 kM©rixPro˚ss
 ();
 
-71 
+79 
 kFPUTe°Task
 ();
 
-72 
+80 
 kR™domAŒoˇti⁄Task
 ();
 
-75 
+83 
 SHELLCOMMANDENTRY
  
 	ggs_v°Comm™dTabÀ
 [] =
 
-77 {"hñp","Show Hñp",
+85 {"hñp","Show Hñp",
 kHñp
 },
 
-78 {"˛s","CÀ¨ S¸ìn",
+86 {"˛s","CÀ¨ S¸ìn",
 kCls
 },
 
-79 {"tŸÆøm","Show TŸÆRAM Size",
+87 {"tŸÆøm","Show TŸÆRAM Size",
 kShowTŸÆRAMSize
 },
 
-80 {"°πod","SåögÅÿDecimÆ/Hex c⁄vît,ÉxË°πod 1000(decimÆË°πod 0x10(hex)",
+88 {"°πod","SåögÅÿDecimÆ/Hex c⁄vît,ÉxË°πod 1000(decimÆË°πod 0x10(hex)",
 kSåögToDecimÆHexText
 },
 
-81 {"shutdown","Shutdow¿And ReboŸ OS",
+89 {"shutdown","Shutdow¿And ReboŸ OS",
 kShutdown
 },
 
-82 {"£âimî","Së PIT C⁄åﬁÀ∏Cou¡î0,Éx)£âimî 10(msË1’îiodi¯åue(1)/Ál£(0))",
+90 {"£âimî","Së PIT C⁄åﬁÀ∏Cou¡î0,Éx)£âimî 10(msË1’îiodi¯åue(1)/Ál£(0))",
 kSëTimî
 },
 
-83 {"waô","Waô m†Usög PIT,Éx)waô 100(ms)",
+91 {"waô","Waô m†Usög PIT,Éx)waô 100(ms)",
 kWaôUsögPIT
 },
 
-84 {"rdtsc","Ród TimêSèm∞Cou¡î",
+92 {"rdtsc","Ród TimêSèm∞Cou¡î",
 kRódTimeSèmpCou¡î
 },
 
-85 {"˝u•ìd","Mósuª Pro˚ss‹ S≥ed",
+93 {"˝u•ìd","Mósuª Pro˚ss‹ S≥ed",
 kMósurPª˚ss‹S≥ed
 },
 
-86 {"d©e","Show D©ê™d Time",
+94 {"d©e","Show D©ê™d Time",
 kShowD©eAndTime
 },
 
-87 {"¸óãèsk","Cª©êTaskÉx)¸óãèsk 1—y≥Ë10(cou¡)",
+95 {"¸óãèsk","Cª©êTaskÉx)¸óãèsk 1—y≥Ë10(cou¡)",
 kCª©eTe°Task
 },
 
-88 {"ch™gïri‹ôy","Ch™gêTask Pri‹ôy,Éx)ch™gïri‹ôy 1(IDË2(Pri‹ôy)",
+96 {"ch™gïri‹ôy","Ch™gêTask Pri‹ôy,Éx)ch™gïri‹ôy 1(IDË2(Pri‹ôy)",
 kCh™geTaskPri‹ôy
 },
 
-89 {"èskli°","Show Task Li°",
+97 {"èskli°","Show Task Li°",
 kShowTaskLi°
 },
 
-90 {"kû…ask","End Task,Éx)kû…ask 1(IDË‹ 0xffffffff(AŒ Task)",
+98 {"kû…ask","End Task,Éx)kû…ask 1(IDË‹ 0xffffffff(AŒ Task)",
 kKûlTask
 },
 
-91 {"˝ulﬂd","Show Pro˚ss‹ Lﬂd",
+99 {"˝ulﬂd","Show Pro˚ss‹ Lﬂd",
 kCPULﬂd
 },
 
-92 {"ã°muãx","Te° Muãx Fun˘i⁄",
+100 {"ã°muãx","Te° Muãx Fun˘i⁄",
 kTe°Muãx
 },
 
-93 {"ã°thªad","Te° Thªad And Pro˚s†Fun˘i⁄",
+101 {"ã°thªad","Te° Thªad And Pro˚s†Fun˘i⁄",
 kTe°Thªad
 },
 
-94 {"showm©rix","Show M©rix S¸ìn",
+102 {"showm©rix","Show M©rix S¸ìn",
 kShowM©rix
 },
 
-95 {"ã°põ","Te° PIE CÆcuœti⁄",
+103 {"ã°põ","Te° PIE CÆcuœti⁄",
 kTe°PIE
 },
 
-96 {"dy«micmemöfo","Show Dy«mi¯Mem‹y Inf‹m©i⁄",
+104 {"dy«micmemöfo","Show Dy«mi¯Mem‹y Inf‹m©i⁄",
 kShowDy«micMem‹yInf‹m©i⁄
 },
 
-97 {"ã°£qÆloc","Te° Sequítü»AŒoˇti⁄ & Fªe",
+105 {"ã°£qÆloc","Te° Sequítü»AŒoˇti⁄ & Fªe",
 kTe°SequítülAŒoˇti⁄
 },
 
-98 {"ã°ø«Œoc","Te° R™dom AŒoˇti⁄ & Fªe",
+106 {"ã°ø«Œoc","Te° R™dom AŒoˇti⁄ & Fªe",
 kTe°R™domAŒoˇti⁄
 },
 
-99 {"hddöfo","Show HDD Inf‹m©i⁄",
+107 {"hddöfo","Show HDD Inf‹m©i⁄",
 kShowHDDInf‹m©i⁄
 },
 
-100 {"ªad£˘‹","Ród HDD Se˘‹ÉxÏód£˘‹ 0(LBAË10(cou¡)",
+108 {"ªad£˘‹","Ród HDD Se˘‹ÉxÏód£˘‹ 0(LBAË10(cou¡)",
 kRódSe˘‹
 },
 
-101 {"wrôe£˘‹","WrôêHDD Se˘‹Éx)wrôe£˘‹ 0(LBAË10(cou¡)",
+109 {"wrôe£˘‹","WrôêHDD Se˘‹Éx)wrôe£˘‹ 0(LBAË10(cou¡)",
 kWrôeSe˘‹
 },
 
-102 {"mou¡hdd","Mou¡ HDD",
+110 {"mou¡hdd","Mou¡ HDD",
 kMou¡HDD
 },
 
-103 {"f‹m©hdd","F‹m© HDD",
+111 {"f‹m©hdd","F‹m© HDD",
 kF‹m©HDD
 },
 
-104 {"fûesy°emöfo","Show FûêSy°em Inf‹m©i⁄",
+112 {"fûesy°emöfo","Show FûêSy°em Inf‹m©i⁄",
 kShowFûeSy°emInf‹m©i⁄
 },
 
-105 {"¸óãfûe","Cª©êFûe,Éx)¸óãfûêa.txt",
+113 {"¸óãfûe","Cª©êFûe,Éx)¸óãfûêa.txt",
 kCª©eFûeInRoŸDúe˘‹y
 },
 
-106 {"dñëefûe","DñëêFûe,Éx)dñëefûêa.txt",
+114 {"dñëefûe","DñëêFûe,Éx)dñëefûêa.txt",
 kDñëeFûeInRoŸDúe˘‹y
 },
 
-107 {"dú","Show Dúe˘‹y",
+115 {"dú","Show Dúe˘‹y",
 kShowRoŸDúe˘‹y
 },
 
-108 {"wrôefûe","WrôêD©®TÿFûe,Éx)wrôefûêa.txt",
+116 {"wrôefûe","WrôêD©®TÿFûe,Éx)wrôefûêa.txt",
 kWrôeD©aToFûe
 },
 
-109 {"ªadfûe","Ród D©®From Fûe,ÉxÏódfûêa.txt",
+117 {"ªadfûe","Ród D©®From Fûe,ÉxÏódfûêa.txt",
 kRódD©aFromFûe
 },
 
-110 {"ã°fûeio","Te° FûêI/O Fun˘i⁄",
+118 {"ã°fûeio","Te° FûêI/O Fun˘i⁄",
 kTe°FûeIO
 },
 
-111 {"Êush","Flush FûêSy°em Cache",
+119 {"Êush","Flush FûêSy°em Cache",
 kFlushCache
 },
 
-112 {"dow∆ﬂd","Dow∆ﬂd D©®From Sîü»ex)dow∆ﬂdá.txt",
+120 {"dow∆ﬂd","Dow∆ﬂd D©®From Sîü»ex)dow∆ﬂdá.txt",
 kDow∆ﬂdFûe
 },
 
-113 {"showmpöfo","Show MP C⁄figuøti⁄ TabÀ Inf‹m©i⁄",
+121 {"showmpöfo","Show MP C⁄figuøti⁄ TabÀ Inf‹m©i⁄",
 kShowMPC⁄figuøti⁄TabÀ
 },
 
-114 {"°¨èp","Sèπ Aµliˇti⁄ Pro˚ss‹",
+122 {"°¨èp","Sèπ Aµliˇti⁄ Pro˚ss‹",
 kSèπAµliˇti⁄Pro˚ss‹
 },
 
-118 vﬁ©ûê
+123 {"°¨tsymmëricio","Sèπ Symmëri¯I/O Mode",
+kSèπSymmëricIOMode
+},
+
+124 {"showúqötöm≠","Show IRQ->INTIN M≠pög TabÀ",
+kShowIRQINTINM≠pögTabÀ
+},
+
+125 {"showöçroccou¡","Show I¡îru± Pro˚ssög Cou¡",
+kShowI¡îru±Pro˚ssögCou¡
+},
+
+126 {"°¨töéﬂdbÆ","Sèπ I¡îru± Lﬂd BÆ™cög",
+kSèπI¡îru±LﬂdBÆ™cög
+},
+
+127 {"°¨âasklﬂdbÆ","Sèπ Task Lﬂd BÆ™cög",
+kSèπTaskLﬂdBÆ™cög
+},
+
+128 {"ch™gófföôy","Ch™gêTask Afföôy,Éx)ch™gófföôy 1(IDË0xFF(Afföôy)",
+kCh™geTaskAfföôy
+},
+
+132 vﬁ©ûê
 QWORD
  
 	ggs_qwR™domVÆue
  = 0;
 
-122 
+136 
 	$kSèπC⁄sﬁeShñl
 ()
 
-124 
+138 
 vcComm™Buf„r
 [
 CONSOLESHELL_MAXCOMMANDBUFFERCOUNT
 ];
 
-125 
+139 
 iComm™Buf„rIndex
 =0;
 
-126 
+140 
 BYTE
  
 bKey
 ;
 
-127 
+141 
 iCurs‹X
 , 
 iCurs‹Y
 ;
 
-130 
+144 
 	`kPrötf
 (
 CONSOLESHELL_PROMPRTMESSAGE
 );
 
-135 
+149 
 bKey
 =
 	`kGëCh
 ();
 
-137 if(
+151 if(
 bKey
 ==
 KEY_BACKSPACE
 )
 
-139 if(
+153 if(
 iComm™Buf„rIndex
 >0)
 
-142 
+156 
 	`kGëCurs‹
 (&
 iCurs‹X
@@ -8997,7 +9085,7 @@ iCurs‹X
 iCurs‹Y
 );
 
-143 
+157 
 	`kPrötSåögXY
 (
 iCurs‹X
@@ -9005,7 +9093,7 @@ iCurs‹X
 iCurs‹Y
 ," ");
 
-144 
+158 
 	`kSëCurs‹
 (
 iCurs‹X
@@ -9013,43 +9101,43 @@ iCurs‹X
 iCurs‹Y
 );
 
-145 
+159 
 iComm™Buf„rIndex
 --;
 
-149 if(
+163 if(
 bKey
  =
 KEY_ENTER
 )
 
-151 
+165 
 	`kPrötf
 ("\n");
 
-153 if(
+167 if(
 iComm™Buf„rIndex
 >0)
 
-156 
+170 
 vcComm™Buf„r
 [
 iComm™Buf„rIndex
 ]='\0';
 
-157 
+171 
 	`kExecuãComm™d
 (
 vcComm™Buf„r
 );
 
-161 
+175 
 	`kPrötf
 ("%s",
 CONSOLESHELL_PROMPRTMESSAGE
 );
 
-162 
+176 
 	`kMemSë
 (
 vcComm™Buf„r
@@ -9057,11 +9145,11 @@ vcComm™Buf„r
 CONSOLESHELL_MAXCOMMANDBUFFERCOUNT
 );
 
-163 
+177 
 iComm™Buf„rIndex
 =0;
 
-166 if((
+180 if((
 bKey
 ==
 KEY_LSHIFT
@@ -9075,23 +9163,23 @@ KEY_NUMLOCK
 KEY_SCROLLLOCK
 ))
 
-173 if(
+187 if(
 bKey
 ==
 KEY_TAB
 )
 
-175 
+189 
 bKey
 =' ';
 
-179 if(
+193 if(
 iComm™Buf„rIndex
 <
 CONSOLESHELL_MAXCOMMANDBUFFERCOUNT
 )
 
-181 
+195 
 vcComm™Buf„r
 [
 iComm™Buf„rIndex
@@ -9099,39 +9187,39 @@ iComm™Buf„rIndex
 bKey
 ;
 
-182 
+196 
 	`kPrötf
 ("%c",
 bKey
 );
 
-186 
+200 
 	}
 }
 
-189 
+203 
 	$kExecuãComm™d
 (c⁄° * 
 pcComm™dBuf„r
 )
 
-191 
+205 
 i
 , 
 iS∑˚Index
 ;
 
-192 
+206 
 iComm™dBuf„rLígth
 ,
 iComm™dLígth
 ;
 
-193 
+207 
 iCou¡
 ;
 
-196 
+210 
 iComm™dBuf„rLígth
 =
 	`kSåLí
@@ -9139,19 +9227,19 @@ iComm™dBuf„rLígth
 pcComm™dBuf„r
 );
 
-197 
+211 
 iS∑˚Index
 =0;iS∑˚Index<
 iComm™dBuf„rLígth
 ;iSpaceIndex++)
 
-199 if(
+213 if(
 pcComm™dBuf„r
 [
 iS∑˚Index
 ]==' ')
 
-206 
+220 
 iCou¡
 =(
 gs_v°Comm™dTabÀ
@@ -9159,13 +9247,13 @@ gs_v°Comm™dTabÀ
 SHELLCOMMANDENTRY
 );
 
-208 
+222 
 i
 =0;i<
 iCou¡
 ;i++)
 
-210 
+224 
 iComm™dLígth
 =
 	`kSåLí
@@ -9177,7 +9265,7 @@ i
 pcComm™d
 );
 
-212 if((
+226 if((
 iComm™dLígth
 ==
 iS∑˚Index
@@ -9193,7 +9281,7 @@ pcComm™d
 pcComm™dBuf„r
 ,iSpaceIndex)==0))
 
-215 
+229 
 gs_v°Comm™dTabÀ
 [
 i
@@ -9205,23 +9293,23 @@ pcComm™dBuf„r
 iS∑˚Index
 +1);
 
-221 if(
+235 if(
 i
 >=
 iCou¡
 )
 
-223 
+237 
 	`kPrötf
 ("'%s',i†nŸ found.\n",
 pcComm™dBuf„r
 );
 
-225 
+239 
 	}
 }
 
-228 
+242 
 	$kInôülizeP¨amëî
 (
 PARAMETERLIST
@@ -9231,7 +9319,7 @@ p°Li°
 pcP¨amëî
 )
 
-230 
+244 
 p°Li°
 ->
 pcBuf„r
@@ -9239,7 +9327,7 @@ pcBuf„r
 pcP¨amëî
 ;
 
-231 
+245 
 p°Li°
 ->
 iLígth
@@ -9249,17 +9337,17 @@ iLígth
 pcP¨amëî
 );
 
-232 
+246 
 p°Li°
 ->
 iCuºítPosôi⁄
 =0;
 
-233 
+247 
 	}
 }
 
-236 
+250 
 	$kGëNextP¨amëî
 (
 PARAMETERLIST
@@ -9269,15 +9357,15 @@ p°Li°
 pcP¨amëî
 )
 
-238 
+252 
 i
 ;
 
-239 
+253 
 iLígth
 ;
 
-242 if(
+256 if(
 p°Li°
 ->
 iLígth
@@ -9285,7 +9373,7 @@ iLígth
 iCuºítPosôi⁄
 )
 
-248 
+262 
 i
 =
 p°Li°
@@ -9295,7 +9383,7 @@ iCuºítPosôi⁄
 iLígth
 ;i++)
 
-250 if(
+264 if(
 p°Li°
 ->
 pcBuf„r
@@ -9303,7 +9391,7 @@ pcBuf„r
 i
 ]==' ')
 
-257 
+271 
 	`kMemCpy
 (
 pcP¨amëî
@@ -9317,7 +9405,7 @@ iCuºítPosôi⁄
 i
 );
 
-258 
+272 
 iLígth
 =
 i
@@ -9327,13 +9415,13 @@ p°Li°
 iCuºítPosôi⁄
 ;
 
-259 
+273 
 pcP¨amëî
 [
 iLígth
 ]='\0';
 
-262 
+276 
 p°Li°
 ->
 iCuºítPosôi⁄
@@ -9341,53 +9429,53 @@ iCuºítPosôi⁄
 iLígth
 +1;
 
-263  
+277  
 iLígth
 ;
 
-264 
+278 
 	}
 }
 
-268 
+282 
 	$kHñp
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-270 
+284 
 i
 ;
 
-271 
+285 
 iCou¡
 ;
 
-272 
+286 
 iCurs‹X
 ,
 iCurs‹Y
 ;
 
-273 
+287 
 iLígth
 ,
 iMaxcomm™dLígth
 =0;
 
-275 
+289 
 	`kPrötf
 ("========================================================================\n");
 
-276 
+290 
 	`kPrötf
 (" jk64 Shell Help \n");
 
-277 
+291 
 	`kPrötf
 ("========================================================================\n");
 
-279 
+293 
 iCou¡
 =(
 gs_v°Comm™dTabÀ
@@ -9395,13 +9483,13 @@ gs_v°Comm™dTabÀ
 SHELLCOMMANDENTRY
 );
 
-282 
+296 
 i
 =0;i<
 iCou¡
 ;i++)
 
-284 
+298 
 iLígth
 =
 	`kSåLí
@@ -9413,25 +9501,25 @@ i
 pcComm™d
 );
 
-285 if(
+299 if(
 iLígth
 >
 iMaxcomm™dLígth
 )
 
-287 
+301 
 iMaxcomm™dLígth
 =
 iLígth
 ;
 
-292 
+306 
 i
 =0;i<
 iCou¡
 ;i++)
 
-294 
+308 
 	`kPrötf
 ("%s",
 gs_v°Comm™dTabÀ
@@ -9441,7 +9529,7 @@ i
 pcComm™d
 );
 
-295 
+309 
 	`kGëCurs‹
 (&
 iCurs‹X
@@ -9449,7 +9537,7 @@ iCurs‹X
 iCurs‹Y
 );
 
-296 
+310 
 	`kSëCurs‹
 (
 iMaxcomm™dLígth
@@ -9457,7 +9545,7 @@ iMaxcomm™dLígth
 iCurs‹Y
 );
 
-297 
+311 
 	`kPrötf
 (" - %s\n",
 gs_v°Comm™dTabÀ
@@ -9467,93 +9555,93 @@ i
 pcHñp
 );
 
-300 if((
+314 if((
 i
 !=0)&&((i%20)==0))
 
-302 
+316 
 	`kPrötf
 ("Preeány KeyÅo continue... ('q' isÉxit) :");
 
-303 if(
+317 if(
 	`kGëCh
 ()=='q')
 
-305 
-	`kPrötf
-("\n");
-
-308 
-	`kPrötf
-("\n");
-
-311 
-	}
-}
-
-314 
-	$kCls
-(c⁄° * 
-pcP¨amëîBuf„r
-)
-
-317 
-	`kCÀ¨S¸ìn
-();
-
-318 
-	`kSëCurs‹
-(0,1);
-
 319 
-	}
-}
-
-322 
-	$kShowTŸÆRAMSize
-(c⁄° * 
-pcP¨amëîBuf„r
-)
-
-324 
 	`kPrötf
-("TŸÆ RAM Size=%d MB\n",
-	`kGëTŸÆRAMSize
-());
+("\n");
+
+322 
+	`kPrötf
+("\n");
 
 325 
 	}
 }
 
 328 
+	$kCls
+(c⁄° * 
+pcP¨amëîBuf„r
+)
+
+331 
+	`kCÀ¨S¸ìn
+();
+
+332 
+	`kSëCurs‹
+(0,1);
+
+333 
+	}
+}
+
+336 
+	$kShowTŸÆRAMSize
+(c⁄° * 
+pcP¨amëîBuf„r
+)
+
+338 
+	`kPrötf
+("TŸÆ RAM Size=%d MB\n",
+	`kGëTŸÆRAMSize
+());
+
+339 
+	}
+}
+
+342 
 	$kSåögToDecimÆHexText
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-330 
+344 
 vcP¨amëî
 [100];
 
-331 
+345 
 iLígth
 ;
 
-332 
+346 
 PARAMETERLIST
  
 °Li°
 ;
 
-333 
+347 
 iCou¡
 =0;
 
-334 
+348 
 iVÆue
 ;
 
-337 
+351 
 	`kInôülizeP¨amëî
 (&
 °Li°
@@ -9561,7 +9649,7 @@ iVÆue
 pcP¨amëîBuf„r
 );
 
-342 
+356 
 iLígth
 =
 	`kGëNextP¨amëî
@@ -9571,11 +9659,11 @@ iLígth
 vcP¨amëî
 );
 
-343 if(
+357 if(
 iLígth
 ==0)
 
-349 
+363 
 	`kPrötf
 ("P¨am %d = '%s', Lígth = %d, ",
 iCou¡
@@ -9585,13 +9673,13 @@ vcP¨amëî
 iLígth
 );
 
-352 if(
+366 if(
 	`kMemCmp
 (
 vcP¨amëî
 ,"0x",2)==0)
 
-355 
+369 
 iVÆue
 =
 	`kAToI
@@ -9599,13 +9687,13 @@ iVÆue
 vcP¨amëî
 +2,16);
 
-356 
+370 
 	`kPrötf
 ("HEX vÆuê%q\n",
 iVÆue
 );
 
-360 
+374 
 iVÆue
 =
 	`kAToI
@@ -9613,91 +9701,91 @@ iVÆue
 vcP¨amëî
 ,10);
 
-361 
+375 
 	`kPrötf
 ("DecimÆ vÆuê%d\n",
 iVÆue
 );
 
-364 
+378 
 iCou¡
 ++;
 
-366 
+380 
 	}
 }
 
-369 
+383 
 	$kShutdown
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-371 
+385 
 	`kPrötf
 ("System Shutdown Start...\n");
 
-374 
+388 
 	`kPrötf
 ("Cache Flush... ");
 
-375 if(
+389 if(
 	`kFlushFûeSy°emCache
 ()==
 TRUE
 )
 
-377 
+391 
 	`kPrötf
 ("Pass\n");
 
-381 
+395 
 	`kPrötf
 ("Fail\n");
 
-385 
+399 
 	`kPrötf
 ("Press Any KeyÅo Reboot PC...");
 
-386 
+400 
 	`kGëCh
 ();
 
-387 
+401 
 	`kReboŸ
 ();
 
-388 
+402 
 	}
 }
 
-391 
+405 
 	$kSëTimî
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-393 
+407 
 vcP¨amëî
 [100];
 
-394 
+408 
 PARAMETERLIST
  
 °Li°
 ;
 
-395 
+409 
 lVÆue
 ;
 
-396 
+410 
 BOOL
  
 bPîiodic
 ;
 
-399 
+413 
 	`kInôülizeP¨amëî
 (&
 °Li°
@@ -9705,7 +9793,7 @@ bPîiodic
 pcP¨amëîBuf„r
 );
 
-402 if(
+416 if(
 	`kGëNextP¨amëî
 (&
 °Li°
@@ -9713,11 +9801,11 @@ pcP¨amëîBuf„r
 vcP¨amëî
 )==0)
 
-404 
+418 
 	`kPrötf
 ("ex)settimer 10(ms) 1(periodic)\n");
 
-407 
+421 
 lVÆue
 =
 	`kAToI
@@ -9725,7 +9813,7 @@ lVÆue
 vcP¨amëî
 ,10);
 
-410 if(
+424 if(
 	`kGëNextP¨amëî
 (&
 °Li°
@@ -9733,11 +9821,11 @@ vcP¨amëî
 vcP¨amëî
 )==0)
 
-412 
+426 
 	`kPrötf
 ("ex)settimer 10(ms) 1(periodic)\n");
 
-416 
+430 
 bPîiodic
  = 
 	`kAToI
@@ -9745,7 +9833,7 @@ bPîiodic
 vcP¨amëî
 ,10);
 
-418 
+432 
 	`kInôülizePIT
 (
 	`MSTOCOUNT
@@ -9755,7 +9843,7 @@ lVÆue
 bPîiodic
 );
 
-419 
+433 
 	`kPrötf
 ("Timê%d ms, Pîiodi¯%d Ch™gêCom∂ëe\n",
 lVÆue
@@ -9763,39 +9851,39 @@ lVÆue
 bPîiodic
 );
 
-420 
+434 
 	}
 }
 
-423 
+437 
 	$kWaôUsögPIT
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-425 
+439 
 vcP¨amëî
 [100];
 
-426 
+440 
 iLígth
 ;
 
-427 
+441 
 PARAMETERLIST
  
 °Li°
 ;
 
-428 
+442 
 lMûi£c⁄d
 ;
 
-429 
+443 
 i
 ;
 
-432 
+446 
 	`kInôülizeP¨amëî
 (&
 °Li°
@@ -9803,7 +9891,7 @@ i
 pcP¨amëîBuf„r
 );
 
-433 if(
+447 if(
 	`kGëNextP¨amëî
 (&
 °Li°
@@ -9811,11 +9899,11 @@ pcP¨amëîBuf„r
 vcP¨amëî
 )==0)
 
-435 
+449 
 	`kPrötf
 ("ex)wait 100(ms)\n");
 
-439 
+453 
 lMûi£c⁄d
  = 
 	`kAToI
@@ -9823,29 +9911,29 @@ lMûi£c⁄d
 vcP¨amëî
 ,10);
 
-440 
+454 
 	`kPrötf
 ("%d m†SÀï Sèπ...\n",
 lMûi£c⁄d
 );
 
-443 
+457 
 	`kDißbÀI¡îru±
 ();
 
-444 
+458 
 i
 =0;i<
 lMûi£c⁄d
 /30;i++)
 
-446 
+460 
 	`kWaôUsögDúe˘PIT
 (
 	`MSTOCOUNT
 (30));
 
-448 
+462 
 	`kWaôUsögDúe˘PIT
 (
 	`MSTOCOUNT
@@ -9853,17 +9941,17 @@ lMûi£c⁄d
 lMûi£c⁄d
 %30));
 
-449 
+463 
 	`kE«bÀI¡îru±
 ();
 
-450 
+464 
 	`kPrötf
 ("%d m†SÀï Com∂ëe\n",
 lMûi£c⁄d
 );
 
-453 
+467 
 	`kInôülizePIT
 (
 	`MSTOCOUNT
@@ -9871,49 +9959,49 @@ lMûi£c⁄d
 TRUE
 );
 
-454 
+468 
 	}
 }
 
-457 
+471 
 	$kRódTimeSèmpCou¡î
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-459 
+473 
 QWORD
  
 qwTSC
 ;
 
-461 
+475 
 qwTSC
  = 
 	`kRódTSC
 ();
 
-462 
+476 
 	`kPrötf
 ("TimêSèm∞Cou¡î = %q\n",
 qwTSC
 );
 
-463 
+477 
 	}
 }
 
-466 
+480 
 	$kMósurPª˚ss‹S≥ed
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-468 
+482 
 i
 ;
 
-469 
+483 
 QWORD
  
 qwLa°TSC
@@ -9921,31 +10009,31 @@ qwLa°TSC
 qwTŸÆTSC
 =0;
 
-471 
+485 
 	`kPrötf
 ("Now Measuring");
 
-474 
+488 
 	`kDißbÀI¡îru±
 ();
 
-475 
+489 
 i
 =0;i<200;i++)
 
-477 
+491 
 qwLa°TSC
 =
 	`kRódTSC
 ();
 
-478 
+492 
 	`kWaôUsögDúe˘PIT
 (
 	`MSTOCOUNT
 (50));
 
-479 
+493 
 qwTŸÆTSC
 +=
 	`kRódTSC
@@ -9953,11 +10041,11 @@ qwTŸÆTSC
 qwLa°TSC
 ;
 
-481 
+495 
 	`kPrötf
 (".");
 
-485 
+499 
 	`kInôülizePIT
 (
 	`MSTOCOUNT
@@ -9965,27 +10053,27 @@ qwLa°TSC
 TRUE
 );
 
-486 
+500 
 	`kE«bÀI¡îru±
 ();
 
-488 
+502 
 	`kPrötf
 ("\nCPU S≥ed = %d MHz\n",
 qwTŸÆTSC
 /10/1000/1000);
 
-489 
+503 
 	}
 }
 
-492 
+506 
 	$kShowD©eAndTime
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-494 
+508 
 BYTE
  
 bSec⁄d
@@ -9995,7 +10083,7 @@ bMöuã
 bHour
 ;
 
-495 
+509 
 BYTE
  
 bDayOFWìk
@@ -10005,13 +10093,13 @@ bDayOfM⁄th
 bM⁄th
 ;
 
-496 
+510 
 WORD
  
 wYór
 ;
 
-499 
+513 
 	`kRódRTCTime
 (&
 bHour
@@ -10021,7 +10109,7 @@ bMöuã
 bSec⁄d
 );
 
-500 
+514 
 	`kRódRTCD©a
 (&
 wYór
@@ -10033,7 +10121,7 @@ bDayOfM⁄th
 bDayOFWìk
 );
 
-502 
+516 
 	`kPrötf
 ("D©®: %d/%d/%d %s",
 wYór
@@ -10047,7 +10135,7 @@ bDayOfM⁄th
 bDayOFWìk
 ));
 
-503 
+517 
 	`kPrötf
 ("Timê: %d:%d:%d\n",
 bHour
@@ -10057,21 +10145,21 @@ bMöuã
 bSec⁄d
 );
 
-504 
+518 
 	}
 }
 
-509 
+523 
 	$kTe°Task1
 ()
 
-511 
+525 
 BYTE
  
 bD©a
 ;
 
-512 
+526 
 i
 =0,
 iX
@@ -10083,7 +10171,7 @@ iM¨gö
 j
 ;
 
-513 
+527 
 CHARACTER
 * 
 p°S¸ìn
@@ -10091,19 +10179,21 @@ p°S¸ìn
 CONSOLE_VIDEOMEMORYADDRESS
 ;
 
-514 
+528 
 TCB
 * 
 p°Ru¬ögTask
 ;
 
-518 
+532 
 p°Ru¬ögTask
  = 
 	`kGëRu¬ögTask
-();
+(
+	`kGëAPICID
+());
 
-519 
+533 
 iM¨gö
  = (
 p°Ru¬ögTask
@@ -10113,19 +10203,19 @@ p°Ru¬ögTask
 qwID
 &0xFFFFFFFF)%10+1;
 
-522 
+536 
 j
 =0;j<20000;j++)
 
-524 
+538 
 i
 )
 
-527 
+541 
 iX
 ++;
 
-528 if(
+542 if(
 iX
 >=(
 CONSOLE_WIDTH
@@ -10133,15 +10223,15 @@ CONSOLE_WIDTH
 iM¨gö
 ))
 
-530 
+544 
 i
 =1;
 
-535 
+549 
 iY
 ++;
 
-536 if(
+550 if(
 iY
 >=(
 CONSOLE_HEIGHT
@@ -10149,39 +10239,39 @@ CONSOLE_HEIGHT
 iM¨gö
 ))
 
-538 
+552 
 i
 =2;
 
-543 
+557 
 iX
 --;
 
-544 if(
+558 if(
 iX
 <
 iM¨gö
 )
 
-546 
+560 
 i
 =3;
 
-551 
+565 
 iY
 --;
 
-552 if(
+566 if(
 iY
 <
 iM¨gö
 )
 
-554 
+568 
 i
 =0;
 
-561 
+575 
 p°S¸ìn
 [
 iY
@@ -10195,7 +10285,7 @@ bCh¨a˘‹
 bD©a
 ;
 
-562 
+576 
 p°S¸ìn
 [
 iY
@@ -10209,29 +10299,29 @@ bAâribuã
 bD©a
 &0x0F;
 
-563 
+577 
 bD©a
 ++;
 
-570 
+584 
 	`kExôTask
 ();
 
-572 
+586 
 	}
 }
 
-576 
+590 
 	$kTe°Task2
 ()
 
-578 
+592 
 i
 =0,
 iOff£t
 ;
 
-579 
+593 
 CHARACTER
 * 
 p°S¸ìn
@@ -10239,23 +10329,25 @@ p°S¸ìn
 CONSOLE_VIDEOMEMORYADDRESS
 ;
 
-580 
+594 
 TCB
 * 
 p°Ru¬ögTask
 ;
 
-581 
+595 
 vcD©a
 [4]={'-','\\','|','/'};
 
-584 
+598 
 p°Ru¬ögTask
  = 
 	`kGëRu¬ögTask
-();
+(
+	`kGëAPICID
+());
 
-585 
+599 
 iOff£t
  = (
 p°Ru¬ögTask
@@ -10265,7 +10357,7 @@ p°Ru¬ögTask
 qwID
 &0xFFFFFFFF)*2;
 
-586 
+600 
 iOff£t
  = 
 CONSOLE_WIDTH
@@ -10273,7 +10365,7 @@ CONSOLE_WIDTH
 CONSOLE_HEIGHT
 -(iOffset%(CONSOLE_WIDTH*CONSOLE_HEIGHT));
 
-591 
+605 
 p°S¸ìn
 [
 iOff£t
@@ -10285,7 +10377,7 @@ vcD©a
 i
 %4];
 
-593 
+607 
 p°S¸ìn
 [
 iOff£t
@@ -10293,39 +10385,129 @@ iOff£t
 bAâribuã
  = (iOffset%15)+1;
 
-594 
+608 
 i
 ++;
 
-599 
+613 
 	}
 }
 
-602 
+617 
+	$kTe°Task3
+()
+
+619 
+QWORD
+ 
+qwTaskID
+;
+
+620 
+TCB
+* 
+p°Ru¬ögTask
+;
+
+621 
+BYTE
+ 
+bLa°LoˇlAPICID
+;
+
+622 
+QWORD
+ 
+qwLa°Tick
+;
+
+625 
+p°Ru¬ögTask
+ = 
+	`kGëRu¬ögTask
+(
+	`kGëAPICID
+());
+
+626 
+qwTaskID
+ = 
+p°Ru¬ögTask
+->
+°Lök
+.
+qwID
+;
+
+627 
+	`kPrötf
+("Te° Task 3 Sèπed. Task ID = 0x%q, Loˇ»APIC ID = 0x%x\n",
+qwTaskID
+,
+	`kGëAPICID
+());
+
+631 
+bLa°LoˇlAPICID
+ = 
+	`kGëAPICID
+();
+
+636 if(
+bLa°LoˇlAPICID
+ !
+	`kGëAPICID
+())
+
+638 
+	`kPrötf
+("C‹êCh™ged. Task ID = 0x%q, Pªviou†Loˇ»APIC ID = 0x%x Cuºíà0x%x\n",
+qwTaskID
+,
+bLa°LoˇlAPICID
+,
+	`kGëAPICID
+());
+
+641 
+bLa°LoˇlAPICID
+ = 
+	`kGëAPICID
+();
+
+644 
+	`kScheduÀ
+();
+
+646 
+	}
+}
+
+650 
 	$kCª©eTe°Task
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-604 
+652 
 PARAMETERLIST
  
 °Li°
 ;
 
-605 
+653 
 vcTy≥
 [30];
 
-606 
+654 
 vcCou¡
 [30];
 
-607 
+655 
 i
 ;
 
-610 
+658 
 	`kInôülizeP¨amëî
 (&
 °Li°
@@ -10333,7 +10515,7 @@ i
 pcP¨amëîBuf„r
 );
 
-611 
+659 
 	`kGëNextP¨amëî
 (&
 °Li°
@@ -10341,7 +10523,7 @@ pcP¨amëîBuf„r
 vcTy≥
 );
 
-612 
+660 
 	`kGëNextP¨amëî
 (&
 °Li°
@@ -10349,13 +10531,13 @@ vcTy≥
 vcCou¡
 );
 
-614 
+662 
 	`kAToI
 (
 vcTy≥
 ,10))
 
-618 
+666 
 i
 =0;i<
 	`kAToI
@@ -10363,7 +10545,7 @@ i
 vcCou¡
 ,10);i++)
 
-620 if(
+668 if(
 	`kCª©eTask
 (
 TASK_FLAGS_LOW
@@ -10373,17 +10555,19 @@ TASK_FLAGS_THREAD
 QWORD
 )
 kTe°Task1
+,
+TASK_LOADBALANCINGID
 )==
 NULL
 )
 
-626 
+674 
 	`kPrötf
 ("Task1 %d Cª©ed\n",
 i
 );
 
-631 
+679 
 i
 =0;i<
 	`kAToI
@@ -10391,7 +10575,7 @@ i
 vcCou¡
 ,10);i++)
 
-633 if(
+681 if(
 	`kCª©eTask
 (
 TASK_FLAGS_LOW
@@ -10401,53 +10585,89 @@ TASK_FLAGS_THREAD
 QWORD
 )
 kTe°Task2
+,
+TASK_LOADBALANCINGID
 )==
 NULL
 )
 
-639 
+687 
 	`kPrötf
 ("Task2 %d cª©ed\n",
 i
 );
 
-643 
+692 
+i
+=0;i<
+	`kAToI
+(
+vcCou¡
+,10);i++)
+
+694 if(
+	`kCª©eTask
+(
+TASK_FLAGS_LOW
+|
+TASK_FLAGS_THREAD
+,0,0,(
+QWORD
+)
+kTe°Task3
+,
+TASK_LOADBALANCINGID
+)==
+NULL
+)
+
+698 
+	`kScheduÀ
+();
+
+700 
+	`kPrötf
+("Task 3 %d Cª©ed\n",
+i
+);
+
+705 
 	}
 }
 
-646 
+708 
 	$kCh™geTaskPri‹ôy
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-648 
+710 
 PARAMETERLIST
  
 °Li°
 ;
 
-649 
+711 
 vcID
 [30];
 
-650 
+712 
 vcPri‹ôy
 [30];
 
-651 
+713 
 QWORD
  
 qwID
 ;
 
-652 
+714 
 BYTE
  
 bPri‹ôy
 ;
 
-655 
+717 
 	`kInôülizeP¨amëî
 (&
 °Li°
@@ -10455,7 +10675,7 @@ bPri‹ôy
 pcP¨amëîBuf„r
 );
 
-656 
+718 
 	`kGëNextP¨amëî
 (&
 °Li°
@@ -10463,7 +10683,7 @@ pcP¨amëîBuf„r
 vcID
 );
 
-657 
+719 
 	`kGëNextP¨amëî
 (&
 °Li°
@@ -10471,13 +10691,13 @@ vcID
 vcPri‹ôy
 );
 
-660 if(
+722 if(
 	`kMemCmp
 (
 vcID
 ,"0x",2)==0)
 
-662 
+724 
 qwID
  = 
 	`kAToI
@@ -10485,7 +10705,7 @@ qwID
 vcID
 +2,16);
 
-666 
+728 
 qwID
  = 
 	`kAToI
@@ -10493,7 +10713,7 @@ qwID
 vcID
 ,10);
 
-669 
+731 
 bPri‹ôy
  = 
 	`kAToI
@@ -10501,7 +10721,7 @@ bPri‹ôy
 vcPri‹ôy
 ,10);
 
-671 
+733 
 	`kPrötf
 ("Ch™gêTask Pri‹ôy ID [0x%q] Pri‹ôy[%d]",
 qwID
@@ -10509,7 +10729,7 @@ qwID
 bPri‹ôy
 );
 
-672 if(
+734 if(
 	`kCh™gePri‹ôy
 (
 qwID
@@ -10519,51 +10739,165 @@ bPri‹ôy
 TRUE
 )
 
-674 
+736 
 	`kPrötf
 ("Success\n");
 
-678 
+740 
 	`kPrötf
 ("Fail\n");
 
-680 
+742 
 	}
 }
 
-683 
+745 
 	$kShowTaskLi°
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-685 
+747 
 i
 ;
 
-686 
+748 
 TCB
 * 
 p°TCB
 ;
 
-687 
+749 
 iCou¡
 =0;
 
-689 
+750 
+iTŸÆTaskCou¡
+ = 0;
+
+751 
+vcBuf„r
+[20];
+
+752 
+iRemaöLígth
+;
+
+753 
+iPro˚ssCou¡
+;
+
+756 
+iPro˚ssCou¡
+ = 
+	`kGëPro˚ss‹Cou¡
+();
+
+758 
+i
+=0;i<
+iPro˚ssCou¡
+;i++)
+
+760 
+iTŸÆTaskCou¡
+ +
+	`kGëTaskCou¡
+(
+i
+);
+
+765 
 	`kPrötf
 ("============Task TŸÆ Cou¡ [%d] ===========\n",
-	`kGëTaskCou¡
-());
+iTŸÆTaskCou¡
+);
 
-690 
+768 if(
+iPro˚ssCou¡
+>1)
+
+771 
+i
+=0;i<
+iPro˚ssCou¡
+;i++)
+
+773 if((
+i
+!=0)&&((i%4)==0))
+
+775 
+	`kPrötf
+("\n");
+
+778 
+	`kSPrötf
+(
+vcBuf„r
+,"c‹ê%d : %d",
+i
+,
+	`kGëTaskCou¡
+(i));
+
+779 
+	`kPrötf
+(
+vcBuf„r
+);
+
+782 
+iRemaöLígth
+ = 19 - 
+	`kSåLí
+(
+vcBuf„r
+);
+
+783 
+	`kMemSë
+(
+vcBuf„r
+,' ',
+iRemaöLígth
+);
+
+784 
+vcBuf„r
+[
+iRemaöLígth
+] = '\0';
+
+785 
+	`kPrötf
+(
+vcBuf„r
+);
+
+788 
+	`kPrötf
+("\nPressány keyÅo continue... ('q' isÉxit) : ");
+
+789 if(
+	`kGëCh
+()=='q')
+
+791 
+	`kPrötf
+("\n");
+
+795 
+	`kPrötf
+("\n\n");
+
+798 
 i
 =0;i<
 TASK_MAXCOUNT
 ;i++)
 
-693 
+801 
 p°TCB
  = 
 	`kGëTCBInTCBPoﬁ
@@ -10571,7 +10905,7 @@ p°TCB
 i
 );
 
-694 if((
+802 if((
 p°TCB
 ->
 °Lök
@@ -10579,27 +10913,27 @@ p°TCB
 qwID
 >>32)!=0)
 
-697 if((
+805 if((
 iCou¡
-!=0)&&((iCount%10)==0))
+!=0)&&((iCount%6)==0))
 
-699 
+807 
 	`kPrötf
 ("Pressány keyÅo continue... ('q' isÉxit) : ");
 
-700 if(
+808 if(
 	`kGëCh
 ()=='q')
 
-702 
+810 
 	`kPrötf
 ("\n");
 
-705 
+813 
 	`kPrötf
 ("\n");
 
-708 
+816 
 	`kPrötf
 ("[%d] Task ID[0x%Q], Pri‹ôy[%d], Fœgs[0x%Q], Thªad[%d]\n",1+
 iCou¡
@@ -10619,7 +10953,17 @@ qwFœgs
 °ChûdThªadLi°
 )));
 
-709 
+817 
+	`kPrötf
+(" C‹êId[0x%x] CPU Afföôy[0x%x]\n",
+p°TCB
+->
+bAPICID
+,p°TCB->
+bAfföôy
+);
+
+818 
 	`kPrötf
 (" P¨íàPID[0x%Q], Mem‹y Addªss[0x%Q], Size[0x%Q]\n",
 p°TCB
@@ -10631,43 +10975,43 @@ pvMem‹yAddªss
 qwMem‹ySize
 );
 
-714 
+823 
 	}
 }
 
-717 
+826 
 	$kKûlTask
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-719 
+828 
 PARAMETERLIST
  
 °Li°
 ;
 
-720 
+829 
 vcID
 [30];
 
-721 
+830 
 QWORD
  
 qwID
 ;
 
-722 
+831 
 TCB
 * 
 p°TCB
 ;
 
-723 
+832 
 i
 ;
 
-726 
+835 
 	`kInôülizeP¨amëî
 (&
 °Li°
@@ -10675,7 +11019,7 @@ i
 pcP¨amëîBuf„r
 );
 
-727 
+836 
 	`kGëNextP¨amëî
 (&
 °Li°
@@ -10683,13 +11027,13 @@ pcP¨amëîBuf„r
 vcID
 );
 
-730 if(
+839 if(
 	`kMemCmp
 (
 vcID
 ,"0x",2)==0)
 
-732 
+841 
 qwID
  = 
 	`kAToI
@@ -10697,7 +11041,7 @@ qwID
 vcID
 +2,16);
 
-736 
+845 
 qwID
  = 
 	`kAToI
@@ -10705,11 +11049,11 @@ qwID
 vcID
 ,10);
 
-740 if(
+849 if(
 qwID
 !=0xFFFFFFFF)
 
-742 
+851 
 p°TCB
  = 
 	`kGëTCBInTCBPoﬁ
@@ -10719,7 +11063,7 @@ p°TCB
 qwID
 ));
 
-743 
+852 
 qwID
  = 
 p°TCB
@@ -10727,7 +11071,7 @@ p°TCB
 °Lök
 .qwID;
 
-746 if(((
+855 if(((
 qwID
 >>32)!=0)&&((
 p°TCB
@@ -10737,13 +11081,13 @@ qwFœgs
 TASK_FLAGS_SYSTEM
 )==0x00))
 
-748 
+857 
 	`kPrötf
 ("Kû»Task ID [0x%q]",
 qwID
 );
 
-749 if(
+858 if(
 	`kEndTask
 (
 qwID
@@ -10751,25 +11095,25 @@ qwID
 TRUE
 )
 
-751 
+860 
 	`kPrötf
 ("Success\n");
 
-755 
+864 
 	`kPrötf
 ("Fail\n");
 
-760 
+869 
 	`kPrötf
 ("Task doesÇotÉxist orÅask is systemÅask\n");
 
-767 
+876 
 i
 =0;i<
 TASK_MAXCOUNT
 ;i++)
 
-769 
+878 
 p°TCB
  = 
 	`kGëTCBInTCBPoﬁ
@@ -10777,7 +11121,7 @@ p°TCB
 i
 );
 
-770 
+879 
 qwID
  = 
 p°TCB
@@ -10785,7 +11129,7 @@ p°TCB
 °Lök
 .qwID;
 
-773 if(((
+882 if(((
 qwID
 >>32)!=0)&&((
 p°TCB
@@ -10795,13 +11139,13 @@ qwFœgs
 TASK_FLAGS_SYSTEM
 )==0x00))
 
-775 
+884 
 	`kPrötf
 ("Kû»Task ID [0x%q]",
 qwID
 );
 
-776 if(
+885 if(
 	`kEndTask
 (
 qwID
@@ -10809,83 +11153,157 @@ qwID
 TRUE
 )
 
-778 
+887 
 	`kPrötf
 ("Success\n");
 
-782 
+891 
 	`kPrötf
 ("Fail\n");
 
-787 
+896 
 	}
 }
 
-790 
+899 
 	$kCPULﬂd
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-792 
-	`kPrötf
-("Pro˚ss‹ Lﬂd : %d%%\n",
-	`kGëPro˚ss‹Lﬂd
-());
-
-794 
-	}
-}
-
-798 
-	$kPrötNumbîTask
-()
-
-800 
+901 
 i
 ;
 
-801 
+902 
+vcBuf„r
+[50];
+
+903 
+iRemaöLígth
+;
+
+905 
+	`kPrötf
+("=========================== Processor Load =====================\n");
+
+908 
+i
+=0;i<
+	`kGëPro˚ss‹Cou¡
+();i++)
+
+910 if((
+i
+!=0)&&((i%4)==0))
+
+912 
+	`kPrötf
+("\n");
+
+915 
+	`kSPrötf
+(
+vcBuf„r
+,"C‹ê%d : %d%%",
+i
+,
+	`kGëPro˚ss‹Lﬂd
+(i));
+
+916 
+	`kPrötf
+("%s",
+vcBuf„r
+);
+
+919 
+iRemaöLígth
+ = 19 - 
+	`kSåLí
+(
+vcBuf„r
+);
+
+920 
+	`kMemSë
+(
+vcBuf„r
+,' ',
+iRemaöLígth
+);
+
+921 
+vcBuf„r
+[
+iRemaöLígth
+] = '\0';
+
+922 
+	`kPrötf
+(
+vcBuf„r
+);
+
+925 
+	`kPrötf
+("\n");
+
+926 
+	}
+}
+
+930 
+	$kPrötNumbîTask
+()
+
+932 
+i
+;
+
+933 
 j
 ;
 
-802 
+934 
 QWORD
  
 qwTickCou¡
 ;
 
-806 
+938 
 qwTickCou¡
  = 
 	`kGëTickCou¡
 ();
 
-807 (
+939 (
 	`kGëTickCou¡
 ()-
 qwTickCou¡
 )<50)
 
-809 
+941 
 	`kScheduÀ
 ();
 
-813 
+945 
 i
 =0;i<5;i++)
 
-815 
+947 
 	`kLock
 (&(
 gs_°Muãx
 ));
 
-816 
+948 
 	`kPrötf
 ("Task ID [0x%Q] VÆue[%d]\n",
 	`kGëRu¬ögTask
-()->
+(
+	`kGëAPICID
+())->
 °Lök
 .
 qwID
@@ -10893,69 +11311,69 @@ qwID
 gs_qwAddî
 );
 
-817 
+949 
 gs_qwAddî
 +=1;
 
-818 
+950 
 	`kU∆ock
 (&(
 gs_°Muãx
 ));
 
-821 
+953 
 j
 =0;j<30000;j++);
 
-825 
+957 
 qwTickCou¡
  = 
 	`kGëTickCou¡
 ();
 
-826 (
+958 (
 	`kGëTickCou¡
 ()-
 qwTickCou¡
 )<1000)
 
-828 
+960 
 	`kScheduÀ
 ();
 
-832 
+964 
 	`kExôTask
 ();
 
-833 
+965 
 	}
 }
 
-836 
+968 
 	$kTe°Muãx
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-838 
+970 
 i
 ;
 
-840 
+972 
 gs_qwAddî
 =1;
 
-843 
+975 
 	`kInôülizeMuãx
 (&(
 gs_°Muãx
 ));
 
-845 
+977 
 i
 =0;i<3;i++)
 
-848 
+980 
 	`kCª©eTask
 (
 TASK_FLAGS_LOW
@@ -10965,35 +11383,37 @@ TASK_FLAGS_THREAD
 QWORD
 )
 kPrötNumbîTask
-);
+,
+	`kGëAPICID
+());
 
-850 
+982 
 	`kPrötf
 ("Waô Utû %d Task End...\n",
 i
 );
 
-851 
+983 
 	`kGëCh
 ();
 
-852 
+984 
 	}
 }
 
-855 
+987 
 	$kCª©eThªadTask
 ()
 
-857 
+989 
 i
 ;
 
-859 
+991 
 i
 =0;i<3;i++)
 
-861 
+993 
 	`kCª©eTask
 (
 TASK_FLAGS_LOW
@@ -11003,29 +11423,31 @@ TASK_FLAGS_THREAD
 QWORD
 )
 kTe°Task2
+,
+TASK_LOADBALANCINGID
 );
 
-866 
+998 
 	`kSÀï
 (1);
 
-868 
+1000 
 	}
 }
 
-871 
+1003 
 	$kTe°Thªad
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-873 
+1005 
 TCB
 * 
 p°Pro˚ss
 ;
 
-875 
+1007 
 p°Pro˚ss
  = 
 	`kCª©eTask
@@ -11037,15 +11459,17 @@ TASK_FLAGS_PROCESS
 QWORD
 )
 kCª©eThªadTask
+,
+TASK_LOADBALANCINGID
 );
 
-877 if(
+1009 if(
 p°Pro˚ss
 !=
 NULL
 )
 
-879 
+1011 
 	`kPrötf
 ("Pro˚s†[0x%Q] Cª©êSuc˚ss\n",
 p°Pro˚ss
@@ -11055,49 +11479,49 @@ p°Pro˚ss
 qwID
 );
 
-883 
+1015 
 	`kPrötf
 ("Process Create Fail\n");
 
-885 
+1017 
 	}
 }
 
-888 
+1020 
 QWORD
  
 	$kR™dom
 ()
 
-890 
+1022 
 gs_qwR™domVÆue
  = (gs_qwRandomValue*412153 + 5571031)>>16;
 
-891  
+1023  
 gs_qwR™domVÆue
 ;
 
-892 
+1024 
 	}
 }
 
-895 
+1027 
 	$kDr›Ch¨a˘‹Thªad
 ()
 
-897 
+1029 
 iX
 ;
 
-898 
+1030 
 i
 ;
 
-899 
+1031 
 vcText
 [2] = {0,};
 
-901 
+1033 
 iX
  = 
 	`kR™dom
@@ -11105,27 +11529,27 @@ iX
 CONSOLE_WIDTH
 ;
 
-906 
+1038 
 	`kSÀï
 (
 	`kR™dom
 ()%20);
 
-908 if((
+1040 if((
 	`kR™dom
 ()%20)<15)
 
-910 
+1042 
 vcText
 [0]=' ';
 
-911 
+1043 
 i
 =0;i<
 CONSOLE_HEIGHT
 -1;i++)
 
-913 
+1045 
 	`kPrötSåögXY
 (
 iX
@@ -11135,17 +11559,17 @@ i
 vcText
 );
 
-914 
+1046 
 	`kSÀï
 (50);
 
-919 
+1051 
 i
 =0;i<
 CONSOLE_HEIGHT
 -1;i++)
 
-921 
+1053 
 vcText
 [0]=
 i
@@ -11153,7 +11577,7 @@ i
 	`kR™dom
 ();
 
-922 
+1054 
 	`kPrötSåögXY
 (
 iX
@@ -11163,27 +11587,27 @@ i
 vcText
 );
 
-923 
+1055 
 	`kSÀï
 (50);
 
-927 
+1059 
 	}
 }
 
-930 
+1062 
 	$kM©rixPro˚ss
 ()
 
-932 
+1064 
 i
 ;
 
-934 
+1066 
 i
 =0;i<300;i++)
 
-936 if(
+1068 if(
 	`kCª©eTask
 (
 TASK_FLAGS_THREAD
@@ -11193,43 +11617,45 @@ TASK_FLAGS_LOW
 QWORD
 )
 kDr›Ch¨a˘‹Thªad
+,
+TASK_LOADBALANCINGID
 )==
 NULL
 )
 
-941 
+1073 
 	`kSÀï
 (
 	`kR™dom
 ()%5+5);
 
-944 
+1076 
 	`kPrötf
 ("%d Thªad i†¸óãd\n",
 i
 );
 
-947 
+1079 
 	`kGëCh
 ();
 
-948 
+1080 
 	}
 }
 
-951 
+1083 
 	$kShowM©rix
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-953 
+1085 
 TCB
 * 
 p°Pro˚ss
 ;
 
-955 
+1087 
 p°Pro˚ss
  = 
 	`kCª©eTask
@@ -11241,15 +11667,17 @@ TASK_FLAGS_LOW
 QWORD
 )
 kM©rixPro˚ss
+,
+TASK_LOADBALANCINGID
 );
 
-957 if(
+1089 if(
 p°Pro˚ss
 !=
 NULL
 )
 
-959 
+1091 
 	`kPrötf
 ("M©rix Pro˚s†[0x%Q] Cª©eSuc˚ss\n",
 p°Pro˚ss
@@ -11259,7 +11687,7 @@ p°Pro˚ss
 qwID
 );
 
-962 (
+1094 (
 p°Pro˚ss
 ->
 °Lök
@@ -11267,61 +11695,61 @@ p°Pro˚ss
 qwID
 >>32)!=0)
 
-964 
+1096 
 	`kSÀï
 (100);
 
-969 
+1101 
 	`kPrötf
 ("Matrix Process Create Fail\n");
 
-971 
+1103 
 	}
 }
 
-973 
+1105 
 	$kFPUTe°Task
 ()
 
-975 
+1107 
 dVÆue1
 ;
 
-976 
+1108 
 dVÆue2
 ;
 
-977 
+1109 
 TCB
 * 
 p°Ru¬ögTask
 ;
 
-978 
+1110 
 QWORD
  
 qwCou¡
 =0;
 
-979 
+1111 
 QWORD
  
 qwR™domVÆue
 ;
 
-980 
+1112 
 i
 ;
 
-981 
+1113 
 iOff£t
 ;
 
-982 
+1114 
 vcD©a
 [4]={'-','\\','|','/'};
 
-983 
+1115 
 CHARACTER
 * 
 p°S¸ìn
@@ -11329,13 +11757,15 @@ p°S¸ìn
 CONSOLE_VIDEOMEMORYADDRESS
 ;
 
-985 
+1117 
 p°Ru¬ögTask
  = 
 	`kGëRu¬ögTask
-();
+(
+	`kGëAPICID
+());
 
-988 
+1120 
 iOff£t
  = (
 p°Ru¬ögTask
@@ -11345,7 +11775,7 @@ p°Ru¬ögTask
 qwID
 &0xFFFFFFFF)*2;
 
-989 
+1121 
 iOff£t
  = 
 CONSOLE_WIDTH
@@ -11353,65 +11783,65 @@ CONSOLE_WIDTH
 CONSOLE_HEIGHT
 -(iOffset%(CONSOLE_WIDTH*CONSOLE_HEIGHT));
 
-994 
+1126 
 dVÆue1
 =1;
 
-995 
+1127 
 dVÆue2
 =1;
 
-998 
+1130 
 i
 =0;i<10;i++)
 
-1000 
+1132 
 qwR™domVÆue
  = 
 	`kR™dom
 ();
 
-1001 
+1133 
 dVÆue1
 *=()
 qwR™domVÆue
 ;
 
-1002 
+1134 
 dVÆue2
 *=()
 qwR™domVÆue
 ;
 
-1004 
+1136 
 	`kSÀï
 (1);
 
-1006 
+1138 
 qwR™domVÆue
 =
 	`kR™dom
 ();
 
-1007 
+1139 
 dVÆue1
 /=()
 qwR™domVÆue
 ;
 
-1008 
+1140 
 dVÆue2
 /=()
 qwR™domVÆue
 ;
 
-1011 if(
+1143 if(
 dVÆue1
 !=
 dVÆue2
 )
 
-1013 
+1145 
 	`kPrötf
 ("VÆuêi†nŸ same~!!! [%f] ![%f]\n",
 dVÆue1
@@ -11419,11 +11849,11 @@ dVÆue1
 dVÆue2
 );
 
-1017 
+1149 
 qwCou¡
 ++;
 
-1020 
+1152 
 p°S¸ìn
 [
 iOff£t
@@ -11435,7 +11865,7 @@ vcD©a
 qwCou¡
 %4];
 
-1023 
+1155 
 p°S¸ìn
 [
 iOff£t
@@ -11443,37 +11873,37 @@ iOff£t
 bAâribuã
  = (iOffset%15)+1;
 
-1025 
+1157 
 	}
 }
 
-1028 
+1160 
 	$kTe°PIE
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-1030 
+1162 
 dResu…
 ;
 
-1031 
+1163 
 i
 ;
 
-1033 
+1165 
 	`kPrötf
 ("PIE Calculation Test\n");
 
-1034 
+1166 
 	`kPrötf
 ("Result:355/133=");
 
-1035 
+1167 
 dResu…
  =()355/133;
 
-1036 
+1168 
 	`kPrötf
 ("%d%d%d\n",(
 QWORD
@@ -11481,11 +11911,11 @@ QWORD
 dResu…
 ,((QWORD)(dResult*10)%10),((QWORD)(dResult*100)%10));
 
-1039 
+1171 
 i
 =0;i<100;i++)
 
-1041 
+1173 
 	`kCª©eTask
 (
 TASK_FLAGS_LOW
@@ -11495,19 +11925,21 @@ TASK_FLAGS_THREAD
 QWORD
 )
 kFPUTe°Task
+,
+TASK_LOADBALANCINGID
 );
 
-1043 
+1175 
 	}
 }
 
-1046 
+1178 
 	$kShowDy«micMem‹yInf‹m©i⁄
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-1048 
+1180 
 QWORD
  
 qwSèπAddªss
@@ -11519,7 +11951,7 @@ qwMëaSize
 qwU£dSize
 ;
 
-1050 
+1182 
 	`kGëDy«micMem‹yInf‹m©i⁄
 (&
 qwSèπAddªss
@@ -11531,51 +11963,51 @@ qwMëaSize
 qwU£dSize
 );
 
-1052 
+1184 
 	`kPrötf
 ("================ Dynamic Memory Information =============\n");
 
-1053 
+1185 
 	`kPrötf
 ("Sèπ Addªs†: [0x%Q]\n",
 qwSèπAddªss
 );
 
-1054 
+1186 
 	`kPrötf
 ("TŸÆ Sizê: [0x%Q]byã, [%d]MB\n",
 qwTŸÆSize
 ,qwTotalSize/1024/1024);
 
-1055 
+1187 
 	`kPrötf
 ("Më®Size: [0x%Q]byã, [%d]KB\n",
 qwMëaSize
 ,qwMetaSize/1024);
 
-1056 
+1188 
 	`kPrötf
 ("U£d Size: [0x%Q]byã, [%d]KB\n",
 qwU£dSize
 ,qwUsedSize/1024);
 
-1057 
+1189 
 	}
 }
 
-1060 
+1192 
 	$kTe°SequítülAŒoˇti⁄
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-1062 
+1194 
 DYNAMICMEMORY
 * 
 p°Mem‹y
 ;
 
-1063 
+1195 
 i
 ,
 j
@@ -11583,23 +12015,23 @@ j
 k
 ;
 
-1064 
+1196 
 QWORD
 * 
 pqwBuf„r
 ;
 
-1066 
+1198 
 	`kPrötf
 ("=============== Dynamic Memory Test =================\n");
 
-1067 
+1199 
 p°Mem‹y
  = 
 	`kGëDy«micMem‹yM™agî
 ();
 
-1069 
+1201 
 i
 =0;i<
 p°Mem‹y
@@ -11607,17 +12039,17 @@ p°Mem‹y
 iMaxLevñCou¡
 ;i++)
 
-1071 
+1203 
 	`kPrötf
 ("Block Li° [%d] Te° Sèπ\n",
 i
 );
 
-1072 
+1204 
 	`kPrötf
 ("Allocation And Compare: ");
 
-1075 
+1207 
 j
 =0;j<(
 p°Mem‹y
@@ -11627,7 +12059,7 @@ iBlockCou¡OfSmÆÀ°Block
 i
 );j++)
 
-1077 
+1209 
 pqwBuf„r
  = 
 	`kAŒoˇãMem‹y
@@ -11637,17 +12069,17 @@ DYNAMICMEMORY_MIN_SIZE
 i
 );
 
-1078 if(
+1210 if(
 pqwBuf„r
 ==
 NULL
 )
 
-1080 
+1212 
 	`kPrötf
 ("\nAllocation Fail\n");
 
-1085 
+1217 
 k
 =0;k<(
 DYNAMICMEMORY_MIN_SIZE
@@ -11655,13 +12087,13 @@ DYNAMICMEMORY_MIN_SIZE
 i
 )/8;k++)
 
-1087 
+1219 
 pqwBuf„r
 [
 k
 ]=k;
 
-1090 
+1222 
 k
 =0;k<(
 DYNAMICMEMORY_MIN_SIZE
@@ -11669,25 +12101,25 @@ DYNAMICMEMORY_MIN_SIZE
 i
 )/8;k++)
 
-1092 if(
+1224 if(
 pqwBuf„r
 [
 k
 ]!=k)
 
-1094 
+1226 
 	`kPrötf
 ("\nCompare Fail\n");
 
-1100 
+1232 
 	`kPrötf
 (".");
 
-1103 
+1235 
 	`kPrötf
 ("\nFree: ");
 
-1105 
+1237 
 j
 =0;j<(
 p°Mem‹y
@@ -11697,7 +12129,7 @@ iBlockCou¡OfSmÆÀ°Block
 i
 );j++)
 
-1107 if(
+1239 if(
 	`kFªeMem‹y
 ((*)(
 p°Mem‹y
@@ -11713,65 +12145,67 @@ j
 FALSE
 )
 
-1109 
+1241 
 	`kPrötf
 ("\n Free Fail\n");
 
-1114 
+1246 
 	`kPrötf
 (".");
 
-1116 
+1248 
 	`kPrötf
 ("\n");
 
-1118 
+1250 
 	}
 }
 
-1121 
+1253 
 	$kR™domAŒoˇti⁄Task
 ()
 
-1123 
+1255 
 TCB
 * 
 p°Task
 ;
 
-1124 
+1256 
 QWORD
  
 qwMem‹ySize
 ;
 
-1125 
+1257 
 vcBuf„r
 [200];
 
-1126 
+1258 
 BYTE
 * 
 pbAŒoˇti⁄Buf„r
 ;
 
-1127 
+1259 
 i
 ,
 j
 ;
 
-1128 
+1260 
 iY
 ;
 
-1130 
+1262 
 p°Task
  = 
 	`kGëRu¬ögTask
-();
+(
+	`kGëAPICID
+());
 
-1131 
+1263 
 iY
  = (
 p°Task
@@ -11781,17 +12215,17 @@ p°Task
 qwID
 )%15+9;
 
-1133 
+1265 
 j
 =0;j<10;j++)
 
-1138 
+1270 
 qwMem‹ySize
  = ((
 	`kR™dom
 ()%(32*1024))+1)*1024;
 
-1139 
+1271 
 pbAŒoˇti⁄Buf„r
  = 
 	`kAŒoˇãMem‹y
@@ -11799,19 +12233,19 @@ pbAŒoˇti⁄Buf„r
 qwMem‹ySize
 );
 
-1143 if(
+1275 if(
 pbAŒoˇti⁄Buf„r
 ==0)
 
-1145 
+1277 
 	`kSÀï
 (1);
 
-1147 } 
+1279 } 
 pbAŒoˇti⁄Buf„r
 ==0);
 
-1149 
+1281 
 	`kSPrötf
 (
 vcBuf„r
@@ -11821,7 +12255,7 @@ pbAŒoˇti⁄Buf„r
 qwMem‹ySize
 );
 
-1151 
+1283 
 	`kPrötSåögXY
 (20,
 iY
@@ -11829,11 +12263,11 @@ iY
 vcBuf„r
 );
 
-1152 
+1284 
 	`kSÀï
 (200);
 
-1155 
+1287 
 	`kSPrötf
 (
 vcBuf„r
@@ -11843,7 +12277,7 @@ pbAŒoˇti⁄Buf„r
 qwMem‹ySize
 );
 
-1156 
+1288 
 	`kPrötSåögXY
 (20,
 iY
@@ -11851,13 +12285,13 @@ iY
 vcBuf„r
 );
 
-1157 
+1289 
 i
 =0;i<
 qwMem‹ySize
 /2;i++)
 
-1159 
+1291 
 pbAŒoˇti⁄Buf„r
 [
 i
@@ -11865,7 +12299,7 @@ i
 	`kR™dom
 ()&0xFF;
 
-1160 
+1292 
 pbAŒoˇti⁄Buf„r
 [
 i
@@ -11873,11 +12307,11 @@ i
 qwMem‹ySize
 /2)]=pbAllocationBuffer[i];
 
-1163 
+1295 
 	`kSÀï
 (200);
 
-1166 
+1298 
 	`kSPrötf
 (
 vcBuf„r
@@ -11887,7 +12321,7 @@ pbAŒoˇti⁄Buf„r
 qwMem‹ySize
 );
 
-1167 
+1299 
 	`kPrötSåögXY
 (20,
 iY
@@ -11895,13 +12329,13 @@ iY
 vcBuf„r
 );
 
-1168 
+1300 
 i
 =0;i<
 qwMem‹ySize
 /2;i++)
 
-1170 if(
+1302 if(
 pbAŒoˇti⁄Buf„r
 [
 i
@@ -11909,7 +12343,7 @@ i
 qwMem‹ySize
 /2)])
 
-1172 
+1304 
 	`kPrötf
 ("Task ID[0x%Q] Vîify Faû\n",
 p°Task
@@ -11919,43 +12353,43 @@ p°Task
 qwID
 );
 
-1173 
+1305 
 	`kExôTask
 ();
 
-1176 
+1308 
 	`kFªeMem‹y
 (
 pbAŒoˇti⁄Buf„r
 );
 
-1177 
+1309 
 	`kSÀï
 (200);
 
-1180 
+1312 
 	`kExôTask
 ();
 
-1181 
+1313 
 	}
 }
 
-1184 
+1316 
 	$kTe°R™domAŒoˇti⁄
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-1186 
+1318 
 i
 ;
 
-1188 
+1320 
 i
 =0;i<100;i++)
 
-1190 
+1322 
 	`kCª©eTask
 (
 TASK_FLAGS_LOWEST
@@ -11965,29 +12399,31 @@ TASK_FLAGS_THREAD
 QWORD
 )
 kR™domAŒoˇti⁄Task
+,
+TASK_LOADBALANCINGID
 );
 
-1192 
+1324 
 	}
 }
 
-1195 
+1327 
 	$kShowHDDInf‹m©i⁄
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-1197 
+1329 
 HDDINFORMATION
  
 °HDD
 ;
 
-1198 
+1330 
 vcBuf„r
 [100];
 
-1201 if(
+1333 if(
 	`kGëHDDInf‹m©i⁄
 (&
 °HDD
@@ -11995,15 +12431,15 @@ vcBuf„r
 FALSE
 )
 
-1203 
+1335 
 	`kPrötf
 ("HDD Information Read Fail\n");
 
-1207 
+1339 
 	`kPrötf
 ("===================== Primary Master HDD Information ====================\n");
 
-1210 
+1342 
 	`kMemCpy
 (
 vcBuf„r
@@ -12013,7 +12449,7 @@ vcBuf„r
 vwModñNumbî
 ,(stHDD.vwModelNumber));
 
-1211 
+1343 
 vcBuf„r
 [(
 °HDD
@@ -12021,13 +12457,13 @@ vcBuf„r
 vwModñNumbî
 )-1]='\0';
 
-1212 
+1344 
 	`kPrötf
 ("Modñ Numbî:\à%s\n",
 vcBuf„r
 );
 
-1215 
+1347 
 	`kMemCpy
 (
 vcBuf„r
@@ -12037,7 +12473,7 @@ vcBuf„r
 vwSîülNumbî
 ,(stHDD.vwSerialNumber));
 
-1216 
+1348 
 vcBuf„r
 [(
 °HDD
@@ -12045,13 +12481,13 @@ vcBuf„r
 vwSîülNumbî
 )-1]='\0';
 
-1217 
+1349 
 	`kPrötf
 ("Sîü»Numbî:\à%s\n",
 vcBuf„r
 );
 
-1220 
+1352 
 	`kPrötf
 ("Hód Cou¡:\à%d\n",
 °HDD
@@ -12059,7 +12495,7 @@ vcBuf„r
 wNumbîOfHód
 );
 
-1221 
+1353 
 	`kPrötf
 ("Cylödî Cou¡:\à%d\n",
 °HDD
@@ -12067,7 +12503,7 @@ wNumbîOfHód
 wNumbîOfCylödî
 );
 
-1222 
+1354 
 	`kPrötf
 ("Se˘‹ Cou¡:\à%d\n",
 °HDD
@@ -12075,7 +12511,7 @@ wNumbîOfCylödî
 wNumbîOfSe˘‹PîCylödî
 );
 
-1225 
+1357 
 	`kPrötf
 ("TŸÆ Se˘‹:\à%d Se˘‹, %dMB\n",
 °HDD
@@ -12083,55 +12519,55 @@ wNumbîOfSe˘‹PîCylödî
 dwTŸÆSe˘‹s
 ,stHDD.dwTotalSectors/2/1024);
 
-1226 
+1358 
 	}
 }
 
-1229 
+1361 
 	$kRódSe˘‹
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-1231 
+1363 
 PARAMETERLIST
  
 °Li°
 ;
 
-1232 
+1364 
 vcLBA
 [50],
 vcSe˘‹Cou¡
 [50];
 
-1233 
+1365 
 DWORD
  
 dwLBA
 ;
 
-1234 
+1366 
 iSe˘‹Cou¡
 ;
 
-1235 * 
+1367 * 
 pcBuf„r
 ;
 
-1236 
+1368 
 i
 ,
 j
 ;
 
-1237 
+1369 
 BYTE
  
 bD©a
 ;
 
-1238 
+1370 
 BOOL
  
 bExô
@@ -12139,7 +12575,7 @@ bExô
 FALSE
 ;
 
-1241 
+1373 
 	`kInôülizeP¨amëî
 (&
 °Li°
@@ -12147,7 +12583,7 @@ FALSE
 pcP¨amëîBuf„r
 );
 
-1242 if((
+1374 if((
 	`kGëNextP¨amëî
 (&
 °Li°
@@ -12157,11 +12593,11 @@ vcLBA
 vcSe˘‹Cou¡
 )==0))
 
-1244 
+1376 
 	`kPrötf
 ("ex)readsector 0(LBA) 10(count)\n");
 
-1247 
+1379 
 dwLBA
  = 
 	`kAToI
@@ -12169,7 +12605,7 @@ dwLBA
 vcLBA
 ,10);
 
-1248 
+1380 
 iSe˘‹Cou¡
  = 
 	`kAToI
@@ -12177,7 +12613,7 @@ iSe˘‹Cou¡
 vcSe˘‹Cou¡
 ,10);
 
-1251 
+1383 
 pcBuf„r
  = 
 	`kAŒoˇãMem‹y
@@ -12185,7 +12621,7 @@ pcBuf„r
 iSe˘‹Cou¡
 *512);
 
-1252 if(
+1384 if(
 	`kRódHDDSe˘‹
 (
 TRUE
@@ -12197,7 +12633,7 @@ iSe˘‹Cou¡
 pcBuf„r
 )==iSectorCount)
 
-1254 
+1386 
 	`kPrötf
 ("LBA [%d] [%d] Se˘‹ Ród Suc˚ss~!!",
 dwLBA
@@ -12205,41 +12641,41 @@ dwLBA
 iSe˘‹Cou¡
 );
 
-1256 
+1388 
 j
 =0;j<
 iSe˘‹Cou¡
 ;j++)
 
-1258 
+1390 
 i
 =0;i<512;i++)
 
-1260 if(!((
+1392 if(!((
 j
 ==0)&&(
 i
 ==0))&&((i%256)==0))
 
-1262 
+1394 
 	`kPrötf
 ("\nPressány keyÅo continue... ('q' isÉxit) : ");
 
-1263 if(
+1395 if(
 	`kGëCh
 ()=='q')
 
-1265 
+1397 
 bExô
 =
 TRUE
 ;
 
-1270 if((
+1402 if((
 i
 %16)==0)
 
-1272 
+1404 
 	`kPrötf
 ("\n[LBA:%d, Off£t:%d]\t| ",
 dwLBA
@@ -12249,7 +12685,7 @@ j
 i
 );
 
-1276 
+1408 
 bD©a
  = 
 pcBuf„r
@@ -12259,83 +12695,83 @@ j
 i
 ]&0xFF;
 
-1277 if(
+1409 if(
 bD©a
 <16)
 
-1279 
+1411 
 	`kPrötf
 ("0");
 
-1281 
+1413 
 	`kPrötf
 ("%X ",
 bD©a
 );
 
-1284 if(
+1416 if(
 bExô
 ==
 TRUE
 )
 
-1290 
+1422 
 	`kPrötf
 ("\n");
 
-1294 
+1426 
 	`kPrötf
 ("Read Fail\n");
 
-1297 
+1429 
 	`kFªeMem‹y
 (
 pcBuf„r
 );
 
-1298 
+1430 
 	}
 }
 
-1301 
+1433 
 	$kWrôeSe˘‹
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-1303 
+1435 
 PARAMETERLIST
  
 °Li°
 ;
 
-1304 
+1436 
 vcLBA
 [50],
 vcSe˘‹Cou¡
 [50];
 
-1305 
+1437 
 DWORD
  
 dwLBA
 ;
 
-1306 
+1438 
 iSe˘‹Cou¡
 ;
 
-1307 * 
+1439 * 
 pcBuf„r
 ;
 
-1308 
+1440 
 i
 ,
 j
 ;
 
-1309 
+1441 
 BOOL
  
 bExô
@@ -12343,19 +12779,19 @@ bExô
 FALSE
 ;
 
-1310 
+1442 
 BYTE
  
 bD©a
 ;
 
-1311 
+1443 
 DWORD
  
 s_dwWrôeCou¡
 =0;
 
-1314 
+1446 
 	`kInôülizeP¨amëî
 (&
 °Li°
@@ -12363,7 +12799,7 @@ s_dwWrôeCou¡
 pcP¨amëîBuf„r
 );
 
-1315 if((
+1447 if((
 	`kGëNextP¨amëî
 (&
 °Li°
@@ -12373,11 +12809,11 @@ vcLBA
 vcSe˘‹Cou¡
 )==0))
 
-1317 
+1449 
 	`kPrötf
 ("ex)writesector 0(LBA) 10(count)\n");
 
-1321 
+1453 
 dwLBA
  = 
 	`kAToI
@@ -12385,7 +12821,7 @@ dwLBA
 vcLBA
 ,10);
 
-1322 
+1454 
 iSe˘‹Cou¡
  = 
 	`kAToI
@@ -12393,11 +12829,11 @@ iSe˘‹Cou¡
 vcSe˘‹Cou¡
 ,10);
 
-1324 
+1456 
 s_dwWrôeCou¡
 ++;
 
-1327 
+1459 
 pcBuf„r
  = 
 	`kAŒoˇãMem‹y
@@ -12405,17 +12841,17 @@ pcBuf„r
 iSe˘‹Cou¡
 *512);
 
-1328 
+1460 
 j
 =0;j<
 iSe˘‹Cou¡
 ;j++)
 
-1330 
+1462 
 i
 =0;i<512;i+=8)
 
-1332 *(
+1464 *(
 DWORD
 *)&(
 pcBuf„r
@@ -12427,7 +12863,7 @@ i
 dwLBA
 +j;
 
-1333 *(
+1465 *(
 DWORD
 *)&(
 pcBuf„r
@@ -12439,7 +12875,7 @@ i
 s_dwWrôeCou¡
 ;
 
-1338 if(
+1470 if(
 	`kWrôeHDDSe˘‹
 (
 TRUE
@@ -12451,11 +12887,11 @@ iSe˘‹Cou¡
 pcBuf„r
 )!=iSectorCount)
 
-1340 
+1472 
 	`kPrötf
 ("Write Fail\n");
 
-1343 
+1475 
 	`kPrötf
 ("LBA [%d], [%d] Se˘‹ WrôêSuc˚ss~!!",
 dwLBA
@@ -12463,41 +12899,41 @@ dwLBA
 iSe˘‹Cou¡
 );
 
-1346 
+1478 
 j
 =0;j<
 iSe˘‹Cou¡
 ;j++)
 
-1348 
+1480 
 i
 =0;i<512;i++)
 
-1350 if(!((
+1482 if(!((
 j
 ==0)&&(
 i
 ==0))&&((i%256)==0))
 
-1352 
+1484 
 	`kPrötf
 ("\nPressány keyÅo continue... ('q' isÉxit) : ");
 
-1353 if(
+1485 if(
 	`kGëCh
 ()=='q')
 
-1355 
+1487 
 bExô
 =
 TRUE
 ;
 
-1360 if((
+1492 if((
 i
 %16)==0)
 
-1362 
+1494 
 	`kPrötf
 ("\n[LBA:%d, Off£t:%d]\t| ",
 dwLBA
@@ -12507,7 +12943,7 @@ j
 i
 );
 
-1366 
+1498 
 bD©a
  = 
 pcBuf„r
@@ -12517,111 +12953,111 @@ j
 i
 ]&0xFF;
 
-1367 if(
+1499 if(
 bD©a
 <16)
 
-1369 
+1501 
 	`kPrötf
 ("0");
 
-1371 
+1503 
 	`kPrötf
 ("%X ",
 bD©a
 );
 
-1374 if(
+1506 if(
 bExô
 ==
 TRUE
 )
 
-1380 
+1512 
 	`kPrötf
 ("\n");
 
-1381 
+1513 
 	`kFªeMem‹y
 (
 pcBuf„r
 );
 
-1382 
+1514 
 	}
 }
 
-1385 
+1517 
 	$kMou¡HDD
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-1387 if(
+1519 if(
 	`kMou¡
 ()==
 FALSE
 )
 
-1389 
+1521 
 	`kPrötf
 ("HDD Mount Fail\n");
 
-1392 
+1524 
 	`kPrötf
 ("Hdd Mount Success\n");
 
-1393 
+1525 
 	}
 }
 
-1396 
+1528 
 	$kF‹m©HDD
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-1398 if(
+1530 if(
 	`kF‹m©
 ()==
 FALSE
 )
 
-1400 
+1532 
 	`kPrötf
 ("HDD Format Fail\n");
 
-1404 
+1536 
 	`kPrötf
 ("HDD Format Success\n");
 
-1405 
+1537 
 	}
 }
 
-1408 
+1540 
 	$kShowFûeSy°emInf‹m©i⁄
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-1410 
+1542 
 FILESYSTEMMANAGER
  
 °M™agî
 ;
 
-1412 
+1544 
 	`kGëFûeSy°emInf‹m©i⁄
 (&
 °M™agî
 );
 
-1414 
+1546 
 	`kPrötf
 ("==================================== File System Information =================================\n");
 
-1415 
+1547 
 	`kPrötf
 ("Mou¡ed:\t\t\t\t\à%d\n",
 °M™agî
@@ -12629,7 +13065,7 @@ FILESYSTEMMANAGER
 bMou¡ed
 );
 
-1416 
+1548 
 	`kPrötf
 ("Re£rved Se˘‹ Cou¡:\t\t\à%d Se˘‹\n",
 °M™agî
@@ -12637,7 +13073,7 @@ bMou¡ed
 dwRe£rvedSe˘‹Cou¡
 );
 
-1417 
+1549 
 	`kPrötf
 ("Clu°î Lök TabÀ Sèπ Addªss:\à%d Se˘‹\n",
 °M™agî
@@ -12645,7 +13081,7 @@ dwRe£rvedSe˘‹Cou¡
 dwClu°îLökAªaSèπAddªss
 );
 
-1418 
+1550 
 	`kPrötf
 ("Clu°î Lök TabÀ Size:\t\à%d Se˘‹\n",
 °M™agî
@@ -12653,7 +13089,7 @@ dwClu°îLökAªaSèπAddªss
 dwClu°îLökAªaSize
 );
 
-1419 
+1551 
 	`kPrötf
 ("D©®Aª®Sèπ Addªss:\t\à%d Se˘‹\n",
 °M™agî
@@ -12661,7 +13097,7 @@ dwClu°îLökAªaSize
 dwD©aAªaSèπAddªss
 );
 
-1420 
+1552 
 	`kPrötf
 ("TŸÆ Clu°î Cou¡:\t\t\à%d Clu°î\n",
 °M™agî
@@ -12669,53 +13105,53 @@ dwD©aAªaSèπAddªss
 dwTŸÆClu°îCou¡
 );
 
-1421 
+1553 
 	}
 }
 
-1424 
+1556 
 	$kCª©eFûeInRoŸDúe˘‹y
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-1426 
+1558 
 PARAMETERLIST
  
 °Li°
 ;
 
-1427 
+1559 
 vcFûeName
 [50];
 
-1428 
+1560 
 iLígth
 ;
 
-1429 
+1561 
 DWORD
  
 dwClu°î
 ;
 
-1430 
+1562 
 DIRECTORYENTRY
  
 °E¡ry
 ;
 
-1431 
+1563 
 i
 ;
 
-1432 
+1564 
 FILE
 * 
 p°Fûe
 ;
 
-1435 
+1567 
 	`kInôülizeP¨amëî
 (&
 °Li°
@@ -12723,7 +13159,7 @@ p°Fûe
 pcP¨amëîBuf„r
 );
 
-1436 
+1568 
 iLígth
  = 
 	`kGëNextP¨amëî
@@ -12733,13 +13169,13 @@ iLígth
 vcFûeName
 );
 
-1437 
+1569 
 vcFûeName
 [
 iLígth
 ]='\0';
 
-1438 if((
+1570 if((
 iLígth
 >((
 °E¡ry
@@ -12747,11 +13183,11 @@ iLígth
 vcFûeName
 )-1))||(iLength==0))
 
-1440 
+1572 
 	`kPrötf
 ("TooÜong or Too short File Name\n");
 
-1444 
+1576 
 p°Fûe
  = 
 	`f›í
@@ -12759,61 +13195,61 @@ p°Fûe
 vcFûeName
 ,"w");
 
-1445 if(
+1577 if(
 p°Fûe
 ==
 NULL
 )
 
-1447 
+1579 
 	`kPrötf
 ("File Create Fail\n");
 
-1450 
+1582 
 	`f˛o£
 (
 p°Fûe
 );
 
-1451 
+1583 
 	`kPrötf
 ("File Create Success\n");
 
-1452 
+1584 
 	}
 }
 
-1455 
+1587 
 	$kDñëeFûeInRoŸDúe˘‹y
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-1457 
+1589 
 PARAMETERLIST
  
 °Li°
 ;
 
-1458 
+1590 
 vcFûeName
 [50];
 
-1459 
+1591 
 iLígth
 ;
 
-1460 
+1592 
 DIRECTORYENTRY
  
 °E¡ry
 ;
 
-1461 
+1593 
 iOff£t
 ;
 
-1464 
+1596 
 	`kInôülizeP¨amëî
 (&
 °Li°
@@ -12821,7 +13257,7 @@ iOff£t
 pcP¨amëîBuf„r
 );
 
-1465 
+1597 
 iLígth
  = 
 	`kGëNextP¨amëî
@@ -12831,53 +13267,53 @@ iLígth
 vcFûeName
 );
 
-1466 
+1598 
 vcFûeName
 [
 iLígth
 ]='\0';
 
-1468 if((
+1600 if((
 iLígth
 >(
 FILESYSTEM_MAXFILENAMELENGTH
 -1))||(iLength==0))
 
-1470 
+1602 
 	`kPrötf
 ("Too Long or Too Short File Name\n");
 
-1474 if(
+1606 if(
 	`ªmove
 (
 vcFûeName
 )!=0)
 
-1476 
+1608 
 	`kPrötf
 ("File Not Found or File Opened\n");
 
-1480 
+1612 
 	`kPrötf
 ("File Delete Success\n");
 
-1481 
+1613 
 	}
 }
 
-1484 
+1616 
 	$kShowRoŸDúe˘‹y
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-1486 
+1618 
 DIR
 * 
 p°Dúe˘‹y
 ;
 
-1487 
+1619 
 i
 ,
 iTŸÆCou¡
@@ -12885,73 +13321,73 @@ iTŸÆCou¡
 iCou¡
 ;
 
-1488 
+1620 
 dúít
 * 
 p°E¡ry
 ;
 
-1489 
+1621 
 vcBuf„r
 [400];
 
-1490 
+1622 
 vcTempVÆue
 [50];
 
-1491 
+1623 
 DWORD
  
 dwTŸÆByã
 ;
 
-1492 
+1624 
 DWORD
  
 dwU£dClu°îCou¡
 ;
 
-1493 
+1625 
 FILESYSTEMMANAGER
  
 °M™agî
 ;
 
-1496 
+1628 
 	`kGëFûeSy°emInf‹m©i⁄
 (&
 °M™agî
 );
 
-1499 
+1631 
 p°Dúe˘‹y
  = 
 	`›ídú
 ("/");
 
-1500 if(
+1632 if(
 p°Dúe˘‹y
 ==
 NULL
 )
 
-1502 
+1634 
 	`kPrötf
 ("Root Directory Open Fail\n");
 
-1507 
+1639 
 iTŸÆCou¡
 =0;
 
-1508 
+1640 
 dwTŸÆByã
 =0;
 
-1509 
+1641 
 dwU£dClu°îCou¡
 =0;
 
-1514 
+1646 
 p°E¡ry
  = 
 	`ªaddú
@@ -12959,17 +13395,17 @@ p°E¡ry
 p°Dúe˘‹y
 );
 
-1516 if(
+1648 if(
 p°E¡ry
 ==
 NULL
 )
 
-1520 
+1652 
 iTŸÆCou¡
 ++;
 
-1521 
+1653 
 dwTŸÆByã
 +=
 p°E¡ry
@@ -12977,17 +13413,17 @@ p°E¡ry
 dwFûeSize
 ;
 
-1524 if(
+1656 if(
 p°E¡ry
 ->
 dwFûeSize
 ==0)
 
-1527 
+1659 
 dwU£dClu°îCou¡
 ++;
 
-1532 
+1664 
 dwU£dClu°îCou¡
  +=(
 p°E¡ry
@@ -12997,17 +13433,17 @@ dwFûeSize
 FILESYSTEM_CLUSTERSIZE
 -1)/FILESYSTEM_CLUSTERSIZE;
 
-1537 
+1669 
 	`ªwöddú
 (
 p°Dúe˘‹y
 );
 
-1538 
+1670 
 iCou¡
 =0;
 
-1542 
+1674 
 p°E¡ry
  = 
 	`ªaddú
@@ -13015,23 +13451,23 @@ p°E¡ry
 p°Dúe˘‹y
 );
 
-1544 if(
+1676 if(
 p°E¡ry
 ==
 NULL
 )
 
-1550 
+1682 
 	`kMemSë
 (
 vcBuf„r
 ,' ',(vcBuffer)-1);
 
-1551 
+1683 
 vcBuf„r
 [(vcBuffer)-1]='\0';
 
-1554 
+1686 
 	`kMemCpy
 (
 vcBuf„r
@@ -13043,7 +13479,7 @@ d_«me
 	`kSåLí
 (pstEntry->d_name));
 
-1557 
+1689 
 	`kSPrötf
 (
 vcTempVÆue
@@ -13053,7 +13489,7 @@ p°E¡ry
 dwFûeSize
 );
 
-1558 
+1690 
 	`kMemCpy
 (
 vcBuf„r
@@ -13063,7 +13499,7 @@ vcTempVÆue
 	`kSåLí
 (vcTempValue));
 
-1561 
+1693 
 	`kSPrötf
 (
 vcBuf„r
@@ -13073,39 +13509,39 @@ p°E¡ry
 dwSèπClu°îIndex
 );
 
-1562 
+1694 
 	`kPrötf
 (" %s\n",
 vcBuf„r
 );
 
-1564 if((
+1696 if((
 iCou¡
 !=0)&&((iCount%20)==0))
 
-1566 
+1698 
 	`kPrötf
 ("Preeány keyÅo continue... ('q' isÉxit) : ");
 
-1567 if(
+1699 if(
 	`kGëCh
 ()=='q')
 
-1569 
+1701 
 	`kPrötf
 ("\n");
 
-1573 
+1705 
 iCou¡
 ++;
 
-1577 
+1709 
 	`kPrötf
 ("\t\tTŸÆ FûêCou¡: %d\n",
 iTŸÆCou¡
 );
 
-1578 
+1710 
 	`kPrötf
 ("\t\tTŸÆ FûêSize: %d KByã (%d Clu°î)\n",
 dwTŸÆByã
@@ -13113,7 +13549,7 @@ dwTŸÆByã
 dwU£dClu°îCou¡
 );
 
-1581 
+1713 
 	`kPrötf
 ("\t\tFªêS∑˚: %d KByã (%d Clu°î)\n",(
 °M™agî
@@ -13125,53 +13561,53 @@ dwU£dClu°îCou¡
 FILESYSTEM_CLUSTERSIZE
 /1024,stManager.dwTotalClusterCount-dwUsedClusterCount);
 
-1584 
+1716 
 	`˛o£dú
 (
 p°Dúe˘‹y
 );
 
-1585 
+1717 
 	}
 }
 
-1588 
+1720 
 	$kWrôeD©aToFûe
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-1590 
+1722 
 PARAMETERLIST
  
 °Li°
 ;
 
-1591 
+1723 
 vcFûeName
 [50];
 
-1592 
+1724 
 iLígth
 ;
 
-1593 
+1725 
 FILE
 * 
 Â
 ;
 
-1594 
+1726 
 iE¡îCou¡
 ;
 
-1595 
+1727 
 BYTE
  
 bKey
 ;
 
-1598 
+1730 
 	`kInôülizeP¨amëî
 (&
 °Li°
@@ -13179,7 +13615,7 @@ bKey
 pcP¨amëîBuf„r
 );
 
-1599 
+1731 
 iLígth
  = 
 	`kGëNextP¨amëî
@@ -13189,23 +13625,23 @@ iLígth
 vcFûeName
 );
 
-1600 
+1732 
 vcFûeName
 [
 iLígth
 ]='\0';
 
-1601 if((
+1733 if((
 iLígth
 >(
 FILESYSTEM_MAXFILENAMELENGTH
 -1))||(iLength==0))
 
-1603 
+1735 
 	`kPrötf
 ("Too Long or Too Short File Name\n");
 
-1608 
+1740 
 Â
  = 
 	`f›í
@@ -13213,53 +13649,53 @@ FILESYSTEM_MAXFILENAMELENGTH
 vcFûeName
 ,"w");
 
-1609 if(
+1741 if(
 Â
 ==
 NULL
 )
 
-1611 
+1743 
 	`kPrötf
 ("%†FûêO≥¿Faû\n",
 vcFûeName
 );
 
-1616 
+1748 
 iE¡îCou¡
 =0;
 
-1619 
+1751 
 bKey
  = 
 	`kGëCh
 ();
 
-1621 if(
+1753 if(
 bKey
 ==
 KEY_ENTER
 )
 
-1623 
+1755 
 iE¡îCou¡
 ++;
 
-1624 if(
+1756 if(
 iE¡îCou¡
 >=3)
 
-1632 
+1764 
 iE¡îCou¡
 =0;
 
-1635 
+1767 
 	`kPrötf
 ("%c",
 bKey
 );
 
-1636 if(
+1768 if(
 	`fwrôe
 (&
 bKey
@@ -13267,61 +13703,61 @@ bKey
 Â
 )!=1)
 
-1638 
+1770 
 	`kPrötf
 ("File Write Fail\n");
 
-1643 
+1775 
 	`kPrötf
 ("File Create Success\n");
 
-1644 
+1776 
 	`f˛o£
 (
 Â
 );
 
-1645 
+1777 
 	}
 }
 
-1648 
+1780 
 	$kRódD©aFromFûe
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-1650 
+1782 
 PARAMETERLIST
  
 °Li°
 ;
 
-1651 
+1783 
 vcFûeName
 [50];
 
-1652 
+1784 
 iLígth
 ;
 
-1653 
+1785 
 FILE
 * 
 Â
 ;
 
-1654 
+1786 
 iE¡îCou¡
 ;
 
-1655 
+1787 
 BYTE
  
 bKey
 ;
 
-1658 
+1790 
 	`kInôülizeP¨amëî
 (&
 °Li°
@@ -13329,7 +13765,7 @@ bKey
 pcP¨amëîBuf„r
 );
 
-1659 
+1791 
 iLígth
  = 
 	`kGëNextP¨amëî
@@ -13339,23 +13775,23 @@ iLígth
 vcFûeName
 );
 
-1660 
+1792 
 vcFûeName
 [
 iLígth
 ]='\0';
 
-1661 if((
+1793 if((
 iLígth
 >(
 FILESYSTEM_MAXFILENAMELENGTH
 -1))||(iLength==0))
 
-1663 
+1795 
 	`kPrötf
 ("Too Long or Too Short File Name\n");
 
-1668 
+1800 
 Â
  = 
 	`f›í
@@ -13363,23 +13799,23 @@ FILESYSTEM_MAXFILENAMELENGTH
 vcFûeName
 ,"r");
 
-1669 if(
+1801 if(
 Â
 ==
 NULL
 )
 
-1671 
+1803 
 	`kPrötf
 ("%†FûêO≥¿Faû\n",
 vcFûeName
 );
 
-1676 
+1808 
 iE¡îCou¡
 =0;
 
-1680 if(
+1812 if(
 	`‰ód
 (&
 bKey
@@ -13387,115 +13823,115 @@ bKey
 Â
 )!=1)
 
-1685 
+1817 
 	`kPrötf
 ("%c",
 bKey
 );
 
-1688 if(
+1820 if(
 bKey
 ==
 KEY_ENTER
 )
 
-1690 
+1822 
 iE¡îCou¡
 ++;
 
-1692 if((
+1824 if((
 iE¡îCou¡
 !=0)&&((iEnterCount%20)==0))
 
-1694 
+1826 
 	`kPrötf
 ("Pressány ketÅo continue... ('q' isÉxit) :");
 
-1695 if(
+1827 if(
 	`kGëCh
 ()=='q')
 
-1697 
+1829 
 	`kPrötf
 ("\n");
 
-1700 
+1832 
 	`kPrötf
 ("\n");
 
-1701 
+1833 
 iE¡îCou¡
 =0;
 
-1706 
+1838 
 	`f˛o£
 (
 Â
 );
 
-1707 
+1839 
 	}
 }
 
-1710 
+1842 
 	$kTe°FûeIO
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-1712 
+1844 
 FILE
 * 
 p°Fûe
 ;
 
-1713 
+1845 
 BYTE
 * 
 pbBuf„r
 ;
 
-1714 
+1846 
 i
 ;
 
-1715 
+1847 
 j
 ;
 
-1716 
+1848 
 DWORD
  
 dwR™domOff£t
 ;
 
-1717 
+1849 
 DWORD
  
 dwByãCou¡
 ;
 
-1718 
+1850 
 BYTE
  
 vbTempBuf„r
 [1024];
 
-1719 
+1851 
 DWORD
  
 dwMaxFûeSize
 ;
 
-1721 
+1853 
 	`kPrötf
 ("============================== File I/O Function Test ===============================\n");
 
-1724 
+1856 
 dwMaxFûeSize
  = 4*1024*1024;
 
-1725 
+1857 
 pbBuf„r
  = 
 	`kAŒoˇãMem‹y
@@ -13503,89 +13939,89 @@ pbBuf„r
 dwMaxFûeSize
 );
 
-1726 if(
+1858 if(
 pbBuf„r
 ==
 NULL
 )
 
-1728 
+1860 
 	`kPrötf
 ("Memory Allocation Fail\n");
 
-1733 
+1865 
 	`ªmove
 ("testfileio.bin");
 
-1738 
+1870 
 	`kPrötf
 ("1. File Open Fail Test...");
 
-1740 
+1872 
 p°Fûe
  = 
 	`f›í
 ("testfileio.bin","r");
 
-1741 if(
+1873 if(
 p°Fûe
 ==
 NULL
 )
 
-1743 
+1875 
 	`kPrötf
 ("[Pass]\n");
 
-1747 
+1879 
 	`kPrötf
 ("[Fail]\n");
 
-1748 
+1880 
 	`f˛o£
 (
 p°Fûe
 );
 
-1754 
+1886 
 	`kPrötf
 ("2. File Create Test...");
 
-1756 
+1888 
 p°Fûe
  = 
 	`f›í
 ("testfileio.bin","w");
 
-1757 if(
+1889 if(
 p°Fûe
 !=
 NULL
 )
 
-1759 
+1891 
 	`kPrötf
 ("[Pass]\n");
 
-1760 
+1892 
 	`kPrötf
 (" FûêH™dÀ [0x%Q]\n",
 p°Fûe
 );
 
-1764 
+1896 
 	`kPrötf
 ("[Fail]\n");
 
-1770 
+1902 
 	`kPrötf
 ("3. Sequential Write Test(Cluster Size)...");
 
-1772 
+1904 
 i
 =0;i<100;i++)
 
-1774 
+1906 
 	`kMemSë
 (
 pbBuf„r
@@ -13595,7 +14031,7 @@ i
 FILESYSTEM_CLUSTERSIZE
 );
 
-1775 if(
+1907 if(
 	`fwrôe
 (
 pbBuf„r
@@ -13605,29 +14041,29 @@ FILESYSTEM_CLUSTERSIZE
 p°Fûe
 )!=FILESYSTEM_CLUSTERSIZE)
 
-1777 
+1909 
 	`kPrötf
 ("[Fail]\n");
 
-1778 
+1910 
 	`kPrötf
 (" %d Clu°î Eº‹\n",
 i
 );
 
-1784 if(
+1916 if(
 i
 >=100)
 
-1786 
+1918 
 	`kPrötf
 ("[Pass]\n");
 
-1792 
+1924 
 	`kPrötf
 ("4. Sequential Read And Verify Test(Cluster Size)...");
 
-1794 
+1926 
 	`f£ek
 (
 p°Fûe
@@ -13637,11 +14073,11 @@ FILESYSTEM_CLUSTERSIZE
 SEEK_END
 );
 
-1797 
+1929 
 i
 =0;i<100;i++)
 
-1800 if(
+1932 if(
 	`‰ód
 (
 pbBuf„r
@@ -13651,17 +14087,17 @@ FILESYSTEM_CLUSTERSIZE
 p°Fûe
 )!=FILESYSTEM_CLUSTERSIZE)
 
-1802 
+1934 
 	`kPrötf
 ("[Fail]\n");
 
-1807 
+1939 
 j
 =0;j<
 FILESYSTEM_CLUSTERSIZE
 ;j++)
 
-1809 if(
+1941 if(
 pbBuf„r
 [
 j
@@ -13671,11 +14107,11 @@ BYTE
 i
 )
 
-1811 
+1943 
 	`kPrötf
 ("[Fail]\n");
 
-1812 
+1944 
 	`kPrötf
 (" %d Clu°î Eº‹. [%X] ![%X]\n",
 i
@@ -13687,19 +14123,19 @@ j
 BYTE
 )i);
 
-1818 if(
+1950 if(
 i
 >=100)
 
-1820 
+1952 
 	`kPrötf
 ("[Pass]\n");
 
-1826 
+1958 
 	`kPrötf
 ("5. Random Write Test...\n");
 
-1829 
+1961 
 	`kMemSë
 (
 pbBuf„r
@@ -13707,7 +14143,7 @@ pbBuf„r
 dwMaxFûeSize
 );
 
-1832 
+1964 
 	`f£ek
 (
 p°Fûe
@@ -13717,7 +14153,7 @@ FILESYSTEM_CLUSTERSIZE
 SEEK_CUR
 );
 
-1833 
+1965 
 	`‰ód
 (
 pbBuf„r
@@ -13727,11 +14163,11 @@ dwMaxFûeSize
 p°Fûe
 );
 
-1836 
+1968 
 i
 =0;i<100;i++)
 
-1838 
+1970 
 dwByãCou¡
  = (
 	`kR™dom
@@ -13739,7 +14175,7 @@ dwByãCou¡
 vbTempBuf„r
 )-1))+1;
 
-1839 
+1971 
 dwR™domOff£t
  = 
 	`kR™dom
@@ -13749,7 +14185,7 @@ dwMaxFûeSize
 dwByãCou¡
 );
 
-1841 
+1973 
 	`kPrötf
 (" [%d] Off£à[%d] Byã [%d]...",
 i
@@ -13759,7 +14195,7 @@ dwR™domOff£t
 dwByãCou¡
 );
 
-1844 
+1976 
 	`f£ek
 (
 p°Fûe
@@ -13769,7 +14205,7 @@ dwR™domOff£t
 SEEK_SET
 );
 
-1845 
+1977 
 	`kMemSë
 (
 vbTempBuf„r
@@ -13779,7 +14215,7 @@ i
 dwByãCou¡
 );
 
-1848 if(
+1980 if(
 	`fwrôe
 (
 vbTempBuf„r
@@ -13789,15 +14225,15 @@ dwByãCou¡
 p°Fûe
 )!=dwByteCount)
 
-1850 
+1982 
 	`kPrötf
 ("[Fail]\n");
 
-1855 
+1987 
 	`kPrötf
 ("[Pass]\n");
 
-1858 
+1990 
 	`kMemSë
 (
 pbBuf„r
@@ -13809,7 +14245,7 @@ i
 dwByãCou¡
 );
 
-1862 
+1994 
 	`f£ek
 (
 p°Fûe
@@ -13819,7 +14255,7 @@ dwMaxFûeSize
 SEEK_SET
 );
 
-1863 
+1995 
 	`fwrôe
 (&
 i
@@ -13827,7 +14263,7 @@ i
 p°Fûe
 );
 
-1864 
+1996 
 pbBuf„r
 [
 dwMaxFûeSize
@@ -13837,15 +14273,15 @@ BYTE
 i
 ;
 
-1870 
+2002 
 	`kPrötf
 ("6. Random Read And Verify Test...\n");
 
-1872 
+2004 
 i
 =0;i<100;i++)
 
-1874 
+2006 
 dwByãCou¡
  = (
 	`kR™dom
@@ -13853,7 +14289,7 @@ dwByãCou¡
 vbTempBuf„r
 )-1))+1;
 
-1875 
+2007 
 dwR™domOff£t
  = 
 	`kR™dom
@@ -13863,7 +14299,7 @@ dwMaxFûeSize
 dwByãCou¡
 );
 
-1877 
+2009 
 	`kPrötf
 (" [%d] Off£à[%d] Byã [%d]...",
 i
@@ -13873,7 +14309,7 @@ dwR™domOff£t
 dwByãCou¡
 );
 
-1880 
+2012 
 	`f£ek
 (
 p°Fûe
@@ -13883,7 +14319,7 @@ dwR™domOff£t
 SEEK_SET
 );
 
-1883 if(
+2015 if(
 	`‰ód
 (
 vbTempBuf„r
@@ -13893,17 +14329,17 @@ dwByãCou¡
 p°Fûe
 )!=dwByteCount)
 
-1885 
+2017 
 	`kPrötf
 ("[Fail]\n");
 
-1886 
+2018 
 	`kPrötf
 (" Ród Faû\n",
 dwR™domOff£t
 );
 
-1891 if(
+2023 if(
 	`kMemCmp
 (
 pbBuf„r
@@ -13915,25 +14351,25 @@ vbTempBuf„r
 dwByãCou¡
 )!=0)
 
-1893 
+2025 
 	`kPrötf
 ("[Fail]\n");
 
-1894 
+2026 
 	`kPrötf
 (" Com∑ª Faû\n",
 dwR™domOff£t
 );
 
-1898 
+2030 
 	`kPrötf
 ("[Pass]\n");
 
-1904 
+2036 
 	`kPrötf
 ("7. Sequential Write, Read And Verify Test(1024 Byte)...\n");
 
-1906 
+2038 
 	`f£ek
 (
 p°Fûe
@@ -13943,17 +14379,17 @@ dwMaxFûeSize
 SEEK_CUR
 );
 
-1909 
+2041 
 i
 =0;i<(2*1024*1024/1024);i++)
 
-1911 
+2043 
 	`kPrötf
 (" [%d] Off£à[%d] Byã [%d] Wrôe...",
 i
 ,i*1024,1024);
 
-1914 if(
+2046 if(
 	`fwrôe
 (
 pbBuf„r
@@ -13963,15 +14399,15 @@ i
 p°Fûe
 )!=1024)
 
-1916 
+2048 
 	`kPrötf
 ("[Fail]\n");
 
-1921 
+2053 
 	`kPrötf
 ("[Pass]\n");
 
-1926 
+2058 
 	`f£ek
 (
 p°Fûe
@@ -13981,19 +14417,19 @@ dwMaxFûeSize
 SEEK_SET
 );
 
-1930 
+2062 
 i
 =0;i<(
 dwMaxFûeSize
 /1024);i++)
 
-1933 
+2065 
 	`kPrötf
 (" [%d] Off£à[%d] Byã [%d] Ród And Vîify...",
 i
 ,i*1024,1024);
 
-1936 if(
+2068 if(
 	`‰ód
 (
 vbTempBuf„r
@@ -14001,11 +14437,11 @@ vbTempBuf„r
 p°Fûe
 )!=1024)
 
-1938 
+2070 
 	`kPrötf
 ("[Fail]\n");
 
-1942 if(
+2074 if(
 	`kMemCmp
 (
 pbBuf„r
@@ -14015,111 +14451,111 @@ i
 vbTempBuf„r
 ,1024)!=0)
 
-1944 
+2076 
 	`kPrötf
 ("[Fail]\n");
 
-1949 
+2081 
 	`kPrötf
 ("[Pass]\n");
 
-1956 
+2088 
 	`kPrötf
 ("8. File Delete Fail Test...");
 
-1958 if(
+2090 if(
 	`ªmove
 ("testfileio.bin")!=0)
 
-1960 
+2092 
 	`kPrötf
 ("[Pass]\n");
 
-1964 
+2096 
 	`kPrötf
 ("[Fail]\n");
 
-1970 
+2102 
 	`kPrötf
 ("9. File Close Test...");
 
-1972 if(
+2104 if(
 	`f˛o£
 (
 p°Fûe
 )==0)
 
-1974 
+2106 
 	`kPrötf
 ("[Pass]\n");
 
-1978 
+2110 
 	`kPrötf
 ("[Fail]\n");
 
-1984 
+2116 
 	`kPrötf
 ("10. File Delete Test...");
 
-1986 if(
+2118 if(
 	`ªmove
 ("testfileio.bin")==0)
 
-1988 
+2120 
 	`kPrötf
 ("[Pass]\n");
 
-1992 
+2124 
 	`kPrötf
 ("[Fail[\n");
 
-1996 
+2128 
 	`kFªeMem‹y
 (
 pbBuf„r
 );
 
-1997 
+2129 
 	}
 }
 
-2000 
+2132 
 	$kFlushCache
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-2002 
+2134 
 QWORD
  
 qwTickCou¡
 ;
 
-2004 
+2136 
 qwTickCou¡
  = 
 	`kGëTickCou¡
 ();
 
-2005 
+2137 
 	`kPrötf
 ("Cache Flush...");
 
-2006 if(
+2138 if(
 	`kFlushFûeSy°emCache
 ()==
 TRUE
 )
 
-2008 
+2140 
 	`kPrötf
 ("pass\n");
 
-2012 
+2144 
 	`kPrötf
 ("Fail\n");
 
-2014 
+2146 
 	`kPrötf
 ("TŸÆ Timê%d ms\n",
 kGëTickCou¡
@@ -14127,55 +14563,55 @@ kGëTickCou¡
 qwTickCou¡
 );
 
-2015 
+2147 
 	}
 }
 
-2018 
+2150 
 	$kDow∆ﬂdFûe
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-2020 
+2152 
 PARAMETERLIST
  
 °Li°
 ;
 
-2021 
+2153 
 vcFûeName
 [50];
 
-2022 
+2154 
 iFûeNameLígth
 ;
 
-2023 
+2155 
 DWORD
  
 dwD©aLígth
 ;
 
-2024 
+2156 
 FILE
 * 
 Â
 ;
 
-2025 
+2157 
 DWORD
  
 dwRe˚ivedSize
 ;
 
-2026 
+2158 
 DWORD
  
 dwTempSize
 ;
 
-2027 
+2159 
 BYTE
  
 vbD©aBuf„r
@@ -14183,13 +14619,13 @@ vbD©aBuf„r
 SERIAL_FIFOMAXSIZE
 ];
 
-2028 
+2160 
 QWORD
  
 qwLa°Re˚ivedTickCou¡
 ;
 
-2031 
+2163 
 	`kInôülizeP¨amëî
 (&
 °Li°
@@ -14197,7 +14633,7 @@ qwLa°Re˚ivedTickCou¡
 pcP¨amëîBuf„r
 );
 
-2032 
+2164 
 iFûeNameLígth
  = 
 	`kGëNextP¨amëî
@@ -14207,49 +14643,49 @@ iFûeNameLígth
 vcFûeName
 );
 
-2033 
+2165 
 vcFûeName
 [
 iFûeNameLígth
 ]='\0';
 
-2034 if((
+2166 if((
 iFûeNameLígth
 >(
 FILESYSTEM_MAXFILENAMELENGTH
 -1))||(iFileNameLength==0))
 
-2036 
+2168 
 	`kPrötf
 ("Too Long or Too Short File Name\n");
 
-2037 
+2169 
 	`kPrötf
 ("ex)downloadá.txt\n");
 
-2042 
+2174 
 	`kCÀ¨SîülFIFO
 ();
 
-2047 
+2179 
 	`kPrötf
 ("Waiting For Data Length.....");
 
-2048 
+2180 
 dwRe˚ivedSize
 =0;
 
-2049 
+2181 
 qwLa°Re˚ivedTickCou¡
  = 
 	`kGëTickCou¡
 ();
 
-2051 
+2183 
 dwRe˚ivedSize
 <4)
 
-2054 
+2186 
 dwTempSize
  = 
 	`kRe˚iveSîülD©a
@@ -14261,47 +14697,47 @@ dwD©aLígth
 dwRe˚ivedSize
 ,4-dwReceivedSize);
 
-2055 
+2187 
 dwRe˚ivedSize
  +
 dwTempSize
 ;
 
-2058 if(
+2190 if(
 dwTempSize
 ==0)
 
-2060 
+2192 
 	`kSÀï
 (0);
 
-2063 if((
+2195 if((
 	`kGëTickCou¡
 ()-
 qwLa°Re˚ivedTickCou¡
 )>30000)
 
-2065 
+2197 
 	`kPrötf
 ("Time Out Occur~!!\n");
 
-2071 
+2203 
 qwLa°Re˚ivedTickCou¡
  = 
 	`kGëTickCou¡
 ();
 
-2076 
+2208 
 	`kPrötf
 ("[%d] Byã\n",
 dwD©aLígth
 );
 
-2079 
+2211 
 	`kSídSîülD©a
 ("A",1);
 
-2085 
+2217 
 Â
  = 
 	`f›í
@@ -14309,39 +14745,39 @@ dwD©aLígth
 vcFûeName
 ,"w");
 
-2086 if(
+2218 if(
 Â
 ==
 NULL
 )
 
-2088 
+2220 
 	`kPrötf
 ("%†FûêO≥¿Faû\n",
 vcFûeName
 );
 
-2093 
+2225 
 	`kPrötf
 ("Data Receive Start: ");
 
-2094 
+2226 
 dwRe˚ivedSize
 =0;
 
-2095 
+2227 
 qwLa°Re˚ivedTickCou¡
  = 
 	`kGëTickCou¡
 ();
 
-2096 
+2228 
 dwRe˚ivedSize
 !=
 dwD©aLígth
 )
 
-2099 
+2231 
 dwTempSize
  = 
 	`kRe˚iveSîülD©a
@@ -14351,17 +14787,17 @@ vbD©aBuf„r
 SERIAL_FIFOMAXSIZE
 );
 
-2100 
+2232 
 dwRe˚ivedSize
 +=
 dwTempSize
 ;
 
-2103 if(
+2235 if(
 dwTempSize
 !=0)
 
-2107 if(((
+2239 if(((
 dwRe˚ivedSize
 %
 SERIAL_FIFOMAXSIZE
@@ -14369,15 +14805,15 @@ SERIAL_FIFOMAXSIZE
 dwD©aLígth
 )))
 
-2109 
+2241 
 	`kSídSîülD©a
 ("A",1);
 
-2110 
+2242 
 	`kPrötf
 ("#");
 
-2114 if(
+2246 if(
 	`fwrôe
 (
 vbD©aBuf„r
@@ -14387,37 +14823,37 @@ dwTempSize
 Â
 )!=dwTempSize)
 
-2116 
+2248 
 	`kPrötf
 ("File Write Error Occur\n");
 
-2121 
+2253 
 qwLa°Re˚ivedTickCou¡
  = 
 	`kGëTickCou¡
 ();
 
-2126 
+2258 
 	`kSÀï
 (0);
 
-2129 if((
+2261 if((
 	`kGëTickCou¡
 ()-
 qwLa°Re˚ivedTickCou¡
 )>10000)
 
-2131 
+2263 
 	`kPrötf
 ("Time Out Occur~!!\n");
 
-2143 if(
+2275 if(
 dwRe˚ivedSize
 !=
 dwD©aLígth
 )
 
-2145 
+2277 
 	`kPrötf
 ("\¿Eº‹ Occur. TŸÆ Sizê[%d] Re˚ived Sizê[%d]\n",
 dwRe˚ivedSize
@@ -14425,71 +14861,639 @@ dwRe˚ivedSize
 dwD©aLígth
 );
 
-2149 
+2281 
 	`kPrötf
 ("\¿Re˚ivêCom∂ëe. TŸÆ Sizê[%d] Byã\n",
 dwRe˚ivedSize
 );
 
-2153 
+2285 
 	`f˛o£
 (
 Â
 );
 
-2154 
+2286 
 	`kFlushFûeSy°emCache
 ();
 
-2155 
+2287 
 	}
 }
 
-2158 
+2290 
 	$kShowMPC⁄figuøti⁄TabÀ
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-2160 
+2292 
 	`kPrötMPC⁄figuøti⁄TabÀ
 ();
 
-2161 
+2293 
 	}
 }
 
-2164 
+2296 
 	$kSèπAµliˇti⁄Pro˚ss‹
 (c⁄° * 
 pcP¨amëîBuf„r
 )
 
-2167 if(
+2299 if(
 	`kSèπUpAµliˇti⁄Pro˚ss‹
 ()==
 FALSE
 )
 
-2169 
+2301 
 	`kPrötf
 ("Application Processor Start Fail\n");
 
-2173 
+2305 
 	`kPrötf
 ("Applicaton Processor Start Success\n");
 
-2176 
+2308 
 	`kPrötf
 ("BoŸ°ø∞Pro˚ss‹[APIC ID: %d] Sèπ Aµliˇti⁄ Pro˚ss‹\n",
 	`kGëAPICID
 ());
 
-2177 
+2309 
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/ConsoleShell.h
+2314 
+	$kSèπSymmëricIOMode
+–c⁄° * 
+pcP¨amëîBuf„r
+ )
+
+2316 
+MPCONFIGURATIONMANAGER
+* 
+p°MPM™agî
+;
+
+2317 
+BOOL
+ 
+bI¡îru±Fœg
+;
+
+2320 if–
+	`kA«lysisMPC⁄figuøti⁄TabÀ
+(Ë=
+FALSE
+ )
+
+2322 
+	`kPrötf
+( "Analyze MP Configuration Table Fail\n" );
+
+2327 
+p°MPM™agî
+ = 
+	`kGëMPC⁄figuøti⁄M™agî
+();
+
+2328 if–
+p°MPM™agî
+->
+bU£PICMode
+ =
+TRUE
+ )
+
+2333 
+	`kOutP‹tByã
+( 0x22, 0x70 );
+
+2334 
+	`kOutP‹tByã
+( 0x23, 0x01 );
+
+2338 
+	`kPrötf
+( "Mask All PIC Controller Interrupt\n" );
+
+2339 
+	`kMaskPICI¡îru±
+( 0xFFFF );
+
+2342 
+	`kPrötf
+( "Enable Global Local APIC\n" );
+
+2343 
+	`kE«bÀGlobÆLoˇlAPIC
+();
+
+2346 
+	`kPrötf
+( "Enable Software Local APIC\n" );
+
+2347 
+	`kE«bÀSo·w¨eLoˇlAPIC
+();
+
+2350 
+	`kPrötf
+( "Disable CPU Interrupt Flag\n" );
+
+2351 
+bI¡îru±Fœg
+ = 
+	`kSëI¡îru±Fœg
+–
+FALSE
+ );
+
+2354 
+	`kSëTaskPri‹ôy
+( 0 );
+
+2357 
+	`kInôülizeLoˇlVe˘‹TabÀ
+();
+
+2360 
+	`kSëSymmëricIOMode
+(
+TRUE
+);
+
+2363 
+	`kPrötf
+( "Initialize IO Redirection Table\n" );
+
+2364 
+	`kInôülizeIORedúe˘i⁄TabÀ
+();
+
+2367 
+	`kPrötf
+( "Restore CPU Interrupt Flag\n" );
+
+2368 
+	`kSëI¡îru±Fœg
+–
+bI¡îru±Fœg
+ );
+
+2370 
+	`kPrötf
+( "Change Symmetric I/O Mode Complete\n" );
+
+2371 
+	}
+}
+
+2375 
+	$kShowIRQINTINM≠pögTabÀ
+–c⁄° * 
+pcP¨amëîBuf„r
+ )
+
+2378 
+	`kPrötIRQToINTINM≠
+();
+
+2379 
+	}
+}
+
+2383 
+	$kShowI¡îru±Pro˚ssögCou¡
+–c⁄° * 
+pcP¨amëîBuf„r
+ )
+
+2385 
+INTERRUPTMANAGER
+* 
+p°I¡îru±M™agî
+;
+
+2386 
+i
+;
+
+2387 
+j
+;
+
+2388 
+iPro˚ssCou¡
+;
+
+2389 
+vcBuf„r
+[ 20 ];
+
+2390 
+iRemaöLígth
+;
+
+2391 
+iLöeCou¡
+;
+
+2393 
+	`kPrötf
+( "========================== Interrupt Count ==========================\n" );
+
+2396 
+iPro˚ssCou¡
+ = 
+	`kGëPro˚ss‹Cou¡
+();
+
+2403  
+i
+ = 0 ; i < 
+iPro˚ssCou¡
+ ; i++ )
+
+2405 if–
+i
+ == 0 )
+
+2407 
+	`kPrötf
+( "IRQ Num\t\t" );
+
+2409 if––
+i
+ % 4 ) == 0 )
+
+2411 
+	`kPrötf
+( "\n \t\t" );
+
+2413 
+	`kSPrötf
+–
+vcBuf„r
+, "C‹ê%d", 
+i
+ );
+
+2414 
+	`kPrötf
+–
+vcBuf„r
+ );
+
+2417 
+iRemaöLígth
+ = 15 - 
+	`kSåLí
+–
+vcBuf„r
+ );
+
+2418 
+	`kMemSë
+–
+vcBuf„r
+, ' ', 
+iRemaöLígth
+ );
+
+2419 
+vcBuf„r
+[ 
+iRemaöLígth
+ ] = '\0';
+
+2420 
+	`kPrötf
+–
+vcBuf„r
+ );
+
+2422 
+	`kPrötf
+( "\n" );
+
+2428 
+iLöeCou¡
+ = 0;
+
+2429 
+p°I¡îru±M™agî
+ = 
+	`kGëI¡îru±M™agî
+();
+
+2430  
+i
+ = 0 ; i < 
+INTERRUPT_MAXVECTORCOUNT
+ ; i++ )
+
+2432  
+j
+ = 0 ; j < 
+iPro˚ssCou¡
+ ; j++ )
+
+2435 if–
+j
+ == 0 )
+
+2438 if––
+iLöeCou¡
+ != 0 ) && ( iLineCount > 10 ) )
+
+2440 
+	`kPrötf
+( "\nPressány keyÅo continue... ('q' isÉxit) : " );
+
+2441 if–
+	`kGëCh
+() == 'q' )
+
+2443 
+	`kPrötf
+( "\n" );
+
+2446 
+iLöeCou¡
+ = 0;
+
+2447 
+	`kPrötf
+( "\n" );
+
+2449 
+	`kPrötf
+( "---------------------------------------------------------------------\n" );
+
+2450 
+	`kPrötf
+–"IRQ %d\t\t", 
+i
+ );
+
+2451 
+iLöeCou¡
+ += 2;
+
+2453 if––
+j
+ % 4 ) == 0 )
+
+2455 
+	`kPrötf
+( "\n \t\t" );
+
+2456 
+iLöeCou¡
+++;
+
+2459 
+	`kSPrötf
+–
+vcBuf„r
+, "0x%Q", 
+p°I¡îru±M™agî
+->
+vvqwC‹eI¡îru±Cou¡
+[ 
+j
+ ][ 
+i
+ ] );
+
+2461 
+	`kPrötf
+–
+vcBuf„r
+ );
+
+2462 
+iRemaöLígth
+ = 15 - 
+	`kSåLí
+–
+vcBuf„r
+ );
+
+2463 
+	`kMemSë
+–
+vcBuf„r
+, ' ', 
+iRemaöLígth
+ );
+
+2464 
+vcBuf„r
+[ 
+iRemaöLígth
+ ] = '\0';
+
+2465 
+	`kPrötf
+–
+vcBuf„r
+ );
+
+2467 
+	`kPrötf
+( "\n" );
+
+2469 
+	}
+}
+
+2473 
+	$kSèπI¡îru±LﬂdBÆ™cög
+–c⁄° * 
+pcP¨amëîBuf„r
+ )
+
+2475 
+	`kPrötf
+( "Start Interrupt Load Balancing\n" );
+
+2476 
+	`kSëI¡îru±LﬂdBÆ™cög
+–
+TRUE
+ );
+
+2477 
+	}
+}
+
+2480 
+	$kSèπTaskLﬂdBÆ™cög
+(c⁄° * 
+pcP¨amëîBuf„r
+)
+
+2482 
+i
+;
+
+2484 
+	`kPrötf
+("Start Task Load Balancing\n");
+
+2486 
+i
+=0;i<
+MAXPROCESSORCOUNT
+;i++)
+
+2488 
+	`kSëTaskPri‹ôy
+(
+i
+,
+TRUE
+);
+
+2490 
+	}
+}
+
+2493 
+	$kCh™geTaskAfföôy
+(c⁄° * 
+pcP¨amëîBuf„r
+)
+
+2495 
+PARAMETERLIST
+ 
+°Li°
+;
+
+2496 
+vcID
+[30];
+
+2497 
+vcAfföôy
+[30];
+
+2498 
+QWORD
+ 
+qwID
+;
+
+2499 
+BYTE
+ 
+bAfföôy
+;
+
+2502 
+	`kInôülizeP¨amëî
+(&
+°Li°
+,
+pcP¨amëîBuf„r
+);
+
+2503 
+	`kGëNextP¨amëî
+(&
+°Li°
+,
+vcID
+);
+
+2504 
+	`kGëNextP¨amëî
+(&
+°Li°
+,
+vcAfföôy
+);
+
+2507 if(
+	`kMemCmp
+(
+vcID
+,"0x",2)==0)
+
+2509 
+qwID
+ = 
+	`kAToI
+(
+vcID
++2,16,);
+
+2513 
+qwID
+ = 
+	`kAToI
+(
+vcID
+,10);
+
+2517 if(
+	`kMemCmp
+(
+vcID
+,"0x",2)==0)
+
+2519 
+bAfföôy
+ = 
+	`kAToI
+(
+vcAfföôy
++2,16);
+
+2523 
+bAfföôy
+ = 
+	`kAToI
+(
+vcAfföôy
+,10);
+
+2526 
+	`kPrötf
+("Ch™gêTask Afföôy ID [0x%q] Afföôy[0x%x] ",
+qwID
+,
+bAfföôy
+);
+
+2527 if(
+	`kCh™gePro˚ss‹Afföôy
+(
+qwID
+,
+bAfföôy
+)==
+TRUE
+)
+
+2529 
+	`kPrötf
+("Success\n");
+
+2533 
+	`kPrötf
+("Fail\n");
+
+2535 
+	}
+}
+
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/ConsoleShell.h
 
 1 #i‚de‡
 __CONSOLESHELL_H__
@@ -14607,7 +15611,7 @@ p°Li°
 pcP¨amëî
 );
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/Descriptor.c
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/Descriptor.c
 
 1 
 	~"Des¸ùt‹.h
@@ -15779,7 +16783,7 @@ dwRe£rved
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/Descriptor.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/Descriptor.h
 
 1 #i‚de‡
 __DESCRIPTOR_H__
@@ -16487,7 +17491,7 @@ bTy≥
 kDummyH™dÀr
  ();
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/DynamicMemory.c
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/DynamicMemory.c
 
 1 
 	~"Dy«micMem‹y.h
@@ -16829,51 +17833,59 @@ gs_°Dy«micMem‹y
 qwU£dSize
 =0;
 
-94 
+96 
+	`kInôülizeSpöLock
+(&(
+gs_°Dy«micMem‹y
+.
+°SpöLock
+));
+
+97 
 	}
 }
 
-97 
+100 
 QWORD
  
 	$kCÆcuœãDy«micMem‹ySize
 ()
 
-99 
+102 
 QWORD
  
 qwRAMSize
 ;
 
-102 
+105 
 qwRAMSize
  = (
 	`kGëTŸÆRAMSize
 ()*1024*1024);
 
-103 if(
+106 if(
 qwRAMSize
 >(
 QWORD
 )3*1024*1024*1024)
 
-105 
+108 
 qwRAMSize
  = (
 QWORD
 )3*1024*1024*1024;
 
-108  
+111  
 qwRAMSize
  - 
 DYNAMICMEMORY_START_ADDRESS
 ;
 
-109 
+112 
 	}
 }
 
-113 
+116 
 	$kCÆcuœãMëaBlockCou¡
 (
 QWORD
@@ -16881,27 +17893,27 @@ QWORD
 qwDy«micRAMSize
 )
 
-115 
+118 
 lBlockCou¡OfSmÆÀ°Block
 ;
 
-116 
+119 
 DWORD
  
 dwSizeOfAŒoˇãdBlockLi°Index
 ;
 
-117 
+120 
 DWORD
  
 dwSizeOfBôm≠
 ;
 
-118 
+121 
 i
 ;
 
-121 
+124 
 lBlockCou¡OfSmÆÀ°Block
  = 
 qwDy«micRAMSize
@@ -16909,7 +17921,7 @@ qwDy«micRAMSize
 DYNAMICMEMORY_MIN_SIZE
 ;
 
-123 
+126 
 dwSizeOfAŒoˇãdBlockLi°Index
  = 
 lBlockCou¡OfSmÆÀ°Block
@@ -16917,23 +17929,23 @@ lBlockCou¡OfSmÆÀ°Block
 BYTE
 );
 
-126 
+129 
 dwSizeOfBôm≠
 =0;
 
-127 
+130 
 i
 =0;(
 lBlockCou¡OfSmÆÀ°Block
 >>i)>0;i++)
 
-130 
+133 
 dwSizeOfBôm≠
  +=(
 BITMAP
 );
 
-132 
+135 
 dwSizeOfBôm≠
  +=((
 lBlockCou¡OfSmÆÀ°Block
@@ -16941,7 +17953,7 @@ lBlockCou¡OfSmÆÀ°Block
 i
 )+7)/8;
 
-136  (
+139  (
 dwSizeOfAŒoˇãdBlockLi°Index
 +
 dwSizeOfBôm≠
@@ -16949,11 +17961,11 @@ dwSizeOfBôm≠
 DYNAMICMEMORY_MIN_SIZE
 -1)/DYNAMICMEMORY_MIN_SIZE;
 
-137 
+140 
 	}
 }
 
-140 * 
+143 * 
 	$kAŒoˇãMem‹y
 (
 QWORD
@@ -16961,31 +17973,31 @@ QWORD
 qwSize
 )
 
-142 
+145 
 QWORD
  
 qwAlig√dSize
 ;
 
-143 
+146 
 QWORD
  
 qwRñ©iveAddªss
 ;
 
-144 
+147 
 lOff£t
 ;
 
-145 
+148 
 iSizeAºayOff£t
 ;
 
-146 
+149 
 iIndexOfBlockLi°
 ;
 
-149 
+152 
 qwAlig√dSize
  = 
 	`kGëBuddyBlockSize
@@ -16993,15 +18005,15 @@ qwAlig√dSize
 qwSize
 );
 
-150 if(
+153 if(
 qwAlig√dSize
  == 0)
 
-153  
+156  
 NULL
 ;
 
-157 if(
+160 if(
 gs_°Dy«micMem‹y
 .
 qwSèπAddªss
@@ -17013,11 +18025,11 @@ qwAlig√dSize
 qwEndAddªss
 )
 
-160  
+163  
 NULL
 ;
 
-164 
+167 
 lOff£t
  = 
 	`kAŒoˇti⁄BuddyBlock
@@ -17025,15 +18037,15 @@ lOff£t
 qwAlig√dSize
 );
 
-165 if(
+168 if(
 lOff£t
 ==-1)
 
-168  
+171  
 NULL
 ;
 
-171 
+174 
 iIndexOfBlockLi°
  = 
 	`kGëBlockLi°IndexOfM©chSize
@@ -17041,7 +18053,7 @@ iIndexOfBlockLi°
 qwAlig√dSize
 );
 
-175 
+178 
 qwRñ©iveAddªss
  = 
 qwAlig√dSize
@@ -17049,7 +18061,7 @@ qwAlig√dSize
 lOff£t
 ;
 
-176 
+179 
 iSizeAºayOff£t
  = 
 qwRñ©iveAddªss
@@ -17057,7 +18069,7 @@ qwRñ©iveAddªss
 DYNAMICMEMORY_MIN_SIZE
 ;
 
-177 
+180 
 gs_°Dy«micMem‹y
 .
 pbAŒoˇãdBlockLi°Index
@@ -17069,7 +18081,7 @@ BYTE
 iIndexOfBlockLi°
 ;
 
-178 
+181 
 gs_°Dy«micMem‹y
 .
 qwU£dSize
@@ -17077,7 +18089,7 @@ qwU£dSize
 qwAlig√dSize
 ;
 
-180  (*)(
+183  (*)(
 qwRñ©iveAddªss
 +
 gs_°Dy«micMem‹y
@@ -17085,11 +18097,11 @@ gs_°Dy«micMem‹y
 qwSèπAddªss
 );
 
-181 
+184 
 	}
 }
 
-184 
+187 
 QWORD
  
 	$kGëBuddyBlockSize
@@ -17099,11 +18111,11 @@ QWORD
 qwSize
 )
 
-186 
+189 
 i
 ;
 
-188 
+191 
 i
 =0;i<
 gs_°Dy«micMem‹y
@@ -17111,7 +18123,7 @@ gs_°Dy«micMem‹y
 iMaxLevñCou¡
 ;i++)
 
-190 if(
+193 if(
 qwSize
 <=(
 DYNAMICMEMORY_MIN_SIZE
@@ -17119,17 +18131,17 @@ DYNAMICMEMORY_MIN_SIZE
 i
 ))
 
-192  (
+195  (
 DYNAMICMEMORY_MIN_SIZE
 <<
 i
 );
 
-197 
+200 
 	}
 }
 
-201 
+204 
 	$kAŒoˇti⁄BuddyBlock
 (
 QWORD
@@ -17137,23 +18149,23 @@ QWORD
 qwAlig√dSize
 )
 
-203 
+206 
 iBlockLi°Index
 ,
 iFªeOff£t
 ;
 
-204 
+207 
 i
 ;
 
-205 
+208 
 BOOL
  
 bPªviousI¡îru±Fœg
 ;
 
-208 
+211 
 iBlockLi°Index
  = 
 	`kGëBlockLi°IndexOfM©chSize
@@ -17161,17 +18173,19 @@ iBlockLi°Index
 qwAlig√dSize
 );
 
-209 if(
+212 if(
 iBlockLi°Index
 ==-1)
 
-216 
-bPªviousI¡îru±Fœg
- = 
-	`kLockF‹Sy°emD©a
-();
+219 
+	`kLockF‹SpöLock
+(&(
+gs_°Dy«micMem‹y
+.
+°SpöLock
+));
 
-219 
+222 
 i
 =
 iBlockLi°Index
@@ -17181,7 +18195,7 @@ gs_°Dy«micMem‹y
 iMaxLevñCou¡
 ;i++)
 
-222 
+225 
 iFªeOff£t
  = 
 	`kFödFªeBlockInBôm≠
@@ -17189,21 +18203,23 @@ iFªeOff£t
 i
 );
 
-223 if(
+226 if(
 iFªeOff£t
 !=-1)
 
-230 if(
+233 if(
 iFªeOff£t
 ==-1)
 
-233 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousI¡îru±Fœg
-);
+236 
+	`kU∆ockF‹SpöLock
+(&(
+gs_°Dy«micMem‹y
+.
+°SpöLock
+));
 
-238 
+241 
 	`kSëFœgInBôm≠
 (
 i
@@ -17213,19 +18229,19 @@ iFªeOff£t
 DYNAMICMEMORY_EMPTY
 );
 
-241 if(
+244 if(
 i
 >
 iBlockLi°Index
 )
 
-245 
+248 
 i
 =i-1;i>=
 iBlockLi°Index
 ;i--)
 
-248 
+251 
 	`kSëFœgInBôm≠
 (
 i
@@ -17235,7 +18251,7 @@ iFªeOff£t
 DYNAMICMEMORY_EMPTY
 );
 
-250 
+253 
 	`kSëFœgInBôm≠
 (
 i
@@ -17245,25 +18261,27 @@ iFªeOff£t
 DYNAMICMEMORY_EXIST
 );
 
-252 
+255 
 iFªeOff£t
  = iFreeOffset*2;
 
-255 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousI¡îru±Fœg
-);
+258 
+	`kU∆ockF‹SpöLock
+(&(
+gs_°Dy«micMem‹y
+.
+°SpöLock
+));
 
-257  
+260  
 iFªeOff£t
 ;
 
-258 
+261 
 	}
 }
 
-261 
+264 
 	$kGëBlockLi°IndexOfM©chSize
 (
 QWORD
@@ -17271,11 +18289,11 @@ QWORD
 qwAlig√dSize
 )
 
-263 
+266 
 i
 ;
 
-265 
+268 
 i
 =0;i<
 gs_°Dy«micMem‹y
@@ -17283,7 +18301,7 @@ gs_°Dy«micMem‹y
 iMaxLevñCou¡
 ;i++)
 
-267 if(
+270 if(
 qwAlig√dSize
 <=(
 DYNAMICMEMORY_MIN_SIZE
@@ -17291,39 +18309,39 @@ DYNAMICMEMORY_MIN_SIZE
 i
 ))
 
-269  
+272  
 i
 ;
 
-273 
+276 
 	}
 }
 
-276 
+279 
 	$kFödFªeBlockInBôm≠
 (
 iBlockLi°Index
 )
 
-278 
+281 
 i
 ,
 iMaxCou¡
 ;
 
-279 
+282 
 BYTE
 * 
 pbBôm≠
 ;
 
-280 
+283 
 QWORD
 * 
 pqwBôm≠
 ;
 
-283 if(
+286 if(
 gs_°Dy«micMem‹y
 .
 p°Bôm≠OfLevñ
@@ -17333,7 +18351,7 @@ iBlockLi°Index
 qwExi°BôCou¡
 ==0)
 
-289 
+292 
 iMaxCou¡
  = 
 gs_°Dy«micMem‹y
@@ -17343,7 +18361,7 @@ iBlockCou¡OfSmÆÀ°Block
 iBlockLi°Index
 ;
 
-290 
+293 
 pbBôm≠
  = 
 gs_°Dy«micMem‹y
@@ -17353,19 +18371,19 @@ p°Bôm≠OfLevñ
 iBlockLi°Index
 ].pbBitmap;
 
-291 
+294 
 i
 =0;i<
 iMaxCou¡
 ;)
 
-294 if(((
+297 if(((
 iMaxCou¡
 -
 i
 )/64)>0)
 
-296 
+299 
 pqwBôm≠
  =(
 QWORD
@@ -17375,15 +18393,15 @@ pbBôm≠
 i
 /8]);
 
-298 if(*
+301 if(*
 pqwBôm≠
 ==0)
 
-300 
+303 
 i
 +=64;
 
-305 if((
+308 if((
 pbBôm≠
 [
 i
@@ -17391,19 +18409,19 @@ i
 DYNAMICMEMORY_EXIST
 <<(i%8)))!=0)
 
-307  
+310  
 i
 ;
 
-309 
+312 
 i
 ++;
 
-313 
+316 
 	}
 }
 
-316 
+319 
 	$kSëFœgInBôm≠
 (
 iBlockLi°Index
@@ -17415,13 +18433,13 @@ BYTE
 bFœg
 )
 
-318 
+321 
 BYTE
 * 
 pbBôm≠
 ;
 
-319 
+322 
 pbBôm≠
  = 
 gs_°Dy«micMem‹y
@@ -17431,19 +18449,19 @@ p°Bôm≠OfLevñ
 iBlockLi°Index
 ].pbBitmap;
 
-321 if(
+324 if(
 bFœg
 ==
 DYNAMICMEMORY_EXIST
 )
 
-324 if((
+327 if((
 pbBôm≠
 [
 iOff£t
 /8]&(0x01<<(iOffset%8)))==0)
 
-326 
+329 
 gs_°Dy«micMem‹y
 .
 p°Bôm≠OfLevñ
@@ -17453,19 +18471,19 @@ iBlockLi°Index
 qwExi°BôCou¡
 ++;
 
-328 
+331 
 pbBôm≠
 [
 iOff£t
 /8]|=(0x01<<(iOffset%8));
 
-333 if((
+336 if((
 pbBôm≠
 [
 iOff£t
 /8]&(0x01<<(iOffset%8)))!=0)
 
-335 
+338 
 gs_°Dy«micMem‹y
 .
 p°Bôm≠OfLevñ
@@ -17475,17 +18493,17 @@ iBlockLi°Index
 qwExi°BôCou¡
 --;
 
-337 
+340 
 pbBôm≠
 [
 iOff£t
 /8]&=~(0x01<<(iOffset%8));
 
-339 
+342 
 	}
 }
 
-342 
+345 
 BOOL
  
 	$kFªeMem‹y
@@ -17493,41 +18511,41 @@ BOOL
 pvAddªss
 )
 
-344 
+347 
 QWORD
  
 qwRñ©iveAddªss
 ;
 
-345 
+348 
 iSizeAºayOff£t
 ;
 
-346 
+349 
 QWORD
  
 qwBlockSize
 ;
 
-347 
+350 
 iBlockLi°Index
 ;
 
-348 
+351 
 iBôm≠Off£t
 ;
 
-350 if(
+353 if(
 pvAddªss
 ==
 NULL
 )
 
-352  
+355  
 FALSE
 ;
 
-356 
+359 
 qwRñ©iveAddªss
  = ((
 QWORD
@@ -17539,7 +18557,7 @@ gs_°Dy«micMem‹y
 qwSèπAddªss
 ;
 
-357 
+360 
 iSizeAºayOff£t
  = 
 qwRñ©iveAddªss
@@ -17547,7 +18565,7 @@ qwRñ©iveAddªss
 DYNAMICMEMORY_MIN_SIZE
 ;
 
-360 if(
+363 if(
 gs_°Dy«micMem‹y
 .
 pbAŒoˇãdBlockLi°Index
@@ -17555,11 +18573,11 @@ pbAŒoˇãdBlockLi°Index
 iSizeAºayOff£t
 ]==0xFF)
 
-362  
+365  
 FALSE
 ;
 
-367 
+370 
 iBlockLi°Index
  = ()
 gs_°Dy«micMem‹y
@@ -17569,7 +18587,7 @@ pbAŒoˇãdBlockLi°Index
 iSizeAºayOff£t
 ];
 
-368 
+371 
 gs_°Dy«micMem‹y
 .
 pbAŒoˇãdBlockLi°Index
@@ -17577,7 +18595,7 @@ pbAŒoˇãdBlockLi°Index
 iSizeAºayOff£t
 ]=0xFF;
 
-370 
+373 
 qwBlockSize
  = 
 DYNAMICMEMORY_MIN_SIZE
@@ -17585,7 +18603,7 @@ DYNAMICMEMORY_MIN_SIZE
 iBlockLi°Index
 ;
 
-373 
+376 
 iBôm≠Off£t
  = 
 qwRñ©iveAddªss
@@ -17593,7 +18611,7 @@ qwRñ©iveAddªss
 qwBlockSize
 ;
 
-374 if(
+377 if(
 	`kFªeBuddyBlock
 (
 iBlockLi°Index
@@ -17603,7 +18621,7 @@ iBôm≠Off£t
 TRUE
 )
 
-376 
+379 
 gs_°Dy«micMem‹y
 .
 qwU£dSize
@@ -17611,19 +18629,19 @@ qwU£dSize
 qwBlockSize
 ;
 
-377  
+380  
 TRUE
 ;
 
-380  
+383  
 FALSE
 ;
 
-381 
+384 
 	}
 }
 
-384 
+387 
 BOOL
  
 	$kFªeBuddyBlock
@@ -17633,33 +18651,35 @@ iBlockLi°Index
 iBlockOff£t
 )
 
-386 
+389 
 iBuddyBlockOff£t
 ;
 
-387 
+390 
 i
 ;
 
-388 
+391 
 BOOL
  
 bFœg
 ;
 
-389 
+392 
 BOOL
  
 bPªviousI¡îru±Fœg
 ;
 
-392 
-bPªviousI¡îru±Fœg
- = 
-	`kLockF‹Sy°emD©a
-();
+395 
+	`kLockF‹SpöLock
+(&(
+gs_°Dy«micMem‹y
+.
+°SpöLock
+));
 
-395 
+398 
 i
 =
 iBlockLi°Index
@@ -17669,7 +18689,7 @@ gs_°Dy«micMem‹y
 iMaxLevñCou¡
 ;i++)
 
-398 
+401 
 	`kSëFœgInBôm≠
 (
 i
@@ -17679,23 +18699,23 @@ iBlockOff£t
 DYNAMICMEMORY_EXIST
 );
 
-402 if((
+405 if((
 iBlockOff£t
 %2)==0)
 
-404 
+407 
 iBuddyBlockOff£t
  = 
 iBlockOff£t
 +1;
 
-408 
+411 
 iBuddyBlockOff£t
  = 
 iBlockOff£t
 -1;
 
-411 
+414 
 bFœg
  = 
 	`kGëFœgInBôm≠
@@ -17705,13 +18725,13 @@ i
 iBuddyBlockOff£t
 );
 
-414 if(
+417 if(
 bFœg
  =
 DYNAMICMEMORY_EMPTY
 )
 
-421 
+424 
 	`kSëFœgInBôm≠
 (
 i
@@ -17721,7 +18741,7 @@ iBuddyBlockOff£t
 DYNAMICMEMORY_EMPTY
 );
 
-422 
+425 
 	`kSëFœgInBôm≠
 (
 i
@@ -17731,25 +18751,27 @@ iBlockOff£t
 DYNAMICMEMORY_EMPTY
 );
 
-425 
+428 
 iBlockOff£t
  = iBlockOffset/2;
 
-428 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousI¡îru±Fœg
-);
+431 
+	`kU∆ockF‹SpöLock
+(&(
+gs_°Dy«micMem‹y
+.
+°SpöLock
+));
 
-429  
+432  
 TRUE
 ;
 
-430 
+433 
 	}
 }
 
-433 
+436 
 BYTE
  
 	$kGëFœgInBôm≠
@@ -17759,13 +18781,13 @@ iBlockLi°Index
 iOff£t
 )
 
-435 
+438 
 BYTE
 * 
 pbBôm≠
 ;
 
-437 
+440 
 pbBôm≠
  = 
 gs_°Dy«micMem‹y
@@ -17775,25 +18797,25 @@ p°Bôm≠OfLevñ
 iBlockLi°Index
 ].pbBitmap;
 
-438 if((
+441 if((
 pbBôm≠
 [
 iOff£t
 /8]&(0x01<<(iOffset%8)))!=0x00)
 
-440  
+443  
 DYNAMICMEMORY_EXIST
 ;
 
-443  
+446  
 DYNAMICMEMORY_EMPTY
 ;
 
-444 
+447 
 	}
 }
 
-447 
+450 
 	$kGëDy«micMem‹yInf‹m©i⁄
 (
 QWORD
@@ -17807,19 +18829,19 @@ pqwMëaD©aSize
 pqwU£dMem‹ySize
 )
 
-449 *
+452 *
 pqwDy«micMem‹ySèπAddªss
  = 
 DYNAMICMEMORY_START_ADDRESS
 ;
 
-450 *
+453 *
 pqwDy«micMem‹yTŸÆSize
  = 
 	`kCÆcuœãDy«micMem‹ySize
 ();
 
-451 *
+454 *
 pqwMëaD©aSize
  = 
 	`kCÆcuœãMëaBlockCou¡
@@ -17829,7 +18851,7 @@ pqwDy«micMem‹yTŸÆSize
 DYNAMICMEMORY_MIN_SIZE
 ;
 
-452 *
+455 *
 pqwU£dMem‹ySize
  = 
 gs_°Dy«micMem‹y
@@ -17837,25 +18859,25 @@ gs_°Dy«micMem‹y
 qwU£dSize
 ;
 
-453 
+456 
 	}
 }
 
-456 
+459 
 DYNAMICMEMORY
 * 
 	$kGëDy«micMem‹yM™agî
 ()
 
-458  &
+461  &
 gs_°Dy«micMem‹y
 ;
 
-459 
+462 
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/DynamicMemory.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/DynamicMemory.h
 
 1 #i‚de‡
 __DYNAMICMEMORY_H__
@@ -17871,7 +18893,11 @@ __DYNAMICMEMORY_H__
 	~"Ty≥s.h
 "
 
-8 
+5 
+	~"Synchr⁄iz©i⁄.h
+"
+
+9 
 	#DYNAMICMEMORY_START_ADDRESS
  ((
 TASK_STACKPOOLADDRESS
@@ -17883,95 +18909,101 @@ TASK_MAXCOUNT
 
 	)
 
-12 
+13 
 	#DYNAMICMEMORY_MIN_SIZE
  (1*1024)
 
 	)
 
-15 
+16 
 	#DYNAMICMEMORY_EXIST
  0x01
 
 	)
 
-16 
+17 
 	#DYNAMICMEMORY_EMPTY
  0x00
 
 	)
 
-20 
+21 
 	skBôm≠Såu˘
 
 
-22 
+23 
 BYTE
 * 
 	mpbBôm≠
 ;
 
-23 
+24 
 QWORD
  
 	mqwExi°BôCou¡
 ;
 
-24 } 
+25 } 
 	tBITMAP
 ;
 
-27 
+28 
 	skDy«micMem‹yM™agîSåu˘
 
 
-30 
+31 
+SPINLOCK
+ 
+	m°SpöLock
+;
+
+34 
 	miMaxLevñCou¡
 ;
 
-31 
+35 
 	miBlockCou¡OfSmÆÀ°Block
-;
-
-32 
-QWORD
- 
-	mqwU£dSize
-;
-
-35 
-QWORD
- 
-	mqwSèπAddªss
 ;
 
 36 
 QWORD
  
-	mqwEndAddªss
+	mqwU£dSize
 ;
 
 39 
+QWORD
+ 
+	mqwSèπAddªss
+;
+
+40 
+QWORD
+ 
+	mqwEndAddªss
+;
+
+43 
 BYTE
 * 
 	mpbAŒoˇãdBlockLi°Index
 ;
 
-40 
+44 
 BITMAP
 * 
 	mp°Bôm≠OfLevñ
 ;
 
-41 } 
+45 } 
 	tDYNAMICMEMORY
 ;
 
-44 
+48 
 kInôülizeDy«micMem‹y
 ();
 
-45 * 
+49 * 
 kAŒoˇãMem‹y
 (
 QWORD
@@ -17979,7 +19011,7 @@ QWORD
 qwSize
 );
 
-46 
+50 
 BOOL
  
 kFªeMem‹y
@@ -17987,7 +19019,7 @@ kFªeMem‹y
 pvAddªss
 );
 
-47 
+51 
 kGëDy«micMem‹yInf‹m©i⁄
 (
 QWORD
@@ -18001,13 +19033,13 @@ pqwMëaD©aSize
 pqwU£dMem‹ySize
 );
 
-48 
+52 
 DYNAMICMEMORY
 * 
 kGëDy«micMem‹yM™agî
 ();
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/EntryPoint.s
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/EntryPoint.s
 
 1 [
 BITS
@@ -18109,7 +19141,7 @@ mov
 mov
  
 	gr•
-, 0x6FFFF8 ; 
+, 0x700000 ; 
 	gRSP
  Î†àÏßÄÏä§ÌÑ∞Ïùò Ïñ¥ÎìúÎ†àÏä§Î•º 0x6FFFF8Î°ú ÏÑ§Ï†ï
 
@@ -18117,7 +19149,7 @@ mov
 mov
  
 	grbp
-, 0x6FFFF8 ; 
+, 0x700000 ; 
 	gRBP
  Î†àÏßÄÏä§ÌÑ∞Ïùò Ïñ¥ÎìúÎ†àÏä§Î•º 0x6FFFF8Î°ú ÏÑ§Ï†ï
 
@@ -18325,7 +19357,7 @@ jmp
 	g$
 
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/FileSystem.c
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/FileSystem.c
 
 1 
 	~"FûeSy°em.h
@@ -23511,7 +24543,7 @@ TRUE
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/FileSystem.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/FileSystem.h
 
 1 #i‚de‡
 __FILESYSTEM_H__
@@ -24267,7 +25299,7 @@ BOOL
 	`kFlushFûeSy°emCache
 ();
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/HardDisk.c
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/HardDisk.c
 
 1 
 	~"H¨dDisk.h
@@ -25741,7 +26773,7 @@ i
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/HardDisk.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/HardDisk.h
 
 1 #i‚de‡
 __HARDDISK_H__
@@ -26173,7 +27205,7 @@ bPrim¨y
 bFœg
 );
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/IOAPIC.c
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/IOAPIC.c
 
 1 
 	~"IOAPIC.h
@@ -26214,8 +27246,8 @@ p°IOAPICE¡ry
 15 if(
 gs_°IOAPICM™agî
 .
-qwIOAPICBa£AddªssOfISA
-==
+qwIOAPICBa£AddºessOfISA
+ =
 NULL
 )
 
@@ -26225,33 +27257,33 @@ p°IOAPICE¡ry
 	`kFödIOAPICE¡ryF‹ISA
 ();
 
-19 if(
+18 if(
 p°IOAPICE¡ry
-!=
+ !=
 NULL
 )
 
-21 
+20 
 gs_°IOAPICM™agî
 .
-qwIOAPICBa£AddªssOfISA
+qwIOAPICBa£AddºessOfISA
  = 
 p°IOAPICE¡ry
 ->
 dwMem‹yM≠Addªss
 &0xFFFFFFFF;
 
-26  
+25  
 gs_°IOAPICM™agî
 .
-qwIOAPICBa£AddªssOfISA
+qwIOAPICBa£AddºessOfISA
 ;
 
-27 
+26 
 	}
 }
 
-30 
+29 
 	$kSëIOAPICRedúe˘i⁄E¡ry
 (
 IOREDIRECTIONTABLE
@@ -26261,15 +27293,15 @@ p°E¡ry
 BYTE
  
 bAPICID
-,BYTE 
+, BYTE 
 bI¡îru±Mask
-,BYTE 
+, BYTE 
 bFœgsAndDñivîyMode
 ,BYTE 
 bVe˘‹
 )
 
-32 
+31 
 	`kMemSë
 (
 p°E¡ry
@@ -26277,7 +27309,7 @@ p°E¡ry
 IOREDIRECTIONTABLE
 ));
 
-34 
+33 
 p°E¡ry
 ->
 bDe°ö©i⁄
@@ -26285,29 +27317,29 @@ bDe°ö©i⁄
 bAPICID
 ;
 
-35 
+34 
 p°E¡ry
 ->
 bFœgsAndDñivîyMode
  = bFlagsAndDeliveryMode;
 
-36 
+35 
 p°E¡ry
 ->
 bI¡îru±Mask
  = bInterruptMask;
 
-37 
+36 
 p°E¡ry
 ->
 bVe˘‹
  = bVector;
 
-38 
+37 
 	}
 }
 
-41 
+40 
 	$kRódIOAPICRedúe˘i⁄TabÀ
 (
 iINTIN
@@ -26317,25 +27349,25 @@ IOREDIRECTIONTABLE
 p°E¡ry
 )
 
-43 
+42 
 QWORD
 * 
 pqwD©a
 ;
 
-44 
+43 
 QWORD
  
 qwIOAPICBa£Addªss
 ;
 
-47 
+46 
 qwIOAPICBa£Addªss
  = 
 	`kGëIOAPICBa£AddªssOfISA
 ();
 
-50 
+49 
 pqwD©a
  = (
 QWORD
@@ -26343,7 +27375,7 @@ QWORD
 p°E¡ry
 ;
 
-58 *(
+57 *(
 DWORD
 *)(
 qwIOAPICBa£Addªss
@@ -26351,11 +27383,11 @@ qwIOAPICBa£Addªss
 IOAPIC_REGISTER_IOREGISTERSELECTOR
 Ë
 IOAPIC_REGISTERINDEX_HIGHIOREDIRECTIONTABLE
- +
+ + 
 iINTIN
 *2;
 
-60 *
+59 *
 pqwD©a
  = *(
 DWORD
@@ -26365,11 +27397,11 @@ qwIOAPICBa£Addªss
 IOAPIC_REGISTER_IOWINDOW
 );
 
-61 *
+60 *
 pqwD©a
  = *pqwData<<32;
 
-69 *(
+68 *(
 DWORD
 *)(
 qwIOAPICBa£Addªss
@@ -26377,11 +27409,11 @@ qwIOAPICBa£Addªss
 IOAPIC_REGISTER_IOREGISTERSELECTOR
 Ë
 IOAPIC_REGISTERINDEX_LOWIOREDIRECTIONTABLE
- +
+ + 
 iINTIN
 *2;
 
-71 *
+70 *
 pqwD©a
  |*(
 DWORD
@@ -26391,11 +27423,11 @@ qwIOAPICBa£Addªss
 IOAPIC_REGISTER_IOWINDOW
 );
 
-72 
+71 
 	}
 }
 
-75 
+74 
 	$kWrôeIOAPICRedúe˘i⁄TabÀ
 (
 iINTIN
@@ -26405,25 +27437,25 @@ IOREDIRECTIONTABLE
 p°E¡ry
 )
 
-77 
+76 
 QWORD
 * 
 pqwD©a
 ;
 
-78 
+77 
 QWORD
  
 qwIOAPICBa£Addªss
 ;
 
-81 
+80 
 qwIOAPICBa£Addªss
  = 
 	`kGëIOAPICBa£AddªssOfISA
 ();
 
-84 
+83 
 pqwD©a
  = (
 QWORD
@@ -26431,7 +27463,7 @@ QWORD
 p°E¡ry
 ;
 
-93 *(
+91 *(
 DWORD
 *)(
 qwIOAPICBa£Addªss
@@ -26439,11 +27471,11 @@ qwIOAPICBa£Addªss
 IOAPIC_REGISTER_IOREGISTERSELECTOR
 Ë
 IOAPIC_REGISTERINDEX_HIGHIOREDIRECTIONTABLE
- +
+ + 
 iINTIN
 *2;
 
-95 *(
+92 *(
 DWORD
 *)(
 qwIOAPICBa£Addªss
@@ -26453,7 +27485,7 @@ IOAPIC_REGISTER_IOWINDOW
 pqwD©a
 >>32;
 
-103 *(
+100 *(
 DWORD
 *)(
 qwIOAPICBa£Addªss
@@ -26461,45 +27493,45 @@ qwIOAPICBa£Addªss
 IOAPIC_REGISTER_IOREGISTERSELECTOR
 Ë
 IOAPIC_REGISTERINDEX_LOWIOREDIRECTIONTABLE
- +
+ + 
 iINTIN
 *2;
 
-105 *(
+102 *(
 DWORD
 *)(
 qwIOAPICBa£Addªss
- +
+ + 
 IOAPIC_REGISTER_IOWINDOW
 Ë*
 pqwD©a
 ;
 
-106 
+103 
 	}
 }
 
-110 
+106 
 	$kMaskAŒI¡îru±InIOAPIC
 ()
 
-112 
+108 
 IOREDIRECTIONTABLE
  
 °E¡ry
 ;
 
-113 
+109 
 i
 ;
 
-116 
+112 
 i
 =0;i<
 IOAPIC_MAXIOREDIRECTIONTABLECOUNT
 ;i++)
 
-119 
+115 
 	`kRódIOAPICRedúe˘i⁄TabÀ
 (
 i
@@ -26507,7 +27539,7 @@ i
 °E¡ry
 );
 
-120 
+116 
 °E¡ry
 .
 bI¡îru±Mask
@@ -26515,7 +27547,7 @@ bI¡îru±Mask
 IOAPIC_INTERRUPT_MASK
 ;
 
-121 
+117 
 	`kWrôeIOAPICRedúe˘i⁄TabÀ
 (
 i
@@ -26523,71 +27555,361 @@ i
 °E¡ry
 );
 
-123 
+119 
 	}
 }
 
-126 
-	$kInôülizeRedúe˘i⁄TabÀ
-()
+124 
+	$kInôülizeIORedúe˘i⁄TabÀ
+( )
 
-128 
+126 
 MPCONFIGURATIONMANAGER
 * 
-°MPM™agî
+p°MPM™agî
 ;
 
-129 
+127 
 MPCONFIGURATIONTABLEHEADER
 * 
 p°MPHódî
 ;
 
-130 
+128 
 IOINTERRUPTASSIGNMENTENTRY
 * 
 p°IOAssignmítE¡ry
 ;
 
-131 
+129 
 IOREDIRECTIONTABLE
  
 °IORedúe˘i⁄E¡ry
 ;
 
-132 
+130 
 QWORD
  
 qwE¡ryAddªss
 ;
 
-133 
+131 
 BYTE
  
 bE¡ryTy≥
 ;
 
-134 
+132 
 BYTE
  
 bDe°ö©i⁄
 ;
 
-135 
+133 
 i
 ;
 
-140 
+138 
 	`kMemSë
-(&
+–&
 gs_°IOAPICM™agî
-,0,(gs_stIOAPICManager));
+, 0, ( gs_stIOAPICManager ) );
 
-143 
+141 
 	`kGëIOAPICBa£AddªssOfISA
 ();
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/IOAPIC.h
+144  
+i
+ = 0 ; i < 
+IOAPIC_MAXIRQTOINTINMAPCOUNT
+ ; i++ )
+
+146 
+gs_°IOAPICM™agî
+.
+vbIRQToINTINM≠
+[ 
+i
+ ] = 0xFF;
+
+153 
+	`kMaskAŒI¡îru±InIOAPIC
+();
+
+158 
+p°MPM™agî
+ = 
+	`kGëMPC⁄figuøti⁄M™agî
+();
+
+159 
+p°MPHódî
+ = 
+p°MPM™agî
+->
+p°MPC⁄figuøti⁄TabÀHódî
+;
+
+160 
+qwE¡ryAddªss
+ = 
+p°MPM™agî
+->
+qwBa£E¡rySèπAddªss
+;
+
+163  
+i
+ = 0 ; i < 
+p°MPHódî
+->
+wE¡ryCou¡
+ ; i++ )
+
+165 
+bE¡ryTy≥
+ = *–
+BYTE
+* ) 
+qwE¡ryAddªss
+;
+
+166  
+bE¡ryTy≥
+ )
+
+170 
+MP_ENTRYTYPE_IOINTERRUPTASSIGNMENT
+:
+
+171 
+p°IOAssignmítE¡ry
+ = ( 
+IOINTERRUPTASSIGNMENTENTRY
+* ) 
+qwE¡ryAddªss
+;
+
+174 if––
+p°IOAssignmítE¡ry
+->
+bSour˚BUSID
+ =
+p°MPM™agî
+->
+bISABusID
+ ) &&
+
+175 –
+p°IOAssignmítE¡ry
+->
+bI¡îru±Ty≥
+ =
+MP_INTERRUPTTYPE_INT
+ ) )
+
+179 if–
+p°IOAssignmítE¡ry
+->
+bSour˚BUSIRQ
+ == 0 )
+
+181 
+bDe°ö©i⁄
+ = 0xFF;
+
+185 
+bDe°ö©i⁄
+ = 0x00;
+
+192 
+	`kSëIOAPICRedúe˘i⁄E¡ry
+–&
+°IORedúe˘i⁄E¡ry
+, 
+bDe°ö©i⁄
+,
+
+193 0x00, 
+IOAPIC_TRIGGERMODE_EDGE
+ | 
+IOAPIC_POLARITY_ACTIVEHIGH
+ |
+
+194 
+IOAPIC_DESTINATIONMODE_PHYSICALMODE
+ | 
+IOAPIC_DELIVERYMODE_FIXED
+,
+
+195 
+PIC_IRQSTARTVECTOR
+ + 
+p°IOAssignmítE¡ry
+->
+bSour˚BUSIRQ
+ );
+
+199 
+	`kWrôeIOAPICRedúe˘i⁄TabÀ
+–
+p°IOAssignmítE¡ry
+->
+bDe°ö©i⁄IOAPICINTIN
+,
+
+200 &
+°IORedúe˘i⁄E¡ry
+ );
+
+203 
+gs_°IOAPICM™agî
+.
+vbIRQToINTINM≠
+[ 
+p°IOAssignmítE¡ry
+->
+bSour˚BUSIRQ
+ ] =
+
+204 
+p°IOAssignmítE¡ry
+->
+bDe°ö©i⁄IOAPICINTIN
+;
+
+206 
+qwE¡ryAddªss
+ +–
+IOINTERRUPTASSIGNMENTENTRY
+ );
+
+210 
+MP_ENTRYTYPE_PROCESSOR
+:
+
+211 
+qwE¡ryAddªss
+ +–
+PROCESSORENTRY
+ );
+
+215 
+MP_ENTRYTYPE_BUS
+:
+
+216 
+MP_ENTRYTYPE_IOAPIC
+:
+
+217 
+MP_ENTRYTYPE_LOCALINTERRUPTASSIGNMENT
+:
+
+218 
+qwE¡ryAddªss
+ += 8;
+
+222 
+	}
+}
+
+226 
+	$kPrötIRQToINTINM≠
+( )
+
+228 
+i
+;
+
+230 
+	`kPrötf
+( "=========== IRQ To I/O APIC INT IN Mapping Table ===========\n" );
+
+232  
+i
+ = 0 ; i < 
+IOAPIC_MAXIRQTOINTINMAPCOUNT
+ ; i++ )
+
+234 
+	`kPrötf
+–"IRQ[%d] -> INTIN [%d]\n", 
+i
+, 
+gs_°IOAPICM™agî
+.
+vbIRQToINTINM≠
+[ i ] );
+
+236 
+	}
+}
+
+239 
+	$kRoutögIRQToAPICID
+(
+iIRQ
+,
+BYTE
+ 
+bAPICID
+)
+
+241 
+i
+;
+
+242 
+IOREDIRECTIONTABLE
+ 
+°E¡ry
+;
+
+245 if(
+iIRQ
+>
+IOAPIC_MAXIRQTOINTINMAPCOUNT
+)
+
+251 
+	`kRódIOAPICRedúe˘i⁄TabÀ
+(
+gs_°IOAPICM™agî
+.
+vbIRQToINTINM≠
+[
+iIRQ
+],&
+°E¡ry
+);
+
+252 
+°E¡ry
+.
+bDe°ö©i⁄
+ = 
+bAPICID
+;
+
+253 
+	`kWrôeIOAPICRedúe˘i⁄TabÀ
+(
+gs_°IOAPICM™agî
+.
+vbIRQToINTINM≠
+[
+iIRQ
+],&
+°E¡ry
+);
+
+254 
+	}
+}
+
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/IOAPIC.h
 
 1 #i‚de‡
 __IOAPIC_H__
@@ -26693,133 +28015,133 @@ __IOAPIC_H__
 
 	)
 
-37 
+38 
 	#IOAPIC_DELIVERYSTATUS_SENDPENDING
  0x10
 
 	)
 
-38 
+39 
 	#IOAPIC_DELIVERYSTATUS_IDLE
  0x00
 
 	)
 
-41 
+42 
 	#IOAPIC_DESTINATIONMODE_LOGICALMODE
  0x08
 
 	)
 
-42 
+43 
 	#IOAPIC_DESTINATIONMODE_PHYSICALMODE
  0x00
 
 	)
 
-45 
+46 
 	#IOAPIC_DELIVERYMODE_FIXED
  0x00
 
 	)
 
-46 
+47 
 	#IOAPIC_DELIVERYMODE_LOWESTPRIORITY
  0x01
 
 	)
 
-47 
+48 
 	#IOAPIC_DELIVERYMODE_SMI
  0x02
 
 	)
 
-48 
+49 
 	#IOAPIC_DELIVERYMODE_NMI
  0x04
 
 	)
 
-49 
+50 
 	#IOAPIC_DELIVERYMODE_INIT
  0x05
 
 	)
 
-50 
+51 
 	#IOAPIC_DELIVERYMODE_EXTINT
  0x07
 
 	)
 
-53 
+54 
 	#IOAPIC_MAXIRQTOINTINMAPCOUNT
  16
 
 	)
 
-57 #¥agm®
+58 #¥agm®
 ∑ck
 (
 push
-,1)
+, 1)
 
-60 
-	skIORedúe˘i⁄TabÀSåu˘
+61 
+	skIOREdúe˘i⁄TabÀSåcut
 
 
-63 
+64 
 BYTE
  
 	mbVe˘‹
 ;
 
-67 
+68 
 BYTE
  
 	mbFœgsAndDñivîyMode
 ;
 
-70 
+71 
 BYTE
  
 	mbI¡îru±Mask
 ;
 
-73 
+74 
 BYTE
  
 	mvbRe£rved
 [4];
 
-76 
+77 
 BYTE
  
 	mbDe°ö©i⁄
 ;
 
-77 } 
+78 } 
 	tIOREDIRECTIONTABLE
 ;
 
-79 #¥agm®
+80 #¥agm®
 ∑ck
-(
+ (
 p›
 )
 
-82 
+83 
 	skIOAPICM™agîSåu˘
 
 
-85 
+86 
 QWORD
  
-	mqwIOAPICBa£AddªssOfISA
+	mqwIOAPICBa£AddºessOfISA
 ;
 
-88 
+89 
 BYTE
  
 	mvbIRQToINTINM≠
@@ -26827,17 +28149,17 @@ BYTE
 IOAPIC_MAXIRQTOINTINMAPCOUNT
 ];
 
-89 } 
+90 } 
 	tIOAPICMANAGER
 ;
 
-92 
+93 
 QWORD
  
 kGëIOAPICBa£AddªssOfISA
 ();
 
-93 
+94 
 kSëIOAPICRedúe˘i⁄E¡ry
 (
 IOREDIRECTIONTABLE
@@ -26855,7 +28177,7 @@ bFœgsAndDñivîyMode
 bVe˘‹
 );
 
-94 
+95 
 kRódIOAPICRedúe˘i⁄TabÀ
 (
 iINTIN
@@ -26865,7 +28187,7 @@ IOREDIRECTIONTABLE
 p°E¡ry
 );
 
-95 
+96 
 kWrôeIOAPICRedúe˘i⁄TabÀ
 (
 iINTIN
@@ -26875,19 +28197,29 @@ IOREDIRECTIONTABLE
 p°E¡ry
 );
 
-96 
+97 
 kMaskAŒI¡îru±InIOAPIC
 ();
 
-97 
-kInôülizeRedúe˘i⁄TabÀ
-();
-
 98 
-kPrötIRQTOINTINM≠
+kInôülizeIORedúe˘i⁄TabÀ
 ();
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/ISR.asm
+99 
+kPrötfIRQToINTINM≠
+();
+
+100 
+kRoutögIRQToAPICID
+(
+iIRQ
+,
+BYTE
+ 
+bAPICID
+);
+
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/ISR.asm
 
 1 [
 BITS
@@ -28819,7 +30151,7 @@ kComm⁄I¡îru±H™dÀr
 	gúëq
  ; Ïù∏ÌÑ∞ÎüΩÌä∏ Ï≤òÎ¶¨Î•º ÏôÑÎ£åÌïòÍ≥† Ïù¥Ï†ÑÏóê ÏàòÌñâÌïòÎçò ÏΩîÎìúÎ°ú Î≥µÏõê
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/ISR.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/ISR.h
 
 1 #i‚de‡
 __ISR_H__
@@ -28983,7 +30315,7 @@ kISRHDD2
 kISRETCI¡îru±
 ( );
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/InterruptHandler.c
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/InterruptHandler.c
 
 1 
 	~"I¡îru±H™dÀr.h
@@ -29021,7 +30353,281 @@ kISRETCI¡îru±
 	~"H¨dDisk.h
 "
 
-12 
+13 
+INTERRUPTMANAGER
+ 
+	ggs_°I¡îru±M™agî
+;
+
+16 
+	$kInôülizeH™dÀr
+()
+
+18 
+	`kMemSë
+(&
+gs_°I¡îru±M™agî
+,0,(gs_stInterruptManager));
+
+19 
+	}
+}
+
+22 
+	$kSëSymmëricIOMode
+(
+BOOL
+ 
+bSymmëricIOMode
+)
+
+24 
+gs_°I¡îru±M™agî
+.
+bSymmëricIOMode
+ = bSymmetricIOMode;
+
+25 
+	}
+}
+
+28 
+	$kSëI¡îru±LﬂdBÆ™cög
+(
+BOOL
+ 
+bU£LﬂdBÆ™cög
+)
+
+30 
+gs_°I¡îru±M™agî
+.
+bU£LﬂdBÆ™cög
+ = bUseLoadBalancing;
+
+31 
+	}
+}
+
+34 
+	$kIn¸ó£I¡îru±Cou¡
+(
+iIRQ
+)
+
+37 
+gs_°I¡îru±M™agî
+.
+vvqwC‹eI¡îru±Cou¡
+[
+	`kGëAPICID
+()][
+iIRQ
+]++;
+
+38 
+	}
+}
+
+41 
+	$kSídEOI
+(
+iIRQ
+)
+
+44 if(
+gs_°I¡îru±M™agî
+.
+bSymmëricIOMode
+==
+FALSE
+)
+
+46 
+	`kSídEOIToPIC
+(
+iIRQ
+);
+
+51 
+	`kSídEOIToLoˇlAPIC
+();
+
+53 
+	}
+}
+
+56 
+INTERRUPTMANAGER
+* 
+	$kGëI¡îru±M™agî
+()
+
+58  &
+gs_°I¡îru±M™agî
+;
+
+59 
+	}
+}
+
+62 
+	$kPro˚ss‹LﬂdBÆ™cög
+(
+iIRQ
+)
+
+64 
+QWORD
+ 
+qwMöCou¡
+= 0xFFFFFFFFFFFFFFFF;
+
+65 
+iMöCou¡C‹eIndex
+;
+
+66 
+iC‹eCou¡
+;
+
+67 
+i
+;
+
+68 
+BOOL
+ 
+bRe£tCou¡
+ = 
+FALSE
+;
+
+69 
+BYTE
+ 
+bAPICID
+;
+
+71 
+bAPICID
+ = 
+	`kGëAPICID
+();
+
+74 if((
+gs_°I¡îru±M™agî
+.
+vvqwC‹eI¡îru±Cou¡
+[
+bAPICID
+][
+iIRQ
+]==0)||((gs_°I¡îru±M™agî.vvqwC‹eI¡îru±Cou¡[bAPICID][iIRQ]%
+INTERRUPT_LOADBALANCINGDIVIDOR
+)!=0)||(gs_°I¡îru±M™agî.
+bU£LﬂdBÆ™cög
+==
+FALSE
+))
+
+80 
+iMöCou¡C‹eIndex
+ = 0;
+
+81 
+iC‹eCou¡
+ = 
+	`kGëPro˚ss‹Cou¡
+();
+
+82 
+i
+=0;i<
+iC‹eCou¡
+;i++)
+
+84 if((
+gs_°I¡îru±M™agî
+.
+vvqwC‹eI¡îru±Cou¡
+[
+i
+][
+iIRQ
+]<
+qwMöCou¡
+))
+
+86 
+qwMöCou¡
+ = 
+gs_°I¡îru±M™agî
+.
+vvqwC‹eI¡îru±Cou¡
+[
+i
+][
+iIRQ
+];
+
+87 
+iMöCou¡C‹eIndex
+ = 
+i
+;
+
+90 i‡(
+gs_°I¡îru±M™agî
+.
+vvqwC‹eI¡îru±Cou¡
+[
+i
+][
+iIRQ
+]>=0xFFFFFFFFFFFFFFFE)
+
+92 
+bRe£tCou¡
+=
+TRUE
+;
+
+97 
+	`kRoutögIRQToAPICID
+(
+iIRQ
+,
+iMöCou¡C‹eIndex
+);
+
+100 if(
+bRe£tCou¡
+==
+TRUE
+)
+
+102 
+i
+=0;i<
+iC‹eCou¡
+;i++)
+
+104 
+gs_°I¡îru±M™agî
+.
+vvqwC‹eI¡îru±Cou¡
+[
+i
+][
+iIRQ
+]=0;
+
+107 
+	}
+}
+
+112 
 	$kComm⁄Ex˚±i⁄H™dÀr
 (
 iVe˘‹Numbî
@@ -29031,263 +30637,353 @@ QWORD
 qwEº‹Code
 )
 
-14 
+114 
 vcBuf„r
 [3]={0,};
 
-17 
+117 
 vcBuf„r
 [0] = '0'+
 iVe˘‹Numbî
 /10;
 
-18 
+118 
 vcBuf„r
 [1] = '0'+
 iVe˘‹Numbî
 %10;
 
-20 
+120 
 	`kPrötSåögXY
 ( 0, 0, "====================================================" );
 
-21 
+121 
 	`kPrötSåögXY
 ( 0, 1, " Exception Occur~!!!! " );
 
-22 
+122 
 	`kPrötSåögXY
-( 0, 2, " Vector: " );
+( 0, 2, " Vector: core ID: " );
 
-23 
+123 
 	`kPrötSåögXY
-–27,2,
+(21,2,
 vcBuf„r
 );
 
-24 
+124 
+	`kSPrötf
+(
+vcBuf„r
+,"0x%x",
+	`kGëAPICID
+());
+
+125 
+	`kPrötSåögXY
+(40,2,
+vcBuf„r
+);
+
+126 
 	`kPrötSåögXY
 ( 0, 3, "====================================================" );
 
-27 
+129 
 	}
 }
 
-30 
+132 
 	$kComm⁄I¡îru±H™dÀr
 (
 iVe˘‹Numbî
 )
 
-32 
+134 
 vcBuf„r
 [] ="[INT: , ]";
 
-33 
+135 
 g_iComm⁄I¡îru±Cou¡
 =0;
 
-37 
+136 
+iIRQ
+;
+
+140 
 vcBuf„r
 [5]='0'+
 iVe˘‹Numbî
 /10;
 
-38 
+141 
 vcBuf„r
 [6]='0'+
 iVe˘‹Numbî
 %10;
 
-40 
+143 
 vcBuf„r
 [8]='0'+
 g_iComm⁄I¡îru±Cou¡
 ;
 
-41 
+144 
 g_iComm⁄I¡îru±Cou¡
 =(g_iCommonInterruptCount+1)%10;
 
-42 
+145 
 	`kPrötSåögXY
 (70,0,
 vcBuf„r
 );
 
-45 
-	`kSídEOIToPIC
-(
+148 
+iIRQ
+ = 
 iVe˘‹Numbî
--
+ - 
 PIC_IRQSTARTVECTOR
+;
+
+151 
+	`kSídEOI
+(
+iIRQ
 );
 
-46 
+154 
+	`kIn¸ó£I¡îru±Cou¡
+(
+iIRQ
+);
+
+157 
+	`kPro˚ss‹LﬂdBÆ™cög
+(
+iIRQ
+);
+
+158 
 	}
 }
 
-49 
+161 
 	$kKeybﬂrdH™dÀr
 (
 iVe˘‹Numbî
 )
 
-52 
+164 
 vcBuf„r
 [] ="[INT: , ]";
 
-53 
+165 
 g_iKeybﬂrdI¡îru±Cou¡
 =0;
 
-54 
+166 
 BYTE
  
 bTemp
 ;
 
-58 
+167 
+iIRQ
+;
+
+171 
 vcBuf„r
 [5]='0'+
 iVe˘‹Numbî
 /10;
 
-59 
+172 
 vcBuf„r
 [6]='0'+
 iVe˘‹Numbî
 %10;
 
-61 
+174 
 vcBuf„r
 [8]='0'+
 g_iKeybﬂrdI¡îru±Cou¡
 ;
 
-62 
+175 
 g_iKeybﬂrdI¡îru±Cou¡
 =(g_iKeyboardInterruptCount+1)%10;
 
-63 
+176 
 	`kPrötSåögXY
 (0,0,
 vcBuf„r
 );
 
-66 if(
+179 if(
 	`kIsOuçutBuf„rFuŒ
 ()==
 TRUE
 )
 
-68 
+181 
 bTemp
 =
 	`kGëKeybﬂrdSˇnCode
 ();
 
-69 
+182 
 	`kC⁄vîtSˇnCodeAndPutQueue
 (
 bTemp
 );
 
-73 
-	`kSídEOIToPIC
-(
+187 
+iIRQ
+ = 
 iVe˘‹Numbî
--
+ - 
 PIC_IRQSTARTVECTOR
+;
+
+190 
+	`kSídEOI
+(
+iIRQ
 );
 
-75 
+193 
+	`kIn¸ó£I¡îru±Cou¡
+(
+iIRQ
+);
+
+196 
+	`kPro˚ss‹LﬂdBÆ™cög
+(
+iIRQ
+);
+
+197 
 	}
 }
 
-78 
+200 
 	$kTimîH™dÀr
 (
 iVe˘‹Numbî
 )
 
-80 
+202 
 vcBuf„r
 [] ="[INT: , ]";
 
-81 
+203 
 g_iTimîI¡îru±Cou¡
 =0;
 
-82 
-i
-=0;
+204 
+iIRQ
+;
 
-86 
+205 
+BYTE
+ 
+bCuºítAPICID
+;
+
+209 
 vcBuf„r
 [5]='0'+
 iVe˘‹Numbî
 /10;
 
-87 
+210 
 vcBuf„r
 [6]='0'+
 iVe˘‹Numbî
 %10;
 
-89 
+212 
 vcBuf„r
 [8]='0'+
 g_iTimîI¡îru±Cou¡
 ;
 
-90 
+213 
 g_iTimîI¡îru±Cou¡
 =(g_iTimerInterruptCount+1)%10;
 
-91 
+214 
 	`kPrötSåögXY
 (70,0,
 vcBuf„r
 );
 
-94 
-	`kSídEOIToPIC
-(
+218 
+iIRQ
+ = 
 iVe˘‹Numbî
--
+ - 
 PIC_IRQSTARTVECTOR
+;
+
+221 
+	`kSídEOI
+(
+iIRQ
 );
 
-97 
+224 
+	`kIn¸ó£I¡îru±Cou¡
+(
+iIRQ
+);
+
+227 
+bCuºítAPICID
+ = 
+	`kGëAPICID
+();
+
+228 if(
+bCuºítAPICID
+==0)
+
+231 
 g_qwTickCou¡
 ++;
 
-101 
+235 
 	`kDe¸ó£Pro˚ss‹Time
-();
+(
+bCuºítAPICID
+);
 
-103 if(
+237 if(
 	`kIsPro˚ss‹TimeExpúed
-()==
+(
+bCuºítAPICID
+)==
 TRUE
 )
 
-105 
+239 
 	`kScheduÀInI¡îru±
 ();
 
-107 
+242 
 	}
 }
 
-111 
+246 
 	$kDevi˚NŸAvaûabÀH™dÀr
 (
 iVe˘‹Numbî
 )
 
-113 
+248 
 TCB
 * 
 p°FPUTask
@@ -29295,65 +30991,81 @@ p°FPUTask
 p°CuºítTask
 ;
 
-114 
+249 
 QWORD
  
 qwLa°FPUTaskID
 ;
 
-118 
+250 
+BYTE
+ 
+bCuºítAPICID
+;
+
+254 
 vcBuf„r
 [] = "[EXC: , ]";
 
-119 
+255 
 g_iFPUI¡îru±Cou¡
 =0;
 
-122 
+258 
 vcBuf„r
 [5] = '0' + 
 iVe˘‹Numbî
 /10;
 
-123 
+259 
 vcBuf„r
 [7] = '0' + 
 iVe˘‹Numbî
 %10;
 
-125 
+261 
 vcBuf„r
 [8] = '0' + 
 g_iFPUI¡îru±Cou¡
 ;
 
-126 
+262 
 g_iFPUI¡îru±Cou¡
  = (g_iFPUInterruptCount+1)%10;
 
-127 
+263 
 	`kPrötSåögXY
 (0,0,
 vcBuf„r
 );
 
-131 
+267 
+bCuºítAPICID
+ = 
+	`kGëAPICID
+();
+
+270 
 	`kCÀ¨TS
 ();
 
-134 
+273 
 qwLa°FPUTaskID
  = 
 	`kGëLa°FPUU£dTaskID
-();
+(
+bCuºítAPICID
+);
 
-135 
+274 
 p°CuºítTask
  = 
 	`kGëRu¬ögTask
-();
+(
+bCuºítAPICID
+);
 
-138 if–
+277 if–
 qwLa°FPUTaskID
  =
 p°CuºítTask
@@ -29363,13 +31075,13 @@ p°CuºítTask
 qwID
 )
 
-143 if(
+282 if(
 qwLa°FPUTaskID
 !=
 TASK_INVALIDID
 )
 
-145 
+284 
 p°FPUTask
  = 
 	`kGëTCBInTCBPoﬁ
@@ -29379,7 +31091,7 @@ p°FPUTask
 qwLa°FPUTaskID
 ));
 
-146 if((
+285 if((
 p°FPUTask
 !=
 NULL
@@ -29391,7 +31103,7 @@ qwID
 qwLa°FPUTaskID
 ))
 
-148 
+287 
 	`kSaveFPUC⁄ãxt
 (
 p°FPUTask
@@ -29399,7 +31111,7 @@ p°FPUTask
 vqwFPUC⁄ãxt
 );
 
-154 if(
+293 if(
 p°CuºítTask
 ->
 bFPUU£d
@@ -29407,11 +31119,11 @@ bFPUU£d
 FALSE
 )
 
-156 
+295 
 	`kInôülizeFPU
 ();
 
-157 
+296 
 p°CuºítTask
 ->
 bFPUU£d
@@ -29419,7 +31131,7 @@ bFPUU£d
 TRUE
 ;
 
-161 
+300 
 	`kLﬂdFPUC⁄ãxt
 (
 p°CuºítTask
@@ -29427,9 +31139,11 @@ p°CuºítTask
 vqwFPUC⁄ãxt
 );
 
-165 
+304 
 	`kSëLa°FPUU£dTaskID
 (
+bCuºítAPICID
+,
 p°CuºítTask
 ->
 °Lök
@@ -29437,71 +31151,81 @@ p°CuºítTask
 qwID
 );
 
-166 
+305 
 	}
 }
 
-169 
+308 
 	$kHDDH™dÀr
 (
 iVe˘‹Numbî
 )
 
-171 
+310 
 vcBuf„r
 []="[INT: , ]";
 
-172 
+311 
 g_iHDDI¡îru±Cou¡
 =0;
 
-173 
+312 
 BYTE
  
 bTemp
 ;
 
-178 
+313 
+iIRQ
+;
+
+318 
 vcBuf„r
 [5] = '0' + 
 iVe˘‹Numbî
 /10;
 
-179 
+319 
 vcBuf„r
 [6] = '0' + 
 iVe˘‹Numbî
 %10;
 
-181 
+321 
 vcBuf„r
 [8] = '0' + 
 g_iHDDI¡îru±Cou¡
 ;
 
-182 
+322 
 g_iHDDI¡îru±Cou¡
  = (g_iHDDInterruptCount+1)%10;
 
-184 
+324 
 	`kPrötSåögXY
 (10,0,
 vcBuf„r
 );
 
-188 if(
+328 
+iIRQ
+ = 
 iVe˘‹Numbî
  - 
 PIC_IRQSTARTVECTOR
+;
+
+331 if(
+iIRQ
  == 14)
 
-191 
+334 
 	`kSëHDDI¡îru±Fœg
 (
 TRUE
 ,TRUE);
 
-197 
+340 
 	`kSëHDDI¡îru±Fœg
 (
 FALSE
@@ -29509,19 +31233,29 @@ FALSE
 TRUE
 );
 
-201 
-	`kSídEOIToPIC
+345 
+	`kSídEOI
 (
-iVe˘‹Numbî
--
-PIC_IRQSTARTVECTOR
+iIRQ
 );
 
-202 
+348 
+	`kIn¸ó£I¡îru±Cou¡
+(
+iIRQ
+);
+
+351 
+	`kPro˚ss‹LﬂdBÆ™cög
+(
+iIRQ
+);
+
+353 
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/InterruptHandler.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/InterruptHandler.h
 
 1 #i‚de‡
 __INTERRUPTHANDLER_H__
@@ -29537,7 +31271,53 @@ __INTERRUPTHANDLER_H__
 	~"Ty≥s.h
 "
 
-7 
+5 
+	~"Mu…iPro˚ss‹.h
+"
+
+9 
+	#INTERRUPT_MAXVECTORCOUNT
+ 16
+
+	)
+
+11 
+	#INTERRUPT_LOADBALANCINGDIVIDOR
+ 10
+
+	)
+
+15 
+	skI¡îru±M™agîSåu˘
+
+
+18 
+QWORD
+ 
+	mvvqwC‹eI¡îru±Cou¡
+[
+MAXPROCESSORCOUNT
+][
+INTERRUPT_MAXVECTORCOUNT
+];
+
+21 
+BOOL
+ 
+	mbU£LﬂdBÆ™cög
+;
+
+24 
+BOOL
+ 
+	mbSymmëricIOMode
+;
+
+25 } 
+	tINTERRUPTMANAGER
+;
+
+28 
 kComm⁄Ex˚±i⁄H™dÀr
 (
 iVe˘‹Numbî
@@ -29547,37 +31327,77 @@ QWORD
 qwEº‹Code
 );
 
-8 
+29 
 kComm⁄I¡îru±H™dÀr
 (
 iVe˘‹Numbî
 );
 
-9 
+30 
 kKeybﬂrdH™dÀr
 (
 iVe˘‹Numbî
 );
 
-10 
+31 
 kTimîH™dÀr
 (
 iVe˘‹Numbî
 );
 
-11 
+32 
 kDevi˚NŸAvaûabÀH™dÀr
 (
 iVe˘‹Numbî
 );
 
-12 
+33 
 kHDDH™dÀr
 (
 iVe˘‹Numbî
 );
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/Keyboard.c
+34 
+kSëSymmëricIOMode
+(
+BOOL
+ 
+bSymmëricIOMode
+);
+
+35 
+kSëI¡îru±LﬂdBÆ™cög
+(
+BOOL
+ 
+bU£LﬂdBÆ™cög
+);
+
+36 
+kIn¸ó£I¡îru±Cou¡
+(
+iIRQ
+);
+
+37 
+kSídEOI
+(
+iIRQ
+);
+
+38 
+INTERRUPTMANAGER
+* 
+kGëI¡îru±M™agî
+();
+
+39 
+kPro˚ss‹LﬂdBÆ™cög
+(
+iIRQ
+);
+
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/Keyboard.c
 
 1 
 	~"Ty≥s.h
@@ -30671,15 +32491,23 @@ KEY_MAXQUEUECOUNT
 KEYDATA
 ));
 
-577  
+577 
+	`kInôülizeSpöLock
+(&(
+gs_°KeybﬂrdM™agî
+.
+°SpöLock
+));
+
+579  
 	`kA˘iv©eKeybﬂrd
 ();
 
-578 
+580 
 	}
 }
 
-583 
+585 
 BOOL
  
 	$kC⁄vîtSˇnCodeAndPutQueue
@@ -30689,13 +32517,13 @@ BYTE
 bSˇnCode
 )
 
-585 
+587 
 KEYDATA
  
 °D©a
 ;
 
-586 
+588 
 BOOL
  
 bResu…
@@ -30703,19 +32531,19 @@ bResu…
 FALSE
 ;
 
-587 
+589 
 BOOL
  
 bPªviousI¡îru±
 ;
 
-590 
+592 
 °D©a
 .
 bSˇnCode
  = bScanCode;
 
-593 if(
+595 if(
 	`kC⁄vîtSˇnCodeToASCIICode
 (
 bSˇnCode
@@ -30729,13 +32557,15 @@ bFœgs
 TRUE
 )
 
-596 
-bPªviousI¡îru±
- = 
-	`kLockF‹Sy°emD©a
-();
-
 598 
+	`kLockF‹SpöLock
+(&(
+gs_°KeybﬂrdM™agî
+.
+°SpöLock
+));
+
+600 
 bResu…
 =
 	`kPutQueue
@@ -30745,21 +32575,23 @@ gs_°KeyQueue
 °D©a
 );
 
-601 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousI¡îru±
-);
+603 
+	`kU∆ockF‹SpöLock
+(&(
+gs_°KeybﬂrdM™agî
+.
+°SpöLock
+));
 
-604  
+606  
 bResu…
 ;
 
-605 
+607 
 	}
 }
 
-608 
+610 
 BOOL
  
 	$kGëKeyFromKeyQueue
@@ -30769,25 +32601,27 @@ KEYDATA
 p°D©a
 )
 
-610 
+612 
 BOOL
  
 bResu…
 ;
 
-611 
+613 
 BOOL
  
 bPªviousI¡îru±
 ;
 
-614 
-bPªviousI¡îru±
- = 
-	`kLockF‹Sy°emD©a
-();
+616 
+	`kLockF‹SpöLock
+(&(
+gs_°KeybﬂrdM™agî
+.
+°SpöLock
+));
 
-617 
+619 
 bResu…
  = 
 	`kGëQueue
@@ -30797,21 +32631,23 @@ gs_°KeyQueue
 p°D©a
 );
 
-620 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousI¡îru±
-);
+622 
+	`kU∆ockF‹SpöLock
+(&(
+gs_°KeybﬂrdM™agî
+.
+°SpöLock
+));
 
-621  
+624  
 bResu…
 ;
 
-622 
+625 
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/Keyboard.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/Keyboard.h
 
 1 #i‚de‡
 __KEYBOARD_H__
@@ -30827,389 +32663,399 @@ __KEYBOARD_H__
 	~"Ty≥s.h
 "
 
-8 
+5 
+	~"Synchr⁄iz©i⁄.h
+"
+
+9 
 	#KEY_SKIPCOUNTFORPAUSE
  2
 
 	)
 
-11 
+12 
 	#KEY_FLAGS_UP
  0x00
 
 	)
 
-12 
+13 
 	#KEY_FLAGS_DOWN
  0x01
 
 	)
 
-13 
+14 
 	#KEY_FLAGS_EXTENDEDKEY
  0x02
 
 	)
 
-16 
+17 
 	#KEY_MAPPINGTABLEMAXCOUNT
  89
 
 	)
 
-18 
+19 
 	#KEY_NONE
  0x00
 
 	)
 
-19 
+20 
 	#KEY_ENTER
  '\n'
 
 	)
 
-20 
+21 
 	#KEY_TAB
  '\t'
 
 	)
 
-21 
+22 
 	#KEY_ESC
  0x1B
 
 	)
 
-22 
+23 
 	#KEY_BACKSPACE
  0x08
 
 	)
 
-24 
+25 
 	#KEY_CTRL
  0x81
 
 	)
 
-25 
+26 
 	#KEY_LSHIFT
  0x82
 
 	)
 
-26 
+27 
 	#KEY_RSHIFT
  0x83
 
 	)
 
-27 
+28 
 	#KEY_PRINTSCREEN
  0x84
 
 	)
 
-28 
+29 
 	#KEY_LALT
  0x85
 
 	)
 
-29 
+30 
 	#KEY_CAPSLOCK
  0x86
 
 	)
 
-30 
+31 
 	#KEY_F1
  0x87
 
 	)
 
-31 
+32 
 	#KEY_F2
  0x88
 
 	)
 
-32 
+33 
 	#KEY_F3
  0x89
 
 	)
 
-33 
+34 
 	#KEY_F4
  0x8A
 
 	)
 
-34 
+35 
 	#KEY_F5
  0x8B
 
 	)
 
-35 
+36 
 	#KEY_F6
  0x8C
 
 	)
 
-36 
+37 
 	#KEY_F7
  0x8D
 
 	)
 
-37 
+38 
 	#KEY_F8
  0x8E
 
 	)
 
-38 
+39 
 	#KEY_F9
  0x8F
 
 	)
 
-39 
+40 
 	#KEY_F10
  0x90
 
 	)
 
-40 
+41 
 	#KEY_NUMLOCK
  0x91
 
 	)
 
-41 
+42 
 	#KEY_SCROLLLOCK
  0x92
 
 	)
 
-42 
+43 
 	#KEY_HOME
  0x93
 
 	)
 
-43 
+44 
 	#KEY_UP
  0x94
 
 	)
 
-44 
+45 
 	#KEY_PAGEUP
  0x95
 
 	)
 
-45 
+46 
 	#KEY_LEFT
  0x96
 
 	)
 
-46 
+47 
 	#KEY_CENTER
  0x97
 
 	)
 
-47 
+48 
 	#KEY_RIGHT
  0x98
 
 	)
 
-48 
+49 
 	#KEY_END
  0x99
 
 	)
 
-49 
+50 
 	#KEY_DOWN
  0x9A
 
 	)
 
-50 
+51 
 	#KEY_PAGEDOWN
  0x9B
 
 	)
 
-51 
+52 
 	#KEY_INS
  0x9C
 
 	)
 
-52 
+53 
 	#KEY_DEL
  0x9D
 
 	)
 
-53 
+54 
 	#KEY_F11
  0x9E
 
 	)
 
-54 
+55 
 	#KEY_F12
  0x9F
 
 	)
 
-55 
+56 
 	#KEY_PAUSE
  0xA0
 
 	)
 
-58 
+59 
 	#KEY_MAXQUEUECOUNT
  100
 
 	)
 
-61 #¥agm®
+62 #¥agm®
 ∑ck
 –
 push
 , 1 )
 
-64 
+65 
 	skKeyM≠pögE¡rySåu˘
 
 
-67 
+68 
 BYTE
  
 	mbN‹mÆCode
 ;
 
-70 
+71 
 BYTE
  
 	mbComböedCode
 ;
 
-71 } 
+72 } 
 	tKEYMAPPINGENTRY
 ;
 
-74 
+75 
 	skKeybﬂrdM™agîSåu˘
 
 
-77 
+78 
+SPINLOCK
+ 
+	m°SpöLock
+;
+
+81 
 BOOL
  
 	mbShi·Down
 ;
 
-78 
+82 
 BOOL
  
 	mbC≠sLockOn
 ;
 
-79 
+83 
 BOOL
  
 	mbNumLockOn
 ;
 
-80 
+84 
 BOOL
  
 	mbS¸ﬁlLockOn
 ;
 
-83 
+87 
 BOOL
  
 	mbExãndedCodeIn
 ;
 
-84 
+88 
 	miSkùCou¡F‹Pau£
 ;
 
-85 } 
+89 } 
 	tKEYBOARDMANAGER
 ;
 
-88 
+92 
 	skKeyD©aSåu˘
 
 
-91 
+95 
 BYTE
  
 	mbSˇnCode
 ;
 
-93 
+97 
 BYTE
  
 	mbASCIICode
 ;
 
-95 
+99 
 BYTE
  
 	mbFœgs
 ;
 
-96 } 
+100 } 
 	tKEYDATA
 ;
 
-98 #¥agm®
+102 #¥agm®
 ∑ck
 –
 p›
  )
 
-101 
+105 
 BOOL
  
 kIsOuçutBuf„rFuŒ
 ( );
 
-102 
+106 
 BOOL
  
 kIsI≈utBuf„rFuŒ
 ( );
 
-103 
+107 
 BOOL
  
 kA˘iv©eKeybﬂrd
 ( );
 
-104 
+108 
 BYTE
  
 kGëKeybﬂrdSˇnCode
 ( );
 
-105 
+109 
 BOOL
  
 kCh™geKeybﬂrdLED
@@ -31221,15 +33067,15 @@ bNumLockOn
 bS¸ﬁlLockOn
  );
 
-106 
+110 
 kE«bÀA20G©e
 ( );
 
-107 
+111 
 kReboŸ
 ( );
 
-108 
+112 
 BOOL
  
 kIsAÕhabëSˇnCode
@@ -31239,7 +33085,7 @@ BYTE
 bSˇnCode
  );
 
-109 
+113 
 BOOL
  
 kIsNumbîOrSymbﬁSˇnCode
@@ -31249,7 +33095,7 @@ BYTE
 bSˇnCode
  );
 
-110 
+114 
 BOOL
  
 kIsNumbîPadSˇnCode
@@ -31259,7 +33105,7 @@ BYTE
 bSˇnCode
  );
 
-111 
+115 
 BOOL
  
 kIsU£ComböedCode
@@ -31269,7 +33115,7 @@ BYTE
 bSˇnCode
  );
 
-112 
+116 
 Upd©eCombö©i⁄KeySètusAndLED
 –
 BYTE
@@ -31277,7 +33123,7 @@ BYTE
 bSˇnCode
  );
 
-113 
+117 
 BOOL
  
 kC⁄vîtSˇnCodeToASCIICode
@@ -31291,13 +33137,13 @@ pbASCIICode
 pbFœgs
  );
 
-114 
+118 
 BOOL
  
 kInôülizeKeybﬂrd
 ();
 
-115 
+119 
 BOOL
  
 kC⁄vîtSˇnCodeAndPutQueue
@@ -31307,7 +33153,7 @@ BYTE
 bSˇnCode
 );
 
-116 
+120 
 BOOL
  
 kGëKeyFromKeyQueue
@@ -31317,7 +33163,7 @@ KEYDATA
 p°D©a
 );
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/List.c
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/List.c
 
 1 
 	~"Li°.h
@@ -31987,7 +33833,7 @@ pvPªvious
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/List.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/List.h
 
 1 #i‚de‡
 __LIST_H__
@@ -32169,7 +34015,7 @@ p°Li°
 p°Cuºít
 );
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/LocalAPIC.c
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/LocalAPIC.c
 
 1 
 	~"LoˇlAPIC.h
@@ -32237,7 +34083,165 @@ APIC_REGISTER_SVR
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/LocalAPIC.h
+31 
+	$kSídEOIToLoˇlAPIC
+( )
+
+33 
+QWORD
+ 
+qwLoˇlAPICBa£Addªss
+;
+
+36 
+qwLoˇlAPICBa£Addªss
+ = 
+	`kGëLoˇlAPICBa£Addªss
+();
+
+39 *–
+DWORD
+* ) ( 
+qwLoˇlAPICBa£Addªss
+ + 
+APIC_REGISTER_EOI
+ ) = 0;
+
+40 
+	}
+}
+
+44 
+	$kSëTaskPri‹ôy
+–
+BYTE
+ 
+bPri‹ôy
+ )
+
+46 
+QWORD
+ 
+qwLoˇlAPICBa£Addªss
+;
+
+49 
+qwLoˇlAPICBa£Addªss
+ = 
+	`kGëLoˇlAPICBa£Addªss
+();
+
+52 *–
+DWORD
+* ) ( 
+qwLoˇlAPICBa£Addªss
+ + 
+APIC_REGISTER_TASKPRIORITY
+ ) = 
+bPri‹ôy
+;
+
+53 
+	}
+}
+
+57 
+	$kInôülizeLoˇlVe˘‹TabÀ
+( )
+
+59 
+QWORD
+ 
+qwLoˇlAPICBa£Addªss
+;
+
+60 
+DWORD
+ 
+dwTempVÆue
+;
+
+63 
+qwLoˇlAPICBa£Addªss
+ = 
+	`kGëLoˇlAPICBa£Addªss
+();
+
+67 *–
+DWORD
+* ) ( 
+qwLoˇlAPICBa£Addªss
+ + 
+APIC_REGISTER_TIMER
+ ) |
+APIC_INTERRUPT_MASK
+;
+
+71 *–
+DWORD
+* ) ( 
+qwLoˇlAPICBa£Addªss
+ + 
+APIC_REGISTER_LINT0
+ ) |
+APIC_INTERRUPT_MASK
+;
+
+75 *–
+DWORD
+* ) ( 
+qwLoˇlAPICBa£Addªss
+ + 
+APIC_REGISTER_LINT1
+ ) = 
+APIC_TRIGGERMODE_EDGE
+ |
+
+76 
+APIC_POLARITY_ACTIVEHIGH
+ | 
+APIC_DELIVERYMODE_NMI
+;
+
+80 *–
+DWORD
+* ) ( 
+qwLoˇlAPICBa£Addªss
+ + 
+APIC_REGISTER_ERROR
+ ) |
+APIC_INTERRUPT_MASK
+;
+
+84 *–
+DWORD
+* ) ( 
+qwLoˇlAPICBa£Addªss
+ +
+
+85 
+APIC_REGISTER_PERFORMANCEMONITORINGCOUNTER
+ ) |
+APIC_INTERRUPT_MASK
+;
+
+89 *–
+DWORD
+* ) ( 
+qwLoˇlAPICBa£Addªss
+ + 
+APIC_REGISTER_THERMALSENSOR
+ ) |=
+
+90 
+APIC_INTERRUPT_MASK
+;
+
+91 
+	}
+}
+
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/LocalAPIC.h
 
 1 #i‚de‡
 __LOCALAPIC_H__
@@ -32398,7 +34402,7 @@ __LOCALAPIC_H__
 	)
 
 40 
-	#APIC_LEVEL_ASSERT
+	#APIC_LEVEL_ASSET
  0x004000
 
 	)
@@ -32439,17 +34443,63 @@ __LOCALAPIC_H__
 
 	)
 
-53 
+53 
+	#APIC_INTERRUPT_MASK
+ 0x010000
+
+	)
+
+56 
+	#APIC_TIMERMODE_PERIODIC
+ 0x020000
+
+	)
+
+57 
+	#APIC_TIMERMODE_ONESHOT
+ 0x000000
+
+	)
+
+60 
+	#APIC_POLARITY_ACTIVELOW
+ 0x002000
+
+	)
+
+61 
+	#APIC_POLARITY_ACTIVEHIGH
+ 0x000000
+
+	)
+
+64 
 QWORD
  
 kGëLoˇlAPICBa£Addªss
 ();
 
-54 
+65 
 kE«bÀSo·w¨eLoˇlAPIC
 ();
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/MPConfigurationTable.c
+66 
+kSídEOIToLoˇlAPIC
+( );
+
+67 
+kSëTaskPri‹ôy
+–
+BYTE
+ 
+bPri‹ôy
+ );
+
+68 
+kInôülizeLoˇlVe˘‹TabÀ
+( );
+
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/MPConfigurationTable.c
 
 1 
 	~"MPC⁄figuøti⁄TabÀ.h
@@ -32463,7 +34513,7 @@ kE«bÀSo·w¨eLoˇlAPIC
 MPCONFIGURATIONMANAGER
  
 	ggs_°MPC⁄figuøti⁄M™agî
- = {0,};
+;
 
 8 
 BOOL
@@ -33851,27 +35901,291 @@ i
 	}
 }
 
-418 
+419 
+IOAPICENTRY
+* 
+	$kFödIOAPICE¡ryF‹ISA
+( )
+
+421 
+MPCONFIGURATIONMANAGER
+* 
+p°MPM™agî
+;
+
+422 
+MPCONFIGURATIONTABLEHEADER
+* 
+p°MPHódî
+;
+
+423 
+IOINTERRUPTASSIGNMENTENTRY
+* 
+p°IOAssignmítE¡ry
+;
+
+424 
+IOAPICENTRY
+* 
+p°IOAPICE¡ry
+;
+
+425 
+QWORD
+ 
+qwE¡ryAddªss
+;
+
+426 
+BYTE
+ 
+bE¡ryTy≥
+;
+
+427 
+BOOL
+ 
+bFöd
+ = 
+FALSE
+;
+
+428 
+i
+;
+
+431 
+p°MPHódî
+ = 
+gs_°MPC⁄figuøti⁄M™agî
+.
+p°MPC⁄figuøti⁄TabÀHódî
+;
+
+432 
+qwE¡ryAddªss
+ = 
+gs_°MPC⁄figuøti⁄M™agî
+.
+qwBa£E¡rySèπAddªss
+;
+
+438  
+i
+ = 0 ; ( i < 
+p°MPHódî
+->
+wE¡ryCou¡
+ ) &&
+
+439 –
+bFöd
+ =
+FALSE
+ ) ; 
+i
+++ )
+
+441 
+bE¡ryTy≥
+ = *–
+BYTE
+* ) 
+qwE¡ryAddªss
+;
+
+442  
+bE¡ryTy≥
+ )
+
+445 
+MP_ENTRYTYPE_PROCESSOR
+:
+
+446 
+qwE¡ryAddªss
+ +–
+PROCESSORENTRY
+ );
+
+450 
+MP_ENTRYTYPE_BUS
+:
+
+451 
+MP_ENTRYTYPE_IOAPIC
+:
+
+452 
+MP_ENTRYTYPE_LOCALINTERRUPTASSIGNMENT
+:
+
+453 
+qwE¡ryAddªss
+ += 8;
+
+457 
+MP_ENTRYTYPE_IOINTERRUPTASSIGNMENT
+:
+
+458 
+p°IOAssignmítE¡ry
+ = ( 
+IOINTERRUPTASSIGNMENTENTRY
+* ) 
+qwE¡ryAddªss
+;
+
+460 if–
+p°IOAssignmítE¡ry
+->
+bSour˚BUSID
+ ==
+
+461 
+gs_°MPC⁄figuøti⁄M™agî
+.
+bISABusID
+ )
+
+463 
+bFöd
+ = 
+TRUE
+;
+
+465 
+qwE¡ryAddªss
+ +–
+IOINTERRUPTASSIGNMENTENTRY
+ );
+
+471 if–
+bFöd
+ =
+FALSE
+ )
+
+473  
+NULL
+;
+
+481 
+qwE¡ryAddªss
+ = 
+gs_°MPC⁄figuøti⁄M™agî
+.
+qwBa£E¡rySèπAddªss
+;
+
+482  
+i
+ = 0 ; i < 
+p°MPHódî
+->
+wE¡ryCou¡
+ ; i++ )
+
+484 
+bE¡ryTy≥
+ = *–
+BYTE
+* ) 
+qwE¡ryAddªss
+;
+
+485  
+bE¡ryTy≥
+ )
+
+488 
+MP_ENTRYTYPE_PROCESSOR
+:
+
+489 
+qwE¡ryAddªss
+ +–
+PROCESSORENTRY
+ );
+
+493 
+MP_ENTRYTYPE_BUS
+:
+
+494 
+MP_ENTRYTYPE_IOINTERRUPTASSIGNMENT
+:
+
+495 
+MP_ENTRYTYPE_LOCALINTERRUPTASSIGNMENT
+:
+
+496 
+qwE¡ryAddªss
+ += 8;
+
+500 
+MP_ENTRYTYPE_IOAPIC
+:
+
+501 
+p°IOAPICE¡ry
+ = ( 
+IOAPICENTRY
+* ) 
+qwE¡ryAddªss
+;
+
+502 if–
+p°IOAPICE¡ry
+->
+bIOAPICID
+ =
+p°IOAssignmítE¡ry
+->
+bDe°ö©i⁄IOAPICID
+ )
+
+504  
+p°IOAPICE¡ry
+;
+
+506 
+qwE¡ryAddªss
+ +–
+IOINTERRUPTASSIGNMENTENTRY
+ );
+
+511  
+NULL
+;
+
+512 
+	}
+}
+
+516 
 	$kGëPro˚ss‹Cou¡
 ( )
 
-421 if–
+519 if–
 gs_°MPC⁄figuøti⁄M™agî
 .
 iPro˚ss‹Cou¡
  == 0 )
 
-425  
+523  
 gs_°MPC⁄figuøti⁄M™agî
 .
 iPro˚ss‹Cou¡
 ;
 
-426 
+524 
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/MPConfigurationTable.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/MPConfigurationTable.h
 
 1 #i‚de‡
 __MPCONFIGURATIONTABLE__
@@ -34445,425 +36759,13 @@ kPrötMPC⁄figuøti⁄TabÀ
 kGëPro˚ss‹Cou¡
 ();
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/Main.c
-
-9 
-	~"Ty≥s.h
-"
-
-10 
-	~"Keybﬂrd.h
-"
-
-11 
-	~"Des¸ùt‹.h
-"
-
-12 
-	~"PIC.h
-"
-
-13 
-	~"C⁄sﬁe.h
-"
-
-14 
-	~"C⁄sﬁeShñl.h
-"
-
-15 
-	~"Task.h
-"
-
-16 
-	~"PIT.h
-"
-
-17 
-	~"Dy«micMem‹y.h
-"
-
-18 
-	~"H¨dDisk.h
-"
-
-19 
-	~"FûeSy°em.h
-"
-
-20 
-	~"SîülP‹t.h
-"
-
-21 
-	~"Mu…iPro˚ss‹.h
-"
-
-24 
-MaöF‹Aµliˇti⁄Pro˚ss‹
-( );
-
-30 
-	$Maö
-( )
-
-32 
-iCurs‹X
-, 
-iCurs‹Y
-;
-
-36 if–*––
-BYTE
-* ) 
-BOOTSTRAPPROCESSOR_FLAGADDRESS
- ) == 0 )
-
-38 
-	`MaöF‹Aµliˇti⁄Pro˚ss‹
-();
-
-43 *––
-BYTE
-* ) 
-BOOTSTRAPPROCESSOR_FLAGADDRESS
- ) = 0;
-
-46 
-	`kInôülizeC⁄sﬁe
-( 0, 10 );
-
-47 
-	`kPrötf
-( "Switch To IA-32e Mode Success~!!\n" );
-
-48 
-	`kPrötf
-( "IA-32e C Language Kernel Start..............[Pass]\n" );
-
-49 
-	`kPrötf
-( "Initialize Console..........................[Pass]\n" );
-
-52 
-	`kGëCurs‹
-–&
-iCurs‹X
-, &
-iCurs‹Y
- );
-
-53 
-	`kPrötf
-( "GDT Initialize And Switch For IA-32e Mode...[ ]" );
-
-54 
-	`kInôülizeGDTTabÀAndTSS
-();
-
-55 
-	`kLﬂdGDTR
-–
-GDTR_STARTADDRESS
- );
-
-56 
-	`kSëCurs‹
-–45, 
-iCurs‹Y
-++ );
-
-57 
-	`kPrötf
-( "Pass\n" );
-
-59 
-	`kPrötf
-( "TSS Segment Load............................[ ]" );
-
-60 
-	`kLﬂdTR
-–
-GDT_TSSSEGMENT
- );
-
-61 
-	`kSëCurs‹
-–45, 
-iCurs‹Y
-++ );
-
-62 
-	`kPrötf
-( "Pass\n" );
-
-64 
-	`kPrötf
-( "IDT Initialize..............................[ ]" );
-
-65 
-	`kInôülizeIDTTabÀs
-();
-
-66 
-	`kLﬂdIDTR
-–
-IDTR_STARTADDRESS
- );
-
-67 
-	`kSëCurs‹
-–45, 
-iCurs‹Y
-++ );
-
-68 
-	`kPrötf
-( "Pass\n" );
-
-70 
-	`kPrötf
-( "Total RAM Size Check........................[ ]" );
-
-71 
-	`kCheckTŸÆRAMSize
-();
-
-72 
-	`kSëCurs‹
-–45, 
-iCurs‹Y
-++ );
-
-73 
-	`kPrötf
-–"Pass], Sizê%d MB\n", 
-	`kGëTŸÆRAMSize
-() );
-
-75 
-	`kPrötf
-( "TCB Pool And Scheduler Initialize...........[Pass]\n" );
-
-76 
-iCurs‹Y
-++;
-
-77 
-	`kInôülizeScheduÀr
-();
-
-80 
-	`kPrötf
-( "Dynamic Memory Initialize...................[Pass]\n" );
-
-81 
-iCurs‹Y
-++;
-
-82 
-	`kInôülizeDy«micMem‹y
-();
-
-85 
-	`kInôülizePIT
-–
-	`MSTOCOUNT
-( 1 ), 1 );
-
-87 
-	`kPrötf
-( "Keyboard Activate And Queue Initialize......[ ]" );
-
-89 if–
-	`kInôülizeKeybﬂrd
-(Ë=
-TRUE
- )
-
-91 
-	`kSëCurs‹
-–45, 
-iCurs‹Y
-++ );
-
-92 
-	`kPrötf
-( "Pass\n" );
-
-93 
-	`kCh™geKeybﬂrdLED
-–
-FALSE
-, FALSE, FALSE );
-
-97 
-	`kSëCurs‹
-–45, 
-iCurs‹Y
-++ );
-
-98 
-	`kPrötf
-( "Fail\n" );
-
-102 
-	`kPrötf
-( "PIC Controller And Interrupt Initialize.....[ ]" );
-
-104 
-	`kInôülizePIC
-();
-
-105 
-	`kMaskPICI¡îru±
-( 0 );
-
-106 
-	`kE«bÀI¡îru±
-();
-
-107 
-	`kSëCurs‹
-–45, 
-iCurs‹Y
-++ );
-
-108 
-	`kPrötf
-( "Pass\n" );
-
-111 
-	`kPrötf
-( "File System Initialize......................[ ]" );
-
-112 if–
-	`kInôülizeFûeSy°em
-(Ë=
-TRUE
- )
-
-114 
-	`kSëCurs‹
-–45, 
-iCurs‹Y
-++ );
-
-115 
-	`kPrötf
-( "Pass\n" );
-
-119 
-	`kSëCurs‹
-–45, 
-iCurs‹Y
-++ );
-
-120 
-	`kPrötf
-( "Fail\n" );
-
-124 
-	`kPrötf
-( "Serial Port Initialize......................[Pass]\n" );
-
-125 
-iCurs‹Y
-++;
-
-126 
-	`kInôülizeSîülP‹t
-();
-
-129 
-	`kCª©eTask
-–
-TASK_FLAGS_LOWEST
- | 
-TASK_FLAGS_THREAD
- | 
-TASK_FLAGS_SYSTEM
- | 
-TASK_FLAGS_IDLE
-, 0, 0,
-
-130 –
-QWORD
- ) 
-kIdÀTask
- );
-
-131 
-	`kSèπC⁄sﬁeShñl
-();
-
-132 
-	}
-}
-
-139 
-	$MaöF‹Aµliˇti⁄Pro˚ss‹
-( )
-
-141 
-QWORD
- 
-qwTickCou¡
-;
-
-144 
-	`kLﬂdGDTR
-–
-GDTR_STARTADDRESS
- );
-
-148 
-	`kLﬂdTR
-–
-GDT_TSSSEGMENT
- + ( 
-	`kGëAPICID
-(Ë* –
-GDTENTRY16
- ) ) );
-
-151 
-	`kLﬂdIDTR
-–
-IDTR_STARTADDRESS
- );
-
-154 
-qwTickCou¡
- = 
-	`kGëTickCou¡
-();
-
-157 if–
-	`kGëTickCou¡
-(Ë- 
-qwTickCou¡
- > 1000 )
-
-159 
-qwTickCou¡
- = 
-	`kGëTickCou¡
-();
-
-161 
-	`kPrötf
-( "Application Processor[APIC ID: %d] Is Activated\n",
-
-162 
-	`kGëAPICID
-() );
-
-165 
-	}
-}
-
-	@/home/jk/os/MINT64/02.Kernel64/Source/MultiProcessor.c
+202 
+IOAPICENTRY
+* 
+kFödIOAPICE¡ryF‹ISA
+();
+
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/MultiProcessor.c
 
 1 
 	~"Mu…iPro˚ss‹.h
@@ -35026,7 +36928,7 @@ APIC_DESTINATIONSHORTHAND_ALLEXCLUDINGSELF
  | 
 APIC_TRIGGERMODE_EDGE
  | 
-APIC_LEVEL_ASSERT
+APIC_LEVEL_ASSET
  | 
 APIC_DESTINATIONMODE_PHYSICAL
  | 
@@ -35082,7 +36984,7 @@ APIC_DESTINATIONSHORTHAND_ALLEXCLUDINGSELF
  | 
 APIC_TRIGGERMODE_EDGE
  | 
-APIC_LEVEL_ASSERT
+APIC_LEVEL_ASSET
  | 
 APIC_DESTINATIONMODE_PHYSICAL
  | 
@@ -35219,7 +37121,7 @@ g_qwAPICIDAddªss
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/MultiProcessor.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/MultiProcessor.h
 
 1 #i‚de‡
 __MULTIPROCESSOR_H__
@@ -35236,7 +37138,7 @@ __MULTIPROCESSOR_H__
 "
 
 8 
-	#BOOTSTRAPPROCESSOR_FLAGADDRESS
+	#BOOTSTRAPPROCESSOR_FLAGADDESS
  0x7C09
 
 	)
@@ -35259,7 +37161,7 @@ BYTE
 kGëAPICID
 ();
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/PIC.c
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/PIC.c
 
 1 
 	~"PIC.h
@@ -35383,7 +37285,7 @@ PIC_SLAVE_PORT1
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/PIC.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/PIC.h
 
 1 #i‚de‡
 __PIC_H__
@@ -35447,7 +37349,7 @@ kSídEOIToPIC
 iIRQNumbî
  );
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/PIT.c
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/PIT.c
 
 1 
 	~"PIT.h
@@ -35625,7 +37527,7 @@ wCou¡
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/PIT.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/PIT.h
 
 1 #i‚de‡
 __PIT_H__
@@ -35809,7 +37711,7 @@ WORD
 wCou¡
 );
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/Queue.c
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/Queue.c
 
 1 
 	~"Queue.h
@@ -36069,7 +37971,7 @@ TRUE
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/Queue.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/Queue.h
 
 1 #i‚de‡
 __QUEUE_H__
@@ -36189,7 +38091,7 @@ p°Queue
 pvD©a
 );
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/RAMDisk.c
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/RAMDisk.c
 
 1 
 	~"RAMDisk.h
@@ -36445,7 +38347,7 @@ iRólWrôeCou¡
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/RAMDisk.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/RAMDisk.h
 
 1 #i‚de‡
 __RAMDISK_H__
@@ -36573,7 +38475,7 @@ iSe˘‹Cou¡
 pcBuf„r
 );
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/RTC.c
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/RTC.c
 
 1 
 	~"RTC.h
@@ -36829,7 +38731,7 @@ bDayOfWìk
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/RTC.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/RTC.h
 
 1 #i‚de‡
 __RTC_H__
@@ -36943,7 +38845,7 @@ BYTE
 bDayOfWìk
 );
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/SerialPort.c
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/SerialPort.c
 
 1 
 	~"SîülP‹t.h
@@ -37341,7 +39243,7 @@ gs_°SîülM™agî
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/SerialPort.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/SerialPort.h
 
 1 #i‚de‡
 __SERIALPORT_H__
@@ -37713,7 +39615,7 @@ iSize
 kCÀ¨SîülFIFO
 ();
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/Synchronization.c
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/Synchronization.c
 
 1 
 	~"Synchr⁄iz©i⁄.h
@@ -37727,23 +39629,27 @@ kCÀ¨SîülFIFO
 	~"Task.h
 "
 
-6 
+4 
+	~"As£mblyUtûôy.h
+"
+
+9 
 BOOL
  
 	$kLockF‹Sy°emD©a
 ()
 
-8  
+11  
 	`kSëI¡îru±Fœg
 (
 FALSE
 );
 
-9 
+12 
 	}
 }
 
-12 
+15 
 	$kU∆ockF‹Sy°emD©a
 (
 BOOL
@@ -37751,17 +39657,17 @@ BOOL
 bI¡îru±Fœg
 )
 
-14 
+17 
 	`kSëI¡îru±Fœg
 (
 bI¡îru±Fœg
 );
 
-15 
+18 
 	}
 }
 
-18 
+22 
 	$kInôülizeMuãx
 (
 MUTEX
@@ -37769,7 +39675,7 @@ MUTEX
 p°Muãx
 )
 
-21 
+25 
 p°Muãx
 ->
 bLockFœg
@@ -37777,13 +39683,13 @@ bLockFœg
 FALSE
 ;
 
-22 
+26 
 p°Muãx
 ->
 dwLockCou¡
 =0;
 
-23 
+27 
 p°Muãx
 ->
 qwTaskID
@@ -37791,11 +39697,11 @@ qwTaskID
 TASK_INVALIDID
 ;
 
-24 
+28 
 	}
 }
 
-27 
+31 
 	$kLock
 (
 MUTEX
@@ -37803,7 +39709,33 @@ MUTEX
 p°Muãx
 )
 
-30 if(
+33 
+BYTE
+ 
+bCuºítAPICID
+;
+
+34 
+BOOL
+ 
+bI¡îru±Fœg
+;
+
+37 
+bI¡îru±Fœg
+ = 
+	`kSëI¡îru±Fœg
+(
+FALSE
+);
+
+40 
+bCuºítAPICID
+ = 
+	`kGëAPICID
+();
+
+43 if(
 	`kTe°AndSë
 (&(
 p°Muãx
@@ -37813,25 +39745,33 @@ bLockFœg
 FALSE
 )
 
-33 if(
+46 if(
 p°Muãx
 ->
 qwTaskID
 ==
 	`kGëRu¬ögTask
-()->
+(
+bCuºítAPICID
+)->
 °Lök
 .
 qwID
 )
 
-35 
+49 
+	`kSëI¡îru±Fœg
+(
+bI¡îru±Fœg
+);
+
+50 
 p°Muãx
 ->
 dwLockCou¡
 ++;
 
-40 
+55 
 	`kTe°AndSë
 (&(
 p°Muãx
@@ -37841,33 +39781,41 @@ bLockFœg
 FALSE
 )
 
-42 
+57 
 	`kScheduÀ
 ();
 
-47 
+62 
 p°Muãx
 ->
 dwLockCou¡
  =1;
 
-48 
+63 
 p°Muãx
 ->
 qwTaskID
 =
 	`kGëRu¬ögTask
-()->
+(
+bCuºítAPICID
+)->
 °Lök
 .
 qwID
 ;
 
-50 
+65 
+	`kSëI¡îru±Fœg
+(
+bI¡îru±Fœg
+);
+
+66 
 	}
 }
 
-53 
+69 
 	$kU∆ock
 (
 MUTEX
@@ -37875,7 +39823,21 @@ MUTEX
 p°Muãx
 )
 
-56 if((
+71 
+BOOL
+ 
+bI¡îru±Fœg
+;
+
+74 
+bI¡îru±Fœg
+ = 
+	`kSëI¡îru±Fœg
+(
+FALSE
+);
+
+77 if((
 p°Muãx
 ->
 bLockFœg
@@ -37885,25 +39847,33 @@ FALSE
 qwTaskID
 !=
 	`kGëRu¬ögTask
-()->
+(
+	`kGëAPICID
+())->
 °Lök
 .
 qwID
 ))
 
-62 if(
+80 
+	`kSëI¡îru±Fœg
+(
+bI¡îru±Fœg
+);
+
+85 if(
 p°Muãx
 ->
 dwLockCou¡
 >1)
 
-64 
+87 
 p°Muãx
 ->
 dwLockCou¡
 --;
 
-69 
+92 
 p°Muãx
 ->
 qwTaskID
@@ -37911,13 +39881,13 @@ qwTaskID
 TASK_INVALIDID
 ;
 
-70 
+93 
 p°Muãx
 ->
 dwLockCou¡
  = 0;
 
-71 
+94 
 p°Muãx
 ->
 bLockFœg
@@ -37925,11 +39895,245 @@ bLockFœg
 FALSE
 ;
 
-73 
+98 
+	`kSëI¡îru±Fœg
+(
+bI¡îru±Fœg
+);
+
+99 
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/Synchronization.h
+102 
+	$kInôülizeSpöLock
+(
+SPINLOCK
+* 
+p°SpöLock
+)
+
+105 
+p°SpöLock
+->
+bLockFœg
+ = 
+FALSE
+;
+
+106 
+p°SpöLock
+->
+dwLockCou¡
+ = 0;
+
+107 
+p°SpöLock
+->
+bAPICID
+ = 0xFF;
+
+108 
+p°SpöLock
+->
+bI¡îru±Fœg
+ = 
+FALSE
+;
+
+109 
+	}
+}
+
+112 
+	$kLockF‹SpöLock
+(
+SPINLOCK
+* 
+p°SpöLock
+)
+
+114 
+BOOL
+ 
+bI¡îru±Fœg
+;
+
+117 
+bI¡îru±Fœg
+ = 
+	`kSëI¡îru±Fœg
+(
+FALSE
+);
+
+120 if(
+	`kTe°AndSë
+(&(
+p°SpöLock
+->
+bLockFœg
+),0,1)==
+FALSE
+)
+
+123 if(
+p°SpöLock
+->
+bAPICID
+ =
+	`kGëAPICID
+())
+
+125 
+p°SpöLock
+->
+dwLockCou¡
+++;
+
+130 
+	`kTe°AndSë
+(&(
+p°SpöLock
+->
+bLockFœg
+),0,1)==
+FALSE
+)
+
+133 
+p°SpöLock
+->
+bLockFœg
+ =
+TRUE
+)
+
+135 
+	`kPau£
+();
+
+141 
+p°SpöLock
+->
+dwLockCou¡
+ = 1;
+
+142 
+p°SpöLock
+->
+bAPICID
+ = 
+	`kGëAPICID
+();
+
+145 
+p°SpöLock
+->
+bI¡îru±Fœg
+ = bInterruptFlag;
+
+146 
+	}
+}
+
+149 
+	$kU∆ockF‹SpöLock
+(
+SPINLOCK
+* 
+p°SpöLock
+)
+
+151 
+BOOL
+ 
+bI¡îru±Fœg
+;
+
+154 
+bI¡îru±Fœg
+ = 
+	`kSëI¡îru±Fœg
+(
+FALSE
+);
+
+157 if((
+p°SpöLock
+->
+bLockFœg
+==
+FALSE
+)||’°SpöLock->
+bAPICID
+!=
+	`kGëAPICID
+()))
+
+159 
+	`kSëI¡îru±Fœg
+(
+bI¡îru±Fœg
+);
+
+164 if(
+p°SpöLock
+->
+dwLockCou¡
+>1)
+
+166 
+p°SpöLock
+->
+dwLockCou¡
+--;
+
+172 
+bI¡îru±Fœg
+ = 
+p°SpöLock
+->bInterruptFlag;
+
+174 
+p°SpöLock
+->
+bAPICID
+ = 0xFF;
+
+175 
+p°SpöLock
+->
+dwLockCou¡
+ = 0;
+
+176 
+p°SpöLock
+->
+bI¡îru±Fœg
+ = 
+FALSE
+;
+
+177 
+p°SpöLock
+->
+bLockFœg
+ = 
+FALSE
+;
+
+179 
+	`kSëI¡îru±Fœg
+(
+bI¡îru±Fœg
+);
+
+180 
+	}
+}
+
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/Synchronization.h
 
 1 #i‚de‡
 __SYNCHRONIZATION_H__
@@ -37983,19 +40187,57 @@ BYTE
 	tMUTEX
 ;
 
-24 #¥agm®
+25 
+	skSpöLockSåcut
+
+
+28 vﬁ©ûê
+DWORD
+ 
+	mdwLockCou¡
+;
+
+29 vﬁ©ûê
+BYTE
+ 
+	mbAPICID
+;
+
+32 vﬁ©ûê
+BOOL
+ 
+	mbLockFœg
+;
+
+35 vﬁ©ûê
+BOOL
+ 
+	mbI¡îru±Fœg
+;
+
+38 
+BYTE
+ 
+	mbvPaddög
+[1];
+
+39 } 
+	tSPINLOCK
+;
+
+41 #¥agm®
 ∑ck
 (
 p›
 )
 
-27 
+45 
 BOOL
  
 kLockF‹Sy°emD©a
 ();
 
-28 
+46 
 kU∆ockF‹Sy°emD©a
 (
 BOOL
@@ -38003,7 +40245,7 @@ BOOL
 bI¡îru±Fœg
 );
 
-30 
+49 
 kInôülizeMuãx
 (
 MUTEX
@@ -38011,7 +40253,7 @@ MUTEX
 p°Muãx
 );
 
-31 
+50 
 kLock
 (
 MUTEX
@@ -38019,7 +40261,7 @@ MUTEX
 p°Muãx
 );
 
-32 
+51 
 kU∆ock
 (
 MUTEX
@@ -38027,7 +40269,31 @@ MUTEX
 p°Muãx
 );
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/Task.c
+53 
+kInôülizeSpöLock
+(
+SPINLOCK
+* 
+p°SpöLock
+);
+
+54 
+kLockF‹SpöLock
+(
+SPINLOCK
+* 
+p°SpöLock
+);
+
+55 
+kU∆ockF‹SpöLock
+(
+SPINLOCK
+* 
+p°SpöLock
+);
+
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/Task.c
 
 1 
 	~"Task.h
@@ -38041,29 +40307,35 @@ p°Muãx
 	~"Synchr⁄iz©i⁄.h
 "
 
-6 
-SCHEDULER
- 
-	ggs_°ScheduÀr
-;
+4 
+	~"Mu…iPro˚ss‹.h
+"
 
 7 
+SCHEDULER
+ 
+	ggs_v°ScheduÀr
+[
+MAXPROCESSORCOUNT
+];
+
+8 
 TCBPOOLMANAGER
  
 	ggs_°TCBPoﬁM™agî
 ;
 
-11 
+12 
 kInôülizeTCBPoﬁ
 ();
 
-12 
+13 
 TCB
 * 
 kAŒoˇãTCB
 ();
 
-13 
+14 
 kFªeTCB
 (
 QWORD
@@ -38071,7 +40343,7 @@ QWORD
 qwID
 );
 
-14 
+15 
 kSëUpTask
 (
 TCB
@@ -38089,33 +40361,59 @@ pvSèckAddªss
 qwSèckSize
 );
 
-17 
+18 
 TCB
 * 
 kGëNextTaskToRun
-();
+(
+BYTE
+ 
+bAPICID
+);
 
-18 
+19 
 BOOL
  
 kAddTaskToRódyLi°
 (
+BYTE
+ 
+bAPICID
+,
 TCB
 * 
 p°Task
 );
 
-19 
+20 
 TCB
 * 
 kRemoveTaskFromRódyLi°
 (
+BYTE
+ 
+bAPICID
+,
 QWORD
  
 qwTaskID
 );
 
-20 
+21 
+BOOL
+ 
+kFödScheduÀrOfTaskAndLock
+(
+QWORD
+ 
+qwTaskID
+,
+BYTE
+* 
+bAPICID
+);
+
+22 
 TCB
 * 
 kGëPro˚ssByThªad
@@ -38123,21 +40421,33 @@ kGëPro˚ssByThªad
 p°Thªad
 );
 
-27 
+23 
+BYTE
+ 
+kFödScheduÀrOfMöimumTaskCou¡
+(c⁄° 
+TCB
+* 
+p°Task
+,BYTE* 
+bAPICID
+);
+
+29 
 	$kInôülizeTCBPoﬁ
 ()
 
-29 
+31 
 i
 ;
 
-31 
+33 
 	`kMemSë
 (&(
 gs_°TCBPoﬁM™agî
 ),0,(gs_stTCBPoolManager));
 
-34 
+36 
 gs_°TCBPoﬁM™agî
 .
 p°SèπAddªss
@@ -38147,7 +40457,7 @@ TCB
 TASK_TCBPOOLADDRESS
 ;
 
-35 
+37 
 	`kMemSë
 (
 TASK_TCBPOOLADDRESS
@@ -38157,13 +40467,13 @@ TCB
 TASK_MAXCOUNT
 );
 
-38 
+40 
 i
 =0;i<
 TASK_MAXCOUNT
 ;i++)
 
-40 
+42 
 gs_°TCBPoﬁM™agî
 .
 p°SèπAddªss
@@ -38175,7 +40485,7 @@ i
 qwID
 =i;
 
-44 
+46 
 gs_°TCBPoﬁM™agî
 .
 iMaxCou¡
@@ -38183,39 +40493,55 @@ iMaxCou¡
 TASK_MAXCOUNT
 ;
 
-45 
+47 
 gs_°TCBPoﬁM™agî
 .
 iAŒoˇãdCou¡
 =1;
 
-46 
+48 
 gs_°TCBPoﬁM™agî
 .
 iU£Cou¡
 =0;
 
-47 
+51 
+	`kInôülizeSpöLock
+(&
+gs_°TCBPoﬁM™agî
+.
+°SpöLock
+);
+
+52 
 	}
 }
 
-50 
+55 
 TCB
 * 
 	$kAŒoˇãTCB
 ()
 
-52 
+57 
 TCB
 * 
 p°Em±yTCB
 ;
 
-53 
+58 
 i
 ;
 
-55 if(
+61 
+	`kLockF‹SpöLock
+(&
+gs_°TCBPoﬁM™agî
+.
+°SpöLock
+);
+
+63 if(
 gs_°TCBPoﬁM™agî
 .
 iU£Cou¡
@@ -38223,11 +40549,19 @@ iU£Cou¡
 iMaxCou¡
 )
 
-57  
+66 
+	`kU∆ockF‹SpöLock
+(&
+gs_°TCBPoﬁM™agî
+.
+°SpöLock
+);
+
+67  
 NULL
 ;
 
-60 
+70 
 i
 =0;i<
 gs_°TCBPoﬁM™agî
@@ -38235,7 +40569,7 @@ gs_°TCBPoﬁM™agî
 iMaxCou¡
 ;i++)
 
-63 if((
+73 if((
 gs_°TCBPoﬁM™agî
 .
 p°SèπAddªss
@@ -38247,7 +40581,7 @@ i
 qwID
 >>32)==0)
 
-65 
+75 
 p°Em±yTCB
 =&(
 gs_°TCBPoﬁM™agî
@@ -38257,7 +40591,7 @@ p°SèπAddªss
 i
 ]);
 
-71 
+81 
 p°Em±yTCB
 ->
 °Lök
@@ -38273,39 +40607,47 @@ iAŒoˇãdCou¡
 i
 ;
 
-72 
+82 
 gs_°TCBPoﬁM™agî
 .
 iU£Cou¡
 ++;
 
-73 
+83 
 gs_°TCBPoﬁM™agî
 .
 iAŒoˇãdCou¡
 ++;
 
-74 if(
+84 if(
 gs_°TCBPoﬁM™agî
 .
 iAŒoˇãdCou¡
 ==0)
 
-76 
+86 
 gs_°TCBPoﬁM™agî
 .
 iAŒoˇãdCou¡
 =1;
 
-78  
+90 
+	`kU∆ockF‹SpöLock
+(&
+gs_°TCBPoﬁM™agî
+.
+°SpöLock
+);
+
+91  
 p°Em±yTCB
 ;
 
-79 
+92 
 	}
 }
 
-82 
+95 
 	$kFªeTCB
 (
 QWORD
@@ -38313,11 +40655,11 @@ QWORD
 qwID
 )
 
-84 
+97 
 i
 ;
 
-87 
+100 
 i
  = 
 	`GETTCBOFFSET
@@ -38325,7 +40667,7 @@ i
 qwID
 );
 
-90 
+103 
 	`kMemSë
 (&(
 gs_°TCBPoﬁM™agî
@@ -38339,7 +40681,15 @@ i
 CONTEXT
 ));
 
-91 
+106 
+	`kLockF‹SpöLock
+(&
+gs_°TCBPoﬁM™agî
+.
+°SpöLock
+);
+
+107 
 gs_°TCBPoﬁM™agî
 .
 p°SèπAddªss
@@ -38351,17 +40701,25 @@ i
 qwID
 =i;
 
-93 
+109 
 gs_°TCBPoﬁM™agî
 .
 iU£Cou¡
 --;
 
-94 
+112 
+	`kU∆ockF‹SpöLock
+(&
+gs_°TCBPoﬁM™agî
+.
+°SpöLock
+);
+
+113 
 	}
 }
 
-99 
+119 
 TCB
 * 
 	$kCª©eTask
@@ -38375,9 +40733,13 @@ pvMem‹yAddªss
 qwMem‹ySize
 ,QWORD 
 qwE¡ryPoötAddªss
+,
+BYTE
+ 
+bAfföôy
 )
 
-101 
+121 
 TCB
 * 
 p°Task
@@ -38385,59 +40747,65 @@ p°Task
 p°Pro˚ss
 ;
 
-102 * 
+122 * 
 pvSèckAddªss
 ;
 
-103 
-BOOL
+123 
+BYTE
  
-bPªviousFœg
+bCuºítAPICID
 ;
 
-106 
-bPªviousFœg
+126 
+bCuºítAPICID
  = 
-	`kLockF‹Sy°emD©a
+	`kGëAPICID
 ();
 
-107 
+129 
 p°Task
 =
 	`kAŒoˇãTCB
 ();
 
-108 if(
+130 if(
 p°Task
 ==
 NULL
 )
 
-111 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousFœg
-);
-
-112  
+132  
 NULL
 ;
 
-116 
+137 
+	`kLockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+°SpöLock
+));
+
+140 
 p°Pro˚ss
  = 
 	`kGëPro˚ssByThªad
 (
 	`kGëRu¬ögTask
-());
+(
+bCuºítAPICID
+));
 
-118 if(
+142 if(
 p°Pro˚ss
 ==
 NULL
 )
 
-120 
+144 
 	`kFªeTCB
 (
 p°Task
@@ -38447,23 +40815,27 @@ p°Task
 qwID
 );
 
-122 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousFœg
-);
+146 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+°SpöLock
+));
 
-123  
+147  
 NULL
 ;
 
-127 if(
+151 if(
 qwFœgs
 &
 TASK_FLAGS_THREAD
 )
 
-130 
+154 
 p°Task
 ->
 qwP¨ítPro˚ssID
@@ -38475,7 +40847,7 @@ p°Pro˚ss
 qwID
 ;
 
-131 
+155 
 p°Task
 ->
 pvMem‹yAddªss
@@ -38483,7 +40855,7 @@ pvMem‹yAddªss
 p°Pro˚ss
 ->pvMemoryAddress;
 
-132 
+156 
 p°Task
 ->
 qwMem‹ySize
@@ -38491,7 +40863,7 @@ qwMem‹ySize
 p°Pro˚ss
 ->qwMemorySize;
 
-135 
+159 
 	`kAddLi°ToTaû
 (&(
 p°Pro˚ss
@@ -38503,7 +40875,7 @@ p°Task
 °ThªadLök
 ));
 
-140 
+164 
 p°Task
 ->
 qwP¨ítPro˚ssID
@@ -38515,19 +40887,19 @@ p°Pro˚ss
 qwID
 ;
 
-141 
+165 
 p°Task
 ->
 pvMem‹yAddªss
  =ÖvMemoryAddress;
 
-142 
+166 
 p°Task
 ->
 qwMem‹ySize
  = qwMemorySize;
 
-146 
+170 
 p°Task
 ->
 °ThªadLök
@@ -38537,13 +40909,17 @@ qwID
 °Lök
 .qwID;
 
-149 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousFœg
-);
+173 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+°SpöLock
+));
 
-152 
+176 
 pvSèckAddªss
 =(*)(
 TASK_STACKPOOLADDRESS
@@ -38559,7 +40935,7 @@ p°Task
 qwID
 )));
 
-155 
+179 
 	`kSëUpTask
 (
 p°Task
@@ -38573,7 +40949,7 @@ pvSèckAddªss
 TASK_STACKSIZE
 );
 
-158 
+182 
 	`kInôülizeLi°
 (&(
 p°Task
@@ -38581,7 +40957,7 @@ p°Task
 °ChûdThªadLi°
 ));
 
-161 
+185 
 p°Task
 ->
 bFPUU£d
@@ -38589,33 +40965,35 @@ bFPUU£d
 FALSE
 ;
 
-164 
-bPªviousFœg
+188 
+p°Task
+->
+bAPICID
  = 
-	`kLockF‹Sy°emD©a
-();
+bCuºítAPICID
+;
 
-167 
-	`kAddTaskToRódyLi°
+191 
+p°Task
+->
+bAfföôy
+ = bAffinity;
+
+194 
+	`kAddTaskToScheduÀrWôhLﬂdBÆ™cög
 (
 p°Task
 );
 
-170 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousFœg
-);
-
-172  
+195  
 p°Task
 ;
 
-173 
+196 
 	}
 }
 
-176 
+199 
 	$kSëUpTask
 (
 TCB
@@ -38633,7 +41011,7 @@ pvSèckAddªss
 qwSèckSize
 )
 
-179 
+202 
 	`kMemSë
 (
 p°TCB
@@ -38643,7 +41021,7 @@ p°TCB
 vqRegi°î
 ,0,(pstTCB->stContext.vqRegister));
 
-182 
+205 
 p°TCB
 ->
 °C⁄ãxt
@@ -38659,7 +41037,7 @@ pvSèckAddªss
 qwSèckSize
 -8;
 
-183 
+206 
 p°TCB
 ->
 °C⁄ãxt
@@ -38675,7 +41053,7 @@ pvSèckAddªss
 qwSèckSize
 -8;
 
-187 *(
+210 *(
 QWORD
 *)((QWORD)
 pvSèckAddªss
@@ -38685,7 +41063,7 @@ qwSèckSize
 kExôTask
 ;
 
-190 
+213 
 p°TCB
 ->
 °C⁄ãxt
@@ -38697,7 +41075,7 @@ TASK_CSOFFSET
 GDT_KERNELCODESEGMENT
 ;
 
-191 
+214 
 p°TCB
 ->
 °C⁄ãxt
@@ -38709,7 +41087,7 @@ TASK_DSOFFSET
 GDT_KERNELDATASEGMENT
 ;
 
-192 
+215 
 p°TCB
 ->
 °C⁄ãxt
@@ -38721,7 +41099,7 @@ TASK_ESOFFSET
 GDT_KERNELDATASEGMENT
 ;
 
-193 
+216 
 p°TCB
 ->
 °C⁄ãxt
@@ -38733,7 +41111,7 @@ TASK_FSOFFSET
 GDT_KERNELDATASEGMENT
 ;
 
-194 
+217 
 p°TCB
 ->
 °C⁄ãxt
@@ -38745,7 +41123,7 @@ TASK_GSOFFSET
 GDT_KERNELDATASEGMENT
 ;
 
-195 
+218 
 p°TCB
 ->
 °C⁄ãxt
@@ -38757,7 +41135,7 @@ TASK_SSOFFSET
 GDT_KERNELDATASEGMENT
 ;
 
-198 
+221 
 p°TCB
 ->
 °C⁄ãxt
@@ -38769,7 +41147,7 @@ TASK_RIPOFFSET
 qwE¡ryPoötAddªss
 ;
 
-201 
+224 
 p°TCB
 ->
 °C⁄ãxt
@@ -38779,93 +41157,157 @@ vqRegi°î
 TASK_RFLAGSOFFSET
 ]|=0x0200;
 
-204 
+227 
 p°TCB
 ->
 pvSèckAddªss
 =pvStackAddress;
 
-205 
+228 
 p°TCB
 ->
 qwSèckSize
 =qwStackSize;
 
-206 
+229 
 p°TCB
 ->
 qwFœgs
 =qwFlags;
 
-207 
+230 
 	}
 }
 
-214 
+237 
 	$kInôülizeScheduÀr
 ()
 
-216 
+239 
 i
 ;
 
-217 
+240 
+j
+;
+
+241 
+BYTE
+ 
+bCuºítAPICID
+;
+
+242 
 TCB
 * 
 p°Task
 ;
 
-220 
+245 
+bCuºítAPICID
+ = 
+	`kGëAPICID
+();
+
+248 if(
+bCuºítAPICID
+==0)
+
+251 
 	`kInôülizeTCBPoﬁ
 ();
 
-223 
+254 
+j
+=0;j<
+MAXPROCESSORCOUNT
+;j++)
+
+257 
 i
 =0;i<
 TASK_MAXREADYLISTCOUNT
 ;i++)
 
-225 
+259 
 	`kInôülizeLi°
 (&(
-gs_°ScheduÀr
-.
+gs_v°ScheduÀr
+[
+j
+].
 v°RódyLi°
 [
 i
 ]));
 
-226 
-gs_°ScheduÀr
-.
+260 
+gs_v°ScheduÀr
+[
+j
+].
 viExecuãCou¡
 [
 i
 ]=0;
 
-228 
+264 
 	`kInôülizeLi°
 (&(
-gs_°ScheduÀr
-.
+gs_v°ScheduÀr
+[
+j
+].
 °WaôLi°
 ));
 
-231 
+267 
+	`kInôülizeSpöLock
+(&(
+gs_v°ScheduÀr
+[
+j
+].
+°SpöLock
+));
+
+273 
 p°Task
  = 
 	`kAŒoˇãTCB
 ();
 
-232 
-gs_°ScheduÀr
-.
+274 
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 p°Ru¬ögTask
  = 
 p°Task
 ;
 
-233 
+278 
+p°Task
+->
+bAPICID
+ = 
+bCuºítAPICID
+;
+
+279 
+p°Task
+->
+bAfföôy
+ = 
+bCuºítAPICID
+;
+
+282 if(
+bCuºítAPICID
+==0)
+
+284 
 p°Task
 ->
 qwFœgs
@@ -38877,7 +41319,21 @@ TASK_FLAGS_PROCESS
 TASK_FLAGS_SYSTEM
 ;
 
-234 
+289 
+p°Task
+->
+qwFœgs
+ = 
+TASK_FLAGS_LOWEST
+ | 
+TASK_FLAGS_PROCESS
+ | 
+TASK_FLAGS_SYSTEM
+ | 
+TASK_FLAGS_IDLE
+;
+
+292 
 p°Task
 ->
 qwP¨ítPro˚ssID
@@ -38887,31 +41343,31 @@ qwP¨ítPro˚ssID
 qwID
 ;
 
-235 
+293 
 p°Task
 ->
 pvMem‹yAddªss
  = (*)0x100000;
 
-236 
+294 
 p°Task
 ->
 qwMem‹ySize
  = 0x500000;
 
-237 
+295 
 p°Task
 ->
 pvSèckAddªss
  = (*)0x600000;
 
-238 
+296 
 p°Task
 ->
 qwSèckSize
  = 0x100000;
 
-239 
+297 
 	`kInôülizeLi°
 (&(
 p°Task
@@ -38919,117 +41375,135 @@ p°Task
 °ChûdThªadLi°
 ));
 
-242 
-gs_°ScheduÀr
-.
+300 
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 qwS≥ndPro˚ss‹TimeInIdÀTask
 =0;
 
-243 
-gs_°ScheduÀr
-.
+301 
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 qwPro˚ss‹Lﬂd
 =0;
 
-246 
-gs_°ScheduÀr
-.
+304 
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 qwLa°FPUU£dTaskID
  = 
 TASK_INVALIDID
 ;
 
-248 
+306 
 	}
 }
 
-252 
+310 
 	$kSëRu¬ögTask
 (
+BYTE
+ 
+bAPICID
+,
 TCB
 * 
 p°Task
 )
 
-254 
-BOOL
- 
-bPªviousFœg
-;
+314 
+	`kLockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bAPICID
+].
+°SpöLock
+));
 
-257 
-bPªviousFœg
- = 
-	`kLockF‹Sy°emD©a
-();
-
-259 
-gs_°ScheduÀr
-.
+316 
+gs_v°ScheduÀr
+[
+bAPICID
+].
 p°Ru¬ögTask
 =
 p°Task
 ;
 
-262 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousFœg
-);
+319 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bAPICID
+].
+°SpöLock
+));
 
-263 
+320 
 	}
 }
 
-266 
+323 
 TCB
 * 
 	$kGëRu¬ögTask
 ()
 
-268 
-BOOL
- 
-bPªviousFœg
-;
-
-269 
+325 
 TCB
 * 
 p°Ru¬ögTask
 ;
 
-272 
-bPªviousFœg
- = 
-	`kLockF‹Sy°emD©a
-();
+328 
+	`kLockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bAPICID
+].
+°SpöLock
+));
 
-274 
+330 
 p°Ru¬ögTask
  = 
-gs_°ScheduÀr
-.pstRunningTask;
+gs_v°ScheduÀr
+[
+bAPICID
+].pstRunningTask;
 
-277 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousFœg
-);
+333 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bAPICID
+].
+°SpöLock
+));
 
-279  
+335  
 p°Ru¬ögTask
 ;
 
-280 
+336 
 	}
 }
 
-286 
+342 
 	$kScheduÀ
 ()
 
-288 
+344 
 TCB
 * 
 p°Ru¬ögTask
@@ -39037,55 +41511,103 @@ p°Ru¬ögTask
 p°NextTask
 ;
 
-289 
+345 
 BOOL
  
-bPªviousFœg
+bPªviousI¡îru±
 ;
 
-292 if(
-	`kGëRódyTaskCou¡
-()<1)
+346 
+BYTE
+ 
+bCuºítAPICID
+;
 
-299 
-bPªviousFœg
-=
-	`kLockF‹Sy°emD©a
+350 
+bPªviousI¡îru±
+ = 
+	`kSëI¡îru±Fœg
+(
+FALSE
+);
+
+353 
+bCuºítAPICID
+ = 
+	`kGëAPICID
 ();
 
-302 
+356 if(
+	`kGëRódyTaskCou¡
+(
+bCuºítAPICID
+)<1)
+
+358 
+	`kSëI¡îru±Fœg
+(
+bPªviousI¡îru±
+);
+
+363 
+	`kLockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+°SpöLock
+));
+
+366 
 p°NextTask
 =
 	`kGëNextTaskToRun
-();
+(
+bCuºítAPICID
+);
 
-303 if(
+367 if(
 p°NextTask
 ==
 NULL
 )
 
-306 
-	`kU∆ockF‹Sy°emD©a
+370 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+°SpöLock
+));
+
+371 
+	`kSëI¡îru±Fœg
 (
-bPªviousFœg
+bPªviousI¡îru±
 );
 
-311 
+376 
 p°Ru¬ögTask
 =
-gs_°ScheduÀr
-.pstRunningTask;
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].pstRunningTask;
 
-312 
-gs_°ScheduÀr
-.
+377 
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 p°Ru¬ögTask
 =
 p°NextTask
 ;
 
-315 if((
+380 if((
 p°Ru¬ögTask
 ->
 qwFœgs
@@ -39093,19 +41615,23 @@ qwFœgs
 TASK_FLAGS_IDLE
 )==TASK_FLAGS_IDLE)
 
-317 
-gs_°ScheduÀr
-.
+382 
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 qwS≥ndPro˚ss‹TimeInIdÀTask
 +=
 TASK_PROCESSORTIME
--gs_°ScheduÀr.
+-gs_v°ScheduÀr[bCuºítAPICID].
 iPro˚ss‹Time
 ;
 
-321 if(
-gs_°ScheduÀr
-.
+386 if(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 qwLa°FPUU£dTaskID
 !=
 p°NextTask
@@ -39115,23 +41641,25 @@ p°NextTask
 qwID
 )
 
-323 
+388 
 	`kSëTS
 ();
 
-327 
+392 
 	`kCÀ¨TS
 ();
 
-336 
-gs_°ScheduÀr
-.
+401 
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 iPro˚ss‹Time
 =
 TASK_PROCESSORTIME
 ;
 
-339 if(
+404 if(
 p°Ru¬ögTask
 ->
 qwFœgs
@@ -39139,17 +41667,29 @@ qwFœgs
 TASK_FLAGS_ENDTASK
 )
 
-341 
+406 
 	`kAddLi°ToTaû
 (&(
-gs_°ScheduÀr
-.
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 °WaôLi°
 ),
 p°Ru¬ögTask
 );
 
-342 
+407 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+°SpöLock
+));
+
+408 
 	`kSwôchC⁄ãxt
 (
 NULL
@@ -39159,13 +41699,25 @@ p°NextTask
 °C⁄ãxt
 ));
 
-346 
+412 
 	`kAddTaskToRódyLi°
 (
+bCuºítAPICID
+,
 p°Ru¬ögTask
 );
 
-347 
+413 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+°SpöLock
+));
+
+414 
 	`kSwôchC⁄ãxt
 (&(
 p°Ru¬ögTask
@@ -39175,23 +41727,27 @@ p°Ru¬ögTask
 p°NextTask
 ->stContext));
 
-353 
-	`kU∆ockF‹Sy°emD©a
+420 
+	`kSëI¡îru±Fœg
 (
-bPªviousFœg
+bPªviousI¡îru±
 );
 
-354 
+421  
+FALSE
+;
+
+422 
 	}
 }
 
-365 
+433 
 BOOL
  
 	$kScheduÀInI¡îru±
 ()
 
-367 
+435 
 TCB
 * 
 p°Ru¬ögTask
@@ -39199,69 +41755,105 @@ p°Ru¬ögTask
 p°NextTask
 ;
 
-368 * 
+436 * 
 pcC⁄ãxtAddªss
 ;
 
-369 
-BOOL
+437 
+BYTE
  
-bPªviousFœg
+bCuºítAPICID
 ;
 
-372 
-bPªviousFœg
+438 
+QWORD
+ 
+qwISTSèπAddªss
+;
+
+441 
+bCuºítAPICID
  = 
-	`kLockF‹Sy°emD©a
+	`kGëAPICID
 ();
 
-375 
+444 
+	`kLockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+°SpöLock
+));
+
+447 
 p°NextTask
 =
 	`kGëNextTaskToRun
-();
+(
+bCuºítAPICID
+);
 
-376 if(
+448 if(
 p°NextTask
 ==
 NULL
 )
 
-379 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousFœg
-);
+451 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+°SpöLock
+));
 
-380  
+452  
 FALSE
 ;
 
-387 
+461 
+qwISTSèπAddªss
+ = 
+IST_STARTADDRESS
+ + 
+IST_SIZE
+ - (IST_SIZE/
+MAXPROCESSORCOUNT
+*
+bCuºítAPICID
+);
+
+463 
 pcC⁄ãxtAddªss
 =(*)
-IST_STARTADDRESS
-+
-IST_SIZE
--(
+qwISTSèπAddªss
+ - (
 CONTEXT
 );
 
-390 
+466 
 p°Ru¬ögTask
  = 
-gs_°ScheduÀr
-.pstRunningTask;
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].pstRunningTask;
 
-391 
-gs_°ScheduÀr
-.
+467 
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 p°Ru¬ögTask
  = 
 p°NextTask
 ;
 
-395 if((
+471 if((
 p°Ru¬ögTask
 ->
 qwFœgs
@@ -39269,17 +41861,19 @@ qwFœgs
 TASK_FLAGS_IDLE
 )==TASK_FLAGS_IDLE)
 
-397 
-gs_°ScheduÀr
-.
+473 
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 qwS≥ndPro˚ss‹TimeInIdÀTask
 +=
 TASK_PROCESSORTIME
--gs_°ScheduÀr.
+-gs_v°ScheduÀr[bCuºítAPICID].
 iPro˚ss‹Time
 ;
 
-401 if(
+477 if(
 p°Ru¬ögTask
 ->
 qwFœgs
@@ -39287,17 +41881,19 @@ qwFœgs
 TASK_FLAGS_ENDTASK
 )
 
-403 
+479 
 	`kAddLi°ToTaû
 (&(
-gs_°ScheduÀr
-.
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 °WaôLi°
 ),
 p°Ru¬ögTask
 );
 
-409 
+485 
 	`kMemCpy
 (&(
 p°Ru¬ögTask
@@ -39309,39 +41905,17 @@ pcC⁄ãxtAddªss
 CONTEXT
 ));
 
-410 
-	`kAddTaskToRódyLi°
-(
-p°Ru¬ögTask
-);
+489 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+°SpöLock
+));
 
-414 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousFœg
-);
-
-417 if(
-gs_°ScheduÀr
-.
-qwLa°FPUU£dTaskID
-!=
-p°NextTask
-->
-°Lök
-.
-qwID
-)
-
-419 
-	`kSëTS
-();
-
-423 
-	`kCÀ¨TS
-();
-
-428 
+493 
 	`kMemCpy
 (
 pcC⁄ãxtAddªss
@@ -39353,73 +41927,129 @@ p°NextTask
 CONTEXT
 ));
 
-431 
-gs_°ScheduÀr
+496 if((
+p°Ru¬ögTask
+->
+qwFœgs
+&
+TASK_FLAGS_ENDTASK
+)!=TASK_FLAGS_ENDTASK)
+
+499 
+	`kAddTaskToScheduÀrWôhLﬂdBÆ™cög
+(
+p°Ru¬ögTask
+);
+
+503 if(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+qwLa°FPUU£dTaskID
+!=
+p°NextTask
+->
+°Lök
 .
+qwID
+)
+
+505 
+	`kSëTS
+();
+
+509 
+	`kCÀ¨TS
+();
+
+513 
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 iPro˚ss‹Time
 =
 TASK_PROCESSORTIME
 ;
 
-432  
+514  
 TRUE
 ;
 
-433 
+515 
 	}
 }
 
-436 
+518 
 	$kDe¸ó£Pro˚ss‹Time
-()
+(
+BYTE
+ 
+bAPICID
+)
 
-438 if(
-gs_°ScheduÀr
-.
+520 if(
+gs_v°ScheduÀr
+[
+bAPICID
+].
 iPro˚ss‹Time
 >0)
 
-440 
-gs_°ScheduÀr
-.
+522 
+gs_v°ScheduÀr
+[
+bAPICID
+].
 iPro˚ss‹Time
 --;
 
-442 
+524 
 	}
 }
 
-445 
+527 
 BOOL
  
 	$kIsPro˚ss‹TimeExpúed
-()
+(
+BYTE
+ 
+bAPICID
+)
 
-447 if(
-gs_°ScheduÀr
-.
+529 if(
+gs_v°ScheduÀr
+[
+bAPICID
+].
 iPro˚ss‹Time
 <=0)
 
-449  
+531  
 TRUE
 ;
 
-451  
+533  
 FALSE
 ;
 
-452 
+534 
 	}
 }
 
-455 
+537 
 TCB
 * 
 	$kGëNextTaskToRun
-()
+(
+BYTE
+ 
+bAPICID
+)
 
-457 
+539 
 TCB
 * 
 p°T¨gë
@@ -39427,7 +42057,7 @@ p°T¨gë
 NULL
 ;
 
-458 
+540 
 iTaskCou¡
 ,
 i
@@ -39435,31 +42065,35 @@ i
 j
 ;
 
-462 
+544 
 j
 =0;j<2;j++)
 
-465 
+547 
 i
 =0;i<
 TASK_MAXREADYLISTCOUNT
 ;i++)
 
-467 
+549 
 iTaskCou¡
  = 
 	`kGëLi°Cou¡
 (&(
-gs_°ScheduÀr
-.
+gs_v°ScheduÀr
+[
+bAPICID
+].
 v°RódyLi°
 [
 i
 ]));
 
-470 if(
-gs_°ScheduÀr
-.
+552 if(
+gs_v°ScheduÀr
+[
+bAPICID
+].
 viExecuãCou¡
 [
 i
@@ -39467,67 +42101,77 @@ i
 iTaskCou¡
 )
 
-472 
+554 
 p°T¨gë
 =(
 TCB
 *)
 	`kRemoveLi°FromHódî
 (&(
-gs_°ScheduÀr
-.
+gs_v°ScheduÀr
+[
+bAPICID
+].
 v°RódyLi°
 [
 i
 ]));
 
-473 
-gs_°ScheduÀr
-.
+555 
+gs_v°ScheduÀr
+[
+bAPICID
+].
 viExecuãCou¡
 [
 i
 ]++;
 
-479 
-gs_°ScheduÀr
-.
+561 
+gs_v°ScheduÀr
+[
+bAPICID
+].
 viExecuãCou¡
 [
 i
 ]=0;
 
-484 if(
+566 if(
 p°T¨gë
 !=
 NULL
 )
 
-490  
+572  
 p°T¨gë
 ;
 
-491 
+573 
 	}
 }
 
-494 
+576 
 BOOL
  
 	$kAddTaskToRódyLi°
 (
+BYTE
+ 
+bAPICID
+,
 TCB
 * 
 p°Task
 )
 
-496 
+578 
 BYTE
  
 bPri‹ôy
 ;
 
-498 
+580 
 bPri‹ôy
  = 
 	`GETPRIORITY
@@ -39537,21 +42181,23 @@ p°Task
 qwFœgs
 );
 
-499 if(
+581 if(
 bPri‹ôy
 >=
 TASK_MAXREADYLISTCOUNT
 )
 
-501  
+583  
 FALSE
 ;
 
-504 
+586 
 	`kAddLi°ToTaû
 (&(
-gs_°ScheduÀr
-.
+gs_v°ScheduÀr
+[
+bAPICID
+].
 v°RódyLi°
 [
 bPri‹ôy
@@ -39559,37 +42205,41 @@ bPri‹ôy
 p°Task
 );
 
-505  
+587  
 TRUE
 ;
 
-506 
+588 
 	}
 }
 
-509 
+591 
 TCB
 * 
 	$kRemoveTaskFromRódyLi°
 (
+BYTE
+ 
+bAPICID
+,
 QWORD
  
 qwTaskID
 )
 
-511 
+593 
 TCB
 * 
 p°T¨gë
 ;
 
-512 
+594 
 BYTE
  
 bPri‹ôy
 ;
 
-515 if(
+597 if(
 	`GETTCBOFFSET
 (
 qwTaskID
@@ -39597,11 +42247,11 @@ qwTaskID
 TASK_MAXCOUNT
 )
 
-517  
+599  
 NULL
 ;
 
-521 
+603 
 p°T¨gë
 =&(
 gs_°TCBPoﬁM™agî
@@ -39613,7 +42263,7 @@ p°SèπAddªss
 qwTaskID
 )]);
 
-522 if(
+604 if(
 p°T¨gë
 ->
 °Lök
@@ -39623,11 +42273,11 @@ qwID
 qwTaskID
 )
 
-524  
+606  
 NULL
 ;
 
-528 
+610 
 bPri‹ôy
  = 
 	`GETPRIORITY
@@ -39637,13 +42287,15 @@ p°T¨gë
 qwFœgs
 );
 
-530 
+612 
 p°T¨gë
  = 
 	`kRemoveLi°
 (&(
-gs_°ScheduÀr
-.
+gs_v°ScheduÀr
+[
+bAPICID
+].
 v°RódyLi°
 [
 bPri‹ôy
@@ -39651,15 +42303,125 @@ bPri‹ôy
 qwTaskID
 );
 
-531  
+613  
 p°T¨gë
 ;
 
-532 
+614 
 	}
 }
 
-535 
+617 
+BOOL
+ 
+	$kFödScheduÀrOfTaskAndLock
+(
+QWORD
+ 
+qwTaskID
+,
+BYTE
+* 
+pbAPICID
+)
+
+619 
+TCB
+* 
+p°T¨gë
+;
+
+620 
+BYTE
+ 
+bAPICID
+;
+
+625 
+p°T¨gë
+ = &(
+gs_°TCBPoﬁM™agî
+.
+p°SèπAddªss
+[
+	`GETTCBOFFSET
+(
+qwTaskID
+)]);
+
+626 if((
+p°T¨gë
+==
+NULL
+)||’°T¨gë->
+°Lök
+.
+qwID
+!=
+qwTaskID
+))
+
+628  
+FALSE
+;
+
+632 
+bAPICID
+ = 
+p°T¨gë
+->bAPICID;
+
+635 
+	`kLockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bAPICID
+].
+°SpöLock
+));
+
+639 
+p°T¨gë
+ = &(
+gs_°TCBPoﬁM™agî
+.
+p°SèπAddªss
+[
+	`GETTCBOFFSET
+(
+qwTaskID
+)]);
+
+640 if(
+p°T¨gë
+->
+bAPICID
+==bAPICID)
+
+649 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bAPICID
+].
+°SpöLock
+));
+
+652 *
+bAPICID
+ = bAPICID;
+
+653  
+TRUE
+;
+
+654 
+	}
+}
+
+657 
 BOOL
  
 	$kCh™gePri‹ôy
@@ -39673,43 +42435,53 @@ BYTE
 bPri‹ôy
 )
 
-537 
+659 
 TCB
 * 
 p°T¨gë
 ;
 
-538 
-BOOL
+660 
+BYTE
  
-bPªviousFœg
+bAPICID
 ;
 
-541 if(
+663 if(
 bPri‹ôy
 >
 TASK_MAXREADYLISTCOUNT
 )
 
-543  
+665  
 FALSE
 ;
 
-547 
-bPªviousFœg
- = 
-	`kLockF‹Sy°emD©a
-();
+669 if(
+	`kFödScheduÀrOfTaskAndLock
+(
+qwTaskID
+,&
+bAPICID
+)==
+FALSE
+)
 
-552 
+671  
+FALSE
+;
+
+676 
 p°T¨gë
  = 
-gs_°ScheduÀr
-.
+gs_v°ScheduÀr
+[
+bAPICID
+].
 p°Ru¬ögTask
 ;
 
-553 if(
+677 if(
 p°T¨gë
 ->
 °Lök
@@ -39719,7 +42491,7 @@ qwID
 qwTaskID
 )
 
-555 
+679 
 	`SETPRIORITY
 (
 p°T¨gë
@@ -39729,21 +42501,23 @@ qwFœgs
 bPri‹ôy
 );
 
-561 
+685 
 p°T¨gë
  = 
 	`kRemoveTaskFromRódyLi°
 (
+bAPICID
+,
 qwTaskID
 );
 
-562 if(
+686 if(
 p°T¨gë
 ==
 NULL
 )
 
-567 
+691 
 p°T¨gë
  = 
 	`kGëTCBInTCBPoﬁ
@@ -39753,7 +42527,7 @@ p°T¨gë
 qwTaskID
 ));
 
-568 if((
+692 if((
 p°T¨gë
 !=
 NULL
@@ -39765,7 +42539,7 @@ qwTaskID
 qwID
 ))
 
-571 
+695 
 	`SETPRIORITY
 (
 p°T¨gë
@@ -39775,11 +42549,11 @@ qwFœgs
 bPri‹ôy
 );
 
-573  
+697  
 FALSE
 ;
 
-578 
+702 
 	`SETPRIORITY
 (
 p°T¨gë
@@ -39789,27 +42563,31 @@ qwFœgs
 bPri‹ôy
 );
 
-579 
+703 
 	`kAddTaskToRódyLi°
 (
 p°T¨gë
 );
 
-584 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousFœg
-);
+708 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bAPICID
+].
+°SpöLock
+));
 
-585  
+709  
 TRUE
 ;
 
-586 
+710 
 	}
 }
 
-589 
+713 
 BOOL
  
 	$kEndTask
@@ -39819,39 +42597,49 @@ QWORD
 qwTaskID
 )
 
-591 
+715 
 TCB
 * 
 p°T¨gë
 ;
 
-592 
+716 
 BYTE
  
 bPri‹ôy
 ;
 
-593 
-BOOL
+717 
+BYTE
  
-bPªviousFœg
+bAPICID
 ;
 
-596 
-bPªviousFœg
- = 
-	`kLockF‹Sy°emD©a
-();
+720 if(
+	`kFödScheduÀrOfTaskAndLock
+(
+qwTaskID
+,&
+bAPICID
+)==
+FALSE
+)
 
-599 
+722  
+FALSE
+;
+
+726 
 p°T¨gë
  = 
-gs_°ScheduÀr
-.
+gs_v°ScheduÀr
+[
+bAPICID
+].
 p°Ru¬ögTask
 ;
 
-600 if(
+727 if(
 p°T¨gë
 ->
 °Lök
@@ -39861,7 +42649,7 @@ qwID
 qwTaskID
 )
 
-602 
+729 
 p°T¨gë
 ->
 qwFœgs
@@ -39869,7 +42657,7 @@ qwFœgs
 TASK_FLAGS_ENDTASK
 ;
 
-604 
+731 
 	`SETPRIORITY
 (
 p°T¨gë
@@ -39879,31 +42667,47 @@ qwFœgs
 TASK_FLAGS_WAIT
 );
 
-607 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousFœg
-);
+734 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bAPICID
+].
+°SpöLock
+));
 
-609 
+737 if(
+	`kGëAPICID
+()==
+bAPICID
+)
+
+739 
 	`kScheduÀ
 ();
 
-618 
+745  
+TRUE
+;
+
+750 
 p°T¨gë
 =
 	`kRemoveTaskFromRódyLi°
 (
+bAPICID
+,
 qwTaskID
 );
 
-619 if(
+751 if(
 p°T¨gë
 ==
 NULL
 )
 
-626 
+758 
 p°T¨gë
  = 
 	`kGëTCBInTCBPoﬁ
@@ -39913,7 +42717,7 @@ p°T¨gë
 qwTaskID
 ));
 
-627 if((
+759 if((
 p°T¨gë
 !=
 NULL
@@ -39925,7 +42729,7 @@ qwID
 qwTaskID
 ))
 
-629 
+761 
 p°T¨gë
 ->
 qwFœgs
@@ -39933,7 +42737,7 @@ qwFœgs
 TASK_FLAGS_ENDTASK
 ;
 
-630 
+762 
 	`SETPRIORITY
 (
 p°T¨gë
@@ -39943,17 +42747,21 @@ qwFœgs
 TASK_FLAGS_WAIT
 );
 
-634 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousFœg
-);
+766 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bAPICID
+].
+°SpöLock
+));
 
-635  
+767  
 FALSE
 ;
 
-638 
+770 
 p°T¨gë
 ->
 qwFœgs
@@ -39961,7 +42769,7 @@ qwFœgs
 TASK_FLAGS_ENDTASK
 ;
 
-639 
+771 
 	`SETPRIORITY
 (
 p°T¨gë
@@ -39971,39 +42779,47 @@ qwFœgs
 TASK_FLAGS_WAIT
 );
 
-640 
+772 
 	`kAddLi°ToTaû
 (&(
-gs_°ScheduÀr
-.
+gs_v°ScheduÀr
+[
+bAPICID
+].
 °WaôLi°
 ),
 p°T¨gë
 );
 
-644 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousFœg
-);
+775 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bAPICID
+].
+°SpöLock
+));
 
-645  
+776  
 TRUE
 ;
 
-646 
+777 
 	}
 }
 
-649 
+780 
 	$kExôTask
 ()
 
-651 
+782 
 	`kEndTask
 (
-gs_°ScheduÀr
-.
+gs_v°ScheduÀr
+[
+kGëAPICID
+].
 p°Ru¬ögTask
 ->
 °Lök
@@ -40011,117 +42827,135 @@ p°Ru¬ögTask
 qwID
 );
 
-652 
+783 
 	}
 }
 
-655 
+786 
 	$kGëRódyTaskCou¡
-()
+(
+BYTE
+ 
+bAPICID
+)
 
-657 
+788 
 iTŸÆCou¡
 =0;
 
-658 
+789 
 i
 ;
 
-659 
-BOOL
- 
-bPªviousFœg
-;
+792 
+	`kLockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bAPICID
+].
+°SpöLock
+));
 
-662 
-bPªviousFœg
- = 
-	`kLockF‹Sy°emD©a
-();
-
-665 
+795 
 i
 =0;i<
 TASK_MAXREADYLISTCOUNT
 ;i++)
 
-667 
+797 
 iTŸÆCou¡
 +=
 	`kGëLi°Cou¡
 (&(
-gs_°ScheduÀr
-.
+gs_v°ScheduÀr
+[
+bAPICID
+].
 v°RódyLi°
 [
 i
 ]));
 
-670 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousFœg
-);
+800 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bAPICID
+].
+°SpöLock
+));
 
-671  
+801  
 iTŸÆCou¡
 ;
 
-672 
+802 
 	}
 }
 
-675 
+805 
 	$kGëTaskCou¡
-()
-
-677 
-iTŸÆCou¡
-;
-
-678 
-BOOL
+(
+BYTE
  
-bPªviousFœg
+bAPICID
+)
+
+807 
+iTŸÆCou¡
 ;
 
-681 
+810 
 iTŸÆCou¡
-=
-	`kGëRódyTaskCou¡
-();
-
-684 
-bPªviousFœg
  = 
-	`kLockF‹Sy°emD©a
-();
+	`kGëRódyTaskCou¡
+(
+bAPICID
+);
 
-686 
+813 
+	`kLockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bAPICID
+].
+°SpöLock
+));
+
+815 
 iTŸÆCou¡
 +=
 	`kGëLi°Cou¡
 (&(
-gs_°ScheduÀr
-.
+gs_v°ScheduÀr
+[
+bAPICID
+].
 °WaôLi°
 ))+1;
 
-689 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousFœg
-);
+818 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bAPICID
+].
+°SpöLock
+));
 
-690  
+819  
 iTŸÆCou¡
 ;
 
-691 
+820 
 	}
 }
 
-694 
+823 
 TCB
 * 
 	$kGëTCBInTCBPoﬁ
@@ -40129,17 +42963,17 @@ TCB
 iOff£t
 )
 
-696 if((
+825 if((
 iOff£t
 <-1)||(iOff£t>
 TASK_MAXCOUNT
 ))
 
-698  
+827  
 NULL
 ;
 
-701  &(
+830  &(
 gs_°TCBPoﬁM™agî
 .
 p°SèπAddªss
@@ -40147,11 +42981,11 @@ p°SèπAddªss
 iOff£t
 ]);
 
-702 
+831 
 	}
 }
 
-705 
+834 
 BOOL
  
 	$kIsTaskExi°
@@ -40161,13 +42995,13 @@ QWORD
 qwID
 )
 
-707 
+836 
 TCB
 * 
 p°TCB
 ;
 
-710 
+839 
 p°TCB
  = 
 	`kGëTCBInTCBPoﬁ
@@ -40177,7 +43011,7 @@ p°TCB
 qwID
 ));
 
-712 if((
+841 if((
 p°TCB
 ==
 NULL
@@ -40187,35 +43021,41 @@ NULL
 qwID
 !=qwID))
 
-714  
+843  
 FALSE
 ;
 
-717  
+846  
 TRUE
 ;
 
-718 
+847 
 	}
 }
 
-721 
+850 
 QWORD
  
 	$kGëPro˚ss‹Lﬂd
-()
+(
+BYTE
+ 
+bAPICID
+)
 
-723  
-gs_°ScheduÀr
-.
+852  
+gs_v°ScheduÀr
+[
+bAPICID
+].
 qwPro˚ss‹Lﬂd
 ;
 
-724 
+853 
 	}
 }
 
-727 
+856 
 TCB
 * 
 	$kGëPro˚ssByThªad
@@ -40225,13 +43065,13 @@ TCB
 p°Thªad
 )
 
-729 
+858 
 TCB
 * 
 p°Pro˚ss
 ;
 
-732 if(
+861 if(
 p°Thªad
 ->
 qwFœgs
@@ -40239,11 +43079,11 @@ qwFœgs
 TASK_FLAGS_PROCESS
 )
 
-734  
+863  
 p°Thªad
 ;
 
-739 
+868 
 p°Pro˚ss
  = 
 	`kGëTCBInTCBPoﬁ
@@ -40255,7 +43095,7 @@ p°Thªad
 qwP¨ítPro˚ssID
 ));
 
-742 if((
+871 if((
 p°Pro˚ss
 ==
 NULL
@@ -40269,23 +43109,529 @@ p°Thªad
 qwP¨ítPro˚ssID
 ))
 
-744  
+873  
 NULL
 ;
 
-747  
+876  
 p°Pro˚ss
 ;
 
-748 
+877 
 	}
 }
 
-755 
+883 
+	$kAddTaskToScheduÀrWôhLﬂdBÆ™cög
+(
+TCB
+* 
+p°Task
+)
+
+885 
+BYTE
+ 
+bCuºítAPICID
+;
+
+886 
+BYTE
+ 
+bT¨gëAPICID
+;
+
+889 
+bCuºítAPICID
+ = 
+p°Task
+->
+bAPICID
+;
+
+893 if((
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+bU£LﬂdBÆ™cög
+==
+TRUE
+)&&(
+p°Task
+->
+bAfföôy
+==
+TASK_LOADBALANCINGID
+))
+
+896 
+bT¨gëAPICID
+ = 
+	`kFödScheduÀrOfMöimumTaskCou¡
+(
+p°Task
+);
+
+900 if((
+p°Task
+->
+bAfföôy
+!=
+bCuºítAPICID
+)&&’°Task->bAfföôy!=
+TASK_LOADBALANCINGID
+))
+
+902 
+bT¨gëAPICID
+ = 
+p°Task
+->
+bAfföôy
+;
+
+907 
+bT¨gëAPICID
+ = 
+bCuºítAPICID
+;
+
+911 
+	`kLockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+°SpöLock
+));
+
+915 if((
+bCuºítAPICID
+!=
+bT¨gëAPICID
+)&&(
+p°Task
+->
+°Lök
+.
+qwID
+==
+gs_v°ScheduÀr
+[bCuºítAPICID].
+qwLa°FPUU£dTaskID
+))
+
+919 
+	`kCÀ¨TS
+();
+
+920 
+	`kSaveFPUC⁄ãxt
+(
+p°Task
+->
+vqwFPUC⁄ãxt
+);
+
+921 
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+qwLa°FPUU£dTaskID
+=
+TASK_INVALIDID
+;
+
+925 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+°SpöLock
+));
+
+928 
+	`kLockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bT¨gëAPICID
+].
+°SpöLock
+));
+
+931 
+p°Task
+->
+bAPICID
+ = 
+bT¨gëAPICID
+;
+
+932 
+	`kAddTaskToRódyLi°
+(
+bT¨gëAPICID
+,
+p°Task
+);
+
+935 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bT¨gëAPICID
+].
+°SpöLock
+));
+
+936 
+	}
+}
+
+941 
+BYTE
+ 
+	$kFödScheduÀrOfMöimumTaskCou¡
+(c⁄° 
+TCB
+* 
+p°Task
+)
+
+943 
+BYTE
+ 
+bPri‹ôy
+;
+
+944 
+BYTE
+ 
+i
+;
+
+945 
+iCuºítTaskCou¡
+;
+
+946 
+iMöTaskCou¡
+;
+
+947 
+BYTE
+ 
+bMöC‹eIndex
+;
+
+948 
+iTempTaskCou¡
+;
+
+949 
+iPro˚ss‹Cou¡
+;
+
+952 
+iPro˚ss‹Cou¡
+ = 
+	`kGëPro˚ss‹Cou¡
+();
+
+955 if(
+iPro˚ss‹Cou¡
+==1)
+
+957  
+p°Task
+->
+bAPICID
+;
+
+961 
+bPri‹ôy
+ = 
+	`GETPRIORITY
+(
+p°Task
+->
+qwFœgs
+);
+
+964 
+iCuºítTaskCou¡
+ = 
+	`kGëLi°Cou¡
+(&(
+gs_v°ScheduÀr
+[
+p°Task
+->
+bAPICID
+].
+v°RódyLi°
+[
+bPri‹ôy
+]));
+
+969 
+iMöTaskCou¡
+ = 
+TASK_MAXCOUNT
+;
+
+970 
+bMöC‹eIndex
+ = 
+p°Task
+->
+bAPICID
+;
+
+971 
+i
+=0;i<
+iPro˚ss‹Cou¡
+;i++)
+
+973 if(
+i
+==
+p°Task
+->
+bAPICID
+)
+
+979 
+iTempTaskCou¡
+ = 
+	`kGëLi°Cou¡
+(&(
+gs_v°ScheduÀr
+[
+i
+].
+v°RódyLi°
+[
+bPri‹ôy
+]));
+
+983 if((
+iTempTaskCou¡
++2<=
+iCuºítTaskCou¡
+)&&(iTempTaskCou¡<
+iMöTaskCou¡
+))
+
+985 
+bMöC‹eIndex
+ = 
+i
+;
+
+986 
+iMöTaskCou¡
+ = 
+iTempTaskCou¡
+;
+
+990  
+bMöC‹eIndex
+;
+
+991 
+	}
+}
+
+994 
+BYTE
+ 
+	$kSëTaskLﬂdBÆ™cög
+(
+BYTE
+ 
+bAPICID
+,
+BOOL
+ 
+bU£LﬂdBÆ™cög
+)
+
+996 
+gs_v°ScheduÀr
+[
+bAPICID
+].
+bU£LﬂdBÆ™cög
+ = bUseLoadBalancing;
+
+997 
+	}
+}
+
+1000 
+BOOL
+ 
+	$kCh™gePro˚ss‹Afföôy
+(
+QWORD
+ 
+qwTaskID
+,
+BYTE
+ 
+bAfföôy
+)
+
+1002 
+TCB
+* 
+p°T¨gë
+;
+
+1003 
+BYTE
+ 
+bAPICID
+;
+
+1006 if(
+	`kFödScheduÀrOfTaskAndLock
+(
+qwTaskID
+,&
+bAPICID
+)==
+FALSE
+)
+
+1008  
+FALSE
+;
+
+1013 
+p°T¨gë
+ = 
+gs_v°ScheduÀr
+[
+bAPICID
+].
+p°Ru¬ögTask
+;
+
+1014 if(
+p°T¨gë
+->
+°Lök
+.
+qwID
+ =
+qwTaskID
+)
+
+1017 
+p°T¨gë
+->
+bAfföôy
+ = bAffinity;
+
+1020 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bAPICID
+].
+°SpöLock
+));
+
+1026 
+p°T¨gë
+=
+	`kRemoveTaskFromRódyLi°
+(
+bAPICID
+,
+qwTaskID
+);
+
+1027 if(
+p°T¨gë
+==
+NULL
+)
+
+1033 
+p°T¨gë
+ = 
+	`kGëTCBInTCBPoﬁ
+(
+	`GETTCBOFFSET
+(
+qwTaskID
+));
+
+1034 if((
+p°T¨gë
+!=
+NULL
+)&&’°T¨gë->
+°Lök
+.
+qwID
+==
+qwTaskID
+))
+
+1037 
+p°T¨gë
+->
+bAfföôy
+ = bAffinity;
+
+1043 
+p°T¨gë
+->
+bAfföôy
+ = bAffinity;
+
+1047 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bAPICID
+].
+°SpöLock
+));
+
+1050 
+	`kAddTaskToScheduÀrWôhLﬂdBÆ™cög
+(
+p°T¨gë
+);
+
+1053  
+TRUE
+;
+
+1054 
+	}
+}
+
+1062 
 	$kIdÀTask
 ()
 
-757 
+1064 
 TCB
 * 
 p°Task
@@ -40295,7 +43641,7 @@ p°ChûdThªad
 p°Pro˚ss
 ;
 
-758 
+1065 
 QWORD
  
 qwLa°MósuªTickCou¡
@@ -40303,7 +43649,7 @@ qwLa°MósuªTickCou¡
 qwLa°S≥ndTickInIdÀTask
 ;
 
-759 
+1066 
 QWORD
  
 qwCuºítMósuªTickCou¡
@@ -40311,71 +43657,99 @@ qwCuºítMósuªTickCou¡
 qwCuºítS≥ndTickInIdÀTask
 ;
 
-760 
-BOOL
+1067 
+QWORD
  
-bPªviousFœg
+qwTaskID
+,
+qwChûdThªadID
 ;
 
-761 
+1068 
 i
 , 
 iCou¡
 ;
 
-762 
+1069 
 QWORD
  
 qwTaskID
 ;
 
-763 * 
+1070 * 
 p°ThªadLök
 ;
 
-766 
+1071 
+BYTE
+ 
+bCuºítAPICID
+;
+
+1072 
+BYTE
+ 
+bPro˚ssAPICID
+;
+
+1075 
+bCuºítAPICID
+ = 
+	`kGëAPICID
+();
+
+1078 
 qwLa°S≥ndTickInIdÀTask
  = 
-gs_°ScheduÀr
-.
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 qwS≥ndPro˚ss‹TimeInIdÀTask
 ;
 
-767 
+1079 
 qwLa°MósuªTickCou¡
  = 
 	`kGëTickCou¡
 ();
 
-772 
+1084 
 qwCuºítMósuªTickCou¡
  = 
 	`kGëTickCou¡
 ();
 
-773 
+1085 
 qwCuºítS≥ndTickInIdÀTask
  = 
-gs_°ScheduÀr
-.
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 qwS≥ndPro˚ss‹TimeInIdÀTask
 ;
 
-777 if(
+1089 if(
 qwCuºítMósuªTickCou¡
 -
 qwLa°MósuªTickCou¡
 ==0)
 
-779 
-gs_°ScheduÀr
-.
+1091 
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 qwPro˚ss‹Lﬂd
 =0;
 
-783 
-gs_°ScheduÀr
-.
+1095 
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 qwPro˚ss‹Lﬂd
 =100-(
 qwCuºítS≥ndTickInIdÀTask
@@ -40387,59 +43761,73 @@ qwCuºítMósuªTickCou¡
 qwLa°MósuªTickCou¡
 );
 
-786 
+1098 
 qwLa°MósuªTickCou¡
  = 
 qwCuºítMósuªTickCou¡
 ;
 
-787 
+1099 
 qwLa°S≥ndTickInIdÀTask
  = 
 qwCuºítS≥ndTickInIdÀTask
 ;
 
-790 
+1102 
 	`kHÆtPro˚ss‹ByLﬂd
-();
+(
+bCuºítAPICID
+);
 
-793 if(
+1105 if(
 	`kGëLi°Cou¡
 (&(
-gs_°ScheduÀr
-.
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 °WaôLi°
 ))>=0)
 
-798 
-bPªviousFœg
- = 
-	`kLockF‹Sy°emD©a
-();
+1110 
+	`kLockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+°SpöLock
+));
 
-799 
+1111 
 p°Task
 =
 	`kRemoveLi°FromHódî
 (&(
-gs_°ScheduÀr
-.
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 °WaôLi°
 ));
 
-800 if(
+1113 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+°SpöLock
+));
+
+1114 if(
 p°Task
 ==
 NULL
 )
 
-803 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousFœg
-);
-
-807 if(
+1119 if(
 p°Task
 ->
 qwFœgs
@@ -40447,7 +43835,7 @@ qwFœgs
 TASK_FLAGS_PROCESS
 )
 
-818 
+1130 
 iCou¡
  = 
 	`kGëLi°Cou¡
@@ -40457,13 +43845,23 @@ p°Task
 °ChûdThªadLi°
 ));
 
-819 
+1131 
 i
 =0;i<
 iCou¡
 ;i++)
 
-822 
+1134 
+	`kLockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+°SpöLock
+));
+
+1136 
 p°ThªadLök
  = (
 TCB
@@ -40475,13 +43873,23 @@ p°Task
 °ChûdThªadLi°
 ));
 
-823 if(
+1137 if(
 p°ThªadLök
 ==
 NULL
 )
 
-831 
+1140 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+°SpöLock
+));
+
+1147 
 p°ChûdThªad
  = 
 	`GETTCBFROMTHREADLINK
@@ -40489,7 +43897,7 @@ p°ChûdThªad
 p°ThªadLök
 );
 
-832 
+1149 
 	`kAddLi°ToTaû
 (&(
 p°Task
@@ -40501,17 +43909,33 @@ p°ChûdThªad
 °ThªadLök
 ));
 
-835 
-	`kEndTask
-(
+1150 
+qwChûdThªadID
+ = 
 p°ChûdThªad
 ->
 °Lök
 .
 qwID
+;
+
+1153 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+°SpöLock
+));
+
+1155 
+	`kEndTask
+(
+qwChûdThªadID
 );
 
-840 if(
+1160 if(
 	`kGëLi°Cou¡
 (&(
 p°Task
@@ -40519,23 +43943,39 @@ p°Task
 °ChûdThªadLi°
 ))>0)
 
-842 
+1163 
+	`kLockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+°SpöLock
+));
+
+1164 
 	`kAddLi°ToTaû
 (&(
-gs_°ScheduÀr
-.
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
 °WaôLi°
 ),
 p°Task
 );
 
-845 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousFœg
-);
+1167 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bCuºítAPICID
+].
+°SpöLock
+));
 
-854 if(
+1176 if(
 p°Task
 ->
 qwFœgs
@@ -40543,7 +43983,7 @@ qwFœgs
 TASK_FLAGS_THREAD
 )
 
-857 
+1179 
 p°Pro˚ss
  = 
 	`kGëPro˚ssByThªad
@@ -40551,13 +43991,27 @@ p°Pro˚ss
 p°Task
 );
 
-858 if(
+1180 if(
 p°Pro˚ss
 !=
 NULL
 )
 
-860 
+1184 if(
+	`kFödScheduÀrOfTaskAndLock
+(
+p°Pro˚ss
+->
+°Lök
+.
+qwID
+,&
+bPro˚ssAPICID
+)==
+TRUE
+)
+
+1186 
 	`kRemoveLi°
 (&(
 p°Pro˚ss
@@ -40571,7 +44025,17 @@ p°Task
 qwID
 );
 
-865 
+1187 
+	`kU∆ockF‹SpöLock
+(&(
+gs_v°ScheduÀr
+[
+bPro˚ssAPICID
+].
+°SpöLock
+));
+
+1193 
 qwTaskID
  = 
 p°Task
@@ -40581,119 +44045,119 @@ p°Task
 qwID
 ;
 
-866 
+1194 
 	`kFªeTCB
 (
 qwTaskID
 );
 
-868 
-	`kU∆ockF‹Sy°emD©a
-(
-bPªviousFœg
-);
-
-869 
+1195 
 	`kPrötf
 ("IDLE: Task Id[0x%q] i†com∂ëñyÉnded.\n",
 qwTaskID
 );
 
-874 
+1200 
 	`kScheduÀ
 ();
 
-876 
-	}
-}
+1205 
+	`kHÆtPro˚ss‹ByLﬂd
+(
+BYTE
+ 
+bAPICID
+)
 
-879 
-	$kHÆtPro˚ss‹ByLﬂd
-()
-
-881 if(
-gs_°ScheduÀr
-.
+1207 if(
+gs_v°ScheduÀr
+[
+bAPICID
+].
 qwPro˚ss‹Lﬂd
 <40)
 
-883 
+1209 
 	`kH…
 ();
 
-884 
+1210 
 	`kH…
 ();
 
-885 
+1211 
 	`kH…
 ();
 
-887 if(
-gs_°ScheduÀr
-.
+1213 if(
+gs_v°ScheduÀr
+[
+bAPICID
+].
 qwPro˚ss‹Lﬂd
 <80)
 
-889 
+1215 
 	`kH…
 ();
 
-890 
+1216 
 	`kH…
 ();
 
-892 if(
-gs_°ScheduÀr
-.
+1218 if(
+gs_v°ScheduÀr
+[
+bAPICID
+].
 qwPro˚ss‹Lﬂd
 <95)
 
-894 
+1220 
 	`kH…
 ();
 
-896 
-	}
-}
-
-902 
+1228 
 QWORD
  
-	$kGëLa°FPUU£dTaskID
-()
+	`kGëLa°FPUU£dTaskID
+(
+BYTE
+ 
+bAPICID
+)
 
-904  
-gs_°ScheduÀr
-.
+1230  
+gs_v°ScheduÀr
+[
+bAPICID
+].
 qwLa°FPUU£dTaskID
 ;
 
-905 
-	}
-}
-
-908 
-	$kSëLa°FPUU£dTaskID
+1234 
+	`kSëLa°FPUU£dTaskID
 (
+BYTE
+ 
+bAPICID
+,
 QWORD
  
 qwTaskID
 )
 
-910 
-gs_°ScheduÀr
-.
+1236 
+gs_v°ScheduÀr
+[
+bAPICID
+].
 qwLa°FPUU£dTaskID
  = 
 qwTaskID
 ;
 
-911 
-	}
-}
-
-	@/home/jk/os/MINT64/02.Kernel64/Source/Task.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/Task.h
 
 1 #i‚de‡
 __TASK_H__
@@ -40713,175 +44177,179 @@ __TASK_H__
 	~"Li°.h
 "
 
-9 
+6 
+	~"Synchr⁄iz©i⁄.h
+"
+
+10 
 	#TASK_REGISTERCOUNT
  (5+19)
 
 	)
 
-10 
+11 
 	#TASK_REGISTERSIZE
  8
 
 	)
 
-13 
+14 
 	#TASK_GSOFFSET
  0
 
 	)
 
-14 
+15 
 	#TASK_FSOFFSET
  1
 
 	)
 
-15 
+16 
 	#TASK_ESOFFSET
  2
 
 	)
 
-16 
+17 
 	#TASK_DSOFFSET
  3
 
 	)
 
-17 
+18 
 	#TASK_R15OFFSET
  4
 
 	)
 
-18 
+19 
 	#TASK_R14OFFSET
  5
 
 	)
 
-19 
+20 
 	#TASK_R13OFFSET
  6
 
 	)
 
-20 
+21 
 	#TASK_R12OFFSET
  7
 
 	)
 
-21 
+22 
 	#TASK_R11OFFSET
  8
 
 	)
 
-22 
+23 
 	#TASK_R10OFFSET
  9
 
 	)
 
-23 
+24 
 	#TASK_R9OFFSET
  10
 
 	)
 
-24 
+25 
 	#TASK_R8OFFSET
  11
 
 	)
 
-25 
+26 
 	#TASK_RSIOFFSET
  12
 
 	)
 
-26 
+27 
 	#TASK_RDIOFFSET
  13
 
 	)
 
-27 
+28 
 	#TASK_RDXOFFSET
  14
 
 	)
 
-28 
+29 
 	#TASK_RCXOFFSET
  15
 
 	)
 
-29 
+30 
 	#TASK_RBXOFFSET
  16
 
 	)
 
-30 
+31 
 	#TASK_RAXOFFSET
  17
 
 	)
 
-31 
+32 
 	#TASK_RBPOFFSET
  18
 
 	)
 
-32 
+33 
 	#TASK_RIPOFFSET
  19
 
 	)
 
-33 
+34 
 	#TASK_CSOFFSET
  20
 
 	)
 
-34 
+35 
 	#TASK_RFLAGSOFFSET
  21
 
 	)
 
-35 
+36 
 	#TASK_RSPOFFSET
  22
 
 	)
 
-36 
+37 
 	#TASK_SSOFFSET
  23
 
 	)
 
-39 
+40 
 	#TASK_TCBPOOLADDRESS
  0x800000
 
 	)
 
-40 
+41 
 	#TASK_MAXCOUNT
  1024
 
 	)
 
-43 
+44 
 	#TASK_STACKPOOLADDRESS
  (
 TASK_TCBPOOLADDRESS
@@ -40893,97 +44361,97 @@ TASK_MAXCOUNT
 
 	)
 
-44 
+45 
 	#TASK_STACKSIZE
  8192
 
 	)
 
-47 
+48 
 	#TASK_INVALIDID
  0xFFFFFFFFFFFFFFFF
 
 	)
 
-50 
+51 
 	#TASK_PROCESSORTIME
  5
 
 	)
 
-53 
+54 
 	#TASK_MAXREADYLISTCOUNT
  5
 
 	)
 
-56 
+57 
 	#TASK_FLAGS_HIGHEST
  0
 
 	)
 
-57 
+58 
 	#TASK_FLAGS_HIGH
  1
 
 	)
 
-58 
+59 
 	#TASK_FLAGS_MEDIUM
  2
 
 	)
 
-59 
+60 
 	#TASK_FLAGS_LOW
  3
 
 	)
 
-60 
+61 
 	#TASK_FLAGS_LOWEST
  4
 
 	)
 
-61 
+62 
 	#TASK_FLAGS_WAIT
  0xFF
 
 	)
 
-64 
+65 
 	#TASK_FLAGS_ENDTASK
  0x8000000000000000
 
 	)
 
-65 
+66 
 	#TASK_FLAGS_SYSTEM
  0x4000000000000000
 
 	)
 
-66 
+67 
 	#TASK_FLAGS_PROCESS
  0x2000000000000000
 
 	)
 
-67 
+68 
 	#TASK_FLAGS_THREAD
  0x1000000000000000
 
 	)
 
-68 
+69 
 	#TASK_FLAGS_IDLE
  0x0800000000000000
 
 	)
 
-71 
+72 
 	#GETPRIORITY
 (
 x
@@ -40991,7 +44459,7 @@ x
 
 	)
 
-72 
+73 
 	#SETPRIORITY
 (
 x
@@ -41001,7 +44469,7 @@ x
 
 	)
 
-73 
+74 
 	#GETTCBOFFSET
 (
 x
@@ -41009,7 +44477,7 @@ x
 
 	)
 
-76 
+77 
 	#GETTCBFROMTHREADLINK
 (
 x
@@ -41025,17 +44493,23 @@ QWORD
 
 	)
 
-80 #¥agm®
+81 
+	#TASK_LOADBALANCINGID
+ 0xFF
+
+	)
+
+85 #¥agm®
 ∑ck
 (
 push
 ,1)
 
-83 
+88 
 	skC⁄ãxtSåu˘
 
 
-85 
+90 
 QWORD
  
 	mvqRegi°î
@@ -41043,131 +44517,155 @@ QWORD
 TASK_REGISTERCOUNT
 ];
 
-86 } 
+91 } 
 	tCONTEXT
 ;
 
-90 
+95 
 	skTaskC⁄åﬁBlockSåu˘
 
 
-93 
+98 
 LISTLINK
  
 	m°Lök
 ;
 
-96 
+101 
 QWORD
  
 	mqwFœgs
 ;
 
-99 * 
+104 * 
 	mpvMem‹yAddªss
 ;
 
-100 
+105 
 QWORD
  
 	mqwMem‹ySize
 ;
 
-106 
+111 
 LISTLINK
  
 	m°ThªadLök
 ;
 
-109 
+114 
 QWORD
  
 	mqwP¨ítPro˚ssID
 ;
 
-112 
+117 
 QWORD
  
 	mvqwFPUC⁄ãxt
 [512/8];
 
-115 
+120 
 LIST
  
 	m°ChûdThªadLi°
 ;
 
-118 
+123 
 CONTEXT
  
 	m°C⁄ãxt
 ;
 
-121 * 
+126 * 
 	mpvSèckAddªss
 ;
 
-122 
+127 
 QWORD
  
 	mqwSèckSize
 ;
 
-125 
+130 
 BOOL
  
 	mbFPUU£d
 ;
 
-128 
-	mvcPaddög
-[11];
+133 
+BYTE
+ 
+	mbAfföôy
+;
 
-129 } 
+136 
+BYTE
+ 
+	mbAPICID
+;
+
+139 
+	mvcPaddög
+[9];
+
+140 } 
 	tTCB
 ;
 
-132 
+143 
 	skTCBPoﬁM™agîSåu˘
 
 
-135 
+146 
+SPINLOCK
+ 
+	m°SpöLock
+;
+
+149 
 TCB
 * 
 	mp°SèπAddªss
 ;
 
-136 
+150 
 	miMaxCou¡
 ;
 
-137 
+151 
 	miU£Cou¡
 ;
 
-140 
+154 
 	miAŒoˇãdCou¡
 ;
 
-141 } 
+155 } 
 	tTCBPOOLMANAGER
 ;
 
-144 
+158 
 	skScheduÀrSåu˘
 
 
-147 
+161 
+SPINLOCK
+ 
+	m°SpöLock
+;
+
+164 
 TCB
 * 
 	mp°Ru¬ögTask
 ;
 
-150 
+167 
 	miPro˚ss‹Time
 ;
 
-153 
+170 
 LIST
  
 	mv°RódyLi°
@@ -41175,47 +44673,53 @@ LIST
 TASK_MAXREADYLISTCOUNT
 ];
 
-156 
+173 
 LIST
  
 	m°WaôLi°
 ;
 
-159 
+176 
 	mviExecuãCou¡
 [
 TASK_MAXREADYLISTCOUNT
 ];
 
-162 
+179 
 QWORD
  
 	mqwPro˚ss‹Lﬂd
 ;
 
-165 
+182 
 QWORD
  
 	mqwS≥ndPro˚ss‹TimeInIdÀTask
 ;
 
-168 
+185 
 QWORD
  
 	mqwLa°FPUU£dTaskID
 ;
 
-170 } 
+188 
+BOOL
+ 
+	mbU£LﬂdBÆ™cög
+;
+
+190 } 
 	tSCHEDULER
 ;
 
-173 #¥agm®
+193 #¥agm®
 ∑ck
 (
 p›
 )
 
-180 
+200 
 TCB
 * 
 kCª©eTask
@@ -41229,47 +44733,59 @@ pvMem‹yAddªss
 qwMem‹ySize
 ,QWORD 
 qwE¡ryPoötAddªss
+,
+BYTE
+ 
+bAfföôy
 );
 
-186 
+206 
 kInôülizeScheduÀr
 ();
 
-187 
+207 
 kSëRu¬ögTask
 (
+BYTE
+ 
+bAPICID
+,
 TCB
 * 
 p°Task
 );
 
-188 
+208 
 TCB
 * 
 kGëRu¬ögTask
-();
+(
+BYTE
+ 
+bAPICID
+);
 
-189 
+209 
 kScheduÀ
 ();
 
-190 
+210 
 BOOL
  
 kScheduÀInI¡îru±
 ();
 
-191 
+211 
 kDe¸ó£Pro˚ss‹Time
 ();
 
-192 
+212 
 BOOL
  
 kIsPro˚ss‹TimeExpúed
 ();
 
-193 
+213 
 BOOL
  
 kCh™gePri‹ôy
@@ -41283,7 +44799,7 @@ BYTE
 bPri‹ôy
 );
 
-194 
+214 
 BOOL
  
 kEndTask
@@ -41293,19 +44809,27 @@ QWORD
 qwTaskID
 );
 
-195 
+215 
 kExôTask
 ();
 
-196 
+216 
 kGëRódyTaskCou¡
-();
+(
+BYTE
+ 
+bAPICID
+);
 
-197 
+217 
 kGëTaskCou¡
-();
+(
+BYTE
+ 
+bAPICID
+);
 
-198 
+218 
 TCB
 * 
 kGëTCBInTCBPoﬁ
@@ -41313,7 +44837,7 @@ kGëTCBInTCBPoﬁ
 iOff£t
 );
 
-199 
+219 
 BOOL
  
 kIsTaskExi°
@@ -41323,35 +44847,81 @@ QWORD
 qwID
 );
 
-200 
+220 
 QWORD
  
 kGëPro˚ss‹Lﬂd
 ();
 
-206 
+221 
+kAddTaskToScheduÀrWôhLﬂdBÆ™cög
+(
+TCB
+* 
+p°Task
+);
+
+222 
+BYTE
+ 
+kSëTaskLﬂdBÆ™cög
+(BYTE 
+bAPICID
+,
+BOOL
+ 
+bU£LﬂdBÆ™cög
+);
+
+223 
+BOOL
+ 
+kCh™gePro˚ss‹Afföôy
+(
+QWORD
+ 
+qwTaskID
+,
+BYTE
+ 
+bAfföôy
+);
+
+229 
 kIdÀTask
 ();
 
-207 
+230 
 kHÆtPro˚ss‹ByLﬂd
-();
+(
+BYTE
+ 
+bAPICID
+);
 
-212 
+235 
 QWORD
  
 kGëLa°FPUU£dTaskID
-();
+(
+BYTE
+ 
+bAPICID
+);
 
-213 
+236 
 kSëLa°FPUU£dTaskID
 (
+BYTE
+ 
+bAPICID
+,
 QWORD
  
 qwTaskID
 );
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/Types.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/Types.h
 
 1 #i‚de‡
 __TYPES_H__
@@ -41455,7 +45025,7 @@ BYTE
 p›
 )
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/Utility.c
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/Utility.c
 
 1 
 	~"Utûôy.h
@@ -42627,7 +46197,7 @@ qwMûli£c⁄d
 	}
 }
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/Utility.h
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/Utility.h
 
 1 #i‚de‡
 __UTILITY_H__
@@ -42640,7 +46210,7 @@ __UTILITY_H__
 	)
 
 4 
-	~"/u§/¸oss/lib/gcc/x86_64-pc-löux/4.8.2/ö˛ude/°d¨g.h
+	~"/u§/¸oss/lib/gcc/x86_64-pc-löux/4.4.5/ö˛ude/°d¨g.h
 "
 
 5 
@@ -42813,7 +46383,7 @@ QWORD
 g_qwTickCou¡
 ;
 
-	@/home/jk/os/MINT64/02.Kernel64/Source/main.c
+	@/home/jkr555/os/MINT64/02.Kernel64/Source/main.c
 
 1 
 	~"Ty≥s.h
@@ -42884,7 +46454,7 @@ iCurs‹Y
 25 if(*((
 BYTE
 *)
-BOOTSTRAPPROCESSOR_FLAGADDRESS
+BOOTSTRAPPROCESSOR_FLAGADDESS
 )==0)
 
 27 
@@ -42894,7 +46464,7 @@ BOOTSTRAPPROCESSOR_FLAGADDRESS
 32 *((
 BYTE
 *)
-BOOTSTRAPPROCESSOR_FLAGADDRESS
+BOOTSTRAPPROCESSOR_FLAGADDESS
 )=0;
 
 35 
@@ -43157,7 +46727,9 @@ TASK_FLAGS_IDLE
 QWORD
 )
 kIdÀTask
-);
+,
+	`kGëAPICID
+());
 
 119 
 	`kSèπC⁄sﬁeShñl
@@ -43171,19 +46743,13 @@ kIdÀTask
 	$maöF‹Aµliˇti⁄Pro˚ss‹
 ()
 
-126 
-QWORD
- 
-qwTickCou¡
-;
-
-129 
+128 
 	`kLﬂdGDTR
 (
 GDTR_STARTADDRESS
 );
 
-133 
+132 
 	`kLﬂdTR
 (
 GDT_TSSSEGMENT
@@ -43193,41 +46759,47 @@ GDT_TSSSEGMENT
 GDTENTRY16
 )));
 
-136 
+135 
 	`kLﬂdIDTR
 (
 IDTR_STARTADDRESS
 );
 
-139 
-qwTickCou¡
- = 
-	`kGëTickCou¡
+138 
+	`kInôülizeScheduÀr
 ();
 
-143 if(
-	`kGëTickCou¡
-()-
-qwTickCou¡
->1000)
-
-145 
-qwTickCou¡
- = 
-	`kGëTickCou¡
+141 
+	`kE«bÀSo·w¨eLoˇlAPIC
 ();
+
+144 
+	`kSëTaskPri‹ôy
+(0);
 
 147 
+	`kInôülizeLoˇlVe˘‹TabÀ
+();
+
+150 
+	`kE«bÀI¡îru±
+();
+
+152 
 	`kPrötf
-("Aµliˇti⁄ Pro˚ss‹[APIC ID: %d] I†A˘iv©ed\n",
+("Aµliˇti⁄ Pro˚ss‹[APIC ID: %d] i†A˘iv©ed\n",
 	`kGëAPICID
 ());
 
-150 
+155 
+	`kIdÀTask
+();
+
+156 
 	}
 }
 
-	@/home/jk/os/MINT64/04.Utility/00.ImageMaker/ImageMaker.c
+	@/home/jkr555/os/MINT64/04.Utility/00.ImageMaker/ImageMaker.c
 
 1 
 	~<°dio.h
@@ -43851,7 +47423,7 @@ iSour˚FûeSize
 	}
 }
 
-	@/home/jk/os/MINT64/04.Utility/01.SerialTransfer/NetworkTransfer.c
+	@/home/jkr555/os/MINT64/04.Utility/01.SerialTransfer/NetworkTransfer.c
 
 1 
 	~<°dio.h
@@ -44271,7 +47843,9 @@ dwSítSize
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/AssemblyUtility.asm
+	@/home/jkr555/os/MINT64/IOAPIC.h
+
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/AssemblyUtility.asm
 
 1 [
 BITS
@@ -45849,7 +49423,7 @@ p›
 	gªt
 
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/AssemblyUtility.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/AssemblyUtility.h
 
 1 #i‚de‡
 __ASSEMBLYUTILITY_H__
@@ -46009,7 +49583,7 @@ wD©a
 kE«bÀGlobÆLoˇlAPIC
 ();
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/CacheManager.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/CacheManager.c
 
 1 
 	~"CacheM™agî.h
@@ -46861,7 +50435,7 @@ TRUE
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/CacheManager.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/CacheManager.h
 
 1 #i‚de‡
 __CACHEMANAGER_H__
@@ -47041,7 +50615,7 @@ CACHEBUFFER
 piMaxCou¡
 );
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/Console.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/Console.c
 
 1 
 	~"/u§/¸oss/lib/gcc/x86_64-pc-löux/4.8.2/ö˛ude/°d¨g.h
@@ -47573,7 +51147,7 @@ CONSOLE_DEFAULTTEXTCOLOR
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/Console.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/Console.h
 
 1 #i‚de‡
 __CONSOLE_H__
@@ -47873,7 +51447,7 @@ iY
 pcSåög
  );
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/ConsoleShell.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/ConsoleShell.c
 
 1 
 	~"C⁄sﬁeShñl.h
@@ -53929,7 +57503,7 @@ FALSE
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/ConsoleShell.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/ConsoleShell.h
 
 1 #i‚de‡
 __CONSOLESHELL_H__
@@ -54047,7 +57621,7 @@ p°Li°
 pcP¨amëî
 );
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/Descriptor.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/Descriptor.c
 
 1 
 	~"Des¸ùt‹.h
@@ -55219,7 +58793,7 @@ dwRe£rved
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/Descriptor.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/Descriptor.h
 
 1 #i‚de‡
 __DESCRIPTOR_H__
@@ -55927,7 +59501,7 @@ bTy≥
 kDummyH™dÀr
  ();
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/DynamicMemory.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/DynamicMemory.c
 
 1 
 	~"Dy«micMem‹y.h
@@ -57295,7 +60869,7 @@ gs_°Dy«micMem‹y
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/DynamicMemory.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/DynamicMemory.h
 
 1 #i‚de‡
 __DYNAMICMEMORY_H__
@@ -57447,7 +61021,7 @@ DYNAMICMEMORY
 kGëDy«micMem‹yM™agî
 ();
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/EntryPoint.s
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/EntryPoint.s
 
 1 [
 BITS
@@ -57765,7 +61339,7 @@ jmp
 	g$
 
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/FileSystem.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/FileSystem.c
 
 1 
 	~"FûeSy°em.h
@@ -62951,7 +66525,7 @@ TRUE
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/FileSystem.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/FileSystem.h
 
 1 #i‚de‡
 __FILESYSTEM_H__
@@ -63707,7 +67281,7 @@ BOOL
 	`kFlushFûeSy°emCache
 ();
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/HardDisk.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/HardDisk.c
 
 1 
 	~"H¨dDisk.h
@@ -65181,7 +68755,7 @@ i
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/HardDisk.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/HardDisk.h
 
 1 #i‚de‡
 __HARDDISK_H__
@@ -65613,7 +69187,7 @@ bPrim¨y
 bFœg
 );
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/ISR.asm
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/ISR.asm
 
 1 [
 BITS
@@ -67545,7 +71119,7 @@ kComm⁄I¡îru±H™dÀr
 	gúëq
  ; Ïù∏ÌÑ∞ÎüΩÌä∏ Ï≤òÎ¶¨Î•º ÏôÑÎ£åÌïòÍ≥† Ïù¥Ï†ÑÏóê ÏàòÌñâÌïòÎçò ÏΩîÎìúÎ°ú Î≥µÏõê
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/ISR.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/ISR.h
 
 1 #i‚de‡
 __ISR_H__
@@ -67709,7 +71283,7 @@ kISRHDD2
 kISRETCI¡îru±
 ( );
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/InterruptHandler.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/InterruptHandler.c
 
 1 
 	~"I¡îru±H™dÀr.h
@@ -68247,7 +71821,7 @@ PIC_IRQSTARTVECTOR
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/InterruptHandler.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/InterruptHandler.h
 
 1 #i‚de‡
 __INTERRUPTHANDLER_H__
@@ -68303,7 +71877,7 @@ kHDDH™dÀr
 iVe˘‹Numbî
 );
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/Keyboard.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/Keyboard.c
 
 1 
 	~"Ty≥s.h
@@ -69537,7 +73111,7 @@ bResu…
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/Keyboard.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/Keyboard.h
 
 1 #i‚de‡
 __KEYBOARD_H__
@@ -70043,7 +73617,7 @@ KEYDATA
 p°D©a
 );
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/List.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/List.c
 
 1 
 	~"Li°.h
@@ -70713,7 +74287,7 @@ pvPªvious
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/List.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/List.h
 
 1 #i‚de‡
 __LIST_H__
@@ -70895,7 +74469,7 @@ p°Li°
 p°Cuºít
 );
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/LocalAPIC.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/LocalAPIC.c
 
 1 
 	~"LoˇlAPIC.h
@@ -70963,7 +74537,7 @@ APIC_REGISTER_SVR
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/LocalAPIC.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/LocalAPIC.h
 
 1 #i‚de‡
 __LOCALAPIC_H__
@@ -71175,7 +74749,7 @@ kGëLoˇlAPICBa£Addªss
 kE«bÀSo·w¨eLoˇlAPIC
 ();
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/MPConfigurationTable.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/MPConfigurationTable.c
 
 1 
 	~"MPC⁄figuøti⁄TabÀ.h
@@ -72597,7 +76171,7 @@ iPro˚ss‹Cou¡
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/MPConfigurationTable.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/MPConfigurationTable.h
 
 1 #i‚de‡
 __MPCONFIGURATIONTABLE__
@@ -73171,7 +76745,7 @@ kPrötMPC⁄figuøti⁄TabÀ
 kGëPro˚ss‹Cou¡
 ();
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/MultiProcessor.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/MultiProcessor.c
 
 1 
 	~"Mu…iPro˚ss‹.h
@@ -73527,7 +77101,7 @@ g_qwAPICIDAddªss
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/MultiProcessor.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/MultiProcessor.h
 
 1 #i‚de‡
 __MULTIPROCESSOR_H__
@@ -73567,7 +77141,7 @@ BYTE
 kGëAPICID
 ();
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/PIC.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/PIC.c
 
 1 
 	~"PIC.h
@@ -73691,7 +77265,7 @@ PIC_SLAVE_PORT1
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/PIC.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/PIC.h
 
 1 #i‚de‡
 __PIC_H__
@@ -73755,7 +77329,7 @@ kSídEOIToPIC
 iIRQNumbî
  );
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/PIT.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/PIT.c
 
 1 
 	~"PIT.h
@@ -73933,7 +77507,7 @@ wCou¡
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/PIT.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/PIT.h
 
 1 #i‚de‡
 __PIT_H__
@@ -74117,7 +77691,7 @@ WORD
 wCou¡
 );
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/Queue.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/Queue.c
 
 1 
 	~"Queue.h
@@ -74377,7 +77951,7 @@ TRUE
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/Queue.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/Queue.h
 
 1 #i‚de‡
 __QUEUE_H__
@@ -74497,7 +78071,7 @@ p°Queue
 pvD©a
 );
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/RAMDisk.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/RAMDisk.c
 
 1 
 	~"RAMDisk.h
@@ -74753,7 +78327,7 @@ iRólWrôeCou¡
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/RAMDisk.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/RAMDisk.h
 
 1 #i‚de‡
 __RAMDISK_H__
@@ -74881,7 +78455,7 @@ iSe˘‹Cou¡
 pcBuf„r
 );
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/RTC.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/RTC.c
 
 1 
 	~"RTC.h
@@ -75137,7 +78711,7 @@ bDayOfWìk
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/RTC.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/RTC.h
 
 1 #i‚de‡
 __RTC_H__
@@ -75251,7 +78825,7 @@ BYTE
 bDayOfWìk
 );
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/SerialPort.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/SerialPort.c
 
 1 
 	~"SîülP‹t.h
@@ -75649,7 +79223,7 @@ gs_°SîülM™agî
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/SerialPort.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/SerialPort.h
 
 1 #i‚de‡
 __SERIALPORT_H__
@@ -76021,7 +79595,7 @@ iSize
 kCÀ¨SîülFIFO
 ();
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/Synchronization.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/Synchronization.c
 
 1 
 	~"Synchr⁄iz©i⁄.h
@@ -76237,7 +79811,7 @@ FALSE
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/Synchronization.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/Synchronization.h
 
 1 #i‚de‡
 __SYNCHRONIZATION_H__
@@ -76335,7 +79909,7 @@ MUTEX
 p°Muãx
 );
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/Task.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/Task.c
 
 1 
 	~"Task.h
@@ -79001,7 +82575,7 @@ qwTaskID
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/Task.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/Task.h
 
 1 #i‚de‡
 __TASK_H__
@@ -79659,7 +83233,7 @@ QWORD
 qwTaskID
 );
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/Types.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/Types.h
 
 1 #i‚de‡
 __TYPES_H__
@@ -79763,7 +83337,7 @@ BYTE
 p›
 )
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/Utility.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/Utility.c
 
 1 
 	~"Utûôy.h
@@ -80935,7 +84509,7 @@ qwMûli£c⁄d
 	}
 }
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/Utility.h
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/Utility.h
 
 1 #i‚de‡
 __UTILITY_H__
@@ -81121,7 +84695,7 @@ QWORD
 g_qwTickCou¡
 ;
 
-	@/home/jk/os/MINT64/save/02.Kernel64/Source/main.c
+	@/home/jkr555/os/MINT64/save/02.Kernel64/Source/main.c
 
 1 
 	~"Ty≥s.h
@@ -81535,7 +85109,7 @@ qwTickCou¡
 	}
 }
 
-	@/home/jk/os/MINT64/testdata.c
+	@/home/jkr555/os/MINT64/testdata.c
 
 1 
 	~<°dio.h
@@ -81579,7 +85153,7 @@ b
 	}
 }
 
-	@/usr/cross/lib/gcc/x86_64-pc-linux/4.8.2/include/stdarg.h
+	@/usr/cross/lib/gcc/x86_64-pc-linux/4.4.5/include/stdarg.h
 
 28 #i‚de‡
 _STDARG_H
@@ -81698,14 +85272,22 @@ s
 	)
 
 62 #ifde‡
-_BSD_VA_LIST
+_HIDDEN_VA_LIST
 
 
 63 #unde‡
+_VA_LIST
+
+
+66 #ifde‡
 _BSD_VA_LIST
 
 
-66 #i‡
+67 #unde‡
+_BSD_VA_LIST
+
+
+70 #i‡
 deföed
 (
 __svr4__
@@ -81715,25 +85297,25 @@ _SCO_DS
 __VA_LIST
 ))
 
-71 #i‚de‡
+75 #i‚de‡
 _VA_LIST_
 
 
-72 
+76 
 	#_VA_LIST_
 
 
 	)
 
-73 #ifde‡
+77 #ifde‡
 __i860__
 
 
-74 #i‚de‡
+78 #i‚de‡
 _VA_LIST
 
 
-75 
+79 
 	#_VA_LIST
  
 va_li°
@@ -81741,23 +85323,23 @@ va_li°
 
 	)
 
-78 
+82 
 __gnuc_va_li°
  
 	tva_li°
 ;
 
-79 #ifde‡
+83 #ifde‡
 _SCO_DS
 
 
-80 
+84 
 	#__VA_LIST
 
 
 	)
 
-89 #i‡!
+93 #i‡!
 deföed
  (
 _VA_LIST_
@@ -81775,29 +85357,29 @@ __FªeBSD__
 WINNT
 )
 
-91 #i‚de‡
+95 #i‚de‡
 _VA_LIST_DEFINED
 
 
-93 #i‚de‡
+97 #i‚de‡
 _VA_LIST
 
 
-95 #i‚de‡
+99 #i‚de‡
 _VA_LIST_T_H
 
 
-97 #i‚de‡
+101 #i‚de‡
 __va_li°__
 
 
-98 
+102 
 __gnuc_va_li°
  
 	tva_li°
 ;
 
-103 #i‡!(
+107 #i‡!(
 deföed
  (
 __BSD_NET2__
@@ -81811,47 +85393,47 @@ __£quít__
 __FªeBSD__
 ))
 
-104 
+108 
 	#_VA_LIST_
 
 
 	)
 
-106 #i‚de‡
+110 #i‚de‡
 _VA_LIST
 
 
-107 
+111 
 	#_VA_LIST
 
 
 	)
 
-109 #i‚de‡
+113 #i‚de‡
 _VA_LIST_DEFINED
 
 
-110 
+114 
 	#_VA_LIST_DEFINED
 
 
 	)
 
-112 #i‚de‡
+116 #i‚de‡
 _VA_LIST_T_H
 
 
-113 
+117 
 	#_VA_LIST_T_H
 
 
 	)
 
-115 #i‚de‡
+119 #i‚de‡
 __va_li°__
 
 
-116 
+120 
 	#__va_li°__
 
 
@@ -97604,6 +101186,8 @@ __USE_UNIX98
 273 
 	g__END_DECLS
 
+
+	@IOAPIC.h
 
 	@/usr/include/alloca.h
 
@@ -151762,127 +155346,127 @@ __END_DECLS
 .
 1
 /usr/include
-206
-8523
-/home/jk/os/MINT64/00.BootLoader/BootLoader.asm
-/home/jk/os/MINT64/00.BootLoader/BootLoader2.asm
-/home/jk/os/MINT64/01.Kernel32/Source/EntryPoint.s
-/home/jk/os/MINT64/01.Kernel32/Source/ModeSwitch.asm
-/home/jk/os/MINT64/01.Kernel32/Source/ModeSwitch.h
-/home/jk/os/MINT64/01.Kernel32/Source/Page.c
-/home/jk/os/MINT64/01.Kernel32/Source/Page.h
-/home/jk/os/MINT64/01.Kernel32/Source/Types.h
-/home/jk/os/MINT64/01.Kernel32/Source/main.c
-/home/jk/os/MINT64/01.Kernel32/VirtualOS.asm
-/home/jk/os/MINT64/02.Kernel64/Source/AssemblyUtility.asm
-/home/jk/os/MINT64/02.Kernel64/Source/AssemblyUtility.h
-/home/jk/os/MINT64/02.Kernel64/Source/CacheManager.c
-/home/jk/os/MINT64/02.Kernel64/Source/CacheManager.h
-/home/jk/os/MINT64/02.Kernel64/Source/Console.c
-/home/jk/os/MINT64/02.Kernel64/Source/Console.h
-/home/jk/os/MINT64/02.Kernel64/Source/ConsoleShell.c
-/home/jk/os/MINT64/02.Kernel64/Source/ConsoleShell.h
-/home/jk/os/MINT64/02.Kernel64/Source/Descriptor.c
-/home/jk/os/MINT64/02.Kernel64/Source/Descriptor.h
-/home/jk/os/MINT64/02.Kernel64/Source/DynamicMemory.c
-/home/jk/os/MINT64/02.Kernel64/Source/DynamicMemory.h
-/home/jk/os/MINT64/02.Kernel64/Source/EntryPoint.s
-/home/jk/os/MINT64/02.Kernel64/Source/FileSystem.c
-/home/jk/os/MINT64/02.Kernel64/Source/FileSystem.h
-/home/jk/os/MINT64/02.Kernel64/Source/HardDisk.c
-/home/jk/os/MINT64/02.Kernel64/Source/HardDisk.h
-/home/jk/os/MINT64/02.Kernel64/Source/IOAPIC.c
-/home/jk/os/MINT64/02.Kernel64/Source/IOAPIC.h
-/home/jk/os/MINT64/02.Kernel64/Source/ISR.asm
-/home/jk/os/MINT64/02.Kernel64/Source/ISR.h
-/home/jk/os/MINT64/02.Kernel64/Source/InterruptHandler.c
-/home/jk/os/MINT64/02.Kernel64/Source/InterruptHandler.h
-/home/jk/os/MINT64/02.Kernel64/Source/Keyboard.c
-/home/jk/os/MINT64/02.Kernel64/Source/Keyboard.h
-/home/jk/os/MINT64/02.Kernel64/Source/List.c
-/home/jk/os/MINT64/02.Kernel64/Source/List.h
-/home/jk/os/MINT64/02.Kernel64/Source/LocalAPIC.c
-/home/jk/os/MINT64/02.Kernel64/Source/LocalAPIC.h
-/home/jk/os/MINT64/02.Kernel64/Source/MPConfigurationTable.c
-/home/jk/os/MINT64/02.Kernel64/Source/MPConfigurationTable.h
-/home/jk/os/MINT64/02.Kernel64/Source/Main.c
-/home/jk/os/MINT64/02.Kernel64/Source/MultiProcessor.c
-/home/jk/os/MINT64/02.Kernel64/Source/MultiProcessor.h
-/home/jk/os/MINT64/02.Kernel64/Source/PIC.c
-/home/jk/os/MINT64/02.Kernel64/Source/PIC.h
-/home/jk/os/MINT64/02.Kernel64/Source/PIT.c
-/home/jk/os/MINT64/02.Kernel64/Source/PIT.h
-/home/jk/os/MINT64/02.Kernel64/Source/Queue.c
-/home/jk/os/MINT64/02.Kernel64/Source/Queue.h
-/home/jk/os/MINT64/02.Kernel64/Source/RAMDisk.c
-/home/jk/os/MINT64/02.Kernel64/Source/RAMDisk.h
-/home/jk/os/MINT64/02.Kernel64/Source/RTC.c
-/home/jk/os/MINT64/02.Kernel64/Source/RTC.h
-/home/jk/os/MINT64/02.Kernel64/Source/SerialPort.c
-/home/jk/os/MINT64/02.Kernel64/Source/SerialPort.h
-/home/jk/os/MINT64/02.Kernel64/Source/Synchronization.c
-/home/jk/os/MINT64/02.Kernel64/Source/Synchronization.h
-/home/jk/os/MINT64/02.Kernel64/Source/Task.c
-/home/jk/os/MINT64/02.Kernel64/Source/Task.h
-/home/jk/os/MINT64/02.Kernel64/Source/Types.h
-/home/jk/os/MINT64/02.Kernel64/Source/Utility.c
-/home/jk/os/MINT64/02.Kernel64/Source/Utility.h
-/home/jk/os/MINT64/02.Kernel64/Source/main.c
-/home/jk/os/MINT64/04.Utility/00.ImageMaker/ImageMaker.c
-/home/jk/os/MINT64/04.Utility/01.SerialTransfer/NetworkTransfer.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/AssemblyUtility.asm
-/home/jk/os/MINT64/save/02.Kernel64/Source/AssemblyUtility.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/CacheManager.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/CacheManager.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/Console.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/Console.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/ConsoleShell.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/ConsoleShell.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/Descriptor.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/Descriptor.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/DynamicMemory.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/DynamicMemory.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/EntryPoint.s
-/home/jk/os/MINT64/save/02.Kernel64/Source/FileSystem.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/FileSystem.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/HardDisk.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/HardDisk.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/ISR.asm
-/home/jk/os/MINT64/save/02.Kernel64/Source/ISR.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/InterruptHandler.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/InterruptHandler.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/Keyboard.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/Keyboard.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/List.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/List.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/LocalAPIC.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/LocalAPIC.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/MPConfigurationTable.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/MPConfigurationTable.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/MultiProcessor.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/MultiProcessor.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/PIC.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/PIC.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/PIT.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/PIT.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/Queue.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/Queue.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/RAMDisk.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/RAMDisk.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/RTC.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/RTC.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/SerialPort.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/SerialPort.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/Synchronization.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/Synchronization.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/Task.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/Task.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/Types.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/Utility.c
-/home/jk/os/MINT64/save/02.Kernel64/Source/Utility.h
-/home/jk/os/MINT64/save/02.Kernel64/Source/main.c
-/home/jk/os/MINT64/testdata.c
-/usr/cross/lib/gcc/x86_64-pc-linux/4.8.2/include/stdarg.h
+207
+8987
+/home/jkr555/os/MINT64/00.BootLoader/BootLoader.asm
+/home/jkr555/os/MINT64/00.BootLoader/BootLoader2.asm
+/home/jkr555/os/MINT64/01.Kernel32/Source/EntryPoint.s
+/home/jkr555/os/MINT64/01.Kernel32/Source/ModeSwitch.asm
+/home/jkr555/os/MINT64/01.Kernel32/Source/ModeSwitch.h
+/home/jkr555/os/MINT64/01.Kernel32/Source/Page.c
+/home/jkr555/os/MINT64/01.Kernel32/Source/Page.h
+/home/jkr555/os/MINT64/01.Kernel32/Source/Types.h
+/home/jkr555/os/MINT64/01.Kernel32/Source/main.c
+/home/jkr555/os/MINT64/01.Kernel32/VirtualOS.asm
+/home/jkr555/os/MINT64/02.Kernel64/Source/AssemblyUtility.asm
+/home/jkr555/os/MINT64/02.Kernel64/Source/AssemblyUtility.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/CacheManager.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/CacheManager.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/Console.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/Console.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/ConsoleShell.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/ConsoleShell.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/Descriptor.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/Descriptor.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/DynamicMemory.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/DynamicMemory.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/EntryPoint.s
+/home/jkr555/os/MINT64/02.Kernel64/Source/FileSystem.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/FileSystem.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/HardDisk.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/HardDisk.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/IOAPIC.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/IOAPIC.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/ISR.asm
+/home/jkr555/os/MINT64/02.Kernel64/Source/ISR.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/InterruptHandler.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/InterruptHandler.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/Keyboard.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/Keyboard.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/List.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/List.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/LocalAPIC.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/LocalAPIC.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/MPConfigurationTable.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/MPConfigurationTable.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/MultiProcessor.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/MultiProcessor.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/PIC.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/PIC.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/PIT.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/PIT.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/Queue.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/Queue.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/RAMDisk.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/RAMDisk.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/RTC.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/RTC.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/SerialPort.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/SerialPort.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/Synchronization.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/Synchronization.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/Task.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/Task.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/Types.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/Utility.c
+/home/jkr555/os/MINT64/02.Kernel64/Source/Utility.h
+/home/jkr555/os/MINT64/02.Kernel64/Source/main.c
+/home/jkr555/os/MINT64/04.Utility/00.ImageMaker/ImageMaker.c
+/home/jkr555/os/MINT64/04.Utility/01.SerialTransfer/NetworkTransfer.c
+/home/jkr555/os/MINT64/IOAPIC.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/AssemblyUtility.asm
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/AssemblyUtility.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/CacheManager.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/CacheManager.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/Console.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/Console.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/ConsoleShell.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/ConsoleShell.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/Descriptor.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/Descriptor.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/DynamicMemory.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/DynamicMemory.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/EntryPoint.s
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/FileSystem.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/FileSystem.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/HardDisk.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/HardDisk.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/ISR.asm
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/ISR.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/InterruptHandler.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/InterruptHandler.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/Keyboard.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/Keyboard.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/List.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/List.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/LocalAPIC.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/LocalAPIC.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/MPConfigurationTable.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/MPConfigurationTable.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/MultiProcessor.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/MultiProcessor.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/PIC.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/PIC.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/PIT.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/PIT.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/Queue.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/Queue.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/RAMDisk.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/RAMDisk.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/RTC.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/RTC.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/SerialPort.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/SerialPort.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/Synchronization.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/Synchronization.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/Task.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/Task.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/Types.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/Utility.c
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/Utility.h
+/home/jkr555/os/MINT64/save/02.Kernel64/Source/main.c
+/home/jkr555/os/MINT64/testdata.c
+/usr/cross/lib/gcc/x86_64-pc-linux/4.4.5/include/stdarg.h
 /usr/include/errno.h
 /usr/include/fcntl.h
 /usr/include/netinet/in.h
@@ -151892,6 +155476,7 @@ __END_DECLS
 /usr/include/sys/socket.h
 /usr/include/sys/stat.h
 /usr/include/sys/types.h
+IOAPIC.h
 /usr/include/alloca.h
 /usr/include/bits/byteswap.h
 /usr/include/bits/errno.h

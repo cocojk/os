@@ -1,7 +1,7 @@
 #ifndef __UTILITY_H__
 #define __UTILITY_H__
 
-#include "/usr/cross/lib/gcc/x86_64-pc-linux/4.8.2/include/stdarg.h"
+#include "/usr/cross/lib/gcc/x86_64-pc-linux/4.4.5/include/stdarg.h"
 #include "Types.h"
 
 // 매크로 
@@ -26,6 +26,8 @@ int kSPrintf(char* pcBuffer,const char* pcFormatString,...);
 int kVSPrintf(char* pcBuffer,const char* pcFormatString,va_list ap);
 QWORD kGetTickCount(void);
 void kSleep(QWORD qwMillisecond);
+inline void kMemSetWord(void* pvDestination,WORD wData,int iWordSize);
+
 
 // 변수
 extern volatile QWORD g_qwTickCount;

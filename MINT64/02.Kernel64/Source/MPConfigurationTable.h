@@ -196,10 +196,9 @@ typedef struct kMPConfigurationManagerStruct
 // 함수 
 BOOL kFindMPFloatingPointerAddress(QWORD* pstAddress);
 BOOL kAnalysisMPConfigurationTable(void);
-MPCONFIGURATIONMANAGER* kGetMPConfigurationManager(void);
+MPCONFIGURATIONMANAGER* kGetMPConfigurationManager(voic);
 void kPrintMPConfigurationTable(void);
 int kGetProcessorCount(void);
 IOAPICENTRY* kFindIOAPICEntryForISA(void);
-
 #endif /*__MPCONFIGURATIONTABLE__*/
 

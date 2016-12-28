@@ -20,8 +20,8 @@ START:
 
 	; 스택을 0x600000 ~ 0x6FFFFFF 영역에 1MB 크기로 생성 
 	mov ss, ax					; ss 세그먼트 셀렉터에 설정
-	mov rsp, 0x6FFFF8			; RSP 레지스터의 어드레스를 0x6FFFF8로 설정
-	mov rbp, 0x6FFFF8			; RBP 레지스터의 어드레스를 0x6FFFF8로 설정
+	mov rsp, 0x700000			; RSP 레지스터의 어드레스를 0x6FFFF8로 설정
+	mov rbp, 0x700000			; RBP 레지스터의 어드레스를 0x6FFFF8로 설정
 
 	; 부트 로더 영역의 Bootstrap Processor 플래그를 확인하여, Bootstrap Processor이면 
 	; 바로 main 함수로 이동 

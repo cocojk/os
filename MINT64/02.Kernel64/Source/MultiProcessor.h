@@ -5,7 +5,7 @@
 
 // 매크로 
 // MultiProcessor 관련 매크로 
-#define BOOTSTRAPPROCESSOR_FLAGADDRESS			0x7C09
+#define BOOTSTRAPPROCESSOR_FLAGADDESS			0x7C09
 // 지원 가능한 최대 프로세서 또는 코어의 개수 
 #define MAXPROCESSORCOUNT						16
 

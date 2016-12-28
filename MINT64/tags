@@ -34,10 +34,13 @@ APIC_DESTINATIONSHORTHAND_NOSHORTHAND	02.Kernel64/Source/LocalAPIC.h	47;"	d
 APIC_DESTINATIONSHORTHAND_NOSHORTHAND	save/02.Kernel64/Source/LocalAPIC.h	47;"	d
 APIC_DESTINATIONSHORTHAND_SELF	02.Kernel64/Source/LocalAPIC.h	48;"	d
 APIC_DESTINATIONSHORTHAND_SELF	save/02.Kernel64/Source/LocalAPIC.h	48;"	d
-APIC_LEVEL_ASSERT	02.Kernel64/Source/LocalAPIC.h	40;"	d
+APIC_INTERRUPT_MASK	02.Kernel64/Source/LocalAPIC.h	53;"	d
+APIC_LEVEL_ASSET	02.Kernel64/Source/LocalAPIC.h	40;"	d
 APIC_LEVEL_ASSET	save/02.Kernel64/Source/LocalAPIC.h	40;"	d
 APIC_LEVEL_DEASSERT	02.Kernel64/Source/LocalAPIC.h	39;"	d
 APIC_LEVEL_DEASSERT	save/02.Kernel64/Source/LocalAPIC.h	39;"	d
+APIC_POLARITY_ACTIVEHIGH	02.Kernel64/Source/LocalAPIC.h	61;"	d
+APIC_POLARITY_ACTIVELOW	02.Kernel64/Source/LocalAPIC.h	60;"	d
 APIC_REGISTER_APICID	02.Kernel64/Source/LocalAPIC.h	10;"	d
 APIC_REGISTER_APICID	save/02.Kernel64/Source/LocalAPIC.h	10;"	d
 APIC_REGISTER_EOI	02.Kernel64/Source/LocalAPIC.h	8;"	d
@@ -62,6 +65,8 @@ APIC_REGISTER_THERMALSENSOR	02.Kernel64/Source/LocalAPIC.h	13;"	d
 APIC_REGISTER_THERMALSENSOR	save/02.Kernel64/Source/LocalAPIC.h	13;"	d
 APIC_REGISTER_TIMER	02.Kernel64/Source/LocalAPIC.h	12;"	d
 APIC_REGISTER_TIMER	save/02.Kernel64/Source/LocalAPIC.h	12;"	d
+APIC_TIMERMODE_ONESHOT	02.Kernel64/Source/LocalAPIC.h	57;"	d
+APIC_TIMERMODE_PERIODIC	02.Kernel64/Source/LocalAPIC.h	56;"	d
 APIC_TRIGGERMODE_EDGE	02.Kernel64/Source/LocalAPIC.h	43;"	d
 APIC_TRIGGERMODE_EDGE	save/02.Kernel64/Source/LocalAPIC.h	43;"	d
 APIC_TRIGGERMODE_LEVEL	02.Kernel64/Source/LocalAPIC.h	44;"	d
@@ -79,9 +84,9 @@ BOOL	01.Kernel32/Source/Types.h	8;"	d
 BOOL	02.Kernel64/Source/Types.h	8;"	d
 BOOL	save/02.Kernel64/Source/Types.h	8;"	d
 BOOTSTRAPPROCESSOR	00.BootLoader/BootLoader.asm	/^BOOTSTRAPPROCESSOR:	db	0x01		; Bootstrap PRocessor인지 여부 $/;"	d
+BOOTSTRAPPROCESSOR_FLAGADDESS	02.Kernel64/Source/MultiProcessor.h	8;"	d
 BOOTSTRAPPROCESSOR_FLAGADDESS	save/02.Kernel64/Source/MultiProcessor.h	8;"	d
 BOOTSTRAPPROCESSOR_FLAGADDRESS	01.Kernel32/Source/main.c	12;"	d	file:
-BOOTSTRAPPROCESSOR_FLAGADDRESS	02.Kernel64/Source/MultiProcessor.h	8;"	d
 BUSENTRY	02.Kernel64/Source/MPConfigurationTable.h	/^} BUSENTRY;$/;"	t	typeref:struct:kBusEntryStruct
 BUSENTRY	save/02.Kernel64/Source/MPConfigurationTable.h	/^} BUSENTRY;$/;"	t	typeref:struct:kBusEntryStruct
 BYTE	01.Kernel32/Source/Types.h	4;"	d
@@ -200,13 +205,13 @@ DWORD	04.Utility/01.SerialTransfer/NetworkTransfer.c	13;"	d	file:
 DWORD	save/02.Kernel64/Source/Types.h	6;"	d
 DYNAMICMEMORY	02.Kernel64/Source/DynamicMemory.h	/^} DYNAMICMEMORY;$/;"	t	typeref:struct:kDynamicMemoryManagerStruct
 DYNAMICMEMORY	save/02.Kernel64/Source/DynamicMemory.h	/^} DYNAMICMEMORY;$/;"	t	typeref:struct:kDynamicMemoryManagerStruct
-DYNAMICMEMORY_EMPTY	02.Kernel64/Source/DynamicMemory.h	16;"	d
+DYNAMICMEMORY_EMPTY	02.Kernel64/Source/DynamicMemory.h	17;"	d
 DYNAMICMEMORY_EMPTY	save/02.Kernel64/Source/DynamicMemory.h	16;"	d
-DYNAMICMEMORY_EXIST	02.Kernel64/Source/DynamicMemory.h	15;"	d
+DYNAMICMEMORY_EXIST	02.Kernel64/Source/DynamicMemory.h	16;"	d
 DYNAMICMEMORY_EXIST	save/02.Kernel64/Source/DynamicMemory.h	15;"	d
-DYNAMICMEMORY_MIN_SIZE	02.Kernel64/Source/DynamicMemory.h	12;"	d
+DYNAMICMEMORY_MIN_SIZE	02.Kernel64/Source/DynamicMemory.h	13;"	d
 DYNAMICMEMORY_MIN_SIZE	save/02.Kernel64/Source/DynamicMemory.h	12;"	d
-DYNAMICMEMORY_START_ADDRESS	02.Kernel64/Source/DynamicMemory.h	8;"	d
+DYNAMICMEMORY_START_ADDRESS	02.Kernel64/Source/DynamicMemory.h	9;"	d
 DYNAMICMEMORY_START_ADDRESS	save/02.Kernel64/Source/DynamicMemory.h	8;"	d
 ENTRYPOINTOBJECTFILE	02.Kernel64/makefile	/^ENTRYPOINTOBJECTFILE = EntryPoint.o$/;"	m
 ENTRYPOINTOBJECTFILE	save/02.Kernel64/makefile	/^ENTRYPOINTOBJECTFILE = EntryPoint.o$/;"	m
@@ -315,11 +320,11 @@ GDT_TYPE_DATA	02.Kernel64/Source/Descriptor.h	13;"	d
 GDT_TYPE_DATA	save/02.Kernel64/Source/Descriptor.h	13;"	d
 GDT_TYPE_TSS	02.Kernel64/Source/Descriptor.h	14;"	d
 GDT_TYPE_TSS	save/02.Kernel64/Source/Descriptor.h	14;"	d
-GETPRIORITY	02.Kernel64/Source/Task.h	71;"	d
+GETPRIORITY	02.Kernel64/Source/Task.h	72;"	d
 GETPRIORITY	save/02.Kernel64/Source/Task.h	71;"	d
-GETTCBFROMTHREADLINK	02.Kernel64/Source/Task.h	76;"	d
+GETTCBFROMTHREADLINK	02.Kernel64/Source/Task.h	77;"	d
 GETTCBFROMTHREADLINK	save/02.Kernel64/Source/Task.h	76;"	d
-GETTCBOFFSET	02.Kernel64/Source/Task.h	73;"	d
+GETTCBOFFSET	02.Kernel64/Source/Task.h	74;"	d
 GETTCBOFFSET	save/02.Kernel64/Source/Task.h	73;"	d
 HANDLEDISKERROR	00.BootLoader/BootLoader.asm	/^HANDLEDISKERROR:$/;"	l
 HANDLEDISKERROR	00.BootLoader/BootLoader2.asm	/^HANDLEDISKERROR:$/;"	l
@@ -423,22 +428,25 @@ IDT_TYPE_TRAP	02.Kernel64/Source/Descriptor.h	60;"	d
 IDT_TYPE_TRAP	save/02.Kernel64/Source/Descriptor.h	60;"	d
 IMAGELOADINGMESSAGE	00.BootLoader/BootLoader.asm	/^IMAGELOADINGMESSAGE:	db 'OS Image Loading...',0$/;"	d
 IMAGELOADINGMESSAGE	00.BootLoader/BootLoader2.asm	/^IMAGELOADINGMESSAGE:	db 'OS Image Loading...',0$/;"	d
+INTERRUPTMANAGER	02.Kernel64/Source/InterruptHandler.h	/^} INTERRUPTMANAGER;$/;"	t	typeref:struct:kInterruptManagerStruct
+INTERRUPT_LOADBALANCINGDIVIDOR	02.Kernel64/Source/InterruptHandler.h	11;"	d
+INTERRUPT_MAXVECTORCOUNT	02.Kernel64/Source/InterruptHandler.h	9;"	d
 IOAPICENTRY	02.Kernel64/Source/MPConfigurationTable.h	/^} IOAPICENTRY;$/;"	t	typeref:struct:kIOAPICEntryStruct
 IOAPICENTRY	save/02.Kernel64/Source/MPConfigurationTable.h	/^} IOAPICENTRY;$/;"	t	typeref:struct:kIOAPICEntryStruct
 IOAPICMANAGER	02.Kernel64/Source/IOAPIC.h	/^} IOAPICMANAGER;$/;"	t	typeref:struct:kIOAPICManagerStruct
-IOAPIC_DELIVERYMODE_EXTINT	02.Kernel64/Source/IOAPIC.h	50;"	d
-IOAPIC_DELIVERYMODE_FIXED	02.Kernel64/Source/IOAPIC.h	45;"	d
-IOAPIC_DELIVERYMODE_INIT	02.Kernel64/Source/IOAPIC.h	49;"	d
-IOAPIC_DELIVERYMODE_LOWESTPRIORITY	02.Kernel64/Source/IOAPIC.h	46;"	d
-IOAPIC_DELIVERYMODE_NMI	02.Kernel64/Source/IOAPIC.h	48;"	d
-IOAPIC_DELIVERYMODE_SMI	02.Kernel64/Source/IOAPIC.h	47;"	d
-IOAPIC_DELIVERYSTATUS_IDLE	02.Kernel64/Source/IOAPIC.h	38;"	d
-IOAPIC_DELIVERYSTATUS_SENDPENDING	02.Kernel64/Source/IOAPIC.h	37;"	d
-IOAPIC_DESTINATIONMODE_LOGICALMODE	02.Kernel64/Source/IOAPIC.h	41;"	d
-IOAPIC_DESTINATIONMODE_PHYSICALMODE	02.Kernel64/Source/IOAPIC.h	42;"	d
+IOAPIC_DELIVERYMODE_EXTINT	02.Kernel64/Source/IOAPIC.h	51;"	d
+IOAPIC_DELIVERYMODE_FIXED	02.Kernel64/Source/IOAPIC.h	46;"	d
+IOAPIC_DELIVERYMODE_INIT	02.Kernel64/Source/IOAPIC.h	50;"	d
+IOAPIC_DELIVERYMODE_LOWESTPRIORITY	02.Kernel64/Source/IOAPIC.h	47;"	d
+IOAPIC_DELIVERYMODE_NMI	02.Kernel64/Source/IOAPIC.h	49;"	d
+IOAPIC_DELIVERYMODE_SMI	02.Kernel64/Source/IOAPIC.h	48;"	d
+IOAPIC_DELIVERYSTATUS_IDLE	02.Kernel64/Source/IOAPIC.h	39;"	d
+IOAPIC_DELIVERYSTATUS_SENDPENDING	02.Kernel64/Source/IOAPIC.h	38;"	d
+IOAPIC_DESTINATIONMODE_LOGICALMODE	02.Kernel64/Source/IOAPIC.h	42;"	d
+IOAPIC_DESTINATIONMODE_PHYSICALMODE	02.Kernel64/Source/IOAPIC.h	43;"	d
 IOAPIC_INTERRUPT_MASK	02.Kernel64/Source/IOAPIC.h	22;"	d
 IOAPIC_MAXIOREDIRECTIONTABLECOUNT	02.Kernel64/Source/IOAPIC.h	19;"	d
-IOAPIC_MAXIRQTOINTINMAPCOUNT	02.Kernel64/Source/IOAPIC.h	53;"	d
+IOAPIC_MAXIRQTOINTINMAPCOUNT	02.Kernel64/Source/IOAPIC.h	54;"	d
 IOAPIC_POLARITY_ACTIVEHIGH	02.Kernel64/Source/IOAPIC.h	34;"	d
 IOAPIC_POLARITY_ACTIVELOW	02.Kernel64/Source/IOAPIC.h	33;"	d
 IOAPIC_REGISTERINDEX_HIGHIOREDIRECTIONTABLE	02.Kernel64/Source/IOAPIC.h	16;"	d
@@ -454,7 +462,7 @@ IOAPIC_TRIGGERMODE_EDGE	02.Kernel64/Source/IOAPIC.h	26;"	d
 IOAPIC_TRIGGERMODE_LEVEL	02.Kernel64/Source/IOAPIC.h	25;"	d
 IOINTERRUPTASSIGNMENTENTRY	02.Kernel64/Source/MPConfigurationTable.h	/^} IOINTERRUPTASSIGNMENTENTRY;$/;"	t	typeref:struct:kIOInterruptAssignmentEntryStruct
 IOINTERRUPTASSIGNMENTENTRY	save/02.Kernel64/Source/MPConfigurationTable.h	/^} IOINTERRUPTASSIGNMENTENTRY;$/;"	t	typeref:struct:kIOInterruptAssignmentEntryStruct
-IOREDIRECTIONTABLE	02.Kernel64/Source/IOAPIC.h	/^} IOREDIRECTIONTABLE;$/;"	t	typeref:struct:kIORedirectionTableStruct
+IOREDIRECTIONTABLE	02.Kernel64/Source/IOAPIC.h	/^} IOREDIRECTIONTABLE;$/;"	t	typeref:struct:kIOREdirectionTableStrcut
 IST_SIZE	02.Kernel64/Source/Descriptor.h	88;"	d
 IST_SIZE	save/02.Kernel64/Source/Descriptor.h	88;"	d
 IST_STARTADDRESS	02.Kernel64/Source/Descriptor.h	86;"	d
@@ -466,91 +474,91 @@ KEYDATA	02.Kernel64/Source/Keyboard.h	/^} KEYDATA;$/;"	t	typeref:struct:kKeyData
 KEYDATA	save/02.Kernel64/Source/Keyboard.h	/^} KEYDATA;$/;"	t	typeref:struct:kKeyDataStruct
 KEYMAPPINGENTRY	02.Kernel64/Source/Keyboard.h	/^} KEYMAPPINGENTRY;$/;"	t	typeref:struct:kKeyMappingEntryStruct
 KEYMAPPINGENTRY	save/02.Kernel64/Source/Keyboard.h	/^} KEYMAPPINGENTRY;$/;"	t	typeref:struct:kKeyMappingEntryStruct
-KEY_BACKSPACE	02.Kernel64/Source/Keyboard.h	22;"	d
+KEY_BACKSPACE	02.Kernel64/Source/Keyboard.h	23;"	d
 KEY_BACKSPACE	save/02.Kernel64/Source/Keyboard.h	22;"	d
-KEY_CAPSLOCK	02.Kernel64/Source/Keyboard.h	29;"	d
+KEY_CAPSLOCK	02.Kernel64/Source/Keyboard.h	30;"	d
 KEY_CAPSLOCK	save/02.Kernel64/Source/Keyboard.h	29;"	d
-KEY_CENTER	02.Kernel64/Source/Keyboard.h	46;"	d
+KEY_CENTER	02.Kernel64/Source/Keyboard.h	47;"	d
 KEY_CENTER	save/02.Kernel64/Source/Keyboard.h	46;"	d
-KEY_CTRL	02.Kernel64/Source/Keyboard.h	24;"	d
+KEY_CTRL	02.Kernel64/Source/Keyboard.h	25;"	d
 KEY_CTRL	save/02.Kernel64/Source/Keyboard.h	24;"	d
-KEY_DEL	02.Kernel64/Source/Keyboard.h	52;"	d
+KEY_DEL	02.Kernel64/Source/Keyboard.h	53;"	d
 KEY_DEL	save/02.Kernel64/Source/Keyboard.h	52;"	d
-KEY_DOWN	02.Kernel64/Source/Keyboard.h	49;"	d
+KEY_DOWN	02.Kernel64/Source/Keyboard.h	50;"	d
 KEY_DOWN	save/02.Kernel64/Source/Keyboard.h	49;"	d
-KEY_END	02.Kernel64/Source/Keyboard.h	48;"	d
+KEY_END	02.Kernel64/Source/Keyboard.h	49;"	d
 KEY_END	save/02.Kernel64/Source/Keyboard.h	48;"	d
-KEY_ENTER	02.Kernel64/Source/Keyboard.h	19;"	d
+KEY_ENTER	02.Kernel64/Source/Keyboard.h	20;"	d
 KEY_ENTER	save/02.Kernel64/Source/Keyboard.h	19;"	d
-KEY_ESC	02.Kernel64/Source/Keyboard.h	21;"	d
+KEY_ESC	02.Kernel64/Source/Keyboard.h	22;"	d
 KEY_ESC	save/02.Kernel64/Source/Keyboard.h	21;"	d
-KEY_F1	02.Kernel64/Source/Keyboard.h	30;"	d
+KEY_F1	02.Kernel64/Source/Keyboard.h	31;"	d
 KEY_F1	save/02.Kernel64/Source/Keyboard.h	30;"	d
-KEY_F10	02.Kernel64/Source/Keyboard.h	39;"	d
+KEY_F10	02.Kernel64/Source/Keyboard.h	40;"	d
 KEY_F10	save/02.Kernel64/Source/Keyboard.h	39;"	d
-KEY_F11	02.Kernel64/Source/Keyboard.h	53;"	d
+KEY_F11	02.Kernel64/Source/Keyboard.h	54;"	d
 KEY_F11	save/02.Kernel64/Source/Keyboard.h	53;"	d
-KEY_F12	02.Kernel64/Source/Keyboard.h	54;"	d
+KEY_F12	02.Kernel64/Source/Keyboard.h	55;"	d
 KEY_F12	save/02.Kernel64/Source/Keyboard.h	54;"	d
-KEY_F2	02.Kernel64/Source/Keyboard.h	31;"	d
+KEY_F2	02.Kernel64/Source/Keyboard.h	32;"	d
 KEY_F2	save/02.Kernel64/Source/Keyboard.h	31;"	d
-KEY_F3	02.Kernel64/Source/Keyboard.h	32;"	d
+KEY_F3	02.Kernel64/Source/Keyboard.h	33;"	d
 KEY_F3	save/02.Kernel64/Source/Keyboard.h	32;"	d
-KEY_F4	02.Kernel64/Source/Keyboard.h	33;"	d
+KEY_F4	02.Kernel64/Source/Keyboard.h	34;"	d
 KEY_F4	save/02.Kernel64/Source/Keyboard.h	33;"	d
-KEY_F5	02.Kernel64/Source/Keyboard.h	34;"	d
+KEY_F5	02.Kernel64/Source/Keyboard.h	35;"	d
 KEY_F5	save/02.Kernel64/Source/Keyboard.h	34;"	d
-KEY_F6	02.Kernel64/Source/Keyboard.h	35;"	d
+KEY_F6	02.Kernel64/Source/Keyboard.h	36;"	d
 KEY_F6	save/02.Kernel64/Source/Keyboard.h	35;"	d
-KEY_F7	02.Kernel64/Source/Keyboard.h	36;"	d
+KEY_F7	02.Kernel64/Source/Keyboard.h	37;"	d
 KEY_F7	save/02.Kernel64/Source/Keyboard.h	36;"	d
-KEY_F8	02.Kernel64/Source/Keyboard.h	37;"	d
+KEY_F8	02.Kernel64/Source/Keyboard.h	38;"	d
 KEY_F8	save/02.Kernel64/Source/Keyboard.h	37;"	d
-KEY_F9	02.Kernel64/Source/Keyboard.h	38;"	d
+KEY_F9	02.Kernel64/Source/Keyboard.h	39;"	d
 KEY_F9	save/02.Kernel64/Source/Keyboard.h	38;"	d
-KEY_FLAGS_DOWN	02.Kernel64/Source/Keyboard.h	12;"	d
+KEY_FLAGS_DOWN	02.Kernel64/Source/Keyboard.h	13;"	d
 KEY_FLAGS_DOWN	save/02.Kernel64/Source/Keyboard.h	12;"	d
-KEY_FLAGS_EXTENDEDKEY	02.Kernel64/Source/Keyboard.h	13;"	d
+KEY_FLAGS_EXTENDEDKEY	02.Kernel64/Source/Keyboard.h	14;"	d
 KEY_FLAGS_EXTENDEDKEY	save/02.Kernel64/Source/Keyboard.h	13;"	d
-KEY_FLAGS_UP	02.Kernel64/Source/Keyboard.h	11;"	d
+KEY_FLAGS_UP	02.Kernel64/Source/Keyboard.h	12;"	d
 KEY_FLAGS_UP	save/02.Kernel64/Source/Keyboard.h	11;"	d
-KEY_HOME	02.Kernel64/Source/Keyboard.h	42;"	d
+KEY_HOME	02.Kernel64/Source/Keyboard.h	43;"	d
 KEY_HOME	save/02.Kernel64/Source/Keyboard.h	42;"	d
-KEY_INS	02.Kernel64/Source/Keyboard.h	51;"	d
+KEY_INS	02.Kernel64/Source/Keyboard.h	52;"	d
 KEY_INS	save/02.Kernel64/Source/Keyboard.h	51;"	d
-KEY_LALT	02.Kernel64/Source/Keyboard.h	28;"	d
+KEY_LALT	02.Kernel64/Source/Keyboard.h	29;"	d
 KEY_LALT	save/02.Kernel64/Source/Keyboard.h	28;"	d
-KEY_LEFT	02.Kernel64/Source/Keyboard.h	45;"	d
+KEY_LEFT	02.Kernel64/Source/Keyboard.h	46;"	d
 KEY_LEFT	save/02.Kernel64/Source/Keyboard.h	45;"	d
-KEY_LSHIFT	02.Kernel64/Source/Keyboard.h	25;"	d
+KEY_LSHIFT	02.Kernel64/Source/Keyboard.h	26;"	d
 KEY_LSHIFT	save/02.Kernel64/Source/Keyboard.h	25;"	d
-KEY_MAPPINGTABLEMAXCOUNT	02.Kernel64/Source/Keyboard.h	16;"	d
+KEY_MAPPINGTABLEMAXCOUNT	02.Kernel64/Source/Keyboard.h	17;"	d
 KEY_MAPPINGTABLEMAXCOUNT	save/02.Kernel64/Source/Keyboard.h	16;"	d
-KEY_MAXQUEUECOUNT	02.Kernel64/Source/Keyboard.h	58;"	d
+KEY_MAXQUEUECOUNT	02.Kernel64/Source/Keyboard.h	59;"	d
 KEY_MAXQUEUECOUNT	save/02.Kernel64/Source/Keyboard.h	58;"	d
-KEY_NONE	02.Kernel64/Source/Keyboard.h	18;"	d
+KEY_NONE	02.Kernel64/Source/Keyboard.h	19;"	d
 KEY_NONE	save/02.Kernel64/Source/Keyboard.h	18;"	d
-KEY_NUMLOCK	02.Kernel64/Source/Keyboard.h	40;"	d
+KEY_NUMLOCK	02.Kernel64/Source/Keyboard.h	41;"	d
 KEY_NUMLOCK	save/02.Kernel64/Source/Keyboard.h	40;"	d
-KEY_PAGEDOWN	02.Kernel64/Source/Keyboard.h	50;"	d
+KEY_PAGEDOWN	02.Kernel64/Source/Keyboard.h	51;"	d
 KEY_PAGEDOWN	save/02.Kernel64/Source/Keyboard.h	50;"	d
-KEY_PAGEUP	02.Kernel64/Source/Keyboard.h	44;"	d
+KEY_PAGEUP	02.Kernel64/Source/Keyboard.h	45;"	d
 KEY_PAGEUP	save/02.Kernel64/Source/Keyboard.h	44;"	d
-KEY_PAUSE	02.Kernel64/Source/Keyboard.h	55;"	d
+KEY_PAUSE	02.Kernel64/Source/Keyboard.h	56;"	d
 KEY_PAUSE	save/02.Kernel64/Source/Keyboard.h	55;"	d
-KEY_PRINTSCREEN	02.Kernel64/Source/Keyboard.h	27;"	d
+KEY_PRINTSCREEN	02.Kernel64/Source/Keyboard.h	28;"	d
 KEY_PRINTSCREEN	save/02.Kernel64/Source/Keyboard.h	27;"	d
-KEY_RIGHT	02.Kernel64/Source/Keyboard.h	47;"	d
+KEY_RIGHT	02.Kernel64/Source/Keyboard.h	48;"	d
 KEY_RIGHT	save/02.Kernel64/Source/Keyboard.h	47;"	d
-KEY_RSHIFT	02.Kernel64/Source/Keyboard.h	26;"	d
+KEY_RSHIFT	02.Kernel64/Source/Keyboard.h	27;"	d
 KEY_RSHIFT	save/02.Kernel64/Source/Keyboard.h	26;"	d
-KEY_SCROLLLOCK	02.Kernel64/Source/Keyboard.h	41;"	d
+KEY_SCROLLLOCK	02.Kernel64/Source/Keyboard.h	42;"	d
 KEY_SCROLLLOCK	save/02.Kernel64/Source/Keyboard.h	41;"	d
-KEY_SKIPCOUNTFORPAUSE	02.Kernel64/Source/Keyboard.h	8;"	d
+KEY_SKIPCOUNTFORPAUSE	02.Kernel64/Source/Keyboard.h	9;"	d
 KEY_SKIPCOUNTFORPAUSE	save/02.Kernel64/Source/Keyboard.h	8;"	d
-KEY_TAB	02.Kernel64/Source/Keyboard.h	20;"	d
+KEY_TAB	02.Kernel64/Source/Keyboard.h	21;"	d
 KEY_TAB	save/02.Kernel64/Source/Keyboard.h	20;"	d
-KEY_UP	02.Kernel64/Source/Keyboard.h	43;"	d
+KEY_UP	02.Kernel64/Source/Keyboard.h	44;"	d
 KEY_UP	save/02.Kernel64/Source/Keyboard.h	43;"	d
 LD32	01.Kernel32/makefile	/^LD32 = x86_64-pc-linux-ld -melf_i386 -T ..\/elf_i386.x -nostdlib -e main -Ttext 0x10200$/;"	m
 LD64	02.Kernel64/makefile	/^LD64 = x86_64-pc-linux-ld -melf_x86_64 -T ..\/elf_x86_64.x -nostdlib -e main -Ttext 0x200000$/;"	m
@@ -630,8 +638,6 @@ MSTOCOUNT	02.Kernel64/Source/PIT.h	8;"	d
 MSTOCOUNT	save/02.Kernel64/Source/PIT.h	8;"	d
 MUTEX	02.Kernel64/Source/Synchronization.h	/^} MUTEX;$/;"	t	typeref:struct:kMutextStruct
 MUTEX	save/02.Kernel64/Source/Synchronization.h	/^} MUTEX;$/;"	t	typeref:struct:kMutextStruct
-Main	02.Kernel64/Source/Main.c	/^void Main( void )$/;"	f
-MainForApplicationProcessor	02.Kernel64/Source/Main.c	/^void MainForApplicationProcessor( void )$/;"	f
 NASM32	01.Kernel32/makefile	/^NASM32 = nasm$/;"	m
 NASM64	02.Kernel64/makefile	/^NASM64 = nasm -f elf64 -g -F stabs$/;"	m
 NASM64	save/02.Kernel64/makefile	/^NASM64 = nasm -f elf64 -g -F stabs$/;"	m
@@ -880,13 +886,14 @@ SERIAL_PORT_INDEX_RECEIVERBUFFER	02.Kernel64/Source/SerialPort.h	16;"	d
 SERIAL_PORT_INDEX_RECEIVERBUFFER	save/02.Kernel64/Source/SerialPort.h	16;"	d
 SERIAL_PORT_INDEX_TRANSMITBUFFER	02.Kernel64/Source/SerialPort.h	17;"	d
 SERIAL_PORT_INDEX_TRANSMITBUFFER	save/02.Kernel64/Source/SerialPort.h	17;"	d
-SETPRIORITY	02.Kernel64/Source/Task.h	72;"	d
+SETPRIORITY	02.Kernel64/Source/Task.h	73;"	d
 SETPRIORITY	save/02.Kernel64/Source/Task.h	72;"	d
 SHELLCOMMANDENTRY	02.Kernel64/Source/ConsoleShell.h	/^} SHELLCOMMANDENTRY;$/;"	t	typeref:struct:kShellCommandEntrystruct
 SHELLCOMMANDENTRY	save/02.Kernel64/Source/ConsoleShell.h	/^} SHELLCOMMANDENTRY;$/;"	t	typeref:struct:kShellCommandEntrystruct
 SOURCEDIRECTORY	01.Kernel32/makefile	/^SOURCEDIRECTORY = Source$/;"	m
 SOURCEDIRECTORY	02.Kernel64/makefile	/^SOURCEDIRECTORY = Source$/;"	m
 SOURCEDIRECTORY	save/02.Kernel64/makefile	/^SOURCEDIRECTORY = Source$/;"	m
+SPINLOCK	02.Kernel64/Source/Synchronization.h	/^} SPINLOCK;$/;"	t	typeref:struct:kSpinLockStrcut
 START	00.BootLoader/BootLoader.asm	/^START:$/;"	l
 START	00.BootLoader/BootLoader2.asm	/^START:$/;"	l
 START	01.Kernel32/Source/EntryPoint.s	/^START:$/;"	l
@@ -894,93 +901,94 @@ START	01.Kernel32/VirtualOS.asm	/^START:$/;"	l
 START	02.Kernel64/Source/EntryPoint.s	/^START:$/;"	l
 START	save/02.Kernel64/Source/EntryPoint.s	/^START:$/;"	l
 SWITCHSUCCESSMESSAGE	01.Kernel32/Source/EntryPoint.s	/^SWITCHSUCCESSMESSAGE: db 'Switch To Protected Mode Success~!!', 0$/;"	d
-TASK_CSOFFSET	02.Kernel64/Source/Task.h	33;"	d
+TASK_CSOFFSET	02.Kernel64/Source/Task.h	34;"	d
 TASK_CSOFFSET	save/02.Kernel64/Source/Task.h	33;"	d
-TASK_DSOFFSET	02.Kernel64/Source/Task.h	16;"	d
+TASK_DSOFFSET	02.Kernel64/Source/Task.h	17;"	d
 TASK_DSOFFSET	save/02.Kernel64/Source/Task.h	16;"	d
-TASK_ESOFFSET	02.Kernel64/Source/Task.h	15;"	d
+TASK_ESOFFSET	02.Kernel64/Source/Task.h	16;"	d
 TASK_ESOFFSET	save/02.Kernel64/Source/Task.h	15;"	d
-TASK_FLAGS_ENDTASK	02.Kernel64/Source/Task.h	64;"	d
+TASK_FLAGS_ENDTASK	02.Kernel64/Source/Task.h	65;"	d
 TASK_FLAGS_ENDTASK	save/02.Kernel64/Source/Task.h	64;"	d
-TASK_FLAGS_HIGH	02.Kernel64/Source/Task.h	57;"	d
+TASK_FLAGS_HIGH	02.Kernel64/Source/Task.h	58;"	d
 TASK_FLAGS_HIGH	save/02.Kernel64/Source/Task.h	57;"	d
-TASK_FLAGS_HIGHEST	02.Kernel64/Source/Task.h	56;"	d
+TASK_FLAGS_HIGHEST	02.Kernel64/Source/Task.h	57;"	d
 TASK_FLAGS_HIGHEST	save/02.Kernel64/Source/Task.h	56;"	d
-TASK_FLAGS_IDLE	02.Kernel64/Source/Task.h	68;"	d
+TASK_FLAGS_IDLE	02.Kernel64/Source/Task.h	69;"	d
 TASK_FLAGS_IDLE	save/02.Kernel64/Source/Task.h	68;"	d
-TASK_FLAGS_LOW	02.Kernel64/Source/Task.h	59;"	d
+TASK_FLAGS_LOW	02.Kernel64/Source/Task.h	60;"	d
 TASK_FLAGS_LOW	save/02.Kernel64/Source/Task.h	59;"	d
-TASK_FLAGS_LOWEST	02.Kernel64/Source/Task.h	60;"	d
+TASK_FLAGS_LOWEST	02.Kernel64/Source/Task.h	61;"	d
 TASK_FLAGS_LOWEST	save/02.Kernel64/Source/Task.h	60;"	d
-TASK_FLAGS_MEDIUM	02.Kernel64/Source/Task.h	58;"	d
+TASK_FLAGS_MEDIUM	02.Kernel64/Source/Task.h	59;"	d
 TASK_FLAGS_MEDIUM	save/02.Kernel64/Source/Task.h	58;"	d
-TASK_FLAGS_PROCESS	02.Kernel64/Source/Task.h	66;"	d
+TASK_FLAGS_PROCESS	02.Kernel64/Source/Task.h	67;"	d
 TASK_FLAGS_PROCESS	save/02.Kernel64/Source/Task.h	66;"	d
-TASK_FLAGS_SYSTEM	02.Kernel64/Source/Task.h	65;"	d
+TASK_FLAGS_SYSTEM	02.Kernel64/Source/Task.h	66;"	d
 TASK_FLAGS_SYSTEM	save/02.Kernel64/Source/Task.h	65;"	d
-TASK_FLAGS_THREAD	02.Kernel64/Source/Task.h	67;"	d
+TASK_FLAGS_THREAD	02.Kernel64/Source/Task.h	68;"	d
 TASK_FLAGS_THREAD	save/02.Kernel64/Source/Task.h	67;"	d
-TASK_FLAGS_WAIT	02.Kernel64/Source/Task.h	61;"	d
+TASK_FLAGS_WAIT	02.Kernel64/Source/Task.h	62;"	d
 TASK_FLAGS_WAIT	save/02.Kernel64/Source/Task.h	61;"	d
-TASK_FSOFFSET	02.Kernel64/Source/Task.h	14;"	d
+TASK_FSOFFSET	02.Kernel64/Source/Task.h	15;"	d
 TASK_FSOFFSET	save/02.Kernel64/Source/Task.h	14;"	d
-TASK_GSOFFSET	02.Kernel64/Source/Task.h	13;"	d
+TASK_GSOFFSET	02.Kernel64/Source/Task.h	14;"	d
 TASK_GSOFFSET	save/02.Kernel64/Source/Task.h	13;"	d
-TASK_INVALIDID	02.Kernel64/Source/Task.h	47;"	d
+TASK_INVALIDID	02.Kernel64/Source/Task.h	48;"	d
 TASK_INVALIDID	save/02.Kernel64/Source/Task.h	47;"	d
-TASK_MAXCOUNT	02.Kernel64/Source/Task.h	40;"	d
+TASK_LOADBALANCINGID	02.Kernel64/Source/Task.h	81;"	d
+TASK_MAXCOUNT	02.Kernel64/Source/Task.h	41;"	d
 TASK_MAXCOUNT	save/02.Kernel64/Source/Task.h	40;"	d
-TASK_MAXREADYLISTCOUNT	02.Kernel64/Source/Task.h	53;"	d
+TASK_MAXREADYLISTCOUNT	02.Kernel64/Source/Task.h	54;"	d
 TASK_MAXREADYLISTCOUNT	save/02.Kernel64/Source/Task.h	53;"	d
-TASK_PROCESSORTIME	02.Kernel64/Source/Task.h	50;"	d
+TASK_PROCESSORTIME	02.Kernel64/Source/Task.h	51;"	d
 TASK_PROCESSORTIME	save/02.Kernel64/Source/Task.h	50;"	d
-TASK_R10OFFSET	02.Kernel64/Source/Task.h	22;"	d
+TASK_R10OFFSET	02.Kernel64/Source/Task.h	23;"	d
 TASK_R10OFFSET	save/02.Kernel64/Source/Task.h	22;"	d
-TASK_R11OFFSET	02.Kernel64/Source/Task.h	21;"	d
+TASK_R11OFFSET	02.Kernel64/Source/Task.h	22;"	d
 TASK_R11OFFSET	save/02.Kernel64/Source/Task.h	21;"	d
-TASK_R12OFFSET	02.Kernel64/Source/Task.h	20;"	d
+TASK_R12OFFSET	02.Kernel64/Source/Task.h	21;"	d
 TASK_R12OFFSET	save/02.Kernel64/Source/Task.h	20;"	d
-TASK_R13OFFSET	02.Kernel64/Source/Task.h	19;"	d
+TASK_R13OFFSET	02.Kernel64/Source/Task.h	20;"	d
 TASK_R13OFFSET	save/02.Kernel64/Source/Task.h	19;"	d
-TASK_R14OFFSET	02.Kernel64/Source/Task.h	18;"	d
+TASK_R14OFFSET	02.Kernel64/Source/Task.h	19;"	d
 TASK_R14OFFSET	save/02.Kernel64/Source/Task.h	18;"	d
-TASK_R15OFFSET	02.Kernel64/Source/Task.h	17;"	d
+TASK_R15OFFSET	02.Kernel64/Source/Task.h	18;"	d
 TASK_R15OFFSET	save/02.Kernel64/Source/Task.h	17;"	d
-TASK_R8OFFSET	02.Kernel64/Source/Task.h	24;"	d
+TASK_R8OFFSET	02.Kernel64/Source/Task.h	25;"	d
 TASK_R8OFFSET	save/02.Kernel64/Source/Task.h	24;"	d
-TASK_R9OFFSET	02.Kernel64/Source/Task.h	23;"	d
+TASK_R9OFFSET	02.Kernel64/Source/Task.h	24;"	d
 TASK_R9OFFSET	save/02.Kernel64/Source/Task.h	23;"	d
-TASK_RAXOFFSET	02.Kernel64/Source/Task.h	30;"	d
+TASK_RAXOFFSET	02.Kernel64/Source/Task.h	31;"	d
 TASK_RAXOFFSET	save/02.Kernel64/Source/Task.h	30;"	d
-TASK_RBPOFFSET	02.Kernel64/Source/Task.h	31;"	d
+TASK_RBPOFFSET	02.Kernel64/Source/Task.h	32;"	d
 TASK_RBPOFFSET	save/02.Kernel64/Source/Task.h	31;"	d
-TASK_RBXOFFSET	02.Kernel64/Source/Task.h	29;"	d
+TASK_RBXOFFSET	02.Kernel64/Source/Task.h	30;"	d
 TASK_RBXOFFSET	save/02.Kernel64/Source/Task.h	29;"	d
-TASK_RCXOFFSET	02.Kernel64/Source/Task.h	28;"	d
+TASK_RCXOFFSET	02.Kernel64/Source/Task.h	29;"	d
 TASK_RCXOFFSET	save/02.Kernel64/Source/Task.h	28;"	d
-TASK_RDIOFFSET	02.Kernel64/Source/Task.h	26;"	d
+TASK_RDIOFFSET	02.Kernel64/Source/Task.h	27;"	d
 TASK_RDIOFFSET	save/02.Kernel64/Source/Task.h	26;"	d
-TASK_RDXOFFSET	02.Kernel64/Source/Task.h	27;"	d
+TASK_RDXOFFSET	02.Kernel64/Source/Task.h	28;"	d
 TASK_RDXOFFSET	save/02.Kernel64/Source/Task.h	27;"	d
-TASK_REGISTERCOUNT	02.Kernel64/Source/Task.h	9;"	d
+TASK_REGISTERCOUNT	02.Kernel64/Source/Task.h	10;"	d
 TASK_REGISTERCOUNT	save/02.Kernel64/Source/Task.h	9;"	d
-TASK_REGISTERSIZE	02.Kernel64/Source/Task.h	10;"	d
+TASK_REGISTERSIZE	02.Kernel64/Source/Task.h	11;"	d
 TASK_REGISTERSIZE	save/02.Kernel64/Source/Task.h	10;"	d
-TASK_RFLAGSOFFSET	02.Kernel64/Source/Task.h	34;"	d
+TASK_RFLAGSOFFSET	02.Kernel64/Source/Task.h	35;"	d
 TASK_RFLAGSOFFSET	save/02.Kernel64/Source/Task.h	34;"	d
-TASK_RIPOFFSET	02.Kernel64/Source/Task.h	32;"	d
+TASK_RIPOFFSET	02.Kernel64/Source/Task.h	33;"	d
 TASK_RIPOFFSET	save/02.Kernel64/Source/Task.h	32;"	d
-TASK_RSIOFFSET	02.Kernel64/Source/Task.h	25;"	d
+TASK_RSIOFFSET	02.Kernel64/Source/Task.h	26;"	d
 TASK_RSIOFFSET	save/02.Kernel64/Source/Task.h	25;"	d
-TASK_RSPOFFSET	02.Kernel64/Source/Task.h	35;"	d
+TASK_RSPOFFSET	02.Kernel64/Source/Task.h	36;"	d
 TASK_RSPOFFSET	save/02.Kernel64/Source/Task.h	35;"	d
-TASK_SSOFFSET	02.Kernel64/Source/Task.h	36;"	d
+TASK_SSOFFSET	02.Kernel64/Source/Task.h	37;"	d
 TASK_SSOFFSET	save/02.Kernel64/Source/Task.h	36;"	d
-TASK_STACKPOOLADDRESS	02.Kernel64/Source/Task.h	43;"	d
+TASK_STACKPOOLADDRESS	02.Kernel64/Source/Task.h	44;"	d
 TASK_STACKPOOLADDRESS	save/02.Kernel64/Source/Task.h	43;"	d
-TASK_STACKSIZE	02.Kernel64/Source/Task.h	44;"	d
+TASK_STACKSIZE	02.Kernel64/Source/Task.h	45;"	d
 TASK_STACKSIZE	save/02.Kernel64/Source/Task.h	44;"	d
-TASK_TCBPOOLADDRESS	02.Kernel64/Source/Task.h	39;"	d
+TASK_TCBPOOLADDRESS	02.Kernel64/Source/Task.h	40;"	d
 TASK_TCBPOOLADDRESS	save/02.Kernel64/Source/Task.h	39;"	d
 TCB	02.Kernel64/Source/Task.h	/^} TCB;$/;"	t	typeref:struct:kTaskControlBlockStruct
 TCB	save/02.Kernel64/Source/Task.h	/^} TCB;$/;"	t	typeref:struct:kTaskControlBlockStruct
@@ -1070,8 +1078,11 @@ __UTILITY_H__	02.Kernel64/Source/Utility.h	2;"	d
 __UTILITY_H__	save/02.Kernel64/Source/Utility.h	2;"	d
 a	testdata.c	/^int a;$/;"	v
 b	testdata.c	/^int b =1;$/;"	v
+bAPICID	02.Kernel64/Source/Synchronization.h	/^	volatile BYTE bAPICID;$/;"	m	struct:kSpinLockStrcut
+bAPICID	02.Kernel64/Source/Task.h	/^	BYTE bAPICID;$/;"	m	struct:kTaskControlBlockStruct
 bASCIICode	02.Kernel64/Source/Keyboard.h	/^	BYTE bASCIICode;$/;"	m	struct:kKeyDataStruct
 bASCIICode	save/02.Kernel64/Source/Keyboard.h	/^	BYTE bASCIICode;$/;"	m	struct:kKeyDataStruct
+bAffinity	02.Kernel64/Source/Task.h	/^	BYTE bAffinity;$/;"	m	struct:kTaskControlBlockStruct
 bAttribute	01.Kernel32/Source/Types.h	/^	BYTE bAttribute;$/;"	m	struct:kCharactorStruct
 bAttribute	02.Kernel64/Source/Types.h	/^	BYTE bAttribute;$/;"	m	struct:kCharactorStruct
 bAttribute	save/02.Kernel64/Source/Types.h	/^	BYTE bAttribute;$/;"	m	struct:kCharactorStruct
@@ -1098,7 +1109,7 @@ bCheckSum	save/02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE bCheckSum;$/;"	
 bCheckSum	save/02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE bCheckSum;$/;"	m	struct:kMPFloatingPointerStruct
 bCombinedCode	02.Kernel64/Source/Keyboard.h	/^    BYTE bCombinedCode;$/;"	m	struct:kKeyMappingEntryStruct
 bCombinedCode	save/02.Kernel64/Source/Keyboard.h	/^    BYTE bCombinedCode;$/;"	m	struct:kKeyMappingEntryStruct
-bDestination	02.Kernel64/Source/IOAPIC.h	/^	BYTE bDestination;$/;"	m	struct:kIORedirectionTableStruct
+bDestination	02.Kernel64/Source/IOAPIC.h	/^	BYTE bDestination;$/;"	m	struct:kIOREdirectionTableStrcut
 bDestinationIOAPICID	02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE bDestinationIOAPICID;$/;"	m	struct:kIOInterruptAssignmentEntryStruct
 bDestinationIOAPICID	save/02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE bDestinationIOAPICID;$/;"	m	struct:kIOInterruptAssignmentEntryStruct
 bDestinationIOAPICINTIN	02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE bDestinationIOAPICINTIN;$/;"	m	struct:kIOInterruptAssignmentEntryStruct
@@ -1125,7 +1136,7 @@ bFPUUsed	02.Kernel64/Source/Task.h	/^	BOOL bFPUUsed;$/;"	m	struct:kTaskControlBl
 bFPUUsed	save/02.Kernel64/Source/Task.h	/^	BOOL bFPUUsed;$/;"	m	struct:kTaskControlBlockStruct
 bFlags	02.Kernel64/Source/Keyboard.h	/^	BYTE bFlags;$/;"	m	struct:kKeyDataStruct
 bFlags	save/02.Kernel64/Source/Keyboard.h	/^	BYTE bFlags;$/;"	m	struct:kKeyDataStruct
-bFlagsAndDeliveryMode	02.Kernel64/Source/IOAPIC.h	/^	BYTE bFlagsAndDeliveryMode;$/;"	m	struct:kIORedirectionTableStruct
+bFlagsAndDeliveryMode	02.Kernel64/Source/IOAPIC.h	/^	BYTE bFlagsAndDeliveryMode;$/;"	m	struct:kIOREdirectionTableStrcut
 bHDDDetected	02.Kernel64/Source/HardDisk.h	/^	BOOL bHDDDetected;$/;"	m	struct:kHDDManagerStruct
 bHDDDetected	save/02.Kernel64/Source/HardDisk.h	/^	BOOL bHDDDetected;$/;"	m	struct:kHDDManagerStruct
 bIOAPICFlags	02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE bIOAPICFlags;$/;"	m	struct:kIOAPICEntryStruct
@@ -1138,7 +1149,8 @@ bISABusID	02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE bISABusID;$/;"	m	str
 bISABusID	save/02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE bISABusID;$/;"	m	struct:kMPConfigurationManagerStruct
 bIST	02.Kernel64/Source/Descriptor.h	/^	BYTE bIST;$/;"	m	struct:kIDTEntryStruct
 bIST	save/02.Kernel64/Source/Descriptor.h	/^	BYTE bIST;$/;"	m	struct:kIDTEntryStruct
-bInterruptMask	02.Kernel64/Source/IOAPIC.h	/^	BYTE bInterruptMask;$/;"	m	struct:kIORedirectionTableStruct
+bInterruptFlag	02.Kernel64/Source/Synchronization.h	/^	volatile BOOL bInterruptFlag;$/;"	m	struct:kSpinLockStrcut
+bInterruptMask	02.Kernel64/Source/IOAPIC.h	/^	BYTE bInterruptMask;$/;"	m	struct:kIOREdirectionTableStrcut
 bInterruptType	02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE bInterruptType;$/;"	m	struct:kIOInterruptAssignmentEntryStruct
 bInterruptType	02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE bInterruptType;$/;"	m	struct:kLocalInterruptEntryStruct
 bInterruptType	save/02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE bInterruptType;$/;"	m	struct:kIOInterruptAssignmentEntryStruct
@@ -1152,6 +1164,7 @@ bLocalAPICID	save/02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE bLocalAPICID
 bLocalAPICVersion	02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE bLocalAPICVersion;$/;"	m	struct:kProcessorEntryStruct
 bLocalAPICVersion	save/02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE bLocalAPICVersion;$/;"	m	struct:kProcessorEntryStruct
 bLockFlag	02.Kernel64/Source/Synchronization.h	/^	volatile BOOL bLockFlag;$/;"	m	struct:kMutextStruct
+bLockFlag	02.Kernel64/Source/Synchronization.h	/^	volatile BOOL bLockFlag;$/;"	m	struct:kSpinLockStrcut
 bLockFlag	save/02.Kernel64/Source/Synchronization.h	/^	volatile BOOL bLockFlag;$/;"	m	struct:kMutextStruct
 bMiddleBaseAddress1	02.Kernel64/Source/Descriptor.h	/^	BYTE bMiddleBaseAddress1;$/;"	m	struct:kGDTEntry16struct
 bMiddleBaseAddress1	save/02.Kernel64/Source/Descriptor.h	/^	BYTE bMiddleBaseAddress1;$/;"	m	struct:kGDTEntry16struct
@@ -1189,6 +1202,7 @@ bSourceBUSIRQ	02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE bSourceBUSIRQ;$/
 bSourceBUSIRQ	02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE bSourceBUSIRQ;$/;"	m	struct:kLocalInterruptEntryStruct
 bSourceBUSIRQ	save/02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE bSourceBUSIRQ;$/;"	m	struct:kIOInterruptAssignmentEntryStruct
 bSourceBUSIRQ	save/02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE bSourceBUSIRQ;$/;"	m	struct:kLocalInterruptEntryStruct
+bSymmetricIOMode	02.Kernel64/Source/InterruptHandler.h	/^	BOOL bSymmetricIOMode;$/;"	m	struct:kInterruptManagerStruct
 bType	02.Kernel64/Source/FileSystem.h	/^	BYTE bType;$/;"	m	struct:kFileDirectoryHandleStruct
 bType	save/02.Kernel64/Source/FileSystem.h	/^	BYTE bType;$/;"	m	struct:kFileDirectoryHandleStruct
 bTypeAndFlags	02.Kernel64/Source/Descriptor.h	/^	BYTE bTypeAndFlags;$/;"	m	struct:kIDTEntryStruct
@@ -1205,9 +1219,12 @@ bUpperLimitAndUpperFlag	02.Kernel64/Source/Descriptor.h	/^	BYTE bUpperLimitAndUp
 bUpperLimitAndUpperFlag	02.Kernel64/Source/Descriptor.h	/^	BYTE bUpperLimitAndUpperFlag;$/;"	m	struct:kGDTEntry8Struct
 bUpperLimitAndUpperFlag	save/02.Kernel64/Source/Descriptor.h	/^	BYTE bUpperLimitAndUpperFlag;$/;"	m	struct:kGDTEntry16struct
 bUpperLimitAndUpperFlag	save/02.Kernel64/Source/Descriptor.h	/^	BYTE bUpperLimitAndUpperFlag;$/;"	m	struct:kGDTEntry8Struct
+bUseLoadBalancing	02.Kernel64/Source/InterruptHandler.h	/^	BOOL bUseLoadBalancing;$/;"	m	struct:kInterruptManagerStruct
+bUseLoadBalancing	02.Kernel64/Source/Task.h	/^	BOOL bUseLoadBalancing;$/;"	m	struct:kSchedulerStruct
 bUsePICMode	02.Kernel64/Source/MPConfigurationTable.h	/^	BOOL bUsePICMode;$/;"	m	struct:kMPConfigurationManagerStruct
 bUsePICMode	save/02.Kernel64/Source/MPConfigurationTable.h	/^	BOOL bUsePICMode;$/;"	m	struct:kMPConfigurationManagerStruct
-bVector	02.Kernel64/Source/IOAPIC.h	/^	BYTE bVector;$/;"	m	struct:kIORedirectionTableStruct
+bVector	02.Kernel64/Source/IOAPIC.h	/^	BYTE bVector;$/;"	m	struct:kIOREdirectionTableStrcut
+bvPadding	02.Kernel64/Source/Synchronization.h	/^	BYTE bvPadding[1];$/;"	m	struct:kSpinLockStrcut
 c	testdata.c	/^int c;$/;"	v
 closedir	02.Kernel64/Source/FileSystem.h	54;"	d
 closedir	save/02.Kernel64/Source/FileSystem.h	54;"	d
@@ -1245,6 +1262,7 @@ dwFileSize	save/02.Kernel64/Source/FileSystem.h	/^	DWORD dwFileSize;$/;"	m	struc
 dwLastAllocatedclusterLinkSectorOffset	02.Kernel64/Source/FileSystem.h	/^	DWORD dwLastAllocatedclusterLinkSectorOffset;$/;"	m	struct:kFileSystemManagerStruct
 dwLastAllocatedclusterLinkSectorOffset	save/02.Kernel64/Source/FileSystem.h	/^	DWORD dwLastAllocatedclusterLinkSectorOffset;$/;"	m	struct:kFileSystemManagerStruct
 dwLockCount	02.Kernel64/Source/Synchronization.h	/^	volatile DWORD dwLockCount;$/;"	m	struct:kMutextStruct
+dwLockCount	02.Kernel64/Source/Synchronization.h	/^	volatile DWORD dwLockCount;$/;"	m	struct:kSpinLockStrcut
 dwLockCount	save/02.Kernel64/Source/Synchronization.h	/^	volatile DWORD dwLockCount;$/;"	m	struct:kMutextStruct
 dwMPConfigurationTableAddress	02.Kernel64/Source/MPConfigurationTable.h	/^	DWORD dwMPConfigurationTableAddress;$/;"	m	struct:kMPFloatingPointerStruct
 dwMPConfigurationTableAddress	save/02.Kernel64/Source/MPConfigurationTable.h	/^	DWORD dwMPConfigurationTableAddress;$/;"	m	struct:kMPFloatingPointerStruct
@@ -1331,7 +1349,7 @@ global	02.Kernel64/Source/AssemblyUtility.asm	/^global kInPortByte, kOutPortByte
 global	02.Kernel64/Source/AssemblyUtility.asm	/^global kInitializeFPU, kSaveFPUContext, kLoadFPUContext, kSetTS, kClearTS$/;"	l
 global	02.Kernel64/Source/AssemblyUtility.asm	/^global kLoadGDTR,kLoadTR,kLoadIDTR$/;"	l
 global	02.Kernel64/Source/AssemblyUtility.asm	/^global kReadTSC$/;"	l
-global	02.Kernel64/Source/AssemblyUtility.asm	/^global kSwitchContext, kHlt, kTestAndSet$/;"	l
+global	02.Kernel64/Source/AssemblyUtility.asm	/^global kSwitchContext, kHlt, kTestAndSet, kPause$/;"	l
 global	02.Kernel64/Source/ISR.asm	/^global kISRBoundRangeExceeded, kISRInvalidOpcode, kISRDeviceNotAvailable, kISRDoubleFault,$/;"	l
 global	02.Kernel64/Source/ISR.asm	/^global kISRCoprocessorSegmentOverrun, kISRInvalidTSS, kISRSegmentNotPresent$/;"	l
 global	02.Kernel64/Source/ISR.asm	/^global kISRDivideError, kISRDebug, kISRNMI, kISRBreakPoint, kISROverflow$/;"	l
@@ -1378,17 +1396,17 @@ gs_stFileSystemManager	save/02.Kernel64/Source/FileSystem.c	/^static FILESYSTEMM
 gs_stHDDManager	02.Kernel64/Source/HardDisk.c	/^static HDDMANAGER gs_stHDDManager;$/;"	v	file:
 gs_stHDDManager	save/02.Kernel64/Source/HardDisk.c	/^static HDDMANAGER gs_stHDDManager;$/;"	v	file:
 gs_stIOAPICManager	02.Kernel64/Source/IOAPIC.c	/^static IOAPICMANAGER gs_stIOAPICManager;$/;"	v	file:
+gs_stInterruptManager	02.Kernel64/Source/InterruptHandler.c	/^static INTERRUPTMANAGER gs_stInterruptManager;$/;"	v	file:
 gs_stKeyQueue	02.Kernel64/Source/Keyboard.c	/^static QUEUE gs_stKeyQueue;$/;"	v	file:
 gs_stKeyQueue	save/02.Kernel64/Source/Keyboard.c	/^static QUEUE gs_stKeyQueue;$/;"	v	file:
 gs_stKeyboardManager	02.Kernel64/Source/Keyboard.c	/^static KEYBOARDMANAGER gs_stKeyboardManager={0,};$/;"	v	file:
 gs_stKeyboardManager	save/02.Kernel64/Source/Keyboard.c	/^static KEYBOARDMANAGER gs_stKeyboardManager={0,};$/;"	v	file:
-gs_stMPConfigurationManager	02.Kernel64/Source/MPConfigurationTable.c	/^static MPCONFIGURATIONMANAGER gs_stMPConfigurationManager = {0,};$/;"	v	file:
+gs_stMPConfigurationManager	02.Kernel64/Source/MPConfigurationTable.c	/^static MPCONFIGURATIONMANAGER gs_stMPConfigurationManager;$/;"	v	file:
 gs_stMPConfigurationManager	save/02.Kernel64/Source/MPConfigurationTable.c	/^static MPCONFIGURATIONMANAGER gs_stMPConfigurationManager = {0,};$/;"	v	file:
 gs_stMutex	02.Kernel64/Source/ConsoleShell.c	/^static MUTEX gs_stMutex;$/;"	v	file:
 gs_stMutex	save/02.Kernel64/Source/ConsoleShell.c	/^static MUTEX gs_stMutex;$/;"	v	file:
 gs_stRDDManager	02.Kernel64/Source/RAMDisk.c	/^static RDDMANAGER gs_stRDDManager;$/;"	v	file:
 gs_stRDDManager	save/02.Kernel64/Source/RAMDisk.c	/^static RDDMANAGER gs_stRDDManager;$/;"	v	file:
-gs_stScheduler	02.Kernel64/Source/Task.c	/^static SCHEDULER gs_stScheduler;$/;"	v	file:
 gs_stScheduler	save/02.Kernel64/Source/Task.c	/^static SCHEDULER gs_stScheduler;$/;"	v	file:
 gs_stSerialManager	02.Kernel64/Source/SerialPort.c	/^static SERIALMANAGER gs_stSerialManager;$/;"	v	file:
 gs_stSerialManager	save/02.Kernel64/Source/SerialPort.c	/^static SERIALMANAGER gs_stSerialManager;$/;"	v	file:
@@ -1402,6 +1420,7 @@ gs_vstKeyMappingTable	02.Kernel64/Source/Keyboard.c	/^static KEYMAPPINGENTRY gs_
 gs_vstKeyMappingTable	save/02.Kernel64/Source/Keyboard.c	/^static KEYMAPPINGENTRY gs_vstKeyMappingTable[KEY_MAPPINGTABLEMAXCOUNT]=$/;"	v	file:
 gs_vstKeyQueueBuffer	02.Kernel64/Source/Keyboard.c	/^static KEYDATA gs_vstKeyQueueBuffer[KEY_MAXQUEUECOUNT];$/;"	v	file:
 gs_vstKeyQueueBuffer	save/02.Kernel64/Source/Keyboard.c	/^static KEYDATA gs_vstKeyQueueBuffer[KEY_MAXQUEUECOUNT];$/;"	v	file:
+gs_vstScheduler	02.Kernel64/Source/Task.c	/^static SCHEDULER gs_vstScheduler[MAXPROCESSORCOUNT];$/;"	v	file:
 iAllocatedCount	02.Kernel64/Source/Task.h	/^	int iAllocatedCount;$/;"	m	struct:kTCBPoolManagerStruct
 iAllocatedCount	save/02.Kernel64/Source/Task.h	/^	int iAllocatedCount;$/;"	m	struct:kTCBPoolManagerStruct
 iBlockCountOfSmallestBlock	02.Kernel64/Source/DynamicMemory.h	/^	int iBlockCountOfSmallestBlock;$/;"	m	struct:kDynamicMemoryManagerStruct
@@ -1449,8 +1468,9 @@ kAddListToHeader	02.Kernel64/Source/List.c	/^void kAddListToHeader(LIST* pstList
 kAddListToHeader	save/02.Kernel64/Source/List.c	/^void kAddListToHeader(LIST* pstList,void* pvItem)$/;"	f
 kAddListToTail	02.Kernel64/Source/List.c	/^void kAddListToTail(LIST* pstList,void* pvItem)$/;"	f
 kAddListToTail	save/02.Kernel64/Source/List.c	/^void kAddListToTail(LIST* pstList,void* pvItem)$/;"	f
-kAddTaskToReadyList	02.Kernel64/Source/Task.c	/^static BOOL kAddTaskToReadyList(TCB* pstTask)$/;"	f	file:
+kAddTaskToReadyList	02.Kernel64/Source/Task.c	/^static BOOL kAddTaskToReadyList(BYTE bAPICID,TCB* pstTask)$/;"	f	file:
 kAddTaskToReadyList	save/02.Kernel64/Source/Task.c	/^static BOOL kAddTaskToReadyList(TCB* pstTask)$/;"	f	file:
+kAddTaskToSchedulerWithLoadBalancing	02.Kernel64/Source/Task.c	/^void kAddTaskToSchedulerWithLoadBalancing(TCB* pstTask)$/;"	f
 kAllocateCacheBuffer	02.Kernel64/Source/CacheManager.c	/^CACHEBUFFER* kAllocateCacheBuffer(int iCacheTableIndex)$/;"	f
 kAllocateCacheBuffer	save/02.Kernel64/Source/CacheManager.c	/^CACHEBUFFER* kAllocateCacheBuffer(int iCacheTableIndex)$/;"	f
 kAllocateCacheBufferWithFlush	02.Kernel64/Source/FileSystem.c	/^static CACHEBUFFER* kAllocateCacheBufferWithFlush(int iCacheTableIndex)$/;"	f	file:
@@ -1483,6 +1503,8 @@ kChangeKeyboardLED	02.Kernel64/Source/Keyboard.c	/^BOOL kChangeKeyboardLED(BOOL 
 kChangeKeyboardLED	save/02.Kernel64/Source/Keyboard.c	/^BOOL kChangeKeyboardLED(BOOL bCapsLockOn,BOOL bNumLockOn,BOOL bScrollLockOn)$/;"	f
 kChangePriority	02.Kernel64/Source/Task.c	/^BOOL kChangePriority(QWORD qwTaskID,BYTE bPriority)$/;"	f
 kChangePriority	save/02.Kernel64/Source/Task.c	/^BOOL kChangePriority(QWORD qwTaskID,BYTE bPriority)$/;"	f
+kChangeProcessorAffinity	02.Kernel64/Source/Task.c	/^BOOL kChangeProcessorAffinity(QWORD qwTaskID,BYTE bAffinity)$/;"	f
+kChangeTaskAffinity	02.Kernel64/Source/ConsoleShell.c	/^static void kChangeTaskAffinity(const char* pcParameterBuffer)$/;"	f	file:
 kChangeTaskPriority	02.Kernel64/Source/ConsoleShell.c	/^static void kChangeTaskPriority(const char* pcParameterBuffer)$/;"	f	file:
 kChangeTaskPriority	save/02.Kernel64/Source/ConsoleShell.c	/^static void kChangeTaskPriority(const char* pcParameterBuffer)$/;"	f	file:
 kCharactorStruct	01.Kernel32/Source/Types.h	/^typedef struct kCharactorStruct$/;"	s
@@ -1523,7 +1545,7 @@ kCreateFile	02.Kernel64/Source/FileSystem.c	/^static BOOL kCreateFile(const char
 kCreateFile	save/02.Kernel64/Source/FileSystem.c	/^static BOOL kCreateFile(const char* pcFileName,DIRECTORYENTRY* pstEntry,int* piDirectoryEntryIndex)$/;"	f	file:
 kCreateFileInRootDirectory	02.Kernel64/Source/ConsoleShell.c	/^static void kCreateFileInRootDirectory(const char* pcParameterBuffer)$/;"	f	file:
 kCreateFileInRootDirectory	save/02.Kernel64/Source/ConsoleShell.c	/^static void kCreateFileInRootDirectory(const char* pcParameterBuffer)$/;"	f	file:
-kCreateTask	02.Kernel64/Source/Task.c	/^TCB* kCreateTask(QWORD qwFlags,void* pvMemoryAddress,QWORD qwMemorySize,QWORD qwEntryPointAddress)$/;"	f
+kCreateTask	02.Kernel64/Source/Task.c	/^TCB* kCreateTask(QWORD qwFlags,void* pvMemoryAddress,QWORD qwMemorySize,QWORD qwEntryPointAddress,BYTE bAffinity)$/;"	f
 kCreateTask	save/02.Kernel64/Source/Task.c	/^TCB* kCreateTask(QWORD qwFlags,void* pvMemoryAddress,QWORD qwMemorySize,QWORD qwEntryPointAddress)$/;"	f
 kCreateTestTask	02.Kernel64/Source/ConsoleShell.c	/^static void kCreateTestTask(const char* pcParameterBuffer)$/;"	f	file:
 kCreateTestTask	save/02.Kernel64/Source/ConsoleShell.c	/^static void kCreateTestTask(const char* pcParameterBuffer)$/;"	f	file:
@@ -1535,7 +1557,7 @@ kDecimalStringToLong	02.Kernel64/Source/Utility.c	/^long kDecimalStringToLong(co
 kDecimalStringToLong	save/02.Kernel64/Source/Utility.c	/^long kDecimalStringToLong(const char* pcBuffer)$/;"	f
 kDecimalTostring	02.Kernel64/Source/Utility.c	/^int kDecimalTostring(long lValue,char* pcBuffer)$/;"	f
 kDecimalTostring	save/02.Kernel64/Source/Utility.c	/^int kDecimalTostring(long lValue,char* pcBuffer)$/;"	f
-kDecreaseProcessorTime	02.Kernel64/Source/Task.c	/^void kDecreaseProcessorTime(void)$/;"	f
+kDecreaseProcessorTime	02.Kernel64/Source/Task.c	/^void kDecreaseProcessorTime(BYTE bAPICID)$/;"	f
 kDecreaseProcessorTime	save/02.Kernel64/Source/Task.c	/^void kDecreaseProcessorTime(void)$/;"	f
 kDeleteFileInRootDirectory	02.Kernel64/Source/ConsoleShell.c	/^static void kDeleteFileInRootDirectory(const char* pcParameterBuffer)$/;"	f	file:
 kDeleteFileInRootDirectory	save/02.Kernel64/Source/ConsoleShell.c	/^static void kDeleteFileInRootDirectory(const char* pcParameterBuffer)$/;"	f	file:
@@ -1587,10 +1609,13 @@ kFindFreeCluster	02.Kernel64/Source/FileSystem.c	/^static DWORD kFindFreeCluster
 kFindFreeCluster	save/02.Kernel64/Source/FileSystem.c	/^static DWORD kFindFreeCluster(void)$/;"	f	file:
 kFindFreeDirectoryEntry	02.Kernel64/Source/FileSystem.c	/^static int kFindFreeDirectoryEntry(void)$/;"	f	file:
 kFindFreeDirectoryEntry	save/02.Kernel64/Source/FileSystem.c	/^static int kFindFreeDirectoryEntry(void)$/;"	f	file:
+kFindIOAPICEntryForISA	02.Kernel64/Source/MPConfigurationTable.c	/^IOAPICENTRY* kFindIOAPICEntryForISA( void )$/;"	f
 kFindList	02.Kernel64/Source/List.c	/^void* kFindList(const LIST* pstList,QWORD qwID)$/;"	f
 kFindList	save/02.Kernel64/Source/List.c	/^void* kFindList(const LIST* pstList,QWORD qwID)$/;"	f
 kFindMPFloatingPointerAddress	02.Kernel64/Source/MPConfigurationTable.c	/^BOOL kFindMPFloatingPointerAddress(QWORD* pstAddress)$/;"	f
 kFindMPFloatingPointerAddress	save/02.Kernel64/Source/MPConfigurationTable.c	/^BOOL kFindMPFloatingPointerAddress(QWORD* pstAddress)$/;"	f
+kFindSchedulerOfMinimumTaskCount	02.Kernel64/Source/Task.c	/^static BYTE kFindSchedulerOfMinimumTaskCount(const TCB* pstTask)$/;"	f	file:
+kFindSchedulerOfTaskAndLock	02.Kernel64/Source/Task.c	/^static BOOL kFindSchedulerOfTaskAndLock(QWORD qwTaskID,BYTE* pbAPICID)$/;"	f	file:
 kFlushCache	02.Kernel64/Source/ConsoleShell.c	/^static void kFlushCache(const char* pcParameterBuffer)$/;"	f	file:
 kFlushCache	save/02.Kernel64/Source/ConsoleShell.c	/^static void kFlushCache(const char* pcParameterBuffer)$/;"	f	file:
 kFlushFileSystemCache	02.Kernel64/Source/FileSystem.c	/^BOOL kFlushFileSystemCache(void)$/;"	f
@@ -1644,11 +1669,11 @@ kGetHDDInformation	save/02.Kernel64/Source/FileSystem.c	/^BOOL kGetHDDInformatio
 kGetHeaderFromList	02.Kernel64/Source/List.c	/^void* kGetHeaderFromList(const LIST* pstList)$/;"	f
 kGetHeaderFromList	save/02.Kernel64/Source/List.c	/^void* kGetHeaderFromList(const LIST* pstList)$/;"	f
 kGetIOAPICBaseAddressOfISA	02.Kernel64/Source/IOAPIC.c	/^QWORD kGetIOAPICBaseAddressOfISA(void)$/;"	f
+kGetInterruptManager	02.Kernel64/Source/InterruptHandler.c	/^INTERRUPTMANAGER* kGetInterruptManager(void)$/;"	f
 kGetKeyFromKeyQueue	02.Kernel64/Source/Keyboard.c	/^BOOL kGetKeyFromKeyQueue(KEYDATA* pstData)$/;"	f
 kGetKeyFromKeyQueue	save/02.Kernel64/Source/Keyboard.c	/^BOOL kGetKeyFromKeyQueue(KEYDATA* pstData)$/;"	f
 kGetKeyboardScanCode	02.Kernel64/Source/Keyboard.c	/^BYTE kGetKeyboardScanCode(void)$/;"	f
 kGetKeyboardScanCode	save/02.Kernel64/Source/Keyboard.c	/^BYTE kGetKeyboardScanCode(void)$/;"	f
-kGetLastFPUUsedTaskID	02.Kernel64/Source/Task.c	/^QWORD kGetLastFPUUsedTaskID(void)$/;"	f
 kGetLastFPUUsedTaskID	save/02.Kernel64/Source/Task.c	/^QWORD kGetLastFPUUsedTaskID(void)$/;"	f
 kGetListCount	02.Kernel64/Source/List.c	/^int kGetListCount(const LIST* pstList)$/;"	f
 kGetListCount	save/02.Kernel64/Source/List.c	/^int kGetListCount(const LIST* pstList)$/;"	f
@@ -1660,7 +1685,7 @@ kGetNextFromList	02.Kernel64/Source/List.c	/^void* kGetNextFromList(const LIST* 
 kGetNextFromList	save/02.Kernel64/Source/List.c	/^void* kGetNextFromList(const LIST* pstList,void* pstCurrent)$/;"	f
 kGetNextParameter	02.Kernel64/Source/ConsoleShell.c	/^int kGetNextParameter(PARAMETERLIST* pstList,char* pcParameter)$/;"	f
 kGetNextParameter	save/02.Kernel64/Source/ConsoleShell.c	/^int kGetNextParameter(PARAMETERLIST* pstList,char* pcParameter)$/;"	f
-kGetNextTaskToRun	02.Kernel64/Source/Task.c	/^static TCB* kGetNextTaskToRun(void)	$/;"	f	file:
+kGetNextTaskToRun	02.Kernel64/Source/Task.c	/^static TCB* kGetNextTaskToRun(BYTE bAPICID)	$/;"	f	file:
 kGetNextTaskToRun	save/02.Kernel64/Source/Task.c	/^static TCB* kGetNextTaskToRun(void)	$/;"	f	file:
 kGetPreviousFromList	02.Kernel64/Source/List.c	/^void* kGetPreviousFromList(const LIST* pstList,void* pstCurrent)$/;"	f
 kGetPreviousFromList	save/02.Kernel64/Source/List.c	/^void* kGetPreviousFromList(const LIST* pstList,void* pstCurrent)$/;"	f
@@ -1668,11 +1693,11 @@ kGetProcessByThread	02.Kernel64/Source/Task.c	/^static TCB* kGetProcessByThread(
 kGetProcessByThread	save/02.Kernel64/Source/Task.c	/^static TCB* kGetProcessByThread(TCB* pstThread)$/;"	f	file:
 kGetProcessorCount	02.Kernel64/Source/MPConfigurationTable.c	/^int kGetProcessorCount( void )$/;"	f
 kGetProcessorCount	save/02.Kernel64/Source/MPConfigurationTable.c	/^int kGetProcessorCount( void )$/;"	f
-kGetProcessorLoad	02.Kernel64/Source/Task.c	/^QWORD kGetProcessorLoad(void)$/;"	f
+kGetProcessorLoad	02.Kernel64/Source/Task.c	/^QWORD kGetProcessorLoad(BYTE bAPICID)$/;"	f
 kGetProcessorLoad	save/02.Kernel64/Source/Task.c	/^QWORD kGetProcessorLoad(void)$/;"	f
 kGetQueue	02.Kernel64/Source/Queue.c	/^BOOL kGetQueue(QUEUE* pstQueue,void* pvData)$/;"	f
 kGetQueue	save/02.Kernel64/Source/Queue.c	/^BOOL kGetQueue(QUEUE* pstQueue,void* pvData)$/;"	f
-kGetReadyTaskCount	02.Kernel64/Source/Task.c	/^int kGetReadyTaskCount(void)$/;"	f
+kGetReadyTaskCount	02.Kernel64/Source/Task.c	/^int kGetReadyTaskCount(BYTE bAPICID)$/;"	f
 kGetReadyTaskCount	save/02.Kernel64/Source/Task.c	/^int kGetReadyTaskCount(void)$/;"	f
 kGetRunningTask	02.Kernel64/Source/Task.c	/^TCB* kGetRunningTask(void)$/;"	f
 kGetRunningTask	save/02.Kernel64/Source/Task.c	/^TCB* kGetRunningTask(void)$/;"	f
@@ -1680,7 +1705,7 @@ kGetTCBInTCBPool	02.Kernel64/Source/Task.c	/^TCB* kGetTCBInTCBPool(int iOffset)$
 kGetTCBInTCBPool	save/02.Kernel64/Source/Task.c	/^TCB* kGetTCBInTCBPool(int iOffset)$/;"	f
 kGetTailFromList	02.Kernel64/Source/List.c	/^void* kGetTailFromList(const LIST* pstList)$/;"	f
 kGetTailFromList	save/02.Kernel64/Source/List.c	/^void* kGetTailFromList(const LIST* pstList)$/;"	f
-kGetTaskCount	02.Kernel64/Source/Task.c	/^int kGetTaskCount(void)$/;"	f
+kGetTaskCount	02.Kernel64/Source/Task.c	/^int kGetTaskCount(BYTE bAPICID)$/;"	f
 kGetTaskCount	save/02.Kernel64/Source/Task.c	/^int kGetTaskCount(void)$/;"	f
 kGetTickCount	02.Kernel64/Source/Utility.c	/^QWORD kGetTickCount(void)$/;"	f
 kGetTickCount	save/02.Kernel64/Source/Utility.c	/^QWORD kGetTickCount(void)$/;"	f
@@ -1694,7 +1719,6 @@ kHDDInformationStruct	02.Kernel64/Source/HardDisk.h	/^typedef struct kHDDInforma
 kHDDInformationStruct	save/02.Kernel64/Source/HardDisk.h	/^typedef struct kHDDInformationStruct$/;"	s
 kHDDManagerStruct	02.Kernel64/Source/HardDisk.h	/^typedef struct kHDDManagerStruct$/;"	s
 kHDDManagerStruct	save/02.Kernel64/Source/HardDisk.h	/^typedef struct kHDDManagerStruct$/;"	s
-kHaltProcessorByLoad	02.Kernel64/Source/Task.c	/^void kHaltProcessorByLoad(void)$/;"	f
 kHaltProcessorByLoad	save/02.Kernel64/Source/Task.c	/^void kHaltProcessorByLoad(void)$/;"	f
 kHelp	02.Kernel64/Source/ConsoleShell.c	/^static void kHelp(const char* pcParameterBuffer)$/;"	f	file:
 kHelp	save/02.Kernel64/Source/ConsoleShell.c	/^static void kHelp(const char* pcParameterBuffer)$/;"	f	file:
@@ -1711,7 +1735,7 @@ kIOAPICEntryStruct	save/02.Kernel64/Source/MPConfigurationTable.h	/^typedef stru
 kIOAPICManagerStruct	02.Kernel64/Source/IOAPIC.h	/^typedef struct kIOAPICManagerStruct $/;"	s
 kIOInterruptAssignmentEntryStruct	02.Kernel64/Source/MPConfigurationTable.h	/^typedef struct kIOInterruptAssignmentEntryStruct$/;"	s
 kIOInterruptAssignmentEntryStruct	save/02.Kernel64/Source/MPConfigurationTable.h	/^typedef struct kIOInterruptAssignmentEntryStruct$/;"	s
-kIORedirectionTableStruct	02.Kernel64/Source/IOAPIC.h	/^typedef struct kIORedirectionTableStruct $/;"	s
+kIOREdirectionTableStrcut	02.Kernel64/Source/IOAPIC.h	/^typedef struct kIOREdirectionTableStrcut $/;"	s
 kISR15	02.Kernel64/Source/ISR.asm	/^kISR15:$/;"	l
 kISR15	save/02.Kernel64/Source/ISR.asm	/^kISR15:$/;"	l
 kISRAlignmentCheck	02.Kernel64/Source/ISR.asm	/^kISRAlignmentCheck:$/;"	l
@@ -1796,6 +1820,7 @@ kInPortByte	02.Kernel64/Source/AssemblyUtility.asm	/^kInPortByte:$/;"	l
 kInPortByte	save/02.Kernel64/Source/AssemblyUtility.asm	/^kInPortByte:$/;"	l
 kInPortWord	02.Kernel64/Source/AssemblyUtility.asm	/^kInPortWord:$/;"	l
 kInPortWord	save/02.Kernel64/Source/AssemblyUtility.asm	/^kInPortWord:$/;"	l
+kIncreaseInterruptCount	02.Kernel64/Source/InterruptHandler.c	/^void kIncreaseInterruptCount(int iIRQ)$/;"	f
 kInitializeCacheManager	02.Kernel64/Source/CacheManager.c	/^BOOL kInitializeCacheManager(void)$/;"	f
 kInitializeCacheManager	save/02.Kernel64/Source/CacheManager.c	/^BOOL kInitializeCacheManager(void)$/;"	f
 kInitializeConsole	02.Kernel64/Source/Console.c	/^void kInitializeConsole(int iX,int iY)$/;"	f
@@ -1810,13 +1835,16 @@ kInitializeGDTTableAndTSS	02.Kernel64/Source/Descriptor.c	/^void kInitializeGDTT
 kInitializeGDTTableAndTSS	save/02.Kernel64/Source/Descriptor.c	/^void kInitializeGDTTableAndTSS (void)$/;"	f
 kInitializeHDD	02.Kernel64/Source/HardDisk.c	/^BOOL kInitializeHDD(void)$/;"	f
 kInitializeHDD	save/02.Kernel64/Source/HardDisk.c	/^BOOL kInitializeHDD(void)$/;"	f
+kInitializeHandler	02.Kernel64/Source/InterruptHandler.c	/^void kInitializeHandler(void)$/;"	f
 kInitializeIDTTables	02.Kernel64/Source/Descriptor.c	/^void kInitializeIDTTables(void)$/;"	f
 kInitializeIDTTables	save/02.Kernel64/Source/Descriptor.c	/^void kInitializeIDTTables(void)$/;"	f
+kInitializeIORedirectionTable	02.Kernel64/Source/IOAPIC.c	/^void kInitializeIORedirectionTable( void )$/;"	f
 kInitializeKernel64Area	01.Kernel32/Source/main.c	/^BOOL kInitializeKernel64Area(void)$/;"	f
 kInitializeKeyboard	02.Kernel64/Source/Keyboard.c	/^BOOL kInitializeKeyboard(void)$/;"	f
 kInitializeKeyboard	save/02.Kernel64/Source/Keyboard.c	/^BOOL kInitializeKeyboard(void)$/;"	f
 kInitializeList	02.Kernel64/Source/List.c	/^void kInitializeList(LIST* pstList)$/;"	f
 kInitializeList	save/02.Kernel64/Source/List.c	/^void kInitializeList(LIST* pstList)$/;"	f
+kInitializeLocalVectorTable	02.Kernel64/Source/LocalAPIC.c	/^void kInitializeLocalVectorTable( void )$/;"	f
 kInitializeMutex	02.Kernel64/Source/Synchronization.c	/^void kInitializeMutex(MUTEX* pstMutex)$/;"	f
 kInitializeMutex	save/02.Kernel64/Source/Synchronization.c	/^void kInitializeMutex(MUTEX* pstMutex)$/;"	f
 kInitializePIC	02.Kernel64/Source/PIC.c	/^void kInitializePIC(void)$/;"	f
@@ -1830,11 +1858,11 @@ kInitializeQueue	02.Kernel64/Source/Queue.c	/^void kInitializeQueue(QUEUE* pstQu
 kInitializeQueue	save/02.Kernel64/Source/Queue.c	/^void kInitializeQueue(QUEUE* pstQueue,void* pvQueueBuffer,int iMaxDataCount,int iDataSize)$/;"	f
 kInitializeRDD	02.Kernel64/Source/RAMDisk.c	/^BOOL kInitializeRDD(DWORD dwTotalSectorCount)$/;"	f
 kInitializeRDD	save/02.Kernel64/Source/RAMDisk.c	/^BOOL kInitializeRDD(DWORD dwTotalSectorCount)$/;"	f
-kInitializeRedirectionTable	02.Kernel64/Source/IOAPIC.c	/^void kInitializeRedirectionTable(void)$/;"	f
 kInitializeScheduler	02.Kernel64/Source/Task.c	/^void kInitializeScheduler(void)$/;"	f
 kInitializeScheduler	save/02.Kernel64/Source/Task.c	/^void kInitializeScheduler(void)$/;"	f
 kInitializeSerialPort	02.Kernel64/Source/SerialPort.c	/^void kInitializeSerialPort(void)$/;"	f
 kInitializeSerialPort	save/02.Kernel64/Source/SerialPort.c	/^void kInitializeSerialPort(void)$/;"	f
+kInitializeSpinLock	02.Kernel64/Source/Synchronization.c	/^void kInitializeSpinLock(SPINLOCK* pstSpinLock)$/;"	f
 kInitializeTCBPool	02.Kernel64/Source/Task.c	/^static void kInitializeTCBPool(void)$/;"	f	file:
 kInitializeTCBPool	save/02.Kernel64/Source/Task.c	/^static void kInitializeTCBPool(void)$/;"	f	file:
 kInitializeTSSSegment	02.Kernel64/Source/Descriptor.c	/^void kInitializeTSSSegment(TSSSEGMENT* pstTSS)$/;"	f
@@ -1855,6 +1883,7 @@ kInternalWriteClusterWithCache	02.Kernel64/Source/FileSystem.c	/^static BOOL kIn
 kInternalWriteClusterWithCache	save/02.Kernel64/Source/FileSystem.c	/^static BOOL kInternalWriteClusterWithCache(DWORD dwOffset,BYTE* pbBuffer)$/;"	f	file:
 kInternalWriteClusterWithoutCache	02.Kernel64/Source/FileSystem.c	/^static BOOL kInternalWriteClusterWithoutCache(DWORD dwOffset,BYTE* pbBuffer)$/;"	f	file:
 kInternalWriteClusterWithoutCache	save/02.Kernel64/Source/FileSystem.c	/^static BOOL kInternalWriteClusterWithoutCache(DWORD dwOffset,BYTE* pbBuffer)$/;"	f	file:
+kInterruptManagerStruct	02.Kernel64/Source/InterruptHandler.h	/^typedef struct kInterruptManagerStruct $/;"	s
 kIsAlphabetScanCode	02.Kernel64/Source/Keyboard.c	/^BOOL kIsAlphabetScanCode(BYTE bScanCode)$/;"	f
 kIsAlphabetScanCode	save/02.Kernel64/Source/Keyboard.c	/^BOOL kIsAlphabetScanCode(BYTE bScanCode)$/;"	f
 kIsFileOpened	02.Kernel64/Source/FileSystem.c	/^BOOL kIsFileOpened(const DIRECTORYENTRY* pstEntry)$/;"	f
@@ -1868,7 +1897,7 @@ kIsNumberPadScanCode	02.Kernel64/Source/Keyboard.c	/^BOOL kIsNumberPadScanCode(B
 kIsNumberPadScanCode	save/02.Kernel64/Source/Keyboard.c	/^BOOL kIsNumberPadScanCode(BYTE bScanCode)$/;"	f
 kIsOutputBufferFull	02.Kernel64/Source/Keyboard.c	/^BOOL kIsOutputBufferFull(void)$/;"	f
 kIsOutputBufferFull	save/02.Kernel64/Source/Keyboard.c	/^BOOL kIsOutputBufferFull(void)$/;"	f
-kIsProcessorTimeExpired	02.Kernel64/Source/Task.c	/^BOOL kIsProcessorTimeExpired(void)$/;"	f
+kIsProcessorTimeExpired	02.Kernel64/Source/Task.c	/^BOOL kIsProcessorTimeExpired(BYTE bAPICID)$/;"	f
 kIsProcessorTimeExpired	save/02.Kernel64/Source/Task.c	/^BOOL kIsProcessorTimeExpired(void)$/;"	f
 kIsQueueEmpty	02.Kernel64/Source/Queue.c	/^BOOL kIsQueueEmpty(const QUEUE* pstQueue)$/;"	f
 kIsQueueEmpty	save/02.Kernel64/Source/Queue.c	/^BOOL kIsQueueEmpty(const QUEUE* pstQueue)$/;"	f
@@ -1908,7 +1937,7 @@ kLocalInterruptEntryStruct	02.Kernel64/Source/MPConfigurationTable.h	/^typedef s
 kLocalInterruptEntryStruct	save/02.Kernel64/Source/MPConfigurationTable.h	/^typedef struct kLocalInterruptEntryStruct$/;"	s
 kLock	02.Kernel64/Source/Synchronization.c	/^void kLock(MUTEX* pstMutex)$/;"	f
 kLock	save/02.Kernel64/Source/Synchronization.c	/^void kLock(MUTEX* pstMutex)$/;"	f
-kLockForSystemData	02.Kernel64/Source/Synchronization.c	/^BOOL kLockForSystemData(void)$/;"	f
+kLockForSpinLock	02.Kernel64/Source/Synchronization.c	/^void kLockForSpinLock(SPINLOCK* pstSpinLock)$/;"	f
 kLockForSystemData	save/02.Kernel64/Source/Synchronization.c	/^BOOL kLockForSystemData(void)$/;"	f
 kMBRStruct	02.Kernel64/Source/FileSystem.h	/^typedef struct kMBRStruct$/;"	s
 kMBRStruct	save/02.Kernel64/Source/FileSystem.h	/^typedef struct kMBRStruct$/;"	s
@@ -1950,6 +1979,8 @@ kParameterListStruct	02.Kernel64/Source/ConsoleShell.h	/^typedef struct kParamet
 kParameterListStruct	save/02.Kernel64/Source/ConsoleShell.h	/^typedef struct kParameterListStruct$/;"	s
 kPartitionStruct	02.Kernel64/Source/FileSystem.h	/^typedef struct kPartitionStruct$/;"	s
 kPartitionStruct	save/02.Kernel64/Source/FileSystem.h	/^typedef struct kPartitionStruct$/;"	s
+kPause	02.Kernel64/Source/AssemblyUtility.asm	/^kPause:$/;"	l
+kPrintIRQToINTINMap	02.Kernel64/Source/IOAPIC.c	/^void kPrintIRQToINTINMap( void )$/;"	f
 kPrintMPConfigurationTable	02.Kernel64/Source/MPConfigurationTable.c	/^void kPrintMPConfigurationTable(void)$/;"	f
 kPrintMPConfigurationTable	save/02.Kernel64/Source/MPConfigurationTable.c	/^void kPrintMPConfigurationTable(void)$/;"	f
 kPrintNumberTask	02.Kernel64/Source/ConsoleShell.c	/^static void kPrintNumberTask(void)$/;"	f	file:
@@ -1961,6 +1992,7 @@ kPrintf	02.Kernel64/Source/Console.c	/^void kPrintf(const char* pcFormatString,.
 kPrintf	save/02.Kernel64/Source/Console.c	/^void kPrintf(const char* pcFormatString,...)$/;"	f
 kProcessorEntryStruct	02.Kernel64/Source/MPConfigurationTable.h	/^typedef struct kProcessorEntryStruct$/;"	s
 kProcessorEntryStruct	save/02.Kernel64/Source/MPConfigurationTable.h	/^typedef struct kProcessorEntryStruct$/;"	s
+kProcessorLoadBalancing	02.Kernel64/Source/InterruptHandler.c	/^void kProcessorLoadBalancing(int iIRQ)$/;"	f
 kPutQueue	02.Kernel64/Source/Queue.c	/^BOOL kPutQueue(QUEUE* pstQueue,const void* pvData)$/;"	f
 kPutQueue	save/02.Kernel64/Source/Queue.c	/^BOOL kPutQueue(QUEUE* pstQueue,const void* pvData)$/;"	f
 kQueueManagerStruct	02.Kernel64/Source/Queue.h	/^typedef struct kQueueManagerStruct$/;"	s
@@ -2019,12 +2051,13 @@ kRemoveListFromHeader	02.Kernel64/Source/List.c	/^void* kRemoveListFromHeader(LI
 kRemoveListFromHeader	save/02.Kernel64/Source/List.c	/^void* kRemoveListFromHeader(LIST* pstList)$/;"	f
 kRemoveListFromTail	02.Kernel64/Source/List.c	/^void* kRemoveListFromTail(LIST* pstList)$/;"	f
 kRemoveListFromTail	save/02.Kernel64/Source/List.c	/^void* kRemoveListFromTail(LIST* pstList)$/;"	f
-kRemoveTaskFromReadyList	02.Kernel64/Source/Task.c	/^static TCB* kRemoveTaskFromReadyList(QWORD qwTaskID)$/;"	f	file:
+kRemoveTaskFromReadyList	02.Kernel64/Source/Task.c	/^static TCB* kRemoveTaskFromReadyList(BYTE bAPICID,QWORD qwTaskID)$/;"	f	file:
 kRemoveTaskFromReadyList	save/02.Kernel64/Source/Task.c	/^static TCB* kRemoveTaskFromReadyList(QWORD qwTaskID)$/;"	f	file:
 kReverseString	02.Kernel64/Source/Utility.c	/^void kReverseString(char* pcBuffer)$/;"	f
 kReverseString	save/02.Kernel64/Source/Utility.c	/^void kReverseString(char* pcBuffer)$/;"	f
 kRewindDirectory	02.Kernel64/Source/FileSystem.c	/^void kRewindDirectory(DIR* pstDirectory)$/;"	f
 kRewindDirectory	save/02.Kernel64/Source/FileSystem.c	/^void kRewindDirectory(DIR* pstDirectory)$/;"	f
+kRoutingIRQToAPICID	02.Kernel64/Source/IOAPIC.c	/^void kRoutingIRQToAPICID(int iIRQ,BYTE bAPICID)$/;"	f
 kSPrintf	02.Kernel64/Source/Utility.c	/^int kSPrintf(char* pcBuffer,const char* pcFormatString,...)$/;"	f
 kSPrintf	save/02.Kernel64/Source/Utility.c	/^int kSPrintf(char* pcBuffer,const char* pcFormatString,...)$/;"	f
 kSaveFPUContext	02.Kernel64/Source/AssemblyUtility.asm	/^kSaveFPUContext:$/;"	l
@@ -2037,6 +2070,8 @@ kSchedulerStruct	02.Kernel64/Source/Task.h	/^typedef struct kSchedulerStruct$/;"
 kSchedulerStruct	save/02.Kernel64/Source/Task.h	/^typedef struct kSchedulerStruct$/;"	s
 kSeekFile	02.Kernel64/Source/FileSystem.c	/^int kSeekFile(FILE* pstFile,int iOffset,int iOrigin)$/;"	f
 kSeekFile	save/02.Kernel64/Source/FileSystem.c	/^int kSeekFile(FILE* pstFile,int iOffset,int iOrigin)$/;"	f
+kSendEOI	02.Kernel64/Source/InterruptHandler.c	/^void kSendEOI(int iIRQ)$/;"	f
+kSendEOIToLocalAPIC	02.Kernel64/Source/LocalAPIC.c	/^void kSendEOIToLocalAPIC( void )$/;"	f
 kSendEOIToPIC	02.Kernel64/Source/PIC.c	/^void kSendEOIToPIC(int iIRQNumber)$/;"	f
 kSendEOIToPIC	save/02.Kernel64/Source/PIC.c	/^void kSendEOIToPIC(int iIRQNumber)$/;"	f
 kSendSerialData	02.Kernel64/Source/SerialPort.c	/^void kSendSerialData(BYTE* pbBuffer,int iSize)$/;"	f
@@ -2059,16 +2094,19 @@ kSetHDDInterruptFlag	02.Kernel64/Source/HardDisk.c	/^void kSetHDDInterruptFlag(B
 kSetHDDInterruptFlag	save/02.Kernel64/Source/HardDisk.c	/^void kSetHDDInterruptFlag(BOOL bPrimary,BOOL bFlag)$/;"	f
 kSetIDTEntry	02.Kernel64/Source/Descriptor.c	/^void kSetIDTEntry(IDTENTRY* pstEntry,void* pvHandler,WORD wSelector,BYTE bIST,BYTE bFlags,BYTE bType)$/;"	f
 kSetIDTEntry	save/02.Kernel64/Source/Descriptor.c	/^void kSetIDTEntry(IDTENTRY* pstEntry,void* pvHandler,WORD wSelector,BYTE bIST,BYTE bFlags,BYTE bType)$/;"	f
-kSetIOAPICRedirectionEntry	02.Kernel64/Source/IOAPIC.c	/^void kSetIOAPICRedirectionEntry(IOREDIRECTIONTABLE* pstEntry,BYTE bAPICID,BYTE bInterruptMask,BYTE bFlagsAndDeliveryMode,BYTE bVector)$/;"	f
+kSetIOAPICRedirectionEntry	02.Kernel64/Source/IOAPIC.c	/^void kSetIOAPICRedirectionEntry(IOREDIRECTIONTABLE* pstEntry,BYTE bAPICID, BYTE bInterruptMask, BYTE bFlagsAndDeliveryMode,BYTE bVector)$/;"	f
 kSetInterruptFlag	02.Kernel64/Source/Utility.c	/^BOOL kSetInterruptFlag(BOOL bEnableInterrupt)$/;"	f
 kSetInterruptFlag	save/02.Kernel64/Source/Utility.c	/^BOOL kSetInterruptFlag(BOOL bEnableInterrupt)$/;"	f
-kSetLastFPUUsedTaskID	02.Kernel64/Source/Task.c	/^void kSetLastFPUUsedTaskID(QWORD qwTaskID)$/;"	f
+kSetInterruptLoadBalancing	02.Kernel64/Source/InterruptHandler.c	/^void kSetInterruptLoadBalancing(BOOL bUseLoadBalancing)$/;"	f
 kSetLastFPUUsedTaskID	save/02.Kernel64/Source/Task.c	/^void kSetLastFPUUsedTaskID(QWORD qwTaskID)$/;"	f
 kSetPageEntryData	01.Kernel32/Source/Page.c	/^void kSetPageEntryData(PTENTRY* pstEntry,DWORD dwUpperBaseAddress,DWORD dwLowerBaseAddress,DWORD dwLowerFlags,DWORD dwUpperFLAGS)$/;"	f
-kSetRunningTask	02.Kernel64/Source/Task.c	/^void kSetRunningTask(TCB* pstTask)$/;"	f
+kSetRunningTask	02.Kernel64/Source/Task.c	/^void kSetRunningTask(BYTE bAPICID,TCB* pstTask)$/;"	f
 kSetRunningTask	save/02.Kernel64/Source/Task.c	/^void kSetRunningTask(TCB* pstTask)$/;"	f
+kSetSymmetricIOMode	02.Kernel64/Source/InterruptHandler.c	/^void kSetSymmetricIOMode(BOOL bSymmetricIOMode)$/;"	f
 kSetTS	02.Kernel64/Source/AssemblyUtility.asm	/^kSetTS:$/;"	l
 kSetTS	save/02.Kernel64/Source/AssemblyUtility.asm	/^kSetTS:$/;"	l
+kSetTaskLoadBalancing	02.Kernel64/Source/Task.c	/^BYTE kSetTaskLoadBalancing(BYTE bAPICID,BOOL bUseLoadBalancing)$/;"	f
+kSetTaskPriority	02.Kernel64/Source/LocalAPIC.c	/^void kSetTaskPriority( BYTE bPriority )$/;"	f
 kSetTimer	02.Kernel64/Source/ConsoleShell.c	/^static void kSetTimer(const char* pcParameterBuffer)$/;"	f	file:
 kSetTimer	save/02.Kernel64/Source/ConsoleShell.c	/^static void kSetTimer(const char* pcParameterBuffer)$/;"	f	file:
 kSetUpTask	02.Kernel64/Source/Task.c	/^static void kSetUpTask(TCB* pstTCB,QWORD qwFlags,QWORD qwEntryPointAddress,void* pvStackAddress,QWORD qwStackSize)$/;"	f	file:
@@ -2083,6 +2121,8 @@ kShowFileSystemInformation	02.Kernel64/Source/ConsoleShell.c	/^static void kShow
 kShowFileSystemInformation	save/02.Kernel64/Source/ConsoleShell.c	/^static void kShowFileSystemInformation(const char* pcParameterBuffer)$/;"	f	file:
 kShowHDDInformation	02.Kernel64/Source/ConsoleShell.c	/^static void kShowHDDInformation(const char* pcParameterBuffer)$/;"	f	file:
 kShowHDDInformation	save/02.Kernel64/Source/ConsoleShell.c	/^static void kShowHDDInformation(const char* pcParameterBuffer)$/;"	f	file:
+kShowIRQINTINMappingTable	02.Kernel64/Source/ConsoleShell.c	/^static void kShowIRQINTINMappingTable( const char* pcParameterBuffer )$/;"	f	file:
+kShowInterruptProcessingCount	02.Kernel64/Source/ConsoleShell.c	/^static void kShowInterruptProcessingCount( const char* pcParameterBuffer )$/;"	f	file:
 kShowMPConfigurationTable	02.Kernel64/Source/ConsoleShell.c	/^static void kShowMPConfigurationTable(const char* pcParameterBuffer)$/;"	f	file:
 kShowMPConfigurationTable	save/02.Kernel64/Source/ConsoleShell.c	/^static void kShowMPConfigurationTable(const char* pcParameterBuffer)$/;"	f	file:
 kShowMatrix	02.Kernel64/Source/ConsoleShell.c	/^static void kShowMatrix(const char* pcParameterBuffer)$/;"	f	file:
@@ -2097,10 +2137,14 @@ kShutdown	02.Kernel64/Source/ConsoleShell.c	/^static void kShutdown(const char* 
 kShutdown	save/02.Kernel64/Source/ConsoleShell.c	/^static void kShutdown(const char* pcParameterBuffer)$/;"	f	file:
 kSleep	02.Kernel64/Source/Utility.c	/^void kSleep(QWORD qwMillisecond)$/;"	f
 kSleep	save/02.Kernel64/Source/Utility.c	/^void kSleep(QWORD qwMillisecond)$/;"	f
+kSpinLockStrcut	02.Kernel64/Source/Synchronization.h	/^typedef struct kSpinLockStrcut$/;"	s
 kStartApplicationProcessor	02.Kernel64/Source/ConsoleShell.c	/^static void kStartApplicationProcessor(const char* pcParameterBuffer)$/;"	f	file:
 kStartApplicationProcessor	save/02.Kernel64/Source/ConsoleShell.c	/^static void kStartApplicationProcessor(const char* pcParameterBuffer)$/;"	f	file:
 kStartConsoleShell	02.Kernel64/Source/ConsoleShell.c	/^void kStartConsoleShell(void)$/;"	f
 kStartConsoleShell	save/02.Kernel64/Source/ConsoleShell.c	/^void kStartConsoleShell(void)$/;"	f
+kStartInterruptLoadBalancing	02.Kernel64/Source/ConsoleShell.c	/^static void kStartInterruptLoadBalancing( const char* pcParameterBuffer )$/;"	f	file:
+kStartSymmetricIOMode	02.Kernel64/Source/ConsoleShell.c	/^static void kStartSymmetricIOMode( const char* pcParameterBuffer )$/;"	f	file:
+kStartTaskLoadBalancing	02.Kernel64/Source/ConsoleShell.c	/^static void kStartTaskLoadBalancing(const char* pcParameterBuffer)$/;"	f	file:
 kStartUpApplicationProcessor	02.Kernel64/Source/MultiProcessor.c	/^BOOL kStartUpApplicationProcessor(void)$/;"	f
 kStartUpApplicationProcessor	save/02.Kernel64/Source/MultiProcessor.c	/^BOOL kStartUpApplicationProcessor(void)$/;"	f
 kStrLen	02.Kernel64/Source/Utility.c	/^int kStrLen(const char* pcBuffer)$/;"	f
@@ -2134,13 +2178,14 @@ kTestTask1	02.Kernel64/Source/ConsoleShell.c	/^static void kTestTask1(void)$/;"	
 kTestTask1	save/02.Kernel64/Source/ConsoleShell.c	/^static void kTestTask1(void)$/;"	f	file:
 kTestTask2	02.Kernel64/Source/ConsoleShell.c	/^static void kTestTask2(void)$/;"	f	file:
 kTestTask2	save/02.Kernel64/Source/ConsoleShell.c	/^static void kTestTask2(void)$/;"	f	file:
+kTestTask3	02.Kernel64/Source/ConsoleShell.c	/^static void kTestTask3(void)$/;"	f	file:
 kTestThread	02.Kernel64/Source/ConsoleShell.c	/^static void kTestThread(const char* pcParameterBuffer)$/;"	f	file:
 kTestThread	save/02.Kernel64/Source/ConsoleShell.c	/^static void kTestThread(const char* pcParameterBuffer)$/;"	f	file:
 kTimerHandler	02.Kernel64/Source/InterruptHandler.c	/^void kTimerHandler(int iVectorNumber)$/;"	f
 kTimerHandler	save/02.Kernel64/Source/InterruptHandler.c	/^void kTimerHandler(int iVectorNumber)$/;"	f
 kUnlock	02.Kernel64/Source/Synchronization.c	/^void kUnlock(MUTEX* pstMutex)$/;"	f
 kUnlock	save/02.Kernel64/Source/Synchronization.c	/^void kUnlock(MUTEX* pstMutex)$/;"	f
-kUnlockForSystemData	02.Kernel64/Source/Synchronization.c	/^void kUnlockForSystemData(BOOL bInterruptFlag)$/;"	f
+kUnlockForSpinLock	02.Kernel64/Source/Synchronization.c	/^void kUnlockForSpinLock(SPINLOCK* pstSpinLock)$/;"	f
 kUnlockForSystemData	save/02.Kernel64/Source/Synchronization.c	/^void kUnlockForSystemData(BOOL bInterruptFlag)$/;"	f
 kUpdateDirectoryEntry	02.Kernel64/Source/FileSystem.c	/^static BOOL kUpdateDirectoryEntry(FILEHANDLE* pstFileHandle)$/;"	f	file:
 kUpdateDirectoryEntry	save/02.Kernel64/Source/FileSystem.c	/^static BOOL kUpdateDirectoryEntry(FILEHANDLE* pstFileHandle)$/;"	f	file:
@@ -2253,7 +2298,7 @@ qwFlags	02.Kernel64/Source/Task.h	/^	QWORD qwFlags;$/;"	m	struct:kTaskControlBlo
 qwFlags	save/02.Kernel64/Source/Task.h	/^	QWORD qwFlags;$/;"	m	struct:kTaskControlBlockStruct
 qwID	02.Kernel64/Source/List.h	/^	QWORD qwID;$/;"	m	struct:kListLinkStruct
 qwID	save/02.Kernel64/Source/List.h	/^	QWORD qwID;$/;"	m	struct:kListLinkStruct
-qwIOAPICBaseAddressOfISA	02.Kernel64/Source/IOAPIC.h	/^	QWORD qwIOAPICBaseAddressOfISA;$/;"	m	struct:kIOAPICManagerStruct
+qwIOAPICBaseAddrressOfISA	02.Kernel64/Source/IOAPIC.h	/^	QWORD qwIOAPICBaseAddrressOfISA;$/;"	m	struct:kIOAPICManagerStruct
 qwIST	02.Kernel64/Source/Descriptor.h	/^	QWORD qwIST[7];$/;"	m	struct:kTSSDataStruct
 qwIST	save/02.Kernel64/Source/Descriptor.h	/^	QWORD qwIST[7];$/;"	m	struct:kTSSDataStruct
 qwLastFPUUsedTaskID	02.Kernel64/Source/Task.h	/^	QWORD qwLastFPUUsedTaskID;$/;"	m	struct:kSchedulerStruct
@@ -2308,6 +2353,10 @@ stMutex	02.Kernel64/Source/RAMDisk.h	/^	MUTEX stMutex;$/;"	m	struct:kRDDManagerS
 stMutex	save/02.Kernel64/Source/FileSystem.h	/^	MUTEX stMutex;$/;"	m	struct:kFileSystemManagerStruct
 stMutex	save/02.Kernel64/Source/HardDisk.h	/^	MUTEX stMutex;$/;"	m	struct:kHDDManagerStruct
 stMutex	save/02.Kernel64/Source/RAMDisk.h	/^	MUTEX stMutex;$/;"	m	struct:kRDDManagerStruct
+stSpinLock	02.Kernel64/Source/DynamicMemory.h	/^	SPINLOCK stSpinLock;$/;"	m	struct:kDynamicMemoryManagerStruct
+stSpinLock	02.Kernel64/Source/Keyboard.h	/^	SPINLOCK stSpinLock;$/;"	m	struct:kKeyboardManagerStruct
+stSpinLock	02.Kernel64/Source/Task.h	/^	SPINLOCK stSpinLock;$/;"	m	struct:kSchedulerStruct
+stSpinLock	02.Kernel64/Source/Task.h	/^	SPINLOCK stSpinLock;$/;"	m	struct:kTCBPoolManagerStruct
 stThreadLink	02.Kernel64/Source/Task.h	/^	LISTLINK stThreadLink;$/;"	m	struct:kTaskControlBlockStruct
 stThreadLink	save/02.Kernel64/Source/Task.h	/^	LISTLINK stThreadLink;$/;"	m	struct:kTaskControlBlockStruct
 stWaitList	02.Kernel64/Source/Task.h	/^	LIST stWaitList;$/;"	m	struct:kSchedulerStruct
@@ -2328,7 +2377,7 @@ vbMPFeatureByte	02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE vbMPFeatureByt
 vbMPFeatureByte	save/02.Kernel64/Source/MPConfigurationTable.h	/^	BYTE vbMPFeatureByte[5];$/;"	m	struct:kMPFloatingPointerStruct
 vbPadding	02.Kernel64/Source/Synchronization.h	/^	BYTE vbPadding[3];$/;"	m	struct:kMutextStruct
 vbPadding	save/02.Kernel64/Source/Synchronization.h	/^	BYTE vbPadding[3];$/;"	m	struct:kMutextStruct
-vbReserved	02.Kernel64/Source/IOAPIC.h	/^	BYTE vbReserved[4];$/;"	m	struct:kIORedirectionTableStruct
+vbReserved	02.Kernel64/Source/IOAPIC.h	/^	BYTE vbReserved[4];$/;"	m	struct:kIOREdirectionTableStrcut
 vbStartingCHSAddress	02.Kernel64/Source/FileSystem.h	/^	BYTE vbStartingCHSAddress[3];$/;"	m	struct:kPartitionStruct
 vbStartingCHSAddress	save/02.Kernel64/Source/FileSystem.h	/^	BYTE vbStartingCHSAddress[3];$/;"	m	struct:kPartitionStruct
 vcBusTypeString	02.Kernel64/Source/MPConfigurationTable.h	/^	char vcBusTypeString[6];$/;"	m	struct:kBusEntryStruct
@@ -2337,7 +2386,7 @@ vcFileName	02.Kernel64/Source/FileSystem.h	/^	char vcFileName[FILESYSTEM_MAXFILE
 vcFileName	save/02.Kernel64/Source/FileSystem.h	/^	char vcFileName[FILESYSTEM_MAXFILENAMELENGTH];$/;"	m	struct:kDirectoryEntryStruct
 vcOEMIDString	02.Kernel64/Source/MPConfigurationTable.h	/^	char vcOEMIDString[8];$/;"	m	struct:kMPConfigurationTableHeaderStruct
 vcOEMIDString	save/02.Kernel64/Source/MPConfigurationTable.h	/^	char vcOEMIDString[8];$/;"	m	struct:kMPConfigurationTableHeaderStruct
-vcPadding	02.Kernel64/Source/Task.h	/^	char vcPadding[11];$/;"	m	struct:kTaskControlBlockStruct
+vcPadding	02.Kernel64/Source/Task.h	/^	char vcPadding[9];$/;"	m	struct:kTaskControlBlockStruct
 vcPadding	save/02.Kernel64/Source/Task.h	/^	char vcPadding[11];$/;"	m	struct:kTaskControlBlockStruct
 vcProductIDString	02.Kernel64/Source/MPConfigurationTable.h	/^	char vcProductIDString[12];$/;"	m	struct:kMPConfigurationTableHeaderStruct
 vcProductIDString	save/02.Kernel64/Source/MPConfigurationTable.h	/^	char vcProductIDString[12];$/;"	m	struct:kMPConfigurationTableHeaderStruct
@@ -2363,6 +2412,7 @@ vstPartiton	02.Kernel64/Source/FileSystem.h	/^	PARTITION vstPartiton[4];$/;"	m	s
 vstPartiton	save/02.Kernel64/Source/FileSystem.h	/^	PARTITION vstPartiton[4];$/;"	m	struct:kMBRStruct
 vstReadyList	02.Kernel64/Source/Task.h	/^	LIST vstReadyList[TASK_MAXREADYLISTCOUNT];$/;"	m	struct:kSchedulerStruct
 vstReadyList	save/02.Kernel64/Source/Task.h	/^	LIST vstReadyList[TASK_MAXREADYLISTCOUNT];$/;"	m	struct:kSchedulerStruct
+vvqwCoreInterruptCount	02.Kernel64/Source/InterruptHandler.h	/^	QWORD vvqwCoreInterruptCount[MAXPROCESSORCOUNT][INTERRUPT_MAXVECTORCOUNT];$/;"	m	struct:kInterruptManagerStruct
 vvstCacheBuffer	02.Kernel64/Source/CacheManager.h	/^	CACHEBUFFER vvstCacheBuffer[CACHE_MAXCACHETABLEINDEX][CACHE_MAXDATAAREACOUNT];$/;"	m	struct:kCacheManagerStruct
 vvstCacheBuffer	save/02.Kernel64/Source/CacheManager.h	/^	CACHEBUFFER vvstCacheBuffer[CACHE_MAXCACHETABLEINDEX][CACHE_MAXDATAAREACOUNT];$/;"	m	struct:kCacheManagerStruct
 vwFirmwareRevision	02.Kernel64/Source/HardDisk.h	/^	WORD vwFirmwareRevision[4];$/;"	m	struct:kHDDInformationStruct
